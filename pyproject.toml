@@ -1,0 +1,31 @@
+[project]
+name = "plot-shift"
+version = "0.1.0"
+description = "Comparative sentiment analysis for narrative turning points"
+readme = "README.md"
+authors = [{ name = "dinno", email = "tahadlrb7@gmail.com" }]
+requires-python = ">=3.14"
+dependencies = ["ipykernel>=7.3.0", "polars>=1.43.2"]
+
+[project.scripts]
+plot-shift = "plot_shift:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = ["pytest", "ruff", "mypy"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py314"
+
+[tool.mypy]
+python_version = "3.14"
+strict = true
+
+[[tool.uv.index]]
+name = "Hamravesh"
+url = "https://repo.hmirror.ir/python/simple"
+default = true
