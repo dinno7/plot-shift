@@ -5,7 +5,12 @@ description = "Comparative sentiment analysis for narrative turning points"
 readme = "README.md"
 authors = [{ name = "dinno", email = "tahadlrb7@gmail.com" }]
 requires-python = ">=3.14"
-dependencies = ["ipykernel>=7.3.0", "polars>=1.43.2"]
+dependencies = [
+    "ipykernel>=7.3.0",
+    "opensubtitlescom>=0.1.5",
+    "polars>=1.43.2",
+    "python-dotenv>=1.2.2",
+]
 
 [project.scripts]
 plot-shift = "plot_shift:main"
