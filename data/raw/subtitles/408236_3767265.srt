@@ -1,0 +1,5708 @@
+1
+00:03:50,076 --> 00:03:54,672
+<i>I have sailed the world
+Beheld its wonders</i>
+
+2
+00:03:54,781 --> 00:03:59,309
+<i>From the Dardanelles
+To the mountains of Peru</i>
+
+3
+00:03:59,419 --> 00:04:03,617
+<i>But there's no place like London</i>
+
+4
+00:04:03,723 --> 00:04:07,750
+<i>No, there's no place like London</i>
+
+5
+00:04:07,861 --> 00:04:09,260
+Mr. Todd?
+
+6
+00:04:10,196 --> 00:04:14,758
+<i>You are young
+Life has been kind to you</i>
+
+7
+00:04:18,171 --> 00:04:22,540
+<i>You will learn</i>
+
+8
+00:04:37,324 --> 00:04:39,383
+<i>There's a hole in the world
+like a great black pit</i>
+
+9
+00:04:39,492 --> 00:04:41,357
+<i>And the vermin of the world inhabit it</i>
+
+10
+00:04:41,461 --> 00:04:43,486
+<i>And its morals aren't worth
+what a pig could spit</i>
+
+11
+00:04:43,596 --> 00:04:46,087
+<i>And it goes by the name of London</i>
+
+12
+00:04:47,233 --> 00:04:49,292
+<i>At the top of the hole
+sit a privileged few</i>
+
+13
+00:04:49,402 --> 00:04:51,302
+<i>Making mock of the vermin
+in the lower zoo</i>
+
+14
+00:04:51,404 --> 00:04:53,133
+<i>Turning beauty into filth and greed</i>
+
+15
+00:04:53,239 --> 00:04:58,541
+<i>I too have sailed the world
+and seen its wonders</i>
+
+16
+00:04:58,645 --> 00:05:03,139
+<i>For the cruelty of men
+is as wondrous as Peru</i>
+
+17
+00:05:03,249 --> 00:05:07,515
+<i>But there's no place like London</i>
+
+18
+00:05:25,372 --> 00:05:27,840
+<i>Is everything all right, Mr. Todd?</i>
+
+19
+00:05:29,142 --> 00:05:31,440
+<i>I beg your indulgence, Anthony.</i>
+
+20
+00:05:32,112 --> 00:05:34,273
+My mind is far from easy.
+
+21
+00:05:36,249 --> 00:05:41,414
+In these once familiar streets
+I feel shadows everywhere.
+
+22
+00:05:41,688 --> 00:05:43,019
+Shadows?
+
+23
+00:05:44,557 --> 00:05:45,854
+Ghosts.
+
+24
+00:05:53,099 --> 00:05:56,660
+<i>There was a barber and his wife</i>
+
+25
+00:05:56,770 --> 00:05:59,705
+<i>And she was beautiful</i>
+
+26
+00:06:00,874 --> 00:06:04,241
+<i>A foolish barber and his wife</i>
+
+27
+00:06:04,344 --> 00:06:07,370
+<i>She was his reason and his life</i>
+
+28
+00:06:07,480 --> 00:06:10,643
+<i>And she was beautiful</i>
+
+29
+00:06:11,351 --> 00:06:15,219
+<i>And she was virtuous</i>
+
+30
+00:06:17,257 --> 00:06:19,851
+<i>And he was</i>
+
+31
+00:06:22,061 --> 00:06:25,588
+<i>naive</i>
+
+32
+00:06:33,239 --> 00:06:36,731
+<i>There was another man who saw</i>
+
+33
+00:06:36,843 --> 00:06:39,869
+<i>that she was beautiful</i>
+
+34
+00:06:40,647 --> 00:06:44,083
+<i>A pious vulture of the law</i>
+
+35
+00:06:44,184 --> 00:06:47,551
+<i>Who, with a gesture of his claw</i>
+
+36
+00:06:47,654 --> 00:06:51,181
+<i>Removed the barber from his plate</i>
+
+37
+00:06:51,291 --> 00:06:55,785
+<i>Then there was nothing but to wait</i>
+
+38
+00:06:55,895 --> 00:06:58,295
+<i>And she would fall</i>
+
+39
+00:06:58,398 --> 00:07:04,803
+<i>So soft, so young
+so lost and, oh, so beautiful</i>
+
+40
+00:07:08,675 --> 00:07:11,769
+<i>And the lady, sir, did she succumb?</i>
+
+41
+00:07:12,779 --> 00:07:16,237
+<i>Oh, that was many years ago</i>
+
+42
+00:07:19,953 --> 00:07:23,286
+<i>I doubt if anyone would know</i>
+
+43
+00:07:32,398 --> 00:07:34,161
+<i>I'd like to thank you, Anthony.</i>
+
+44
+00:07:34,267 --> 00:07:38,294
+<i>If you hadn't spotted me,
+I'd be lost on the ocean still.</i>
+
+45
+00:07:39,506 --> 00:07:41,337
+Will I see you again?
+
+46
+00:07:42,642 --> 00:07:44,974
+You might find me if you like.
+
+47
+00:07:46,646 --> 00:07:49,479
+<i>Around Fleet Street, I wouldn't wonder.</i>
+
+48
+00:07:51,251 --> 00:07:53,344
+<i>Until then, my friend.</i>
+
+49
+00:08:03,596 --> 00:08:05,655
+<i>There's a hole in the world
+like a great black pit</i>
+
+50
+00:08:05,765 --> 00:08:07,824
+<i>And it's filled with people
+who are filled with shit</i>
+
+51
+00:08:07,934 --> 00:08:10,630
+<i>And the vermin of the world inhabit it</i>
+
+52
+00:09:04,657 --> 00:09:05,681
+A customer!
+
+53
+00:09:05,792 --> 00:09:07,555
+<i>Wait! What's your rush?
+What's your hurry?</i>
+
+54
+00:09:07,660 --> 00:09:09,890
+<i>You gave me such a fright
+I thought you was a ghost!</i>
+
+55
+00:09:09,996 --> 00:09:12,624
+<i>Half a minute, can't you sit?
+Sit you down. Sit!</i>
+
+56
+00:09:12,732 --> 00:09:15,223
+<i>All I meant is that I haven't seen
+a customer for weeks!</i>
+
+57
+00:09:15,335 --> 00:09:17,803
+<i>Did you come here for a pie, sir?</i>
+
+58
+00:09:17,904 --> 00:09:20,134
+<i>Do forgive me
+if me head's a little vague</i>
+
+59
+00:09:20,239 --> 00:09:21,228
+What was that?
+
+60
+00:09:21,341 --> 00:09:25,038
+<i>But you'd think we had the plague!
+From the way that people keep avoiding</i>
+
+61
+00:09:25,144 --> 00:09:26,133
+<i>No, you don't.</i>
+
+62
+00:09:26,245 --> 00:09:28,338
+<i>Heaven knows I try, sir!</i>
+
+63
+00:09:28,448 --> 00:09:31,110
+<i>But there's no one
+comes in even to inhale</i>
+
+64
+00:09:31,217 --> 00:09:33,947
+<i>Right you are, sir
+would you like a drop of ale?</i>
+
+65
+00:09:34,053 --> 00:09:37,216
+<i>Mind you, I can hardly blame them</i>
+
+66
+00:09:37,323 --> 00:09:41,657
+<i>These are probably
+the worst pies in London</i>
+
+67
+00:09:41,761 --> 00:09:44,252
+<i>I know why nobody cares to take them</i>
+
+68
+00:09:44,364 --> 00:09:47,595
+<i>I should know, I make them
+But good? No!</i>
+
+69
+00:09:47,700 --> 00:09:50,726
+<i>The worst pies in London</i>
+
+70
+00:09:50,837 --> 00:09:54,705
+<i>Even that's polite
+The worst pies in London</i>
+
+71
+00:09:54,807 --> 00:09:57,298
+<i>If you doubt it, take a bite</i>
+
+72
+00:09:58,711 --> 00:10:03,478
+<i>Is that just disgusting?
+You have to concede it</i>
+
+73
+00:10:03,583 --> 00:10:05,608
+<i>It's nothing but crusting</i>
+
+74
+00:10:05,718 --> 00:10:11,315
+<i>Here, drink this, you'll need it
+The worst pies in London</i>
+
+75
+00:10:11,424 --> 00:10:13,949
+<i>And no wonder
+with the price of meat what it is</i>
+
+76
+00:10:14,060 --> 00:10:16,995
+<i>When you get it
+Never thought I'd live to see the day</i>
+
+77
+00:10:17,096 --> 00:10:20,190
+<i>Men'd think it was a treat
+Finding poor animals</i>
+
+78
+00:10:20,299 --> 00:10:21,425
+<i>What are dying in the street</i>
+
+79
+00:10:21,534 --> 00:10:23,900
+<i>Mrs. Mooney has a pie shop</i>
+
+80
+00:10:24,003 --> 00:10:26,528
+<i>Does her business
+but I noticed something weird</i>
+
+81
+00:10:26,639 --> 00:10:29,164
+<i>Lately all her neighbors' cats
+have disappeared</i>
+
+82
+00:10:29,275 --> 00:10:32,301
+<i>Have to hand it to her
+What I calls enterprise</i>
+
+83
+00:10:32,412 --> 00:10:34,073
+<i>Popping pussies into pies</i>
+
+84
+00:10:34,180 --> 00:10:36,341
+<i>Wouldn't do in my shop</i>
+
+85
+00:10:36,449 --> 00:10:38,974
+<i>Just the thought of it's enough
+to make you sick</i>
+
+86
+00:10:39,085 --> 00:10:42,145
+<i>And I'm telling you
+them pussycats is quick</i>
+
+87
+00:10:42,255 --> 00:10:45,622
+<i>No denying times is hard, sir!</i>
+
+88
+00:10:45,725 --> 00:10:49,661
+<i>Even harder than
+the worst pies in London</i>
+
+89
+00:10:49,762 --> 00:10:53,425
+<i>Only lard and nothing more
+Is that just revolting</i>
+
+90
+00:10:53,533 --> 00:10:55,501
+<i>All greasy and gritty</i>
+
+91
+00:10:55,601 --> 00:10:57,796
+<i>It looks like it's molting</i>
+
+92
+00:10:57,904 --> 00:10:59,895
+<i>And tastes like</i>
+
+93
+00:11:00,006 --> 00:11:01,405
+<i>Well, pity</i>
+
+94
+00:11:01,507 --> 00:11:04,704
+<i>A woman alone!</i>
+
+95
+00:11:05,611 --> 00:11:08,512
+<i>With limited wind</i>
+
+96
+00:11:08,614 --> 00:11:13,608
+<i>And the worst pies in London</i>
+
+97
+00:11:14,887 --> 00:11:16,149
+<i>Sir</i>
+
+98
+00:11:16,789 --> 00:11:18,916
+<i>Times is hard</i>
+
+99
+00:11:19,025 --> 00:11:24,657
+<i>Times is hard</i>
+
+100
+00:11:27,133 --> 00:11:31,331
+<i>Trust me, dearie, it's gonna take a lot
+more than ale to wash that taste out.</i>
+
+101
+00:11:32,205 --> 00:11:35,641
+<i>Come with me.
+We'll get you a nice tumbler of gin, eh?</i>
+
+102
+00:11:48,387 --> 00:11:49,376
+<i>Isn't this homey, now?</i>
+
+103
+00:11:51,057 --> 00:11:53,582
+<i>The cheery wallpaper
+was a real bargain, too.</i>
+
+104
+00:11:53,693 --> 00:11:56,287
+It was only partly singed when
+the chapel burned down.
+
+105
+00:11:56,395 --> 00:11:59,762
+<i>There you go.
+You sit down, warm your bones.</i>
+
+106
+00:12:00,399 --> 00:12:03,334
+You've a room over the shop here?
+
+107
+00:12:03,436 --> 00:12:05,768
+<i>Times is so hard,
+why don't you rent it out?</i>
+
+108
+00:12:05,872 --> 00:12:08,841
+<i>What, up there? No, I won't go near it.</i>
+
+109
+00:12:11,010 --> 00:12:13,069
+People think it's haunted.
+
+110
+00:12:14,013 --> 00:12:15,878
+- Haunted?
+- Yeah.
+
+111
+00:12:17,216 --> 00:12:19,514
+And who's to say they're wrong?
+
+112
+00:12:20,219 --> 00:12:23,985
+<i>You see, years ago,
+something happened up there.</i>
+
+113
+00:12:24,090 --> 00:12:26,115
+Something not very nice.
+
+114
+00:12:29,195 --> 00:12:31,959
+<i>There was a barber and his wife</i>
+
+115
+00:12:33,166 --> 00:12:36,693
+<i>And he was beautiful</i>
+
+116
+00:12:36,803 --> 00:12:40,170
+<i>A proper artist with a knife</i>
+
+117
+00:12:40,273 --> 00:12:43,538
+<i>But they transported him for life</i>
+
+118
+00:12:43,643 --> 00:12:47,079
+<i>And he was beautiful</i>
+
+119
+00:12:48,781 --> 00:12:52,717
+<i>Barker, his name was. Benjamin Barker.</i>
+
+120
+00:12:53,553 --> 00:12:55,748
+What was his crime?
+
+121
+00:12:56,088 --> 00:12:57,680
+Foolishness.
+
+122
+00:12:58,891 --> 00:13:01,519
+<i>He had this wife, you see</i>
+
+123
+00:13:01,627 --> 00:13:03,788
+<i>Pretty little thing, silly little nit</i>
+
+124
+00:13:03,896 --> 00:13:08,026
+<i>Had her chance
+for the moon on a string</i>
+
+125
+00:13:08,134 --> 00:13:10,466
+<i>Poor thing</i>
+
+126
+00:13:11,871 --> 00:13:14,169
+<i>Poor thing</i>
+
+127
+00:13:15,474 --> 00:13:17,965
+<i>There was this judge, you see</i>
+
+128
+00:13:18,077 --> 00:13:22,639
+<i>Wanted her like mad
+Every day he sent her a flower</i>
+
+129
+00:13:22,748 --> 00:13:25,444
+<i>But did she come down from her tower?</i>
+
+130
+00:13:26,219 --> 00:13:28,983
+<i>Sat up there and sobbed by the hour</i>
+
+131
+00:13:29,522 --> 00:13:31,547
+<i>Poor fool</i>
+
+132
+00:13:31,791 --> 00:13:35,022
+<i>But there was worse yet to come
+poor thing</i>
+
+133
+00:13:41,767 --> 00:13:46,431
+<i>Well, Beadle calls on her all polite
+Poor thing</i>
+
+134
+00:13:46,873 --> 00:13:48,500
+<i>Poor thing</i>
+
+135
+00:13:48,608 --> 00:13:51,702
+<i>The Judge, he tells her is all contrite</i>
+
+136
+00:13:51,811 --> 00:13:55,042
+<i>He blames himself
+for her dreadful plight</i>
+
+137
+00:13:55,147 --> 00:13:58,207
+<i>She must come straight
+to his house tonight</i>
+
+138
+00:13:58,317 --> 00:14:01,013
+<i>Poor thing, poor thing</i>
+
+139
+00:14:06,192 --> 00:14:09,218
+<i>Of course, when she goes there
+Poor thing, poor thing</i>
+
+140
+00:14:09,328 --> 00:14:12,161
+<i>They're having this ball all in masks</i>
+
+141
+00:14:12,265 --> 00:14:15,428
+<i>There's no one she knows there
+Poor dear, poor thing</i>
+
+142
+00:14:15,534 --> 00:14:18,503
+<i>She wanders tormented and drinks
+Poor thing</i>
+
+143
+00:14:18,604 --> 00:14:21,539
+<i>The Judge has repented, she thinks
+Poor thing</i>
+
+144
+00:14:21,641 --> 00:14:24,701
+<i>"Oh, where is Judge Turpin?"
+She asks</i>
+
+145
+00:14:26,078 --> 00:14:29,377
+<i>He was there all right
+Only not so contrite</i>
+
+146
+00:14:32,018 --> 00:14:35,283
+<i>She wasn't no match for such craft
+you see</i>
+
+147
+00:14:35,388 --> 00:14:38,084
+<i>And everyone thought it so droll</i>
+
+148
+00:14:38,190 --> 00:14:41,057
+<i>They figured she had to be daft
+you see</i>
+
+149
+00:14:41,160 --> 00:14:44,152
+<i>So all of them stood there and laughed
+you see</i>
+
+150
+00:14:44,263 --> 00:14:45,560
+<i>Poor soul</i>
+
+151
+00:14:46,999 --> 00:14:48,557
+<i>Poor thing...</i>
+
+152
+00:14:56,542 --> 00:14:57,839
+No!
+
+153
+00:15:00,146 --> 00:15:02,842
+Would no one have mercy on her?
+
+154
+00:15:03,749 --> 00:15:05,683
+<i>So, it is you,</i>
+
+155
+00:15:06,519 --> 00:15:08,214
+Benjamin Barker?
+
+156
+00:15:09,855 --> 00:15:11,584
+Where is Lucy?
+
+157
+00:15:13,125 --> 00:15:14,752
+Where is my wife?
+
+158
+00:15:15,328 --> 00:15:17,296
+She poisoned herself.
+
+159
+00:15:17,997 --> 00:15:21,091
+<i>Arsenic, from the apothecary
+around the corner.</i>
+
+160
+00:15:22,301 --> 00:15:25,668
+<i>Tried to stop her,
+but she wouldn't listen to me.</i>
+
+161
+00:15:29,241 --> 00:15:31,368
+And he's got your daughter.
+
+162
+00:15:33,546 --> 00:15:34,877
+He?
+
+163
+00:15:36,015 --> 00:15:37,607
+Judge Turpin?
+
+164
+00:15:38,851 --> 00:15:42,082
+Adopted her. Like his own.
+
+165
+00:15:44,023 --> 00:15:45,547
+Fifteen years.
+
+166
+00:15:46,492 --> 00:15:49,859
+I've sweated in a living hell
+on a false charge.
+
+167
+00:15:51,931 --> 00:15:56,459
+Fifteen years dreaming I might
+come home to a wife and child.
+
+168
+00:15:58,137 --> 00:16:01,504
+<i>Well, I can't say the years have been
+particularly kind to you, Mr. Barker.</i>
+
+169
+00:16:01,607 --> 00:16:04,098
+No. Not Barker.
+
+170
+00:16:05,344 --> 00:16:07,039
+That man is dead.
+
+171
+00:16:08,147 --> 00:16:11,139
+It's Todd now. Sweeney Todd.
+
+172
+00:16:12,918 --> 00:16:15,148
+And he will have his revenge.
+
+173
+00:16:48,187 --> 00:16:49,779
+Come in.
+
+174
+00:16:50,156 --> 00:16:52,488
+<i>Nothing to be afraid of, love.</i>
+
+175
+00:17:39,371 --> 00:17:42,397
+<i>When they came for the girl, I hid them.</i>
+
+176
+00:17:42,508 --> 00:17:45,136
+<i>Could've sold them, but I didn't.</i>
+
+177
+00:17:56,989 --> 00:18:00,015
+<i>Those handles is chased silver,
+ain't they?</i>
+
+178
+00:18:01,794 --> 00:18:04,058
+Silver. Yes.
+
+179
+00:18:14,039 --> 00:18:17,167
+<i>These are my friends</i>
+
+180
+00:18:18,777 --> 00:18:22,873
+<i>See how they glisten</i>
+
+181
+00:18:23,816 --> 00:18:27,115
+<i>See this one shine</i>
+
+182
+00:18:27,753 --> 00:18:32,486
+<i>How he smiles in the light</i>
+
+183
+00:18:32,591 --> 00:18:35,890
+<i>My friend</i>
+
+184
+00:18:35,995 --> 00:18:40,193
+<i>My faithful friend</i>
+
+185
+00:18:42,735 --> 00:18:46,603
+<i>Speak to me, friend</i>
+
+186
+00:18:47,673 --> 00:18:51,200
+<i>Whisper, I'll listen</i>
+
+187
+00:18:52,178 --> 00:18:55,614
+<i>I know, I know</i>
+
+188
+00:18:55,714 --> 00:19:02,381
+<i>You've been locked
+out of sight all these years</i>
+
+189
+00:19:03,022 --> 00:19:07,220
+<i>Like me, my friend</i>
+
+190
+00:19:07,326 --> 00:19:11,422
+<i>Well, I've come home</i>
+
+191
+00:19:11,530 --> 00:19:15,694
+<i>To find you waiting</i>
+
+192
+00:19:17,002 --> 00:19:19,470
+<i>Home</i>
+
+193
+00:19:19,572 --> 00:19:23,565
+<i>And we're together</i>
+
+194
+00:19:24,410 --> 00:19:28,141
+<i>And we'll do wonders</i>
+
+195
+00:19:30,282 --> 00:19:32,147
+<i>Won't we?</i>
+
+196
+00:19:33,319 --> 00:19:36,083
+<i>You there, my friend</i>
+
+197
+00:19:36,188 --> 00:19:40,090
+<i>- I'm your friend, too, Mr. Todd
+- Come, let me hold you</i>
+
+198
+00:19:40,192 --> 00:19:43,628
+<i>- If you only knew, Mr. Todd
+- Now, with a sigh</i>
+
+199
+00:19:43,729 --> 00:19:44,957
+<i>Oh, Mr. Todd</i>
+
+200
+00:19:45,064 --> 00:19:48,727
+<i>- you're warm in my hand
+- You grow warm in my hand</i>
+
+201
+00:19:48,834 --> 00:19:50,802
+<i>My friend</i>
+
+202
+00:19:50,903 --> 00:19:54,634
+<i>- You've come home
+- My clever friend</i>
+
+203
+00:19:54,740 --> 00:19:58,506
+<i>Always had a fondness for you, I did</i>
+
+204
+00:19:58,611 --> 00:20:01,307
+<i>Rest now, my friends</i>
+
+205
+00:20:01,413 --> 00:20:05,679
+<i>- Never you fear, Mr. Todd
+- Soon I'll unfold you</i>
+
+206
+00:20:05,784 --> 00:20:08,514
+<i>- You can move in here, Mr. Todd
+- Soon you'll know</i>
+
+207
+00:20:08,621 --> 00:20:11,784
+<i>- Splendors you never
+- Splendors you never</i>
+
+208
+00:20:11,890 --> 00:20:15,053
+<i>- have dreamed all your days
+- have dreamed all your days</i>
+
+209
+00:20:15,160 --> 00:20:16,752
+<i>Will be yours</i>
+
+210
+00:20:16,862 --> 00:20:19,422
+<i>My lucky friends</i>
+
+211
+00:20:19,531 --> 00:20:23,592
+<i>- I'm your friend and now you're mine
+- Till now your shine...</i>
+
+212
+00:20:23,702 --> 00:20:27,968
+<i>- Don't they shine beautiful?
+- ... was merely silver</i>
+
+213
+00:20:28,073 --> 00:20:30,564
+<i>Silver's good enough for me</i>
+
+214
+00:20:30,676 --> 00:20:36,546
+<i>- Friends, you shall drip rubies
+- Mr. T</i>
+
+215
+00:20:38,017 --> 00:20:41,544
+<i>You'll soon drip precious</i>
+
+216
+00:20:43,355 --> 00:20:46,188
+<i>rubies</i>
+
+217
+00:20:53,899 --> 00:20:55,389
+Leave me.
+
+218
+00:21:08,847 --> 00:21:13,580
+<i>At last, my arm is complete again.</i>
+
+219
+00:22:14,947 --> 00:22:19,247
+<i>Green finch and linnet bird
+Nightingale, blackbird</i>
+
+220
+00:22:19,351 --> 00:22:22,548
+<i>How is it you sing?</i>
+
+221
+00:22:23,589 --> 00:22:27,650
+<i>How can you jubilate
+Sitting in cages</i>
+
+222
+00:22:27,760 --> 00:22:30,820
+<i>Never taking wing?</i>
+
+223
+00:22:31,930 --> 00:22:36,526
+<i>Outside the sky waits
+Beckoning, beckoning</i>
+
+224
+00:22:36,635 --> 00:22:39,365
+<i>Just beyond the bars</i>
+
+225
+00:22:40,973 --> 00:22:44,136
+<i>How can you remain
+Staring at the rain</i>
+
+226
+00:22:44,243 --> 00:22:48,145
+<i>Maddened by the stars?</i>
+
+227
+00:22:49,581 --> 00:22:53,779
+<i>How is it you sing anything?</i>
+
+228
+00:22:54,486 --> 00:22:58,479
+<i>How is it you sing?</i>
+
+229
+00:23:12,471 --> 00:23:16,532
+<i>My cage has many rooms
+Damask and dark</i>
+
+230
+00:23:16,642 --> 00:23:22,103
+<i>Nothing there sings
+Not even my lark</i>
+
+231
+00:23:22,214 --> 00:23:26,617
+<i>Larks never will, you know
+When they're captive</i>
+
+232
+00:23:26,718 --> 00:23:31,985
+<i>Teach me to be more adaptive</i>
+
+233
+00:23:37,162 --> 00:23:41,622
+<i>Green finch and linnet bird
+Nightingale, blackbird</i>
+
+234
+00:23:41,733 --> 00:23:45,829
+<i>Teach me how to sing</i>
+
+235
+00:23:45,938 --> 00:23:50,875
+<i>If I cannot fly</i>
+
+236
+00:23:52,144 --> 00:23:58,777
+<i>Let me sing</i>
+
+237
+00:24:10,195 --> 00:24:11,685
+<i>Alms!</i>
+
+238
+00:24:11,830 --> 00:24:16,597
+<i>Alms for a miserable woman</i>
+
+239
+00:24:18,437 --> 00:24:24,433
+<i>On a miserable chilly morning</i>
+
+240
+00:24:26,578 --> 00:24:28,808
+<i>- Thank you, sir!
+- Ma'am?</i>
+
+241
+00:24:30,182 --> 00:24:32,946
+Could you tell me whose house this is?
+
+242
+00:24:33,352 --> 00:24:36,344
+<i>That's the great
+Judge Turpin's house, that is.</i>
+
+243
+00:24:36,455 --> 00:24:38,821
+And the young lady who resides there?
+
+244
+00:24:38,924 --> 00:24:42,917
+<i>Oh, that's Johanna,
+his pretty little ward.</i>
+
+245
+00:24:43,128 --> 00:24:46,461
+<i>Keeps her snug, he does. All locked up.</i>
+
+246
+00:24:47,165 --> 00:24:51,898
+<i>So don't you go trespassing there,
+or it's a good whipping for you,</i>
+
+247
+00:24:52,004 --> 00:24:55,838
+or any other young man
+with mischief on his mind.
+
+248
+00:24:56,742 --> 00:24:58,209
+<i>Alms!</i>
+
+249
+00:24:58,310 --> 00:25:03,373
+<i>Alms for a desperate woman</i>
+
+250
+00:25:08,220 --> 00:25:12,316
+<i>I feel you</i>
+
+251
+00:25:12,424 --> 00:25:16,360
+<i>Johanna</i>
+
+252
+00:25:16,461 --> 00:25:20,795
+<i>I feel you</i>
+
+253
+00:25:20,899 --> 00:25:24,801
+<i>I was half convinced I'd waken</i>
+
+254
+00:25:24,903 --> 00:25:28,862
+<i>Satisfied enough to dream you</i>
+
+255
+00:25:28,974 --> 00:25:35,072
+<i>Happily I was mistaken, Johanna</i>
+
+256
+00:25:36,315 --> 00:25:40,308
+<i>I'll steal you</i>
+
+257
+00:25:40,419 --> 00:25:44,219
+<i>Johanna!</i>
+
+258
+00:25:44,323 --> 00:25:48,885
+<i>I'll steal you</i>
+
+259
+00:26:03,475 --> 00:26:05,602
+<i>Come in, lad. Come in.</i>
+
+260
+00:26:12,584 --> 00:26:15,018
+<i>You were looking for Hyde Park,
+you say?</i>
+
+261
+00:26:15,153 --> 00:26:16,415
+Yes.
+
+262
+00:26:16,989 --> 00:26:20,481
+<i>It's very large on the map,
+but I keep getting lost.</i>
+
+263
+00:26:20,592 --> 00:26:22,651
+<i>Sit down, lad, sit down.</i>
+
+264
+00:26:23,395 --> 00:26:28,059
+<i>It's embarrassing for a sailor
+to lose his bearings, but there you are.</i>
+
+265
+00:26:32,738 --> 00:26:34,205
+A sailor?
+
+266
+00:26:35,674 --> 00:26:38,404
+<i>Yes, sir. The Bountiful, out of Plymouth.</i>
+
+267
+00:26:38,543 --> 00:26:42,138
+<i>A sailor must know
+the ways of the world, yes?</i>
+
+268
+00:26:43,115 --> 00:26:46,573
+Must be practiced
+in the ways of the world.
+
+269
+00:26:46,685 --> 00:26:48,710
+<i>Would you say you were practiced, boy?</i>
+
+270
+00:26:48,920 --> 00:26:52,185
+<i>- Sir?
+- Oh, yes.</i>
+
+271
+00:26:53,392 --> 00:26:56,725
+Such practices.
+
+272
+00:26:58,397 --> 00:27:02,663
+The geishas of Japan.
+The concubines of Siam.
+
+273
+00:27:02,768 --> 00:27:07,228
+The catamites of Greece.
+The harlots of India.
+
+274
+00:27:08,840 --> 00:27:12,537
+I have them all here. Drawings of them.
+
+275
+00:27:12,644 --> 00:27:18,173
+Everything you've ever dreamed
+of doing with a woman.
+
+276
+00:27:19,618 --> 00:27:21,483
+Would you like to see?
+
+277
+00:27:22,587 --> 00:27:25,055
+I think there's been some mistake.
+
+278
+00:27:25,924 --> 00:27:27,414
+I think not.
+
+279
+00:27:29,661 --> 00:27:34,564
+<i>You gandered at my ward, Johanna.
+You gandered at her.</i>
+
+280
+00:27:34,666 --> 00:27:39,035
+<i>- Yes, sir, you gandered.
+- I meant no harm.</i>
+
+281
+00:27:39,137 --> 00:27:41,230
+Your meaning is immaterial.
+
+282
+00:27:42,741 --> 00:27:44,208
+Mark me.
+
+283
+00:27:44,309 --> 00:27:51,181
+<i>If I see your face again on this street,
+you'll rue the day you were born.</i>
+
+284
+00:27:55,353 --> 00:27:57,821
+<i>Hyde Park is that way, young sir!</i>
+
+285
+00:27:57,923 --> 00:28:01,086
+<i>A left and a right and straight on,
+you see?</i>
+
+286
+00:28:01,193 --> 00:28:03,161
+<i>Move on, now!</i>
+
+287
+00:28:11,570 --> 00:28:15,199
+<i>You heard what Judge Turpin said,
+little man.</i>
+
+288
+00:28:15,941 --> 00:28:20,901
+<i>Next time, it'll be your pretty little brains
+all over the pavement.</i>
+
+289
+00:28:45,237 --> 00:28:49,071
+<i>I'll steal you</i>
+
+290
+00:28:49,174 --> 00:28:53,133
+<i>Johanna</i>
+
+291
+00:28:53,245 --> 00:28:57,511
+<i>I'll steal you</i>
+
+292
+00:28:57,616 --> 00:29:01,450
+<i>Do they think that walls can hide you?</i>
+
+293
+00:29:01,553 --> 00:29:05,421
+<i>Even now, I'm at your window</i>
+
+294
+00:29:05,524 --> 00:29:10,052
+<i>I am in the dark beside you</i>
+
+295
+00:29:10,162 --> 00:29:15,190
+<i>Buried sweetly in your yellow hair</i>
+
+296
+00:29:22,073 --> 00:29:25,600
+<i>I feel you</i>
+
+297
+00:29:25,710 --> 00:29:29,544
+<i>Johanna</i>
+
+298
+00:29:29,648 --> 00:29:33,516
+<i>And one day</i>
+
+299
+00:29:33,618 --> 00:29:38,453
+<i>I'll steal you</i>
+
+300
+00:29:38,557 --> 00:29:42,357
+<i>Till I'm with you then
+I'm with you there!</i>
+
+301
+00:29:42,460 --> 00:29:47,329
+<i>Sweetly buried in your yellow hair!</i>
+
+302
+00:30:09,855 --> 00:30:13,382
+He's here every Thursday.
+Italian. All the rage he is.
+
+303
+00:30:14,259 --> 00:30:16,591
+<i>Best barber in London, they say.</i>
+
+304
+00:30:48,059 --> 00:30:49,253
+Hang on.
+
+305
+00:31:21,259 --> 00:31:25,389
+<i>Ladies and gentlemen
+May I have your attention, please?</i>
+
+306
+00:31:26,765 --> 00:31:28,733
+<i>Do you wake every morning
+in shame and despair</i>
+
+307
+00:31:28,833 --> 00:31:31,734
+<i>To discover your pillow
+is covered with hair</i>
+
+308
+00:31:31,836 --> 00:31:33,804
+<i>What ought not to be there?</i>
+
+309
+00:31:33,905 --> 00:31:37,773
+<i>Well, ladies and gentlemen
+From now on you can waken at ease</i>
+
+310
+00:31:37,876 --> 00:31:39,741
+<i>You need never again
+have a worry or care</i>
+
+311
+00:31:39,844 --> 00:31:42,574
+<i>I will show you a miracle
+marvelous rare</i>
+
+312
+00:31:43,581 --> 00:31:45,378
+<i>Gentlemen, you are about
+to see something</i>
+
+313
+00:31:45,483 --> 00:31:48,384
+<i>What rose from the dead!</i>
+
+314
+00:31:49,254 --> 00:31:51,279
+<i>On the top of my head!</i>
+
+315
+00:31:53,792 --> 00:31:57,250
+<i>'Twas Pirelli's Miracle Elixir</i>
+
+316
+00:31:57,362 --> 00:32:00,798
+<i>That's what did the trick, sir
+True, sir, true</i>
+
+317
+00:32:00,899 --> 00:32:04,426
+<i>Was it quick, sir? Did it in a tick, sir?</i>
+
+318
+00:32:04,536 --> 00:32:08,131
+<i>Just like an elixir ought to do</i>
+
+319
+00:32:08,239 --> 00:32:12,608
+<i>How about a bottle, mister?
+Only costs a penny, guaranteed</i>
+
+320
+00:32:15,280 --> 00:32:18,841
+<i>Does Pirelli's stimulate the growth, sir?</i>
+
+321
+00:32:18,950 --> 00:32:22,283
+<i>You can have my oath, sir
+'Tis unique</i>
+
+322
+00:32:22,387 --> 00:32:25,845
+<i>Rub a minute
+Stimulating, isn't it?</i>
+
+323
+00:32:25,957 --> 00:32:29,688
+<i>Soon you'll have to thin it
+Once a week!</i>
+
+324
+00:32:29,794 --> 00:32:31,455
+<i>Pardon me, ma'am
+what's that awful stench?</i>
+
+325
+00:32:31,563 --> 00:32:33,190
+<i>Are we standing in an open trench?</i>
+
+326
+00:32:33,298 --> 00:32:34,265
+<i>Must be standing near an open trench!</i>
+
+327
+00:32:34,366 --> 00:32:35,355
+<i>Pardon me, sir
+what's that awful stench?</i>
+
+328
+00:32:35,467 --> 00:32:38,368
+<i>Buy Pirelli's Miracle Elixir</i>
+
+329
+00:32:38,470 --> 00:32:42,031
+<i>Anything what's slick, sir
+Soon sprouts curls</i>
+
+330
+00:32:42,140 --> 00:32:45,541
+<i>Try Pirelli's
+When they see how thick, sir</i>
+
+331
+00:32:45,643 --> 00:32:49,238
+<i>You can have your pick, sir
+Of the girls</i>
+
+332
+00:32:49,347 --> 00:32:50,507
+<i>Want to buy a bottle, missus?</i>
+
+333
+00:32:50,615 --> 00:32:52,139
+<i>- What is this?
+- What is this?</i>
+
+334
+00:32:52,250 --> 00:32:54,775
+<i>- Smells like piss
+- Smells like...</i>
+
+335
+00:32:54,886 --> 00:32:56,683
+<i>- Looks like piss!
+- Wouldn't touch it if I was you, dear!</i>
+
+336
+00:32:56,788 --> 00:33:00,224
+<i>- This is piss, piss with ink
+- Let Pirelli's activate your roots, sir!</i>
+
+337
+00:33:00,325 --> 00:33:01,849
+<i>Keep it off your boots, sir
+Eats right through</i>
+
+338
+00:33:01,960 --> 00:33:04,793
+<i>Yes, get Pirelli's, use a bottle of it
+Ladies seem to love it</i>
+
+339
+00:33:04,896 --> 00:33:06,796
+<i>Flies do, too</i>
+
+340
+00:33:09,634 --> 00:33:11,499
+<i>I am Adolfo Pirelli</i>
+
+341
+00:33:11,603 --> 00:33:13,662
+<i>The king of the barbers
+The barber of kings</i>
+
+342
+00:33:13,772 --> 00:33:17,037
+<i>E buon giorno, good day!
+I blow you a kiss!</i>
+
+343
+00:33:17,642 --> 00:33:19,473
+<i>And I</i>
+
+344
+00:33:19,577 --> 00:33:21,772
+<i>the so famous Pirelli
+I wish-a to know-a</i>
+
+345
+00:33:21,880 --> 00:33:24,747
+<i>Who has-a the nerve-a to say</i>
+
+346
+00:33:24,849 --> 00:33:27,010
+<i>My elixir is piss</i>
+
+347
+00:33:27,986 --> 00:33:30,181
+<i>Who says this?</i>
+
+348
+00:33:32,724 --> 00:33:33,952
+I do.
+
+349
+00:33:36,061 --> 00:33:38,825
+I am Mr. Sweeney Todd of Fleet Street.
+
+350
+00:33:40,031 --> 00:33:42,397
+I have opened a bottle of Pirelli's Elixir.
+
+351
+00:33:42,500 --> 00:33:46,459
+<i>And I say to you that it is nothing
+but an arrant fraud,</i>
+
+352
+00:33:47,405 --> 00:33:50,203
+concocted from piss and ink.
+
+353
+00:33:51,242 --> 00:33:55,008
+<i>Furthermore, Signor,
+I have serviced no kings,</i>
+
+354
+00:33:56,214 --> 00:34:00,981
+<i>yet I wager that I can shave a cheek
+with 10 times more dexterity,</i>
+
+355
+00:34:01,086 --> 00:34:03,421
+than any street mountebank.
+
+356
+00:34:08,359 --> 00:34:10,327
+Do you see these razors?
+
+357
+00:34:11,229 --> 00:34:13,789
+I lay them against £5.
+
+358
+00:34:14,632 --> 00:34:16,623
+<i>You are no match, sir.</i>
+
+359
+00:34:17,335 --> 00:34:22,034
+<i>Either accept my challenge,
+or reveal yourself as a sham.</i>
+
+360
+00:34:24,075 --> 00:34:26,168
+You hear this foolish man?
+
+361
+00:34:26,845 --> 00:34:32,181
+<i>Now, please, you will see
+how he will-a regret-a his-a folly.</i>
+
+362
+00:34:33,184 --> 00:34:34,651
+Toby!
+
+363
+00:34:34,752 --> 00:34:36,686
+Who's for a free shave?
+
+364
+00:34:59,511 --> 00:35:01,638
+Will Beadle Bamford be the judge?
+
+365
+00:35:01,779 --> 00:35:06,443
+<i>Glad, as always,
+to oblige my friends and neighbors.</i>
+
+366
+00:35:17,929 --> 00:35:19,123
+Ready?
+
+367
+00:35:19,797 --> 00:35:21,025
+Ready!
+
+368
+00:35:21,633 --> 00:35:22,895
+Ready.
+
+369
+00:35:23,535 --> 00:35:27,995
+<i>The fastest,
+smoothest shave is the winner!</i>
+
+370
+00:35:52,730 --> 00:35:55,426
+<i>Now, signorini, signori
+We mix-a the lather</i>
+
+371
+00:35:55,533 --> 00:35:58,434
+<i>But first-a
+You gather around, signorini, signori</i>
+
+372
+00:35:58,536 --> 00:36:01,562
+<i>You looking a man who have
+had-a the glory to shave-a the Pope!</i>
+
+373
+00:36:01,673 --> 00:36:03,868
+<i>Mr. Sweeney, whoever
+I beg-a you pardon</i>
+
+374
+00:36:03,975 --> 00:36:06,375
+<i>You'll probably say
+it was only a cardinal</i>
+
+375
+00:36:06,477 --> 00:36:07,842
+<i>Nope!</i>
+
+376
+00:36:07,946 --> 00:36:09,777
+<i>It was-a the Pope!</i>
+
+377
+00:36:12,150 --> 00:36:16,985
+<i>To shave-a the face
+To cut-a the hair</i>
+
+378
+00:36:17,088 --> 00:36:22,116
+<i>Require the grace
+Require the flair</i>
+
+379
+00:36:22,227 --> 00:36:24,718
+<i>For if-a you slip
+You nick the skin</i>
+
+380
+00:36:24,829 --> 00:36:27,423
+<i>You clip-a the chin
+You rip-a the lip a bit</i>
+
+381
+00:36:27,532 --> 00:36:29,830
+<i>Beyond-a repair</i>
+
+382
+00:36:30,435 --> 00:36:32,562
+<i>To shave-a the face</i>
+
+383
+00:36:33,371 --> 00:36:37,137
+<i>Or even a part
+Without it-a smart</i>
+
+384
+00:36:37,875 --> 00:36:40,742
+<i>Require the heart</i>
+
+385
+00:36:40,845 --> 00:36:43,336
+<i>Not just-a the flash</i>
+
+386
+00:36:43,448 --> 00:36:48,977
+<i>It take-a panache
+It take-a the passion for the art</i>
+
+387
+00:36:50,888 --> 00:36:55,348
+<i>To shave-a the face
+To trim-a the beard</i>
+
+388
+00:36:55,994 --> 00:37:00,226
+<i>To make-a the bristle
+Clean like a whistle</i>
+
+389
+00:37:00,331 --> 00:37:06,270
+<i>This is from early infancy
+The talent give to me</i>
+
+390
+00:37:06,537 --> 00:37:09,563
+<i>By God</i>
+
+391
+00:37:12,777 --> 00:37:16,770
+<i>It take-a the skill
+It take-a the brains</i>
+
+392
+00:37:17,282 --> 00:37:22,948
+<i>It take-a da will
+To take-a the pains</i>
+
+393
+00:37:23,721 --> 00:37:28,886
+<i>It take-a the pace
+It take-a the grace</i>
+
+394
+00:37:38,036 --> 00:37:40,834
+The winner is Todd!
+
+395
+00:37:52,350 --> 00:37:56,252
+<i>Sir, I bow to a skill
+far greater than my own.</i>
+
+396
+00:37:57,622 --> 00:37:59,180
+The £5.
+
+397
+00:38:05,663 --> 00:38:08,131
+May the good Lord smile on you.
+
+398
+00:38:09,634 --> 00:38:11,499
+Until we meet again.
+
+399
+00:38:12,270 --> 00:38:14,170
+<i>Come, boy. Come!</i>
+
+400
+00:38:23,681 --> 00:38:25,308
+<i>Suppose it's just me gentle heart,</i>
+
+401
+00:38:25,416 --> 00:38:28,510
+but I do hate to see a boy
+treated like that.
+
+402
+00:38:28,619 --> 00:38:31,087
+<i>Congratulations, Mr. Todd.</i>
+
+403
+00:38:31,189 --> 00:38:34,022
+<i>May I ask you, sir,
+do you have your own establishment?</i>
+
+404
+00:38:34,125 --> 00:38:35,683
+He certainly does.
+
+405
+00:38:35,793 --> 00:38:38,125
+<i>Sweeney Todd's Tonsorial Parlor,</i>
+
+406
+00:38:38,229 --> 00:38:41,289
+above my Meat Pie Emporium
+in Fleet Street.
+
+407
+00:38:44,969 --> 00:38:47,028
+<i>I thank you, sir.</i>
+
+408
+00:38:47,138 --> 00:38:49,902
+You are a paragon of integrity.
+
+409
+00:38:50,007 --> 00:38:54,171
+<i>Well, I try to do my best for
+my friends and neighbors.</i>
+
+410
+00:38:55,012 --> 00:38:58,413
+<i>Your establishment
+is in Fleet Street, you say?</i>
+
+411
+00:38:58,683 --> 00:39:01,117
+<i>- Yes, sir.
+- Then, Mr. Todd,</i>
+
+412
+00:39:01,619 --> 00:39:05,680
+you shall surely see me there
+before the week is out.
+
+413
+00:39:05,990 --> 00:39:08,481
+<i>You will be welcome, Beadle Bamford.</i>
+
+414
+00:39:08,593 --> 00:39:12,825
+<i>And I can guarantee to give you,
+without a penny's charge,</i>
+
+415
+00:39:12,930 --> 00:39:15,558
+the closest shave you will ever know.
+
+416
+00:39:26,177 --> 00:39:27,804
+<i>Come on, love.</i>
+
+417
+00:40:47,458 --> 00:40:49,756
+<i>It's not much of a chair, but it'll do.</i>
+
+418
+00:40:49,861 --> 00:40:53,024
+<i>It was me poor Albert's chair.
+Sit in it all day long he did,</i>
+
+419
+00:40:53,130 --> 00:40:55,394
+after his leg gave out with the gout.
+
+420
+00:40:55,500 --> 00:40:57,434
+Why doesn't the Beadle come?
+
+421
+00:40:57,535 --> 00:41:00,732
+<i>"Before the week is out,"
+that's what he said.</i>
+
+422
+00:41:00,838 --> 00:41:04,137
+<i>Well, who says the week's out?
+It's only Tuesday.</i>
+
+423
+00:41:08,246 --> 00:41:12,910
+<i>Easy now
+Hush, love, hush</i>
+
+424
+00:41:13,017 --> 00:41:17,317
+<i>Don't distress yourself
+What's your rush?</i>
+
+425
+00:41:17,421 --> 00:41:21,653
+<i>Keep your thoughts
+Nice and lush</i>
+
+426
+00:41:21,759 --> 00:41:23,351
+<i>Wait</i>
+
+427
+00:41:26,230 --> 00:41:30,496
+<i>Hush, love, hush
+Think it through</i>
+
+428
+00:41:30,601 --> 00:41:34,628
+<i>Once it bubbles
+Then what's to do?</i>
+
+429
+00:41:34,739 --> 00:41:38,937
+<i>Watch it close
+Let it brew</i>
+
+430
+00:41:39,043 --> 00:41:40,305
+<i>Wait</i>
+
+431
+00:41:42,146 --> 00:41:46,845
+<i>I've been thinking flowers
+Maybe daisies</i>
+
+432
+00:41:46,951 --> 00:41:49,010
+<i>To brighten up the room</i>
+
+433
+00:41:50,388 --> 00:41:55,189
+<i>Don't you think some flowers
+Pretty daisies</i>
+
+434
+00:41:55,293 --> 00:41:57,818
+<i>Might relieve the gloom?</i>
+
+435
+00:41:59,630 --> 00:42:00,927
+<i>Wait</i>
+
+436
+00:42:02,800 --> 00:42:05,234
+<i>Love, wait</i>
+
+437
+00:42:05,336 --> 00:42:08,100
+And the Judge? When'll we get to him?
+
+438
+00:42:09,240 --> 00:42:12,705
+Can't you think of nothing else?
+Always brooding away on your wrongs
+
+439
+00:42:12,810 --> 00:42:15,745
+and what happened
+heaven knows how many years ago.
+
+440
+00:42:15,846 --> 00:42:17,336
+Come on.
+
+441
+00:42:17,448 --> 00:42:21,179
+<i>Slow, love, slow
+Time's so fast</i>
+
+442
+00:42:21,786 --> 00:42:26,052
+<i>Now goes quickly
+See, now it's past</i>
+
+443
+00:42:26,157 --> 00:42:30,116
+<i>Soon will come
+Soon will last</i>
+
+444
+00:42:30,227 --> 00:42:31,592
+<i>Wait</i>
+
+445
+00:42:34,665 --> 00:42:38,761
+<i>Don't you know
+Silly man</i>
+
+446
+00:42:38,869 --> 00:42:42,396
+<i>Half the fun is to plan the plan?</i>
+
+447
+00:42:43,107 --> 00:42:47,168
+<i>All good things
+come to those who can</i>
+
+448
+00:42:47,278 --> 00:42:48,506
+<i>Wait</i>
+
+449
+00:42:51,716 --> 00:42:56,380
+<i>Gillyflowers, maybe
+'Stead of daisies</i>
+
+450
+00:42:56,587 --> 00:43:01,047
+<i>I don't know, though
+What do you think?</i>
+
+451
+00:43:10,968 --> 00:43:12,629
+<i>Oh, I'm sorry, excuse me.</i>
+
+452
+00:43:12,737 --> 00:43:15,399
+<i>- Mrs. Lovett, sir.
+- A pleasure, ma'am.</i>
+
+453
+00:43:16,273 --> 00:43:18,332
+<i>Mr. Todd,
+there's a girl who needs my help.</i>
+
+454
+00:43:18,442 --> 00:43:20,467
+<i>Such a sad girl and lonely,
+but beautiful, too and...</i>
+
+455
+00:43:20,578 --> 00:43:24,139
+<i>- Slow down, son.
+- Yes. I'm sorry.</i>
+
+456
+00:43:25,583 --> 00:43:27,517
+<i>This girl has a guardian
+who keeps her locked away,</i>
+
+457
+00:43:27,618 --> 00:43:29,677
+<i>but then, this morning,
+she dropped this.</i>
+
+458
+00:43:29,787 --> 00:43:32,051
+Surely a sign
+that Johanna wants me to help her.
+
+459
+00:43:32,156 --> 00:43:33,714
+<i>That's her name, Johanna.</i>
+
+460
+00:43:33,824 --> 00:43:37,055
+And Turpin is her guardian.
+He's a judge of some sort.
+
+461
+00:43:37,161 --> 00:43:39,095
+<i>Once he goes to court,
+I'm going to slip into the house,</i>
+
+462
+00:43:39,196 --> 00:43:41,562
+release her and beg her
+to come away with me tonight.
+
+463
+00:43:41,666 --> 00:43:44,066
+<i>- Oh, this is very romantic.
+- Yes.</i>
+
+464
+00:43:45,102 --> 00:43:47,161
+<i>But I don't know anyone in London,
+you see.</i>
+
+465
+00:43:47,271 --> 00:43:51,264
+And I need somewhere safe to bring her
+till I've hired a coach to take us away.
+
+466
+00:43:51,375 --> 00:43:53,400
+<i>If I could keep her here
+just for an hour or two,</i>
+
+467
+00:43:53,511 --> 00:43:55,741
+I'd be forever in your debt.
+
+468
+00:43:59,517 --> 00:44:02,953
+<i>- Bring her here, love.
+- Thank you, ma'am.</i>
+
+469
+00:44:03,921 --> 00:44:05,286
+Mr. Todd?
+
+470
+00:44:07,191 --> 00:44:09,386
+<i>Oh, thank you.
+Thank you, thank you, my friend.</i>
+
+471
+00:44:09,493 --> 00:44:11,188
+<i>Thank you, ma'am.</i>
+
+472
+00:44:14,298 --> 00:44:17,790
+<i>Seems like the Fates
+are favoring you at last, Mr. T.</i>
+
+473
+00:44:19,236 --> 00:44:22,728
+What is it? You'll have her back
+before the day is out.
+
+474
+00:44:23,507 --> 00:44:24,804
+What about him?
+
+475
+00:44:25,776 --> 00:44:26,936
+Him?
+
+476
+00:44:27,044 --> 00:44:29,638
+<i>Oh, well. Let him bring her here.</i>
+
+477
+00:44:29,747 --> 00:44:32,648
+<i>And then, since you're so hot for a little,</i>
+
+478
+00:44:33,884 --> 00:44:36,409
+<i>that's the throat to slit, my dear.</i>
+
+479
+00:44:38,189 --> 00:44:39,952
+Poor little Johanna.
+
+480
+00:44:40,057 --> 00:44:43,493
+All those years without a scrap
+of motherly affection.
+
+481
+00:44:43,994 --> 00:44:47,088
+<i>Well, I'll soon see to that.</i>
+
+482
+00:44:55,306 --> 00:44:58,605
+Hello. What's he doing here?
+
+483
+00:45:00,611 --> 00:45:02,875
+Keep the boy downstairs.
+
+484
+00:45:14,191 --> 00:45:16,625
+<i>Signora, is Mr. Todd at home?</i>
+
+485
+00:45:16,727 --> 00:45:18,854
+Plying his trade upstairs.
+
+486
+00:45:19,930 --> 00:45:21,591
+Would you look at it now?
+
+487
+00:45:21,699 --> 00:45:24,190
+<i>You wouldn't mind if I gave it a nice
+juicy meat pie, would you?</i>
+
+488
+00:45:24,301 --> 00:45:28,101
+<i>- Sì, sì, sì. Whatever you want.
+- Come on, lad.</i>
+
+489
+00:45:28,572 --> 00:45:30,972
+<i>Your teeth are strong, I hope.</i>
+
+490
+00:45:32,510 --> 00:45:36,071
+Close the door.
+Get you a nice lovely pie.
+
+491
+00:45:38,916 --> 00:45:41,248
+Sit down. Make yourself comfy.
+
+492
+00:45:48,726 --> 00:45:50,159
+Come in.
+
+493
+00:45:59,036 --> 00:46:01,732
+- Mr. Todd.
+- Signor Pirelli.
+
+494
+00:46:03,340 --> 00:46:04,830
+Call me Davey.
+
+495
+00:46:05,876 --> 00:46:09,243
+Davey Collin's the name
+when it's not professional.
+
+496
+00:46:10,481 --> 00:46:12,915
+<i>I'd like me five quid back,
+if you don't mind.</i>
+
+497
+00:46:13,017 --> 00:46:14,109
+Why?
+
+498
+00:46:14,218 --> 00:46:18,245
+<i>Because you entered into our little
+wager under false pretenses, my friend.</i>
+
+499
+00:46:18,355 --> 00:46:22,985
+<i>So that you might remember
+to be a bit more forthright in the future,</i>
+
+500
+00:46:23,093 --> 00:46:25,027
+I'll be taking half your profits
+from herewith.
+
+501
+00:46:25,129 --> 00:46:27,063
+Share and share alike.
+
+502
+00:46:28,599 --> 00:46:30,999
+Mr. Benjamin Barker.
+
+503
+00:46:33,537 --> 00:46:36,597
+Here we are. Tuck in.
+
+504
+00:46:40,211 --> 00:46:43,146
+I like to see a man
+with a healthy appetite.
+
+505
+00:46:43,247 --> 00:46:45,545
+Reminds me of my dear Albert.
+
+506
+00:46:46,150 --> 00:46:49,745
+<i>Liked to gorge himself
+to bloatation, he did.</i>
+
+507
+00:46:49,854 --> 00:46:52,152
+<i>He didn't have
+your nice head of hair, though.</i>
+
+508
+00:46:52,256 --> 00:46:55,487
+<i>To tell the truth, it gets awful hot.</i>
+
+509
+00:46:59,663 --> 00:47:01,824
+<i>Yes, this'll do nicely.</i>
+
+510
+00:47:05,469 --> 00:47:08,802
+<i>You don't remember me, do you?
+Why should you?</i>
+
+511
+00:47:08,906 --> 00:47:11,238
+<i>I was just a little nip
+that you hired for a couple of weeks,</i>
+
+512
+00:47:11,342 --> 00:47:13,310
+sweeping up hair.
+
+513
+00:47:14,245 --> 00:47:16,304
+But I remember these.
+
+514
+00:47:17,147 --> 00:47:20,173
+<i>And how could
+I ever forget you, Mr. Barker.</i>
+
+515
+00:47:24,488 --> 00:47:26,649
+I used to sit right here.
+
+516
+00:47:27,591 --> 00:47:30,458
+Dream of the day
+when I could be a proper barber myself.
+
+517
+00:47:30,561 --> 00:47:34,292
+You might say that you was
+inspiration to me.
+
+518
+00:47:46,644 --> 00:47:48,509
+<i>So, is we got a deal?</i>
+
+519
+00:47:49,914 --> 00:47:53,941
+<i>Or should I run down the street
+to me old pal, Beadle Bamford?</i>
+
+520
+00:47:57,554 --> 00:48:01,752
+<i>What do you say to that, now,
+Mr. Sweeney Todd?</i>
+
+521
+00:48:24,415 --> 00:48:27,441
+<i>My, my, my. Always work to be done.</i>
+
+522
+00:48:27,551 --> 00:48:29,883
+<i>Spic and span, that's my motto.</i>
+
+523
+00:48:42,566 --> 00:48:45,933
+<i>So, how'd you end up
+with that dreadful Italian?</i>
+
+524
+00:48:46,036 --> 00:48:50,405
+Got me from the workhouse.
+Been there since I was born.
+
+525
+00:48:50,507 --> 00:48:53,101
+<i>Oh, God!
+He's got an appointment with his tailor!</i>
+
+526
+00:48:53,210 --> 00:48:54,802
+<i>If he's late, he'll blame me!</i>
+
+527
+00:48:54,912 --> 00:48:56,174
+Wait!
+
+528
+00:49:02,820 --> 00:49:05,345
+Signor! You got an appointment!
+
+529
+00:49:10,594 --> 00:49:14,394
+Signor Pirelli's been called away.
+Better run after him.
+
+530
+00:49:15,366 --> 00:49:19,803
+<i>No, sir. I should stay here,
+or it'll be a lashing.</i>
+
+531
+00:49:19,903 --> 00:49:22,599
+He's a great one for the lashings.
+
+532
+00:49:28,479 --> 00:49:29,639
+<i>So,</i>
+
+533
+00:49:30,948 --> 00:49:34,884
+<i>- Mrs. Lovett gave you a pie, did she?
+- She's a real lady.</i>
+
+534
+00:49:35,753 --> 00:49:37,380
+That she is.
+
+535
+00:49:42,259 --> 00:49:47,253
+<i>But if I know a growing boy,
+there's still room for more pie, eh?</i>
+
+536
+00:49:47,364 --> 00:49:48,661
+<i>Yes, sir.</i>
+
+537
+00:49:49,933 --> 00:49:52,731
+Then why don't you wait
+for your master downstairs?
+
+538
+00:49:52,836 --> 00:49:57,205
+<i>- Be another pie in it for you, I'm sure.
+- No, I should stay here.</i>
+
+539
+00:49:59,943 --> 00:50:03,879
+<i>Tell you what,
+why don't you tell Mrs. Lovett</i>
+
+540
+00:50:03,981 --> 00:50:07,439
+that I said to give you
+a nice big tot of gin.
+
+541
+00:50:07,551 --> 00:50:09,109
+<i>Thank you, sir!</i>
+
+542
+00:51:17,121 --> 00:51:19,419
+<i>This is the second time, sir,</i>
+
+543
+00:51:19,523 --> 00:51:22,651
+you have been brought
+before this bench.
+
+544
+00:51:23,894 --> 00:51:27,990
+<i>Though it is my earnest wish ever
+to temper justice with mercy,</i>
+
+545
+00:51:28,098 --> 00:51:31,261
+your persistent dedication
+to a life of crime
+
+546
+00:51:31,368 --> 00:51:35,031
+is an abomination before God and man.
+
+547
+00:51:35,139 --> 00:51:38,597
+I therefore sentence you
+to hang by the neck until you're dead.
+
+548
+00:51:38,709 --> 00:51:41,678
+And may the Lord
+have mercy on your soul.
+
+549
+00:51:42,746 --> 00:51:44,509
+Court is adjourned.
+
+550
+00:51:53,490 --> 00:51:55,981
+<i>Thank you, Your Honor.</i>
+
+551
+00:51:56,093 --> 00:51:59,529
+- Just the sentence we wanted.
+- Was he guilty?
+
+552
+00:51:59,630 --> 00:52:00,756
+<i>Well, if he didn't do it,</i>
+
+553
+00:52:00,864 --> 00:52:03,298
+he's surely done
+something to warrant a hanging.
+
+554
+00:52:03,400 --> 00:52:06,096
+- What man has not?
+- Sorry?
+
+555
+00:52:09,106 --> 00:52:10,869
+No matter. Come.
+
+556
+00:52:12,075 --> 00:52:13,736
+Walk home with me.
+
+557
+00:52:16,780 --> 00:52:19,476
+<i>I have news for you, my friend.</i>
+
+558
+00:52:19,583 --> 00:52:22,609
+<i>In order to shield her
+from the evils of this world,</i>
+
+559
+00:52:22,719 --> 00:52:26,052
+I have decided to marry
+my dear Johanna.
+
+560
+00:52:26,156 --> 00:52:28,556
+<i>Sir, happy news indeed.</i>
+
+561
+00:52:28,659 --> 00:52:30,217
+<i>Strange though,</i>
+
+562
+00:52:30,827 --> 00:52:36,493
+<i>when I offered myself to her,
+she showed a certain reluctance.</i>
+
+563
+00:52:37,401 --> 00:52:40,097
+<i>Excuse me, my lord
+May I request, my lord</i>
+
+564
+00:52:40,204 --> 00:52:42,604
+<i>Permission, my lord, to speak?</i>
+
+565
+00:52:42,706 --> 00:52:44,970
+<i>Forgive me if I suggest, my lord</i>
+
+566
+00:52:45,075 --> 00:52:47,441
+<i>You're looking less
+than your best, my lord</i>
+
+567
+00:52:47,544 --> 00:52:52,243
+<i>There's powder upon your vest, my lord
+And stubble upon your cheek</i>
+
+568
+00:52:55,385 --> 00:52:59,287
+<i>And ladies, my lord, are weak</i>
+
+569
+00:53:00,090 --> 00:53:02,354
+<i>Stubble, you say?</i>
+
+570
+00:53:05,696 --> 00:53:09,154
+Perhaps I am
+a little overhasty in the mornings.
+
+571
+00:53:10,267 --> 00:53:12,735
+<i>Fret not though, my lord
+I know a place, my lord</i>
+
+572
+00:53:12,836 --> 00:53:15,361
+<i>A barber, my lord, of skill</i>
+
+573
+00:53:15,472 --> 00:53:17,667
+<i>Thus armed with a shaven face, my lord</i>
+
+574
+00:53:17,774 --> 00:53:20,072
+<i>Some eau de cologne to grace, my lord</i>
+
+575
+00:53:20,177 --> 00:53:22,645
+<i>And musk to enhance the chase
+my lord</i>
+
+576
+00:53:22,746 --> 00:53:25,613
+<i>You'll dazzle the girl until</i>
+
+577
+00:53:26,516 --> 00:53:27,881
+Until?
+
+578
+00:53:28,452 --> 00:53:32,650
+<i>She bows to your every will</i>
+
+579
+00:53:33,724 --> 00:53:35,021
+Barber?
+
+580
+00:53:36,326 --> 00:53:37,350
+Take me to him.
+
+581
+00:53:37,461 --> 00:53:42,160
+<i>His name is Todd, my lord, and he is
+the very last word in barbering.</i>
+
+582
+00:53:48,839 --> 00:53:52,275
+<i>You ought to slow down a bit, lad.
+It'll go straight to your head.</i>
+
+583
+00:53:52,376 --> 00:53:53,968
+They used to give it to us
+in the workhouse
+
+584
+00:53:54,077 --> 00:53:55,840
+so as we could sleep.
+
+585
+00:53:55,946 --> 00:53:58,107
+<i>Not that you'd want
+to sleep in that place, ma'am.</i>
+
+586
+00:53:58,215 --> 00:54:00,581
+Not with the things
+what happen in the dark.
+
+587
+00:54:00,684 --> 00:54:02,015
+<i>That's nice, dear.</i>
+
+588
+00:54:02,119 --> 00:54:03,950
+Think I'll just pop in
+on Mr. Todd for a tick.
+
+589
+00:54:04,054 --> 00:54:06,887
+<i>- You all right, there?
+- Leave the bottle.</i>
+
+590
+00:54:11,895 --> 00:54:15,296
+That lad is drinking me
+out of house and home.
+
+591
+00:54:16,300 --> 00:54:18,632
+How long till Pirelli gets back?
+
+592
+00:54:19,269 --> 00:54:20,998
+He won't be back.
+
+593
+00:54:22,873 --> 00:54:24,738
+<i>Mr. T, you didn't.</i>
+
+594
+00:54:35,952 --> 00:54:39,547
+You're barking mad.
+Killing a man what done you no harm.
+
+595
+00:54:40,390 --> 00:54:44,326
+He recognized me from the old days.
+Tried to blackmail me.
+
+596
+00:54:45,595 --> 00:54:47,222
+Half me earnings.
+
+597
+00:54:47,931 --> 00:54:50,729
+<i>Oh, well, it's a different matter then.</i>
+
+598
+00:54:51,635 --> 00:54:55,127
+<i>For a moment there,
+I thought you'd lost your marbles.</i>
+
+599
+00:54:58,208 --> 00:54:59,835
+All that blood.
+
+600
+00:55:01,345 --> 00:55:02,812
+Poor bugger.
+
+601
+00:55:03,680 --> 00:55:05,045
+<i>Oh, well.</i>
+
+602
+00:55:13,457 --> 00:55:15,857
+<i>Well, waste not, want not.</i>
+
+603
+00:55:17,494 --> 00:55:20,759
+<i>So, what are we gonna do
+about the boy then?</i>
+
+604
+00:55:22,265 --> 00:55:23,789
+Send him up.
+
+605
+00:55:24,735 --> 00:55:27,704
+<i>Oh, we don't need to worry about him.
+He's a simple thing.</i>
+
+606
+00:55:27,804 --> 00:55:29,328
+Send him up!
+
+607
+00:55:32,242 --> 00:55:35,700
+<i>Now, Mr. T,
+surely one's enough for today.</i>
+
+608
+00:55:36,847 --> 00:55:40,339
+<i>Besides, I was thinking of hiring the lad
+to help me run the shop.</i>
+
+609
+00:55:40,450 --> 00:55:43,419
+Your poor knees
+aren't what they used to be.
+
+610
+00:55:44,221 --> 00:55:45,654
+All right.
+
+611
+00:55:47,691 --> 00:55:49,989
+<i>Course, we're gonna
+have to stock up on the gin.</i>
+
+612
+00:55:50,093 --> 00:55:52,118
+Boy drinks like a sailor.
+
+613
+00:55:56,266 --> 00:55:57,563
+The Judge.
+
+614
+00:56:01,071 --> 00:56:02,333
+Get out.
+
+615
+00:56:04,408 --> 00:56:05,670
+Get out!
+
+616
+00:56:22,058 --> 00:56:23,548
+Mr. Todd?
+
+617
+00:56:24,594 --> 00:56:26,221
+At your service.
+
+618
+00:56:27,397 --> 00:56:30,525
+<i>An honor to receive
+your patronage, my lord.</i>
+
+619
+00:56:31,802 --> 00:56:33,497
+<i>You know me, sir?</i>
+
+620
+00:56:33,904 --> 00:56:39,137
+Who in this wide world
+does not know the great Judge Turpin?
+
+621
+00:56:45,749 --> 00:56:47,649
+<i>These premises
+are hardly prepossessing,</i>
+
+622
+00:56:47,751 --> 00:56:49,582
+and yet the Beadle tells me
+
+623
+00:56:49,686 --> 00:56:53,588
+you're the most accomplished
+of all the barbers in the city.
+
+624
+00:56:54,257 --> 00:56:56,623
+<i>That is gracious of him, sir.</i>
+
+625
+00:56:57,694 --> 00:57:00,128
+<i>What may I do for you today, sir?</i>
+
+626
+00:57:00,897 --> 00:57:03,695
+A stylish trimming of the hair?
+
+627
+00:57:03,800 --> 00:57:05,791
+Soothing skin massage?
+
+628
+00:57:05,902 --> 00:57:07,631
+<i>Sit, sir. Sit.</i>
+
+629
+00:57:08,805 --> 00:57:13,765
+<i>You see, sir, a man infatuate with love
+Her ardent and eager slave</i>
+
+630
+00:57:13,877 --> 00:57:18,780
+<i>So fetch the pomade and pumice stone
+And lend me a more seductive tone</i>
+
+631
+00:57:18,882 --> 00:57:23,319
+<i>A sprinkling perhaps of French cologne
+But first, sir, I think</i>
+
+632
+00:57:24,387 --> 00:57:26,981
+<i>a shave</i>
+
+633
+00:57:28,758 --> 00:57:31,852
+<i>The closest I ever gave</i>
+
+634
+00:57:36,500 --> 00:57:38,798
+<i>You're in a merry mood today, Mr. Todd.</i>
+
+635
+00:57:38,902 --> 00:57:44,067
+<i>'Tis your delight, sir, catching fire
+From one man to the next</i>
+
+636
+00:57:44,174 --> 00:57:46,734
+<i>'Tis true, sir, love can still inspire</i>
+
+637
+00:57:46,843 --> 00:57:49,243
+<i>The blood to pound
+the heart leap higher</i>
+
+638
+00:57:49,346 --> 00:57:50,711
+<i>- What more
+- What more</i>
+
+639
+00:57:50,814 --> 00:57:52,975
+<i>- can man require than love, sir
+- can man require</i>
+
+640
+00:57:53,083 --> 00:57:54,277
+<i>More than love, sir</i>
+
+641
+00:57:54,384 --> 00:57:55,681
+<i>- What, sir?
+- Women</i>
+
+642
+00:57:55,785 --> 00:57:58,219
+<i>- Yes, women
+- Pretty women</i>
+
+643
+00:58:29,419 --> 00:58:33,583
+<i>Now then, my friend</i>
+
+644
+00:58:34,691 --> 00:58:38,559
+<i>Now to your purpose</i>
+
+645
+00:58:39,563 --> 00:58:43,294
+<i>Patience, enjoy it</i>
+
+646
+00:58:44,167 --> 00:58:48,604
+<i>Revenge can't be taken in haste</i>
+
+647
+00:58:48,705 --> 00:58:50,900
+<i>Make haste, and if we wed
+You'll be commended, sir</i>
+
+648
+00:58:51,007 --> 00:58:52,372
+<i>My lord</i>
+
+649
+00:58:54,978 --> 00:58:57,412
+<i>And who, may it be said
+Is your intended, sir?</i>
+
+650
+00:58:57,514 --> 00:59:00,005
+<i>My ward</i>
+
+651
+00:59:01,251 --> 00:59:03,583
+A pretty little rosebud.
+
+652
+00:59:03,687 --> 00:59:05,587
+Pretty as her mother?
+
+653
+00:59:06,623 --> 00:59:09,217
+What? What was that?
+
+654
+00:59:09,326 --> 00:59:13,626
+<i>Nothing, sir. Nothing. May we proceed?</i>
+
+655
+00:59:15,365 --> 00:59:16,957
+<i>Pretty women</i>
+
+656
+00:59:17,567 --> 00:59:21,936
+<i>Fascinating
+Sipping coffee</i>
+
+657
+00:59:22,806 --> 00:59:27,937
+<i>Dancing
+Pretty women!</i>
+
+658
+00:59:28,044 --> 00:59:30,410
+<i>Are a wonder</i>
+
+659
+00:59:30,513 --> 00:59:32,981
+<i>Pretty women</i>
+
+660
+00:59:35,785 --> 00:59:40,654
+<i>Sitting in the window or</i>
+
+661
+00:59:40,757 --> 00:59:45,660
+<i>Standing on the stair</i>
+
+662
+00:59:45,762 --> 00:59:52,361
+<i>Something in them
+Cheers the air</i>
+
+663
+00:59:56,039 --> 00:59:57,836
+<i>Pretty women</i>
+
+664
+00:59:58,842 --> 01:00:00,673
+<i>Silhouetted</i>
+
+665
+01:00:01,311 --> 01:00:03,711
+<i>Stay within you</i>
+
+666
+01:00:03,813 --> 01:00:06,338
+<i>Glancing!</i>
+
+667
+01:00:06,449 --> 01:00:08,713
+<i>Stay forever</i>
+
+668
+01:00:08,818 --> 01:00:11,446
+<i>Breathing lightly</i>
+
+669
+01:00:11,554 --> 01:00:13,647
+<i>Pretty women</i>
+
+670
+01:00:13,757 --> 01:00:16,157
+<i>- Pretty women
+- Pretty women</i>
+
+671
+01:00:16,259 --> 01:00:21,026
+<i>- Blowing out their candles or
+- Blowing out their candles or</i>
+
+672
+01:00:21,131 --> 01:00:24,396
+<i>- Combing out their hair
+- Combing out their hair</i>
+
+673
+01:00:24,501 --> 01:00:26,025
+<i>Then they leave</i>
+
+674
+01:00:26,136 --> 01:00:28,036
+<i>- Even when they leave...
+- Even when they</i>
+
+675
+01:00:28,138 --> 01:00:29,662
+<i>leave you and vanish...</i>
+
+676
+01:00:29,773 --> 01:00:32,674
+<i>- ... they still...
+- ... they somehow can still remain...</i>
+
+677
+01:00:32,776 --> 01:00:38,237
+<i>- ... are there, they're there
+- ... there with you</i>
+
+678
+01:00:38,348 --> 01:00:39,372
+<i>- Pretty women
+- Pretty women</i>
+
+679
+01:00:39,482 --> 01:00:41,006
+<i>- At their mirrors
+- In their gardens</i>
+
+680
+01:00:41,117 --> 01:00:42,641
+<i>- Letter-writing
+- Flower-picking</i>
+
+681
+01:00:42,752 --> 01:00:43,776
+<i>weather-watching</i>
+
+682
+01:00:43,887 --> 01:00:48,688
+<i>- How they make a man sing
+- How they make a man sing</i>
+
+683
+01:00:48,792 --> 01:00:51,317
+<i>- Proof of heaven
+- Proof of heaven</i>
+
+684
+01:00:51,428 --> 01:00:53,760
+<i>- As you're living
+- As you're living</i>
+
+685
+01:00:53,863 --> 01:00:56,263
+<i>- Pretty women, sir!
+- Pretty women, sir!</i>
+
+686
+01:00:56,366 --> 01:00:58,459
+<i>- Pretty women, yes!
+- Pretty women, yes!</i>
+
+687
+01:00:58,568 --> 01:01:01,969
+<i>- Pretty women, sir
+- Pretty women, pretty women</i>
+
+688
+01:01:02,072 --> 01:01:03,664
+Mr. Todd! I've seen Johanna
+
+689
+01:01:03,773 --> 01:01:06,503
+and she said
+she'd leave with me tonight.
+
+690
+01:01:08,778 --> 01:01:10,177
+You.
+
+691
+01:01:10,280 --> 01:01:14,478
+There is indeed a higher power
+to warn me thus in time.
+
+692
+01:01:14,584 --> 01:01:16,484
+Johanna elope with you?
+
+693
+01:01:18,254 --> 01:01:19,380
+I'll make sure that neither you
+
+694
+01:01:19,489 --> 01:01:22,788
+nor any other man
+shall ever set eyes on her again.
+
+695
+01:01:23,493 --> 01:01:24,960
+<i>As for you, barber,</i>
+
+696
+01:01:25,061 --> 01:01:27,495
+it's all too clear
+what company you keep.
+
+697
+01:01:27,597 --> 01:01:29,690
+<i>Service them well
+and hold their custom,</i>
+
+698
+01:01:29,799 --> 01:01:31,596
+for you'll have none of mine.
+
+699
+01:01:31,701 --> 01:01:33,931
+- Mr. Todd. You have to help me.
+- Out.
+
+700
+01:01:34,037 --> 01:01:35,436
+<i>- Mr. Todd, please.
+- Out.</i>
+
+701
+01:01:35,538 --> 01:01:37,472
+- Mr. Todd!
+- Out!
+
+702
+01:01:43,146 --> 01:01:44,443
+All this shouting and running about.
+
+703
+01:01:44,547 --> 01:01:46,708
+- What's happened?
+- I had him.
+
+704
+01:01:46,816 --> 01:01:48,010
+<i>The sailor busted in, I know.</i>
+
+705
+01:01:48,118 --> 01:01:49,551
+And then I saw them both
+running down the stairs.
+
+706
+01:01:49,652 --> 01:01:51,119
+I had him!
+
+707
+01:01:51,221 --> 01:01:53,280
+<i>His throat was bare beneath my hand</i>
+
+708
+01:01:53,389 --> 01:01:56,290
+<i>- There, there, dear. Calm down.
+- No, I had him!</i>
+
+709
+01:01:56,392 --> 01:01:58,826
+<i>His throat was there
+And he'll never come again!</i>
+
+710
+01:01:58,928 --> 01:02:01,863
+<i>Easy now. Hush, love, hush</i>
+
+711
+01:02:01,965 --> 01:02:03,990
+<i>- I'll keep telling you
+- When?</i>
+
+712
+01:02:04,100 --> 01:02:06,193
+<i>- What's your rush?
+- Why did I wait?</i>
+
+713
+01:02:06,302 --> 01:02:10,204
+<i>You told me to wait!
+Now he'll never come again!</i>
+
+714
+01:02:12,742 --> 01:02:14,642
+<i>There's a hole in the world
+like a great black pit</i>
+
+715
+01:02:14,744 --> 01:02:16,644
+<i>And it's filled with people
+who are filled with shit</i>
+
+716
+01:02:16,746 --> 01:02:19,909
+<i>And the vermin of the world inhabit it</i>
+
+717
+01:02:20,016 --> 01:02:22,541
+<i>But not for long!</i>
+
+718
+01:02:25,655 --> 01:02:29,887
+<i>They all deserve to die</i>
+
+719
+01:02:29,993 --> 01:02:34,396
+<i>Tell you why, Mrs. Lovett
+Tell you why</i>
+
+720
+01:02:34,497 --> 01:02:37,261
+<i>Because in all of
+the whole human race, Mrs. Lovett</i>
+
+721
+01:02:37,367 --> 01:02:39,699
+<i>There are two kinds of men
+and only two</i>
+
+722
+01:02:39,803 --> 01:02:41,896
+<i>There's the one staying put
+In his proper place</i>
+
+723
+01:02:42,005 --> 01:02:44,303
+<i>And the one with his foot
+In the other one's face</i>
+
+724
+01:02:44,407 --> 01:02:46,568
+<i>Look at me, Mrs. Lovett, look at you!</i>
+
+725
+01:02:46,676 --> 01:02:51,010
+<i>No, we all deserve to die</i>
+
+726
+01:02:51,114 --> 01:02:55,551
+<i>Even you, Mrs. Lovett
+Even I</i>
+
+727
+01:02:55,652 --> 01:02:58,382
+<i>Because the lives of the wicked
+should be made brief</i>
+
+728
+01:02:58,488 --> 01:03:00,683
+<i>For the rest of us, death will be a relief</i>
+
+729
+01:03:00,790 --> 01:03:05,090
+<i>We all deserve to die</i>
+
+730
+01:03:05,195 --> 01:03:11,327
+<i>And I'll never see Johanna</i>
+
+731
+01:03:11,434 --> 01:03:17,566
+<i>No, I'll never hug my girl to me</i>
+
+732
+01:03:17,674 --> 01:03:19,403
+<i>Finished!</i>
+
+733
+01:03:20,777 --> 01:03:24,474
+<i>All right! You, sir. How about a shave?</i>
+
+734
+01:03:24,581 --> 01:03:28,347
+Come and visit
+your good friend Sweeney.
+
+735
+01:03:28,451 --> 01:03:31,284
+<i>You, sir, too, sir.
+Welcome to the grave!</i>
+
+736
+01:03:31,387 --> 01:03:35,380
+<i>I will have vengeance</i>
+
+737
+01:03:35,491 --> 01:03:40,622
+<i>I will have salvation</i>
+
+738
+01:03:42,565 --> 01:03:43,554
+<i>Who, sir?</i>
+
+739
+01:03:43,666 --> 01:03:46,328
+<i>You, sir? No one's in the chair.
+Come on, come on.</i>
+
+740
+01:03:46,436 --> 01:03:49,997
+Sweeney's waiting! I want you bleeders.
+
+741
+01:03:50,106 --> 01:03:53,405
+<i>You, sir! Anybody!
+Gentlemen, now don't be shy!</i>
+
+742
+01:03:53,509 --> 01:03:59,175
+<i>Not one man, no, nor ten men</i>
+
+743
+01:03:59,282 --> 01:04:05,710
+<i>Nor a hundred can assuage me</i>
+
+744
+01:04:05,822 --> 01:04:09,724
+<i>I will have you</i>
+
+745
+01:04:10,293 --> 01:04:13,820
+<i>And I will get him back
+Even as he gloats</i>
+
+746
+01:04:13,930 --> 01:04:17,229
+<i>In the meantime
+I'll practice on less honorable throats</i>
+
+747
+01:04:17,333 --> 01:04:23,602
+<i>And my Lucy lies in ashes</i>
+
+748
+01:04:23,706 --> 01:04:30,339
+<i>And I'll never see my girl again</i>
+
+749
+01:04:30,446 --> 01:04:33,938
+<i>But the work waits!</i>
+
+750
+01:04:35,151 --> 01:04:38,086
+<i>I'm alive at last!</i>
+
+751
+01:04:38,621 --> 01:04:44,719
+<i>And I'm full of joy!</i>
+
+752
+01:04:51,401 --> 01:04:53,164
+<i>That's all very well,
+but what are we gonna do about him?</i>
+
+753
+01:04:58,737 --> 01:04:59,999
+Hello?
+
+754
+01:05:03,575 --> 01:05:05,133
+Do you hear me?
+
+755
+01:05:08,246 --> 01:05:09,736
+Come on.
+
+756
+01:05:10,515 --> 01:05:12,710
+You great useless thing.
+
+757
+01:05:19,024 --> 01:05:20,457
+Sit down.
+
+758
+01:05:40,445 --> 01:05:42,310
+There. Drink it down.
+
+759
+01:05:44,416 --> 01:05:48,011
+<i>Now, we got a body
+moldering away upstairs.</i>
+
+760
+01:05:48,119 --> 01:05:51,020
+<i>Now, what do you intend
+we should do about that, then?</i>
+
+761
+01:05:51,122 --> 01:05:53,386
+<i>Later on when it's dark,</i>
+
+762
+01:05:53,491 --> 01:05:56,790
+we'll take it to some secret place
+and bury it.
+
+763
+01:05:56,895 --> 01:05:59,489
+<i>Oh, yeah. Course we could do that.</i>
+
+764
+01:06:02,667 --> 01:06:04,134
+Don't suppose he's got any relatives
+
+765
+01:06:04,235 --> 01:06:06,100
+that's gonna come poking around
+looking for him.
+
+766
+01:06:11,476 --> 01:06:14,206
+<i>Seems a downright shame</i>
+
+767
+01:06:14,546 --> 01:06:15,808
+Shame?
+
+768
+01:06:17,449 --> 01:06:19,679
+<i>Seems an awful waste</i>
+
+769
+01:06:21,786 --> 01:06:25,722
+<i>Such a nice plump frame
+What's his name has</i>
+
+770
+01:06:25,824 --> 01:06:28,156
+<i>Had, has</i>
+
+771
+01:06:28,660 --> 01:06:31,390
+<i>Nor it can't be traced</i>
+
+772
+01:06:32,497 --> 01:06:35,091
+<i>Business needs a lift</i>
+
+773
+01:06:35,900 --> 01:06:38,391
+<i>Debts to be erased</i>
+
+774
+01:06:39,237 --> 01:06:42,434
+<i>Think of it as thrift, as a gift</i>
+
+775
+01:06:43,141 --> 01:06:45,234
+If you get my drift.
+
+776
+01:06:45,877 --> 01:06:49,278
+<i>Seems an awful waste</i>
+
+777
+01:06:51,549 --> 01:06:54,677
+<i>I mean, with the price of meat what it is</i>
+
+778
+01:06:54,953 --> 01:06:58,047
+<i>When you get it, if you get it</i>
+
+779
+01:06:58,623 --> 01:06:59,749
+<i>Good, you got it</i>
+
+780
+01:06:59,858 --> 01:07:03,817
+<i>Take, for instance
+Mrs. Mooney and her pie shop</i>
+
+781
+01:07:03,928 --> 01:07:08,024
+<i>Business never better
+using only pussycats and toast</i>
+
+782
+01:07:08,133 --> 01:07:12,001
+<i>Now a pussy's good for
+maybe six or seven at the most</i>
+
+783
+01:07:12,103 --> 01:07:14,003
+<i>And I'm sure they can't
+compare as far as taste</i>
+
+784
+01:07:14,105 --> 01:07:16,665
+<i>Mrs. Lovett, what a charming notion
+Eminently practical</i>
+
+785
+01:07:16,775 --> 01:07:19,073
+<i>- And yet appropriate as always
+- Well, it does seem a waste</i>
+
+786
+01:07:19,177 --> 01:07:21,941
+<i>Mrs. Lovett, how I've lived without you
+All these years I'll never know!</i>
+
+787
+01:07:22,046 --> 01:07:23,035
+<i>Think about it</i>
+
+788
+01:07:23,148 --> 01:07:24,172
+<i>- lots of other gentlemen'll...
+- How delectable!</i>
+
+789
+01:07:24,282 --> 01:07:25,613
+<i>- ... soon be coming for a shave
+- Also undetectable</i>
+
+790
+01:07:25,717 --> 01:07:28,515
+<i>- Won't they? Think of all them pies!
+- How choice! How rare!</i>
+
+791
+01:07:28,620 --> 01:07:32,215
+<i>For what's the sound
+of the world out there?</i>
+
+792
+01:07:32,323 --> 01:07:35,258
+<i>What, Mr. Todd, what, Mr. Todd
+What is that sound?</i>
+
+793
+01:07:35,360 --> 01:07:38,887
+<i>Those crunching
+noises pervading the air?</i>
+
+794
+01:07:38,997 --> 01:07:41,898
+<i>Yes, Mr. Todd
+Yes, Mr. Todd, yes, all around</i>
+
+795
+01:07:42,000 --> 01:07:45,265
+<i>It's man devouring man, my dear</i>
+
+796
+01:07:45,370 --> 01:07:49,898
+<i>- And who are we to deny it in here?
+- And who are we to deny it in here?</i>
+
+797
+01:07:53,278 --> 01:07:56,179
+<i>These are desperate times, Mrs. Lovett.</i>
+
+798
+01:07:56,881 --> 01:07:59,816
+And desperate measures are called for.
+
+799
+01:08:00,084 --> 01:08:03,451
+<i>Here we are, hot out of the oven.</i>
+
+800
+01:08:04,522 --> 01:08:05,716
+What is that?
+
+801
+01:08:05,824 --> 01:08:08,850
+<i>It's priest
+Have a little priest</i>
+
+802
+01:08:08,960 --> 01:08:12,361
+<i>- Is it really good?
+- Sir, it's too good, at least</i>
+
+803
+01:08:12,464 --> 01:08:15,729
+<i>Then again
+they don't commit sins of the flesh</i>
+
+804
+01:08:15,834 --> 01:08:17,699
+<i>So it's pretty fresh</i>
+
+805
+01:08:19,370 --> 01:08:20,997
+<i>Awful lot of fat</i>
+
+806
+01:08:21,105 --> 01:08:22,538
+<i>Only where it sat</i>
+
+807
+01:08:22,640 --> 01:08:26,201
+<i>Haven't you got poet
+or something like that?</i>
+
+808
+01:08:26,311 --> 01:08:31,112
+<i>No, you see the trouble with poet is
+how do you know it's deceased?</i>
+
+809
+01:08:31,216 --> 01:08:33,241
+<i>Try the priest</i>
+
+810
+01:08:42,227 --> 01:08:44,092
+Lawyer's rather nice.
+
+811
+01:08:44,195 --> 01:08:45,992
+<i>If it's for a price</i>
+
+812
+01:08:46,097 --> 01:08:51,000
+<i>Order something else, though, to follow
+Since no one should swallow it twice</i>
+
+813
+01:08:51,102 --> 01:08:52,797
+<i>Anything that's lean?</i>
+
+814
+01:08:52,904 --> 01:08:57,773
+<i>Well, then, if you're British and loyal
+You might enjoy Royal Marine</i>
+
+815
+01:08:57,876 --> 01:08:59,605
+<i>Anyway, it's clean</i>
+
+816
+01:08:59,711 --> 01:09:02,874
+<i>Though, of course
+it tastes of wherever it's been</i>
+
+817
+01:09:02,981 --> 01:09:06,382
+<i>Is that squire on the fire?</i>
+
+818
+01:09:06,484 --> 01:09:09,920
+<i>Mercy no, sir, look closer
+You'll notice it's grocer</i>
+
+819
+01:09:10,021 --> 01:09:13,013
+<i>Looks thicker
+More like vicar</i>
+
+820
+01:09:13,124 --> 01:09:16,423
+<i>No, it has to be grocer
+It's green</i>
+
+821
+01:09:19,931 --> 01:09:23,662
+<i>The history of the world, my love</i>
+
+822
+01:09:23,768 --> 01:09:26,430
+<i>Save a lot of graves
+Do a lot of relatives favors</i>
+
+823
+01:09:26,538 --> 01:09:30,497
+<i>Is those below serving those up above</i>
+
+824
+01:09:30,608 --> 01:09:33,168
+<i>Everybody shaves
+So there should be plenty of flavors</i>
+
+825
+01:09:33,278 --> 01:09:36,406
+<i>How gratifying for once to know</i>
+
+826
+01:09:36,514 --> 01:09:37,947
+<i>- That those above
+- That those above</i>
+
+827
+01:09:38,049 --> 01:09:42,008
+<i>- will serve those down below!
+- will serve those down below!</i>
+
+828
+01:09:48,293 --> 01:09:49,317
+What is that?
+
+829
+01:09:49,427 --> 01:09:52,828
+<i>It's fop
+Finest in the shop</i>
+
+830
+01:09:52,931 --> 01:09:57,630
+<i>Or we have some shepherd's pie
+peppered with actual shepherd on top</i>
+
+831
+01:09:57,735 --> 01:09:59,498
+<i>And I've just begun</i>
+
+832
+01:09:59,604 --> 01:10:04,507
+<i>Here's the politician, so oily
+It's served with a doily, have one</i>
+
+833
+01:10:04,609 --> 01:10:06,304
+<i>Put it on a bun</i>
+
+834
+01:10:06,411 --> 01:10:09,812
+<i>Well, you never know if it's going to run</i>
+
+835
+01:10:09,914 --> 01:10:13,042
+<i>Try the friar, fried, it's drier</i>
+
+836
+01:10:13,151 --> 01:10:16,917
+<i>No, the clergy is really
+Too coarse and too mealy</i>
+
+837
+01:10:17,021 --> 01:10:20,149
+<i>Then actor
+It's compacter</i>
+
+838
+01:10:20,258 --> 01:10:23,193
+<i>But always arrives overdone</i>
+
+839
+01:10:23,294 --> 01:10:26,661
+I'll come again
+when you have judge on the menu.
+
+840
+01:10:33,071 --> 01:10:36,598
+<i>Have charity towards the world, my pet</i>
+
+841
+01:10:36,708 --> 01:10:39,643
+<i>Yes, yes, I know, my love</i>
+
+842
+01:10:39,744 --> 01:10:43,339
+<i>We'll take the customers
+that we can get</i>
+
+843
+01:10:43,448 --> 01:10:46,076
+<i>High-born and low, my love</i>
+
+844
+01:10:46,184 --> 01:10:49,176
+<i>We'll not discriminate great from small</i>
+
+845
+01:10:49,287 --> 01:10:51,380
+<i>No, we'll serve anyone</i>
+
+846
+01:10:51,489 --> 01:10:53,013
+<i>- We'll serve anyone
+- Meaning anyone</i>
+
+847
+01:10:53,124 --> 01:10:57,254
+<i>- And to anyone at all!
+- And to anyone at all!</i>
+
+848
+01:11:16,714 --> 01:11:18,181
+<i>So, it's true.</i>
+
+849
+01:11:19,117 --> 01:11:23,781
+<i>Sir, a gentleman knocks
+before entering a lady's room.</i>
+
+850
+01:11:24,022 --> 01:11:26,684
+<i>Indeed he does, but I see no lady.</i>
+
+851
+01:11:29,560 --> 01:11:32,085
+<i>I told myself the sailor was lying,</i>
+
+852
+01:11:32,196 --> 01:11:36,565
+<i>that my Johanna would never betray me,
+never hurt me so.</i>
+
+853
+01:11:36,668 --> 01:11:39,432
+<i>Sir, I will leave this place.</i>
+
+854
+01:11:40,605 --> 01:11:43,335
+I think that only appropriate
+
+855
+01:11:43,441 --> 01:11:47,639
+since you no longer find
+my company to your liking.
+
+856
+01:11:50,181 --> 01:11:53,116
+We shall provide you with new lodgings.
+
+857
+01:11:55,953 --> 01:11:59,753
+Until this moment I have spared the rod.
+
+858
+01:12:01,025 --> 01:12:04,722
+But the ungrateful child
+has broken my heart.
+
+859
+01:12:06,330 --> 01:12:08,264
+<i>When you've learned
+to appreciate what you have,</i>
+
+860
+01:12:08,366 --> 01:12:10,061
+perhaps we shall meet again.
+
+861
+01:12:10,168 --> 01:12:11,726
+Until then
+
+862
+01:12:13,271 --> 01:12:16,138
+think on your sins.
+
+863
+01:12:23,347 --> 01:12:24,541
+No!
+
+864
+01:12:28,653 --> 01:12:30,177
+<i>No, please!</i>
+
+865
+01:12:33,558 --> 01:12:36,721
+Johanna! Where are you taking her?
+Tell me or I swear I'II...
+
+866
+01:12:36,828 --> 01:12:39,353
+<i>You'd kill me, boy? Here I stand!</i>
+
+867
+01:12:41,199 --> 01:12:42,689
+Johanna!
+
+868
+01:13:49,200 --> 01:13:53,534
+<i>I feel you</i>
+
+869
+01:13:53,638 --> 01:13:57,472
+<i>Johanna</i>
+
+870
+01:13:57,575 --> 01:14:01,443
+<i>I feel you</i>
+
+871
+01:14:02,079 --> 01:14:05,674
+<i>Do they think that walls can hide you?</i>
+
+872
+01:14:05,783 --> 01:14:09,617
+<i>Even now, I'm at your window</i>
+
+873
+01:14:09,720 --> 01:14:14,157
+<i>I am in the dark beside you</i>
+
+874
+01:14:14,258 --> 01:14:19,389
+<i>Buried sweetly in your yellow hair</i>
+
+875
+01:14:19,497 --> 01:14:23,991
+<i>Johanna</i>
+
+876
+01:14:32,009 --> 01:14:35,570
+<i>And are you beautiful and pale</i>
+
+877
+01:14:35,680 --> 01:14:38,774
+<i>With yellow hair, like her?</i>
+
+878
+01:14:38,883 --> 01:14:42,341
+<i>I'd want you beautiful and pale</i>
+
+879
+01:14:42,453 --> 01:14:48,688
+<i>The way I've dreamed you were
+Johanna</i>
+
+880
+01:14:52,129 --> 01:14:58,534
+<i>And if you're beautiful
+what then with yellow hair, like wheat</i>
+
+881
+01:14:58,636 --> 01:15:02,197
+<i>I think we shall not meet again</i>
+
+882
+01:15:02,306 --> 01:15:05,275
+<i>My little dove, my sweet Johanna</i>
+
+883
+01:15:05,376 --> 01:15:11,713
+<i>I'll steal you, Johanna!</i>
+
+884
+01:15:11,816 --> 01:15:14,148
+<i>Goodbye, Johanna!</i>
+
+885
+01:15:15,186 --> 01:15:18,280
+<i>You're gone, and yet you're mine</i>
+
+886
+01:15:18,389 --> 01:15:20,721
+<i>I'm fine, Johanna</i>
+
+887
+01:15:20,825 --> 01:15:27,526
+<i>- I'm fine!
+- Johanna</i>
+
+888
+01:15:34,338 --> 01:15:40,709
+<i>Smoke! Smoke! Sign of the devil
+Sign of the devil. City on fire!</i>
+
+889
+01:15:40,811 --> 01:15:43,905
+<i>Witch! Witch! Smell it, sir
+An evil smell</i>
+
+890
+01:15:44,015 --> 01:15:45,710
+<i>Every night at the vespers bell</i>
+
+891
+01:15:45,816 --> 01:15:47,443
+<i>Smoke that comes from
+the mouth of hell</i>
+
+892
+01:15:47,551 --> 01:15:50,520
+<i>City on fire!</i>
+
+893
+01:15:50,621 --> 01:15:53,818
+<i>City on fire</i>
+
+894
+01:15:54,625 --> 01:15:57,185
+Mischief! Mischief! Mischief!
+
+895
+01:16:05,636 --> 01:16:12,098
+<i>And if I never hear your voice
+My turtledove, my dear</i>
+
+896
+01:16:12,209 --> 01:16:17,875
+<i>I still have reason to rejoice
+The way ahead is clear</i>
+
+897
+01:16:17,982 --> 01:16:22,180
+<i>Johanna</i>
+
+898
+01:16:23,988 --> 01:16:24,977
+<i>I feel</i>
+
+899
+01:16:25,089 --> 01:16:30,652
+<i>And in that darkness when I'm blind
+With what I can't forget</i>
+
+900
+01:16:30,761 --> 01:16:31,785
+<i>Johanna</i>
+
+901
+01:16:31,896 --> 01:16:34,922
+<i>It's always morning in my mind</i>
+
+902
+01:16:35,032 --> 01:16:41,301
+<i>My little lamb, my pet, Johanna</i>
+
+903
+01:16:44,308 --> 01:16:47,471
+<i>- You stay, Johanna...
+- Johanna</i>
+
+904
+01:16:47,578 --> 01:16:50,308
+<i>...the way I've dreamed you are</i>
+
+905
+01:16:50,815 --> 01:16:54,410
+<i>Oh, look, Johanna! A star!</i>
+
+906
+01:16:54,518 --> 01:16:59,080
+<i>Buried sweetly in your yellow hair</i>
+
+907
+01:16:59,190 --> 01:17:02,591
+<i>A shooting star!</i>
+
+908
+01:17:06,497 --> 01:17:10,433
+<i>There, there, somebody, somebody
+look up there. Didn't I tell you?</i>
+
+909
+01:17:10,534 --> 01:17:14,436
+<i>Smell that air. City on fire!</i>
+
+910
+01:17:14,538 --> 01:17:17,439
+<i>Quick, sir, run and tell
+Warn them all of the witch's spell</i>
+
+911
+01:17:17,541 --> 01:17:19,168
+<i>There it is, there it is, the unholy smell</i>
+
+912
+01:17:19,276 --> 01:17:21,471
+<i>Tell it to the Beadle and police as well
+Tell them! Tell them</i>
+
+913
+01:17:21,579 --> 01:17:25,413
+<i>Help, fiend! City on fire!</i>
+
+914
+01:17:25,516 --> 01:17:28,917
+<i>City on fire</i>
+
+915
+01:17:29,020 --> 01:17:30,783
+Mischief. Mischief.
+
+916
+01:17:40,631 --> 01:17:47,059
+<i>And though I'll think of you, I guess
+Until the day I die</i>
+
+917
+01:17:47,171 --> 01:17:52,871
+<i>I think I miss you less and less
+As every day goes by</i>
+
+918
+01:17:52,977 --> 01:17:59,712
+<i>- Johanna
+- Johanna</i>
+
+919
+01:17:59,817 --> 01:18:06,154
+<i>And you'd be beautiful and pale
+And look too much like her</i>
+
+920
+01:18:06,257 --> 01:18:11,957
+<i>If only angels could prevail
+We'd be the way we were</i>
+
+921
+01:18:12,063 --> 01:18:18,935
+<i>- Johanna
+- I feel you, Johanna</i>
+
+922
+01:18:19,036 --> 01:18:22,062
+<i>Wake up, Johanna</i>
+
+923
+01:18:22,173 --> 01:18:25,267
+<i>Another bright red day</i>
+
+924
+01:18:25,376 --> 01:18:32,077
+<i>We learn, Johanna, to say</i>
+
+925
+01:18:33,751 --> 01:18:35,241
+<i>Goodbye</i>
+
+926
+01:18:38,923 --> 01:18:42,484
+<i>I'll steal</i>
+
+927
+01:18:45,563 --> 01:18:50,432
+<i>you</i>
+
+928
+01:19:27,905 --> 01:19:31,671
+<i>Ladies and gentlemen
+May I have your attention, please?</i>
+
+929
+01:19:33,244 --> 01:19:35,235
+<i>Are your nostrils a-quiver
+and tingling as well</i>
+
+930
+01:19:35,346 --> 01:19:38,406
+<i>At that delicate
+luscious ambrosial smell?</i>
+
+931
+01:19:38,516 --> 01:19:40,609
+<i>Yes, they are, I can tell</i>
+
+932
+01:19:40,718 --> 01:19:44,552
+<i>Well, ladies and gentlemen
+That aroma enriching the breeze</i>
+
+933
+01:19:44,655 --> 01:19:46,589
+<i>Is like nothing
+compared to its succulent source</i>
+
+934
+01:19:46,690 --> 01:19:50,353
+<i>As the gourmets among you
+will tell you, of course</i>
+
+935
+01:19:50,461 --> 01:19:55,296
+<i>Ladies and gentlemen
+You can't imagine the rapture in store</i>
+
+936
+01:19:56,333 --> 01:19:58,631
+<i>Just inside of this door!</i>
+
+937
+01:20:02,907 --> 01:20:06,365
+<i>There you'll sample
+Mrs. Lovett's meat pies</i>
+
+938
+01:20:06,477 --> 01:20:09,935
+<i>Savory and sweet pies
+As you'll see</i>
+
+939
+01:20:10,047 --> 01:20:13,505
+<i>You who eat pies
+Mrs. Lovett's meat pies</i>
+
+940
+01:20:13,617 --> 01:20:17,109
+<i>Conjure up the treat
+pies used to be!</i>
+
+941
+01:20:20,858 --> 01:20:22,587
+<i>- Toby!
+- Coming!</i>
+
+942
+01:20:23,661 --> 01:20:25,390
+<i>- Ale there!
+- Right, ma'am!</i>
+
+943
+01:20:25,496 --> 01:20:26,895
+<i>Quick, now!</i>
+
+944
+01:20:28,132 --> 01:20:31,761
+<i>Nice to see you, dearie
+How have you been keeping?</i>
+
+945
+01:20:31,869 --> 01:20:35,464
+<i>Cor, me bones is weary
+Toby! One for the gentleman</i>
+
+946
+01:20:35,573 --> 01:20:39,134
+<i>Hear the birdies cheeping
+Helps to keep it cheery</i>
+
+947
+01:20:39,243 --> 01:20:42,679
+<i>Toby! Throw the old woman out!</i>
+
+948
+01:20:42,780 --> 01:20:46,580
+<i>What's my secret?
+Frankly, dear, forgive my candor</i>
+
+949
+01:20:46,684 --> 01:20:50,142
+<i>Family secret
+All to do with herbs</i>
+
+950
+01:20:50,254 --> 01:20:53,712
+<i>Things like being
+careful with your coriander</i>
+
+951
+01:20:53,824 --> 01:20:56,555
+<i>That's what makes the gravy grander!</i>
+
+952
+01:21:06,403 --> 01:21:09,930
+<i>Eat them slow and feel the crust
+How thin she rolled it</i>
+
+953
+01:21:10,040 --> 01:21:13,669
+<i>Eat them slow
+'cause every one's a prize!</i>
+
+954
+01:21:13,777 --> 01:21:17,213
+<i>Eat them slow 'cause that's the lot
+and now we've sold it!</i>
+
+955
+01:21:17,314 --> 01:21:18,576
+<i>Come again tomorrow!</i>
+
+956
+01:21:18,682 --> 01:21:19,979
+<i>Hold it!</i>
+
+957
+01:21:20,985 --> 01:21:23,044
+<i>Bless my eyes!</i>
+
+958
+01:21:24,688 --> 01:21:26,622
+<i>Fresh supplies!</i>
+
+959
+01:21:26,724 --> 01:21:28,089
+<i>- How about it, dearie?
+- Is that a pie...</i>
+
+960
+01:21:28,192 --> 01:21:29,989
+<i>- Be here in a twinkling!
+- ... fit for a king</i>
+
+961
+01:21:30,094 --> 01:21:32,722
+<i>- Just confirms me theory, Toby!
+- A wondrous sweet</i>
+
+962
+01:21:32,830 --> 01:21:33,990
+<i>- and most delectable thing?
+- God watches over us</i>
+
+963
+01:21:34,098 --> 01:21:35,793
+<i>Didn't have an inkling, positively eerie</i>
+
+964
+01:21:35,899 --> 01:21:37,196
+<i>You see, ma'am
+why there's no meat pie</i>
+
+965
+01:21:37,301 --> 01:21:39,963
+Toby! Throw the old woman out!
+
+966
+01:21:48,045 --> 01:21:51,310
+Still got to keep an eye
+on the household expenditure.
+
+967
+01:21:52,950 --> 01:21:55,578
+<i>Which isn't to say we couldn't get
+some nice taxidermy animals,</i>
+
+968
+01:21:55,686 --> 01:21:57,984
+bring a touch of gentility to the place.
+
+969
+01:21:58,088 --> 01:22:00,579
+<i>You know, a boar's head or two?</i>
+
+970
+01:22:01,792 --> 01:22:05,558
+- Mr. T? You listening to me?
+- Of course.
+
+971
+01:22:06,163 --> 01:22:11,226
+- Then what did I just say?
+- There must be a way to the Judge.
+
+972
+01:22:11,335 --> 01:22:14,463
+Judge. Always harping
+on the bloody old judge.
+
+973
+01:22:15,506 --> 01:22:17,736
+We got a nice
+respectable business now.
+
+974
+01:22:17,841 --> 01:22:19,706
+Money coming in regular-like.
+
+975
+01:22:19,810 --> 01:22:21,505
+<i>And since we're careful
+to pick and choose,</i>
+
+976
+01:22:21,612 --> 01:22:25,776
+<i>strangers, people who won't be missed,
+who's gonna catch on?</i>
+
+977
+01:22:27,418 --> 01:22:29,545
+<i>Mr. Todd, I'm so happy</i>
+
+978
+01:22:29,653 --> 01:22:31,780
+<i>I could eat you up, I really could</i>
+
+979
+01:22:31,889 --> 01:22:35,120
+<i>You know what I'd like to do, Mr. Todd?
+What I dream?</i>
+
+980
+01:22:35,225 --> 01:22:38,922
+<i>If the business stays as good
+Where I'd really like to go</i>
+
+981
+01:22:39,530 --> 01:22:43,864
+<i>In a year or so?
+Don't you want to know?</i>
+
+982
+01:22:43,967 --> 01:22:45,093
+Of course.
+
+983
+01:22:45,202 --> 01:22:47,033
+<i>Do you really want to know?</i>
+
+984
+01:22:47,137 --> 01:22:49,037
+<i>Yes, I do.</i>
+
+985
+01:23:03,787 --> 01:23:06,756
+<i>By the sea, Mr. Todd
+That's the life I'll covet</i>
+
+986
+01:23:06,857 --> 01:23:09,724
+<i>By the sea, Mr. Todd
+Oh, I know you'd love it</i>
+
+987
+01:23:09,827 --> 01:23:14,855
+<i>You and me, Mr. T, we could be alone
+In a house what we'd almost own</i>
+
+988
+01:23:14,965 --> 01:23:18,196
+<i>- Down by the sea
+- Anything you say</i>
+
+989
+01:23:18,302 --> 01:23:21,100
+<i>Wouldn't that be smashing?</i>
+
+990
+01:23:22,005 --> 01:23:25,133
+<i>Think how snug it'll be
+Underneath our flannel</i>
+
+991
+01:23:25,242 --> 01:23:28,211
+<i>When it's just you and me
+And the English Channel</i>
+
+992
+01:23:28,312 --> 01:23:31,110
+<i>In our cozy retreat
+Kept all neat and tidy</i>
+
+993
+01:23:31,215 --> 01:23:36,380
+<i>We'll have chums over every Friday
+By the sea</i>
+
+994
+01:23:36,487 --> 01:23:41,982
+<i>Don't you love the weather
+by the sea?</i>
+
+995
+01:23:42,860 --> 01:23:45,954
+<i>We'll grow old together</i>
+
+996
+01:23:46,263 --> 01:23:50,723
+<i>By the seaside
+By the beautiful sea</i>
+
+997
+01:23:55,839 --> 01:23:58,831
+<i>It'll be so quiet that who'll come by it</i>
+
+998
+01:23:58,942 --> 01:24:01,274
+<i>except a seagull?</i>
+
+999
+01:24:02,146 --> 01:24:06,583
+<i>We shouldn't try it
+though, till it's legal for two!</i>
+
+1000
+01:24:07,951 --> 01:24:11,079
+<i>But a seaside wedding could be devised</i>
+
+1001
+01:24:11,188 --> 01:24:14,021
+<i>Me rumpled bedding legitimized</i>
+
+1002
+01:24:14,124 --> 01:24:19,756
+<i>Me eyelids'll flutter, I'll turn into butter
+The moment I mutter "I do!"</i>
+
+1003
+01:24:19,863 --> 01:24:23,526
+Will you take this woman
+to be your lawfully wedded wife?
+
+1004
+01:24:27,671 --> 01:24:29,696
+You may kiss your bride.
+
+1005
+01:24:42,085 --> 01:24:47,955
+<i>Down by the sea
+Married nice and proper</i>
+
+1006
+01:24:48,158 --> 01:24:53,755
+<i>By the sea
+Bring along your chopper</i>
+
+1007
+01:24:53,864 --> 01:25:00,326
+<i>To the seaside
+By the beautiful sea</i>
+
+1008
+01:25:18,555 --> 01:25:21,183
+<i>I brought you some breakfast, dear.</i>
+
+1009
+01:25:25,062 --> 01:25:28,088
+Mr. T? Can I ask you a question?
+
+1010
+01:25:29,299 --> 01:25:30,391
+What?
+
+1011
+01:25:31,468 --> 01:25:33,766
+What did your Lucy look like?
+
+1012
+01:25:36,707 --> 01:25:38,971
+<i>Can't really remember, can you?</i>
+
+1013
+01:25:40,310 --> 01:25:42,278
+She had yellow hair.
+
+1014
+01:25:44,214 --> 01:25:47,115
+<i>You gotta leave this all behind,
+you know.</i>
+
+1015
+01:25:48,919 --> 01:25:50,511
+She's gone.
+
+1016
+01:25:52,155 --> 01:25:54,453
+<i>Life is for the alive, my dear.</i>
+
+1017
+01:25:55,592 --> 01:25:58,322
+<i>We could have a life, us two.</i>
+
+1018
+01:25:58,428 --> 01:26:00,453
+Maybe not like I dreamed.
+
+1019
+01:26:01,532 --> 01:26:03,693
+Maybe not like you remember.
+
+1020
+01:26:04,768 --> 01:26:06,565
+But we could get by.
+
+1021
+01:26:15,178 --> 01:26:19,308
+<i>- Mr. Todd! Mrs. Lovett, ma'am?
+- What is it, Anthony?</i>
+
+1022
+01:26:19,416 --> 01:26:23,284
+- He has her locked in a madhouse.
+- Johanna.
+
+1023
+01:26:23,387 --> 01:26:24,854
+Fogg's Asylum.
+
+1024
+01:26:24,955 --> 01:26:29,722
+I've circled the place a dozen times.
+There's no way in. It's a fortress.
+
+1025
+01:26:29,826 --> 01:26:32,727
+- I've got him.
+- Mr. Todd?
+
+1026
+01:26:33,997 --> 01:26:35,624
+We've got her.
+
+1027
+01:26:36,967 --> 01:26:38,332
+Where do you suppose
+all the wigmakers
+
+1028
+01:26:38,435 --> 01:26:40,869
+in London go to obtain their hair?
+
+1029
+01:26:41,672 --> 01:26:42,900
+Bedlam.
+
+1030
+01:26:43,707 --> 01:26:47,575
+- They get it from the lunatics at Bedlam.
+- I don't understand.
+
+1031
+01:26:49,079 --> 01:26:52,105
+We shall set you up
+as a wigmaker's apprentice.
+
+1032
+01:26:52,215 --> 01:26:55,343
+That'll gain you access.
+And then you take her.
+
+1033
+01:26:56,086 --> 01:26:57,747
+<i>Go, quickly, go!</i>
+
+1034
+01:26:59,256 --> 01:27:00,689
+Fetch the boy.
+
+1035
+01:27:00,791 --> 01:27:04,124
+Don't you think you should
+leave the boy behind?
+
+1036
+01:27:18,675 --> 01:27:22,771
+<i>- Toby. Mr. Todd needs you.
+- Yes, ma'am.</i>
+
+1037
+01:27:35,759 --> 01:27:37,090
+Mr. T?
+
+1038
+01:27:39,663 --> 01:27:43,622
+<i>- Do you know where the Old Bailey is?
+- Yes, sir. Not that I ever been there.</i>
+
+1039
+01:27:43,734 --> 01:27:47,830
+Take this there.
+Seek out a Judge Turpin. Repeat that.
+
+1040
+01:27:47,938 --> 01:27:50,406
+Go to Old Bailey. Find Judge Turpin.
+
+1041
+01:27:50,507 --> 01:27:53,943
+<i>You put that into his hands.
+Only to him, you understand?</i>
+
+1042
+01:27:54,044 --> 01:27:55,136
+<i>Yes, sir.</i>
+
+1043
+01:27:55,245 --> 01:27:57,509
+<i>And while I'm out, do you mind
+if I stop by the grocer just to pick...</i>
+
+1044
+01:27:57,614 --> 01:28:00,276
+<i>No. You're not to stop,
+you're not to speak.</i>
+
+1045
+01:28:00,384 --> 01:28:02,978
+You're to deliver the letter.
+Do you understand?
+
+1046
+01:28:03,086 --> 01:28:04,610
+<i>Yes, sir.</i>
+
+1047
+01:28:34,785 --> 01:28:36,252
+<i>Where you been, lad?</i>
+
+1048
+01:28:36,353 --> 01:28:41,017
+We had quite the rush at dinner time.
+Me poor bones is ready to drop.
+
+1049
+01:28:41,124 --> 01:28:43,422
+Mr. Todd sent me on an errand.
+
+1050
+01:28:43,527 --> 01:28:44,516
+<i>And on the way back,</i>
+
+1051
+01:28:44,628 --> 01:28:47,495
+<i>I went by the workhouse,
+just to take a look.</i>
+
+1052
+01:28:47,597 --> 01:28:51,397
+<i>And I was thinking, but for you,
+I'd be there now.</i>
+
+1053
+01:28:52,502 --> 01:28:54,299
+Or someplace worse.
+
+1054
+01:28:54,404 --> 01:28:56,395
+Seems like the good Lord
+sent you for me.
+
+1055
+01:28:56,506 --> 01:28:59,873
+<i>Oh, love, I feel quite the same way.</i>
+
+1056
+01:28:59,976 --> 01:29:01,876
+<i>Listen to me, please.</i>
+
+1057
+01:29:01,978 --> 01:29:04,242
+You know there's nothing
+I wouldn't do for you.
+
+1058
+01:29:04,347 --> 01:29:07,475
+<i>Say, if there were someone around,</i>
+
+1059
+01:29:08,385 --> 01:29:10,148
+someone bad?
+
+1060
+01:29:10,754 --> 01:29:13,154
+Only you didn't know it.
+
+1061
+01:29:13,256 --> 01:29:16,987
+What is this?
+What are you talking about?
+
+1062
+01:29:19,129 --> 01:29:25,591
+<i>Nothing's gonna harm you
+Not while I'm around</i>
+
+1063
+01:29:27,070 --> 01:29:32,565
+<i>Nothing's gonna harm you
+No, sir, not while I'm around</i>
+
+1064
+01:29:32,676 --> 01:29:34,200
+What do you mean "someone bad"?
+
+1065
+01:29:34,311 --> 01:29:40,841
+<i>Demons are prowling everywhere
+nowadays</i>
+
+1066
+01:29:41,685 --> 01:29:47,954
+<i>I'll send them howling, I don't care
+I got ways</i>
+
+1067
+01:29:49,226 --> 01:29:52,161
+<i>Hush, darling, there's no need for this.</i>
+
+1068
+01:29:53,897 --> 01:30:00,268
+<i>No one's gonna hurt you
+No one's gonna dare</i>
+
+1069
+01:30:01,538 --> 01:30:07,170
+<i>Others can desert you
+Not to worry, whistle, I'll be there</i>
+
+1070
+01:30:08,011 --> 01:30:11,777
+<i>Demons will charm you
+With a smile</i>
+
+1071
+01:30:11,882 --> 01:30:17,684
+<i>For a while, but in time</i>
+
+1072
+01:30:17,788 --> 01:30:20,552
+<i>Nothing can harm you</i>
+
+1073
+01:30:21,792 --> 01:30:26,923
+<i>Not while I'm around</i>
+
+1074
+01:30:30,534 --> 01:30:32,195
+<i>That's nice, dear.</i>
+
+1075
+01:30:32,903 --> 01:30:37,533
+<i>Now, what is all this foolishness?
+What are you talking about?</i>
+
+1076
+01:30:38,275 --> 01:30:42,143
+Little things that
+I've been thinking about Mr. Todd.
+
+1077
+01:30:43,113 --> 01:30:48,107
+<i>Not to worry, not to worry
+I may not be smart, but I ain't dumb</i>
+
+1078
+01:30:49,386 --> 01:30:54,585
+<i>I can do it, put me to it
+Show me something I can overcome</i>
+
+1079
+01:30:55,859 --> 01:30:59,886
+<i>Not to worry, ma'am</i>
+
+1080
+01:31:02,699 --> 01:31:07,193
+<i>Being close and being clever
+Ain't like being true</i>
+
+1081
+01:31:08,271 --> 01:31:13,800
+<i>I don't need to, I won't never
+Hide a thing from you</i>
+
+1082
+01:31:13,910 --> 01:31:17,311
+<i>Like some</i>
+
+1083
+01:31:19,082 --> 01:31:23,280
+<i>Now, Toby, dear, haven't we
+had enough of this foolish chatter?</i>
+
+1084
+01:31:23,386 --> 01:31:24,717
+Here.
+
+1085
+01:31:24,821 --> 01:31:29,986
+How about I give you
+a nice shiny new penny
+
+1086
+01:31:30,093 --> 01:31:32,823
+and you go get us some toffees?
+
+1087
+01:31:35,165 --> 01:31:36,826
+That's Signor Pirelli's purse!
+
+1088
+01:31:36,933 --> 01:31:39,766
+<i>No, it's not. Just something Mr. T
+gave me for my birthday.</i>
+
+1089
+01:31:39,870 --> 01:31:41,770
+<i>That proves it! We gotta go, ma'am.</i>
+
+1090
+01:31:41,872 --> 01:31:43,999
+We gotta find the Beadle
+and get the law here!
+
+1091
+01:31:44,140 --> 01:31:46,973
+<i>Toby. Hush, lad,
+you're not going anywhere.</i>
+
+1092
+01:31:47,077 --> 01:31:52,071
+<i>You just sit here, nice and quiet,
+next to me. That's right, right.</i>
+
+1093
+01:31:54,985 --> 01:31:57,647
+How could you think
+such a thing of Mr. Todd?
+
+1094
+01:31:57,754 --> 01:32:00,279
+He's been so good to us.
+
+1095
+01:32:04,494 --> 01:32:11,024
+<i>Nothing's gonna harm you
+Not while I'm around</i>
+
+1096
+01:32:12,836 --> 01:32:18,331
+<i>Nothing's gonna harm you, darling
+Not while I'm around</i>
+
+1097
+01:32:19,609 --> 01:32:25,275
+<i>Demons'll charm you with a smile
+For a while</i>
+
+1098
+01:32:25,382 --> 01:32:28,510
+<i>But in time</i>
+
+1099
+01:32:28,618 --> 01:32:32,611
+<i>Nothing's gonna harm you</i>
+
+1100
+01:32:32,722 --> 01:32:38,354
+<i>Not while I'm around</i>
+
+1101
+01:32:42,132 --> 01:32:45,101
+Funny we should be having
+this little chat right now.
+
+1102
+01:32:45,201 --> 01:32:47,396
+'Cause I was just thinking...
+
+1103
+01:32:48,305 --> 01:32:50,933
+You know how you've always fancied
+coming into the bake house with me
+
+1104
+01:32:51,041 --> 01:32:54,169
+<i>- to help make the pies?
+- Yes, ma'am.</i>
+
+1105
+01:32:54,344 --> 01:32:58,678
+<i>Well, no time like the present, eh?</i>
+
+1106
+01:33:18,568 --> 01:33:22,004
+<i>I feel bad for you, going up
+and down all these stairs.</i>
+
+1107
+01:33:22,105 --> 01:33:25,905
+<i>- Well, that'll be your job now.
+- Yes, ma'am.</i>
+
+1108
+01:33:30,347 --> 01:33:32,611
+<i>Quite a stink, ain't there?</i>
+
+1109
+01:33:36,319 --> 01:33:37,650
+You see those grates?
+
+1110
+01:33:37,754 --> 01:33:40,552
+<i>They go right down to the sewers,
+and the smells come up.</i>
+
+1111
+01:33:40,657 --> 01:33:43,057
+Always a few rats gone home
+to Jesus down there.
+
+1112
+01:33:43,159 --> 01:33:47,061
+<i>Now, this'll be the bake oven.
+Three dozen at a time.</i>
+
+1113
+01:33:47,163 --> 01:33:49,927
+<i>Always be sure
+the door is closed properly, like this.</i>
+
+1114
+01:33:50,033 --> 01:33:53,628
+- Door's closed properly.
+- This is a grinder.
+
+1115
+01:33:54,237 --> 01:33:57,570
+Pop in the meat. Give it a good grind.
+
+1116
+01:34:00,877 --> 01:34:02,572
+Pops out there.
+
+1117
+01:34:04,481 --> 01:34:05,846
+You try.
+
+1118
+01:34:07,550 --> 01:34:08,778
+Good grind.
+
+1119
+01:34:10,420 --> 01:34:12,149
+Comes out there.
+
+1120
+01:34:14,157 --> 01:34:15,488
+That's my boy.
+
+1121
+01:34:15,592 --> 01:34:18,425
+<i>I'm just gonna pop upstairs,
+back in two shakes, all right?</i>
+
+1122
+01:34:18,528 --> 01:34:21,759
+You mind if I have a pie while I wait?
+
+1123
+01:34:21,865 --> 01:34:23,856
+<i>As many as you like, son.</i>
+
+1124
+01:34:36,679 --> 01:34:38,044
+<i>Yes, sir, I agree.</i>
+
+1125
+01:34:38,148 --> 01:34:39,615
+It would be to our mutual interest
+
+1126
+01:34:39,716 --> 01:34:43,652
+to come to some arrangement
+in regard to my poor children's hair.
+
+1127
+01:34:43,753 --> 01:34:45,186
+Brunettes.
+
+1128
+01:34:46,756 --> 01:34:48,246
+Redheads.
+
+1129
+01:34:50,960 --> 01:34:53,428
+I keep the blondes in here.
+
+1130
+01:34:53,530 --> 01:34:56,090
+<i>It was yellow hair
+you was looking for, sir?</i>
+
+1131
+01:34:56,199 --> 01:34:57,564
+Yes.
+
+1132
+01:35:28,631 --> 01:35:32,658
+<i>- That one there has the shade I need.
+- Come, child.</i>
+
+1133
+01:35:39,409 --> 01:35:42,901
+Smile for the gentleman
+and you shall have a sweetie.
+
+1134
+01:35:44,914 --> 01:35:47,178
+<i>Now, where shall I cut?</i>
+
+1135
+01:35:48,585 --> 01:35:51,952
+<i>Not another word, Mr. Fogg,
+or it will be your last.</i>
+
+1136
+01:35:53,890 --> 01:35:58,759
+<i>Now, I leave you
+to the mercy of your children.</i>
+
+1137
+01:36:09,172 --> 01:36:12,505
+<i>I got him locked in.
+But if he escapes, he'll go to the law.</i>
+
+1138
+01:36:12,609 --> 01:36:14,839
+<i>- Then he won't escape.
+- I don't know, Mr. Todd.</i>
+
+1139
+01:36:14,944 --> 01:36:17,208
+The Judge'll be here soon.
+
+1140
+01:36:18,781 --> 01:36:21,614
+<i>'Scuse me, sir. Gave me a fright.</i>
+
+1141
+01:36:21,718 --> 01:36:24,710
+<i>Not my intention, good madam.
+I assure you.</i>
+
+1142
+01:36:25,488 --> 01:36:28,480
+Though I am here on official business.
+
+1143
+01:36:29,159 --> 01:36:34,426
+<i>You see, there's been some complaints
+about the stink from your chimney.</i>
+
+1144
+01:36:34,531 --> 01:36:37,557
+They say at night
+it is something most foul.
+
+1145
+01:36:38,434 --> 01:36:41,528
+Health regulations
+and the general public welfare
+
+1146
+01:36:41,638 --> 01:36:43,538
+<i>naturally being my duty,</i>
+
+1147
+01:36:43,640 --> 01:36:46,768
+I'm afraid I'm gonna have to take a look
+
+1148
+01:36:49,646 --> 01:36:51,341
+at your bakehouse.
+
+1149
+01:36:52,749 --> 01:36:54,239
+<i>Of course, sir.</i>
+
+1150
+01:36:54,350 --> 01:36:58,013
+<i>But first, why don't you come upstairs?
+Let me pamper you.</i>
+
+1151
+01:36:59,789 --> 01:37:02,724
+Much as I do appreciate
+tonsorial doormen
+
+1152
+01:37:02,825 --> 01:37:05,293
+I really ought to see
+to my official obligations first.
+
+1153
+01:37:05,395 --> 01:37:07,386
+I completely understand.
+
+1154
+01:37:10,767 --> 01:37:15,329
+<i>If you'll indulge me, sir,
+what is that exotic aroma?</i>
+
+1155
+01:37:18,308 --> 01:37:21,334
+<i>Me secret, is a touch of ambergris.</i>
+
+1156
+01:37:22,712 --> 01:37:25,374
+Dare I offer you something
+a tad more appropriate
+
+1157
+01:37:25,481 --> 01:37:27,881
+for a gentleman of your standing?
+
+1158
+01:37:27,984 --> 01:37:30,919
+<i>The ladies will greatly appreciate it, sir.</i>
+
+1159
+01:37:33,790 --> 01:37:37,055
+You're the expert in these matters.
+
+1160
+01:37:37,160 --> 01:37:39,094
+Only take a moment.
+
+1161
+01:37:43,233 --> 01:37:45,724
+<i>Would you like a bit of bay rum, sir?</i>
+
+1162
+01:37:45,835 --> 01:37:48,099
+Bay rum is very bracing.
+
+1163
+01:38:53,936 --> 01:38:57,565
+<i>Let me out! Please, let me out!</i>
+
+1164
+01:39:00,343 --> 01:39:01,970
+Let me out!
+
+1165
+01:39:19,629 --> 01:39:20,789
+Toby?
+
+1166
+01:39:22,598 --> 01:39:24,156
+Where is he?
+
+1167
+01:39:28,271 --> 01:39:33,140
+<i>Toby, where are you, love?</i>
+
+1168
+01:39:35,244 --> 01:39:36,506
+Toby?
+
+1169
+01:39:40,483 --> 01:39:44,112
+<i>Nothing's gonna harm you</i>
+
+1170
+01:39:44,220 --> 01:39:47,451
+<i>Not while I'm around</i>
+
+1171
+01:39:47,557 --> 01:39:48,819
+Toby?
+
+1172
+01:39:50,660 --> 01:39:52,924
+<i>Where are you hiding?</i>
+
+1173
+01:39:54,464 --> 01:39:55,624
+Toby?
+
+1174
+01:39:56,833 --> 01:40:00,030
+<i>Nothing's gonna harm you, darling</i>
+
+1175
+01:40:02,538 --> 01:40:05,132
+<i>Not while I'm around</i>
+
+1176
+01:40:09,178 --> 01:40:10,440
+Toby?
+
+1177
+01:40:12,582 --> 01:40:14,015
+Mr. Todd!
+
+1178
+01:40:16,052 --> 01:40:17,644
+You wait for him here.
+
+1179
+01:40:17,754 --> 01:40:21,246
+I'll return with a coach
+in less than half an hour.
+
+1180
+01:40:21,357 --> 01:40:25,817
+Don't worry. No one'll recognize you.
+You're safe now.
+
+1181
+01:40:26,829 --> 01:40:31,664
+<i>Safe? So, we run away
+and then all our dreams come true?</i>
+
+1182
+01:40:32,769 --> 01:40:34,430
+I hope so.
+
+1183
+01:40:35,238 --> 01:40:38,435
+I've never had dreams. Only nightmares.
+
+1184
+01:40:39,442 --> 01:40:40,841
+<i>Johanna,</i>
+
+1185
+01:40:41,577 --> 01:40:45,035
+when we're free of this place
+all the ghosts will go away.
+
+1186
+01:40:45,148 --> 01:40:48,584
+<i>No, Anthony. They never go away.</i>
+
+1187
+01:40:49,652 --> 01:40:53,383
+I'll be right back to you.
+Half an hour and we'll be free.
+
+1188
+01:41:28,825 --> 01:41:31,453
+<i>Beadle! Beadle!</i>
+
+1189
+01:41:32,662 --> 01:41:37,429
+<i>No good hiding, I saw you</i>
+
+1190
+01:41:37,533 --> 01:41:42,493
+<i>Are you in there still, Beadle?
+Beadle?</i>
+
+1191
+01:41:42,605 --> 01:41:45,403
+<i>Beadle, dear Beadle?</i>
+
+1192
+01:41:47,543 --> 01:41:50,671
+<i>Beadle deedle deedle
+deedle deedle dumpling</i>
+
+1193
+01:41:50,780 --> 01:41:52,975
+<i>Beadle dumpling...</i>
+
+1194
+01:41:59,989 --> 01:42:03,015
+Who are you?
+What are you doing here?
+
+1195
+01:42:05,261 --> 01:42:06,751
+<i>Evil is here, sir.</i>
+
+1196
+01:42:06,863 --> 01:42:11,459
+<i>The stink of evil, from below, from her!
+Oh, she's the Devil's wife.</i>
+
+1197
+01:42:11,567 --> 01:42:15,560
+<i>Beware her, sir.
+She with no pity in her heart.</i>
+
+1198
+01:42:17,573 --> 01:42:20,440
+<i>Don't I know you, mister?</i>
+
+1199
+01:42:20,543 --> 01:42:22,010
+Mr. Todd?
+
+1200
+01:42:33,456 --> 01:42:34,980
+Where is she?
+
+1201
+01:42:36,425 --> 01:42:39,019
+<i>Below, Your Honor. With my neighbor.</i>
+
+1202
+01:42:40,029 --> 01:42:43,590
+Thank heavens
+the sailor did not molest her.
+
+1203
+01:42:43,699 --> 01:42:48,261
+<i>Thank heavens, too,
+she has seen the error of her ways.</i>
+
+1204
+01:42:49,138 --> 01:42:51,402
+<i>- She has?
+- Oh, yes.</i>
+
+1205
+01:42:52,275 --> 01:42:54,573
+Your lesson was well-learned.
+
+1206
+01:42:54,677 --> 01:42:58,773
+She speaks only of you.
+Longing for forgiveness.
+
+1207
+01:43:00,583 --> 01:43:02,744
+Then she shall have it.
+
+1208
+01:43:03,819 --> 01:43:07,186
+<i>- She'll be here soon, you say?
+- Yes.</i>
+
+1209
+01:43:07,790 --> 01:43:09,758
+<i>Excellent, my friend.</i>
+
+1210
+01:43:11,761 --> 01:43:13,422
+How about a shave?
+
+1211
+01:43:14,830 --> 01:43:16,764
+<i>Sit, sir. Sit.</i>
+
+1212
+01:43:19,769 --> 01:43:25,799
+<i>- Oh, pretty women
+- Pretty women, yes</i>
+
+1213
+01:43:25,908 --> 01:43:28,968
+<i>Johanna, Johanna</i>
+
+1214
+01:43:29,078 --> 01:43:32,673
+<i>Pretty women
+Pretty women are a wonder</i>
+
+1215
+01:43:32,782 --> 01:43:34,374
+<i>Pretty women!</i>
+
+1216
+01:43:34,483 --> 01:43:37,384
+<i>What we do for pretty women!</i>
+
+1217
+01:43:37,486 --> 01:43:41,149
+<i>- Blowing out their candles
+- Blowing out their candles</i>
+
+1218
+01:43:41,257 --> 01:43:44,852
+<i>- Or combing out their hair
+- Or combing out their hair</i>
+
+1219
+01:43:44,961 --> 01:43:46,656
+<i>Then they leave</i>
+
+1220
+01:43:46,762 --> 01:43:50,323
+<i>- Even when they leave
+- Even when they leave you and vanish</i>
+
+1221
+01:43:50,433 --> 01:43:53,334
+<i>- They still are there
+- They somehow can still remain</i>
+
+1222
+01:43:53,436 --> 01:43:58,373
+<i>- There with you, there
+- They're there</i>
+
+1223
+01:43:59,175 --> 01:44:02,770
+How seldom it is
+one meets a fellow spirit.
+
+1224
+01:44:02,878 --> 01:44:07,116
+<i>With fellow tastes in women, at least.</i>
+
+1225
+01:44:07,950 --> 01:44:09,417
+What's that?
+
+1226
+01:44:10,319 --> 01:44:13,220
+<i>The years, no doubt,
+have changed me, sir.</i>
+
+1227
+01:44:13,322 --> 01:44:16,223
+<i>But then, I suppose the face of a barber,</i>
+
+1228
+01:44:16,325 --> 01:44:20,386
+<i>the face of a prisoner,
+a dog, is not particularly memorable.</i>
+
+1229
+01:44:27,136 --> 01:44:29,570
+Benjamin Barker.
+
+1230
+01:44:29,905 --> 01:44:32,738
+Benjamin Barker!
+
+1231
+01:45:10,579 --> 01:45:14,037
+<i>Rest now, my friend</i>
+
+1232
+01:45:16,185 --> 01:45:20,417
+<i>Rest now forever</i>
+
+1233
+01:45:21,891 --> 01:45:27,158
+<i>Sleep now the untroubled</i>
+
+1234
+01:45:27,263 --> 01:45:32,826
+<i>Sleep of the angels</i>
+
+1235
+01:45:44,013 --> 01:45:46,106
+<i>Come for a shave, have you, lad?</i>
+
+1236
+01:45:46,215 --> 01:45:47,807
+<i>No, I...</i>
+
+1237
+01:45:51,687 --> 01:45:54,451
+Everyone needs a good shave.
+
+1238
+01:46:01,664 --> 01:46:03,723
+Forget my face.
+
+1239
+01:46:07,570 --> 01:46:10,801
+<i>Die! God in heaven, die!</i>
+
+1240
+01:46:24,653 --> 01:46:26,143
+You.
+
+1241
+01:46:35,097 --> 01:46:36,894
+Why did you scream?
+
+1242
+01:46:36,999 --> 01:46:39,968
+<i>He was clutching onto me dress,
+but he's finished now.</i>
+
+1243
+01:46:40,069 --> 01:46:42,503
+I'll take care of it. Open the door.
+
+1244
+01:46:42,605 --> 01:46:44,903
+<i>Open the door, I said.</i>
+
+1245
+01:47:39,094 --> 01:47:41,756
+"Don't I know you?" she said.
+
+1246
+01:47:51,507 --> 01:47:53,338
+You knew she lived.
+
+1247
+01:47:55,311 --> 01:47:57,575
+I was only thinking of you.
+
+1248
+01:48:01,183 --> 01:48:03,151
+You lied to me.
+
+1249
+01:48:03,252 --> 01:48:06,813
+<i>No, no, not lied at all
+No, I never lied</i>
+
+1250
+01:48:06,922 --> 01:48:08,583
+<i>- Lucy...
+- Said she took a poison</i>
+
+1251
+01:48:08,691 --> 01:48:10,591
+<i>she did, never said that she died</i>
+
+1252
+01:48:10,693 --> 01:48:12,888
+<i>- I've come home again
+- Poor thing, she lived</i>
+
+1253
+01:48:12,995 --> 01:48:14,257
+<i>But it left her weak in the head</i>
+
+1254
+01:48:14,363 --> 01:48:16,831
+<i>All she did for months
+was just lie there in bed</i>
+
+1255
+01:48:16,932 --> 01:48:18,297
+<i>Should've been in hospital</i>
+
+1256
+01:48:18,400 --> 01:48:21,130
+<i>Wound up in Bedlam instead
+Poor thing!</i>
+
+1257
+01:48:21,237 --> 01:48:23,467
+<i>- Better you should think she was dead
+- Oh, my God!</i>
+
+1258
+01:48:23,572 --> 01:48:26,439
+<i>Yes, I lied 'cause I love you!</i>
+
+1259
+01:48:26,542 --> 01:48:29,272
+<i>- I'd be twice the wife she was!
+- Lucy...</i>
+
+1260
+01:48:29,378 --> 01:48:31,676
+<i>- I love you!
+- What have I done?</i>
+
+1261
+01:48:31,780 --> 01:48:34,977
+<i>Could that thing have
+cared for you like me?</i>
+
+1262
+01:48:35,084 --> 01:48:38,144
+<i>Mrs. Lovett, you're a bloody wonder
+Eminently practical</i>
+
+1263
+01:48:38,254 --> 01:48:41,018
+<i>And yet appropriate as always
+As you've said repeatedly</i>
+
+1264
+01:48:41,123 --> 01:48:42,784
+<i>There's little point in dwelling
+on the past</i>
+
+1265
+01:48:42,892 --> 01:48:43,859
+<i>- Now, come here, my love...
+- Do you mean it?</i>
+
+1266
+01:48:43,959 --> 01:48:45,187
+<i>Everything I did, I swear, I thought</i>
+
+1267
+01:48:45,294 --> 01:48:46,522
+<i>- was only for the best
+- Not a thing to fear</i>
+
+1268
+01:48:46,662 --> 01:48:50,189
+<i>- my love, what's dead Is dead
+- Can we still be married?</i>
+
+1269
+01:48:50,299 --> 01:48:53,268
+<i>The history of the world, my pet</i>
+
+1270
+01:48:53,369 --> 01:48:56,497
+<i>Oh, Mr. Todd, oh, Mr. Todd
+Leave it to me</i>
+
+1271
+01:48:56,605 --> 01:48:59,870
+<i>Is learn forgiveness and try to forget</i>
+
+1272
+01:48:59,975 --> 01:49:01,636
+<i>By the sea, Mr. Todd
+We'll be comfy-cozy</i>
+
+1273
+01:49:01,744 --> 01:49:03,405
+<i>By the sea, Mr. Todd
+Where there's no one nosy</i>
+
+1274
+01:49:03,512 --> 01:49:08,779
+<i>And life is for the alive, my dear
+So let's keep living it</i>
+
+1275
+01:49:08,884 --> 01:49:13,685
+<i>- Just keep living it, really living it!
+- Just keep living it, really living it!</i>
+
+1276
+01:50:00,169 --> 01:50:04,230
+<i>There was a barber and his wife</i>
+
+1277
+01:50:05,607 --> 01:50:10,010
+<i>And she was beautiful</i>
+
+1278
+01:50:12,581 --> 01:50:16,881
+<i>A foolish barber and his wife</i>
+
+1279
+01:50:17,786 --> 01:50:22,189
+<i>She was his reason and his life</i>
+
+1280
+01:50:22,992 --> 01:50:27,395
+<i>And she was beautiful</i>
+
+1281
+01:50:28,163 --> 01:50:32,725
+<i>And she was virtuous</i>
+
+1282
+01:50:34,970 --> 01:50:38,201
+<i>And he was...</i>
+
+1283
+01:50:38,165 --> 01:50:39,165
+Subtitles extracted by LeapinLar
