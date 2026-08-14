@@ -49,12 +49,12 @@ download_and_extract() {
 basics_out_url="https://datasets.imdbws.com/title.basics.tsv.gz"
 basics_out_tsv="$PWD/data/raw/title.basics.tsv"
 basics_out_gz="$PWD/data/raw/title.basics.tsv.gz"
-mkdir -p dirname "$basics_out_gz"
+mkdir -p "$(dirname "$basics_out_gz")"
 
 ratings_out_url="https://datasets.imdbws.com/title.ratings.tsv.gz"
 ratings_out_tsv="$PWD/data/raw/title.ratings.tsv"
 ratings_out_gz="$PWD/data/raw/title.ratings.tsv.gz"
-mkdir -p dirname "$ratings_out_gz"
+mkdir -p "$(dirname "$ratings_out_gz")"
 
 download_and_extract "$basics_out_url" "$basics_out_gz" "$basics_out_tsv"
 download_and_extract "$ratings_out_url" "$ratings_out_gz" "$ratings_out_tsv"
