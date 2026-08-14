@@ -1,18 +1,59 @@
-import sqlite3
+from abc import ABC, abstractmethod
 
-from plot_shift.data import (
-    MovieMetaSqliteRepository,
-    PlotShiftDB,
-    SubtitleMetaRepositorySqliteRepository,
-)
+from plot_shift.data.models import MovieMeta, Subtitle, SubtitleMeta
 
 
-class PlotShiftSqliteDB(PlotShiftDB):
-    def __init__(self, dbpath: str):
-        self.db_conn = sqlite3.connect(dbpath)
-        self.movies_meta = MovieMetaSqliteRepository(self.db_conn)
-        self.subtitle_meta = SubtitleMetaRepositorySqliteRepository(self.db_conn)
-        self.subtitles = SubtitleMetaRepositorySqliteRepository(self.db_conn)
+class PlotShiftDB(ABC):
+    """Abstract contract for the PlotShift database facade."""
 
+    # INFO: All Repo
+    movies_meta: MovieMetaRepository
+    subtitle_meta: SubtitleMetaRepository
+    subtitles: SubtitleRepository
+
+    @abstractmethod
     def close(self) -> None:
-        self.db_conn.close()
+        """Release underlying database resources."""
+        ...
+
+    def __enter__(self) -> PlotShiftDB:
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb) -> None:
+        self.close()
+
+
+class MovieMetaRepository(ABC):
+    """Abstract contract for movie metadata persistence."""
+
+    @abstractmethod
+    def insert_many(self, movies_meta_list: list[MovieMeta]) -> None: ...
+
+    @abstractmethod
+    def get_all(self) -> list[MovieMeta]: ...
+
+
+class SubtitleRepository(ABC):
+    """Abstract contract for subtitle cue persistence."""
+
+    @abstractmethod
+    def insert_one(self, entry: Subtitle) -> int | None: ...
+
+    @abstractmethod
+    def insert_many(self, entries: list[Subtitle]) -> None: ...
+
+    @abstractmethod
+    def get_by_id(self, entry_id: int) -> Subtitle | None: ...
+
+    @abstractmethod
+    def get_by_imdb_id(self, imdb_id_int: int) -> list[Subtitle]: ...
+
+
+class SubtitleMetaRepository(ABC):
+    """Abstract contract for downloaded subtitle persistence."""
+
+    @abstractmethod
+    def insert_one(self, subtitle: SubtitleMeta) -> int | None: ...
+
+    @abstractmethod
+    def get_all(self) -> list[SubtitleMeta]: ...

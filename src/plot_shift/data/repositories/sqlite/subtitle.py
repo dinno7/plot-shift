@@ -1,31 +1,13 @@
 import sqlite3
 from datetime import timedelta
 
-from plot_shift.data import Subtitle
-from plot_shift.data.repositories.repo import SubtitleRepository
+from plot_shift.data.models import Subtitle
+from plot_shift.data.repository import SubtitleRepository
 
 
 class SubtitleSqliteRepository(SubtitleRepository):
     def __init__(self, conn: sqlite3.Connection):
         self.db_conn: sqlite3.Connection = conn
-
-    # def init_table(self) -> None:
-    #     self.db_conn.execute("""
-    #         CREATE TABLE IF NOT EXISTS subtitles (
-    #             id INTEGER PRIMARY KEY AUTOINCREMENT,
-    #             index INTEGER NOT NULL,
-    #             imdb_id_int INTEGER NOT NULL,
-    #             start_seconds REAL NOT NULL,
-    #             end_seconds REAL NOT NULL,
-    #             text_raw TEXT NOT NULL,
-    #             text TEXT NOT NULL
-    #         );
-    #     """)
-    #     # Index for fast lookup by imdb_id_int
-    #     self.db_conn.execute("""
-    #         CREATE INDEX IF NOT EXISTS idx_subtitles_imdb
-    #         ON subtitles(imdb_id_int);
-    #     """)
 
     def _row_to_entry(self, row: tuple) -> Subtitle:
         """Convert a database row to a Subtitle dataclass."""
@@ -42,7 +24,7 @@ class SubtitleSqliteRepository(SubtitleRepository):
         cursor = self.db_conn.cursor()
         cursor.execute(
             """
-            INSERT INTO subtitles (index, imdb_id_int, start_seconds, end_seconds, text_raw, text)
+            INSERT INTO subtitles (idx, imdb_id_int, start_seconds, end_seconds, text_raw, text)
             VALUES (?, ?, ?, ?, ?, ?)
             """,
             (
@@ -74,7 +56,7 @@ class SubtitleSqliteRepository(SubtitleRepository):
         ]
         cursor.executemany(
             """
-            INSERT INTO subtitles (index, imdb_id_int, start_seconds, end_seconds, text_raw, text)
+            INSERT INTO subtitles (idx, imdb_id_int, start_seconds, end_seconds, text_raw, text)
             VALUES (?, ?, ?, ?, ?, ?)
             """,
             data,
@@ -90,7 +72,7 @@ class SubtitleSqliteRepository(SubtitleRepository):
 
     def get_by_imdb_id(self, imdb_id_int: int) -> list[Subtitle]:
         cursor = self.db_conn.execute(
-            "SELECT * FROM subtitles WHERE imdb_id_int = ? ORDER BY index ASC",
+            "SELECT * FROM subtitles WHERE imdb_id_int = ? ORDER BY idx ASC",
             (imdb_id_int,),
         )
         rows = cursor.fetchall()

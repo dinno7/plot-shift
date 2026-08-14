@@ -1,3 +1,9 @@
+import sqlite3
+
+from plot_shift.data.models import MovieMeta
+from plot_shift.data.repository import MovieMetaRepository
+
+
 class MovieMetaSqliteRepository(MovieMetaRepository):
     def __init__(self, conn: sqlite3.Connection):
         self.db_conn = conn

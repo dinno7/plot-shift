@@ -1,18 +1,18 @@
 import sqlite3
 from datetime import datetime
 
-from plot_shift.data import SubtitleMeta
-from plot_shift.data.repositories.repo import SubtitleMetaRepository
+from plot_shift.data.models import SubtitleMeta
+from plot_shift.data.repository import SubtitleMetaRepository
 
 
 class SubtitleMetaRepositorySqliteRepository(SubtitleMetaRepository):
     _INSERT_QUERY = """
-        INSERT INTO downloaded_subtitles
+        INSERT INTO subtitles_meta
         (imdb_id_int, file_id, file_name_on_disk, subtitle_id,
          download_count, new_download_count, language, upload_date, url, dump_json)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     """
-    _SELECT_ALL_QUERY = "SELECT * FROM downloaded_subtitles"
+    _SELECT_ALL_QUERY = "SELECT * FROM subtitles_meta"
 
     def __init__(self, conn: sqlite3.Connection):
         self.db_conn = conn
