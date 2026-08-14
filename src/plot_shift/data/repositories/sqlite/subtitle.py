@@ -24,8 +24,8 @@ class SubtitleSqliteRepository(SubtitleRepository):
         cursor = self.db_conn.cursor()
         cursor.execute(
             """
-            INSERT INTO subtitles (idx, imdb_id_int, start_seconds, end_seconds, text_raw, text)
-            VALUES (?, ?, ?, ?, ?, ?)
+            INSERT OR IGNORE INTO subtitles (idx, imdb_id_int, start_seconds, end_seconds, text_raw)
+            VALUES (?, ?, ?, ?, ?)
             """,
             (
                 entry.index,
@@ -33,7 +33,6 @@ class SubtitleSqliteRepository(SubtitleRepository):
                 entry.start.total_seconds(),
                 entry.end.total_seconds(),
                 entry.text_raw,
-                entry.text,
             ),
         )
         last_id = cursor.lastrowid
@@ -50,14 +49,13 @@ class SubtitleSqliteRepository(SubtitleRepository):
                 e.start.total_seconds(),
                 e.end.total_seconds(),
                 e.text_raw,
-                e.text,
             )
             for e in entries
         ]
         cursor.executemany(
             """
-            INSERT INTO subtitles (idx, imdb_id_int, start_seconds, end_seconds, text_raw, text)
-            VALUES (?, ?, ?, ?, ?, ?)
+            INSERT INTO subtitles (idx, imdb_id_int, start_seconds, end_seconds, text_raw)
+            VALUES (?, ?, ?, ?, ?)
             """,
             data,
         )
