@@ -9,3 +9,5 @@ wheels/
 # Virtual environments
 .venv
 /.env
+/data/raw/title.basics.tsv
+/data/raw/title.ratings.tsv
