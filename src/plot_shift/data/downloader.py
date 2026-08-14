@@ -3,9 +3,9 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 from opensubtitlescom import OpenSubtitles
-from opensubtitlescom.responses import *
+from opensubtitlescom.responses import Subtitle
 
-from plot_shift.data.repository import DownloadedSubtitle, PlotShiftSqliteDB
+from plot_shift.data.models.subtitle_meta import SubtitleMeta
 
 
 class SubtitleDownloader:
@@ -38,7 +38,7 @@ class SubtitleDownloader:
 
     def download_with_file_id(self, file_id: int, file_path: str):
         sub_content = self.opensub.download(
-            file_id,
+            str(file_id),
         )
         out_file = file_path
         with open(
@@ -106,7 +106,7 @@ if __name__ == "__main__":
         print(f"🔃 Start Downloading subtitle with id {m.imdb_id_int}")
 
         sub, filepath = sub_downloader.download_with_imdb_id(m.imdb_id_int)
-        new_sub = DownloadedSubtitle(
+        new_sub = SubtitleMeta(
             file_id=sub.file_id,
             download_count=sub.download_count,
             imdb_id_int=sub.imdb_id,
