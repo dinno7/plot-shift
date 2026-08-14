@@ -1,6 +1,5 @@
 import os
 from pathlib import Path
-from typing import List, Tuple, Union
 
 from dotenv import load_dotenv
 from opensubtitlescom import OpenSubtitles
@@ -22,7 +21,7 @@ class SubtitleDownloader:
         self.opensub.login(username=username, password=password)
         self.out_dir = out_dir
 
-    def best_sub_with_imdb_id(self, id: str) -> Subtitle:
+    def best_sub_with_imdb_id(self, id: int) -> Subtitle:
         subs = self.opensub.search(
             imdb_id=id,
             languages="en",
@@ -48,19 +47,19 @@ class SubtitleDownloader:
         ) as subfile:
             subfile.write(sub_content)
 
-    def download_with_imdb_id(self, id: int) -> Tuple[Subtitle, str]:
-        item: Union[Subtitle, None] = None
+    def download_with_imdb_id(self, id: int) -> tuple[Subtitle, str]:
+        item: Subtitle | None = None
         try:
             item = self.best_sub_with_imdb_id(id)
         except Exception as err:
             raise err
 
-        out_file = Path(self.out_dir) / f"{item.imdb_id}_{item.file_id}.srt"
+        out_file = str(Path(self.out_dir) / f"{item.imdb_id}_{item.file_id}.srt")
         self.download_with_file_id(item.file_id, out_file)
 
         return (item, out_file)
 
-    def download_with_imdb_ids(self, ids: List[int]):
+    def download_with_imdb_ids(self, ids: list[int]):
         for id in ids:
             try:
                 self.download_with_imdb_id(id)
@@ -98,7 +97,7 @@ if __name__ == "__main__":
     repo = PlotShiftSqliteDB("./data/proceeded/data.db")
 
     metas = repo.movies_meta.get_all()
-    downloaded_subs = repo.downloaded_subtitles.get_all()
+    downloaded_subs = repo.subtitle_meta.get_all()
     downloaded_ids = {d.imdb_id_int for d in downloaded_subs}
     remained = [m for m in metas if m.imdb_id_int not in downloaded_ids]
 
@@ -119,7 +118,7 @@ if __name__ == "__main__":
             url=sub.url,
             dump_json=sub.to_json(),
         )
-        repo.downloaded_subtitles.insert_one(new_sub)
+        repo.subtitle_meta.insert_one(new_sub)
 
         print(
             f"✅ Subtitle with id {sub.imdb_id} and name {sub.file_name} downloaded from {sub.url} to {filepath}"
