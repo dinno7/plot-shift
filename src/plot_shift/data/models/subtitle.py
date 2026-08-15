@@ -1,5 +1,5 @@
 import re
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from datetime import timedelta
 
 
@@ -12,15 +12,16 @@ class Subtitle:
     start: timedelta
     end: timedelta
     text_raw: str
-    text: str = field(init=False)
     id: int | None
-
-    def __post_init__(self):
-        self.text = self._clean(self.text_raw)
 
     @property
     def duration(self) -> timedelta:
         return self.end - self.start
+
+    @property
+    def text(self) -> str:
+        """The text property."""
+        return self._clean(self.text_raw)
 
     @staticmethod
     def _clean(raw: str) -> str:
