@@ -54,7 +54,7 @@ class SubtitleSqliteRepository(SubtitleRepository):
         ]
         cursor.executemany(
             """
-            INSERT INTO subtitles (idx, imdb_id_int, start_seconds, end_seconds, text_raw)
+            INSERT OR IGNORE INTO subtitles (idx, imdb_id_int, start_seconds, end_seconds, text_raw)
             VALUES (?, ?, ?, ?, ?)
             """,
             data,
