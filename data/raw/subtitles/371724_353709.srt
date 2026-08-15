@@ -1,0 +1,6187 @@
+1
+00:00:29,246 --> 00:00:32,239
+<i>It's an important and popular fact</i>
+
+2
+00:00:32,327 --> 00:00:36,038
+<i>that things are not always
+what they seem.</i>
+
+3
+00:00:36,129 --> 00:00:39,566
+<i>For instance, on the planet Earth,
+man had always assumed</i>
+
+4
+00:00:39,650 --> 00:00:43,326
+<i>that he was the most intelligent
+species occupying the planet,</i>
+
+5
+00:00:43,411 --> 00:00:45,972
+<i>instead of the third most intelligent.</i>
+
+6
+00:00:46,053 --> 00:00:50,366
+<i>The second most intelligent creatures
+were dolphins, who, curiously enough,</i>
+
+7
+00:00:50,454 --> 00:00:54,131
+<i>had long known of the impending
+destruction of the planet Earth.</i>
+
+8
+00:00:54,216 --> 00:00:56,526
+<i>They'd made many attempts
+to alert mankind,</i>
+
+9
+00:00:56,617 --> 00:00:59,496
+<i>but most of their communications
+were misinterpreted</i>
+
+10
+00:00:59,578 --> 00:01:02,935
+<i>as amusing attempts to punch footballs
+or whistle for titbits.</i>
+
+11
+00:01:03,019 --> 00:01:07,333
+<i>So they eventually decided they would
+leave Earth by their own means.</i>
+
+12
+00:01:07,421 --> 00:01:10,459
+<i>The last ever dolphin message
+was misinterpreted</i>
+
+13
+00:01:10,542 --> 00:01:13,660
+<i>as a sophisticated attempt
+to do a backward somersault</i>
+
+14
+00:01:13,783 --> 00:01:16,662
+<i>through a hoop,
+whistling The Star-Spangled Banner.</i>
+
+15
+00:01:16,784 --> 00:01:18,423
+<i>In fact, the message was this:</i>
+
+16
+00:01:18,545 --> 00:01:21,299
+<i>"So long and thanks for all the fish."</i>
+
+17
+00:01:46,876 --> 00:01:48,833
+<i>So long and thanks for all the fish</i>
+
+18
+00:01:48,917 --> 00:01:50,874
+<i>So sad that it should come to this</i>
+
+19
+00:01:50,998 --> 00:01:54,912
+<i>We tried to warn you all but, oh, dear</i>
+
+20
+00:01:55,039 --> 00:01:56,996
+<i>You may not share our intellect</i>
+
+21
+00:01:57,080 --> 00:01:59,037
+<i>Which might explain your disrespect</i>
+
+22
+00:01:59,121 --> 00:02:03,081
+<i>For all the natural wonders
+that grow around you</i>
+
+23
+00:02:03,162 --> 00:02:07,282
+<i>So long, so long and thanks
+for all the fish</i>
+
+24
+00:02:09,405 --> 00:02:11,203
+<i>Your world's about to be destroyed</i>
+
+25
+00:02:11,286 --> 00:02:13,322
+<i>There's no point getting all annoyed</i>
+
+26
+00:02:13,406 --> 00:02:17,720
+<i>Lie back and let the planet
+dissolve around you</i>
+
+27
+00:02:17,808 --> 00:02:19,606
+<i>Despite those nets of tuna fleets</i>
+
+28
+00:02:19,689 --> 00:02:21,601
+<i>We thought that most of you were sweet</i>
+
+29
+00:02:21,690 --> 00:02:25,604
+<i>Especially tiny tots
+and your pregnant women</i>
+
+30
+00:02:25,691 --> 00:02:27,808
+<i>So long, so long,
+so long, so long, so long</i>
+
+31
+00:02:29,733 --> 00:02:33,852
+<i>So long, so long
+and thanks for all the fish</i>
+
+32
+00:02:36,095 --> 00:02:40,170
+<i>If I had just one last wish</i>
+
+33
+00:02:40,257 --> 00:02:44,137
+<i>I would like a tasty fish</i>
+
+34
+00:02:44,218 --> 00:02:48,338
+<i>If we could just change one thing</i>
+
+35
+00:02:48,420 --> 00:02:52,460
+<i>We would all have lungs to sing</i>
+
+36
+00:02:52,582 --> 00:02:56,462
+<i>Come one and all</i>
+
+37
+00:02:56,583 --> 00:03:00,658
+<i>Man and mammal</i>
+
+38
+00:03:00,745 --> 00:03:03,818
+<i>Side by side</i>
+
+39
+00:03:03,906 --> 00:03:09,858
+<i>In life's great gene pool</i>
+
+40
+00:03:27,995 --> 00:03:30,066
+<i>So long, so long,
+so long, so long, so long</i>
+
+41
+00:03:32,037 --> 00:03:37,989
+<i>So long, so long
+and thanks for all the fish</i>
+
+42
+00:03:50,924 --> 00:03:55,124
+<i>The extraordinary story
+of The Hitchhiker's Guide to the Galaxy</i>
+
+43
+00:03:55,206 --> 00:03:56,798
+<i>begins very simply.</i>
+
+44
+00:03:56,886 --> 00:03:59,641
+<i>It begins with a man.</i>
+
+45
+00:04:08,331 --> 00:04:11,847
+<i>An Earthman, to be precise,
+who no more knows his destiny,</i>
+
+46
+00:04:11,932 --> 00:04:15,244
+<i>than a tea leaf knows the history
+of the East India Company.</i>
+
+47
+00:04:17,494 --> 00:04:20,168
+<i>His name is Arthur Dent.</i>
+
+48
+00:04:20,256 --> 00:04:23,408
+<i>He is a five-foot-eight-inch-tall
+ape descendant,</i>
+
+49
+00:04:23,497 --> 00:04:27,332
+<i>and someone is trying to drive
+a bypass through his house.</i>
+
+50
+00:04:32,420 --> 00:04:34,332
+What do I want you to do about it?
+
+51
+00:04:34,421 --> 00:04:38,416
+Find him and tell him I'm currently
+lying flat on my back in front of...
+
+52
+00:04:38,503 --> 00:04:39,731
+Fine, I'll hold.
+
+53
+00:04:39,823 --> 00:04:42,384
+You can't lie in front
+of the bulldozers for ever.
+
+54
+00:04:42,464 --> 00:04:44,535
+I'm game. We'll see who rusts first.
+
+55
+00:04:44,625 --> 00:04:47,823
+This bypass has got to be built
+and it is going to be built.
+
+56
+00:04:47,906 --> 00:04:51,742
+- Why has it got to be built?
+- It's a bypass.
+
+57
+00:04:51,868 --> 00:04:56,226
+You've got to build bypasses. Besides,
+you should've protested months ago.
+
+58
+00:04:56,309 --> 00:04:59,508
+The plans have been on display
+at the planning office for a year.
+
+59
+00:04:59,591 --> 00:05:02,152
+On display?
+I had to go down to a cellar.
+
+60
+00:05:02,272 --> 00:05:07,394
+Mr Dent, have you any idea how much
+damage this bulldozer would suffer
+
+61
+00:05:07,474 --> 00:05:09,830
+if I just let it roll straight over you?
+
+62
+00:05:10,995 --> 00:05:13,829
+- How much?
+- None at all.
+
+63
+00:05:13,916 --> 00:05:16,636
+<i>By a strange coincidence,
+"none at all"</i>
+
+64
+00:05:16,717 --> 00:05:20,268
+<i>is exactly how much suspicion
+ape-descendant Arthur Dent had</i>
+
+65
+00:05:20,359 --> 00:05:22,271
+<i>that one of his closest friends</i>
+
+66
+00:05:22,360 --> 00:05:25,876
+<i>was not descended from an ape,
+but was, in fact, from a small planet</i>
+
+67
+00:05:25,961 --> 00:05:28,954
+<i>somewhere in the vicinity
+of Betelgeuse.</i>
+
+68
+00:05:29,722 --> 00:05:32,112
+Arthur.
+
+69
+00:05:32,203 --> 00:05:33,876
+- Ford.
+- Yes?
+
+70
+00:05:33,964 --> 00:05:35,398
+Here.
+
+71
+00:05:35,485 --> 00:05:36,759
+There you are.
+
+72
+00:05:36,845 --> 00:05:38,598
+Eat, drink. We gotta talk.
+
+73
+00:05:38,686 --> 00:05:41,804
+Now's not the best time.
+They're going to demolish my home.
+
+74
+00:05:43,288 --> 00:05:46,122
+You already know? How?
+
+75
+00:05:46,209 --> 00:05:48,041
+What do you...?
+
+76
+00:05:49,730 --> 00:05:52,689
+Oh, they, they? When you say
+"they" you mean they? Got it.
+
+77
+00:05:52,771 --> 00:05:57,244
+Listen. I got somethin' important
+I gotta tell you. Right now.
+
+78
+00:05:57,333 --> 00:05:59,723
+Well, what about my house?
+
+79
+00:06:04,056 --> 00:06:09,337
+Workers of the Earth, I bring
+good tidings of peanuts and beer.
+
+80
+00:06:19,462 --> 00:06:21,214
+Good. Let's go to the pub.
+
+81
+00:06:21,302 --> 00:06:24,182
+They won't demolish it
+until they've finished the beers.
+
+82
+00:06:24,264 --> 00:06:26,539
+- Can we trust 'em?
+- To the end of the Earth.
+
+83
+00:06:26,664 --> 00:06:28,940
+- How far's that?
+- About 12 minutes away.
+
+84
+00:06:30,106 --> 00:06:33,895
+Barman, six pints of bitter and quickly.
+The world's about to end.
+
+85
+00:06:33,987 --> 00:06:35,819
+Six pints coming up.
+
+86
+00:06:35,908 --> 00:06:39,424
+Keep the change.
+You got about ten minutes to spend it.
+
+87
+00:06:39,549 --> 00:06:42,748
+Three pints each? At lunchtime?
+
+88
+00:06:49,553 --> 00:06:51,510
+Sorry.
+
+89
+00:06:51,594 --> 00:06:53,825
+Time is an illusion.
+
+90
+00:06:53,915 --> 00:06:55,986
+Lunchtime, doubly so.
+
+91
+00:06:56,076 --> 00:06:59,752
+And eat those peanuts
+because you'll need the salt.
+
+92
+00:06:59,837 --> 00:07:02,398
+- Look, what is going on, Ford?
+- Arthur...
+
+93
+00:07:04,439 --> 00:07:07,750
+What if I told you
+I really wasn't from Guildford?
+
+94
+00:07:07,840 --> 00:07:12,074
+I was from a small planet
+somewhere in the vicinity of Betelgeuse?
+
+95
+00:07:12,202 --> 00:07:15,559
+- Is it something you're likely to say?
+- Remember when we met?
+
+96
+00:07:22,286 --> 00:07:23,435
+Out of the way.
+
+97
+00:07:26,888 --> 00:07:27,877
+Hi.
+
+98
+00:07:27,968 --> 00:07:30,881
+Wasn't it strange I was trying
+to shake hands with a car?
+
+99
+00:07:30,969 --> 00:07:32,449
+I assumed you were drunk.
+
+100
+00:07:32,530 --> 00:07:36,445
+I thought cars were the dominant
+life form. I was introducing myself.
+
+101
+00:07:36,572 --> 00:07:40,771
+You saved my life.
+And now I'm saving yours. Please drink.
+
+102
+00:07:40,853 --> 00:07:44,051
+It must be Thursday. I could never
+get the hang of Thursdays.
+
+103
+00:07:44,135 --> 00:07:47,367
+- If this is about your house...
+- No, it's not about the house.
+
+104
+00:07:51,217 --> 00:07:53,254
+- Who's he?
+- She.
+
+105
+00:07:53,338 --> 00:07:56,809
+Tricia McMillan.
+We met at a fancy-dress party.
+
+106
+00:07:58,180 --> 00:08:00,092
+<i>I hate those kind of parties.</i>
+
+107
+00:08:00,181 --> 00:08:03,060
+<i>I'd rather have stayed at home
+and ironed my hankies.</i>
+
+108
+00:08:03,142 --> 00:08:05,213
+<i>- But there I was.
+- Who are you?</i>
+
+109
+00:08:05,303 --> 00:08:06,975
+<i>And there she was.</i>
+
+110
+00:08:07,063 --> 00:08:11,581
+- Dent. Arthur Dent.
+- No. I mean, who are you?
+
+111
+00:08:11,665 --> 00:08:14,783
+Oh, the costume? Right.
+"Livingstone, I presume."
+
+112
+00:08:15,907 --> 00:08:20,060
+Yeah, it's not as clever as Darwin,
+but the best I could do at short notice.
+
+113
+00:08:20,148 --> 00:08:22,105
+You're the first to get that right.
+
+114
+00:08:22,189 --> 00:08:24,863
+- Really?
+- Yes. Everyone calls me Santa.
+
+115
+00:08:24,950 --> 00:08:27,340
+- Right.
+- I thought the beagle was a giveaway.
+
+116
+00:08:27,471 --> 00:08:29,030
+So did I.
+
+117
+00:08:29,112 --> 00:08:31,422
+People at these parties
+are drunken idiots.
+
+118
+00:08:31,513 --> 00:08:32,832
+What?
+
+119
+00:08:32,913 --> 00:08:35,474
+All these people are idiots. God.
+
+120
+00:08:39,116 --> 00:08:40,754
+That's awkward.
+
+121
+00:08:40,836 --> 00:08:42,555
+Tell me.
+
+122
+00:08:44,398 --> 00:08:47,038
+She was amazing though, Ford.
+
+123
+00:08:47,159 --> 00:08:49,993
+<i>Beautiful, witty, mad as a balloon.</i>
+
+124
+00:08:50,080 --> 00:08:54,519
+Without the beard,
+you look at least 80 years younger.
+
+125
+00:08:54,642 --> 00:08:57,282
+Maybe I'm de-evolving.
+
+126
+00:08:59,964 --> 00:09:05,404
+Well, I should tell you that I do not
+date single-celled organisms, OK?
+
+127
+00:09:08,007 --> 00:09:10,124
+Let's go somewhere.
+
+128
+00:09:10,208 --> 00:09:14,168
+Yeah. Definitely.
+Where do you have in mind?
+
+129
+00:09:14,249 --> 00:09:18,449
+- Madagascar.
+- Is that that new club on Dean Street?
+
+130
+00:09:18,531 --> 00:09:21,330
+No, it's a country
+off the coast of Africa.
+
+131
+00:09:21,412 --> 00:09:24,291
+That Madagascar?
+Why are we waiting here?
+
+132
+00:09:24,854 --> 00:09:27,243
+Wait a sec.
+
+133
+00:09:27,334 --> 00:09:28,848
+Go.
+
+134
+00:09:31,856 --> 00:09:36,170
+God, you're serious.
+I can't go to Madagascar.
+
+135
+00:09:36,258 --> 00:09:39,171
+- Why not?
+- Because, I just, you know...
+
+136
+00:09:39,259 --> 00:09:40,579
+- You're serious?
+- Yeah.
+
+137
+00:09:40,660 --> 00:09:44,131
+I want to go somewhere I've never been
+and I'd like to go with you,
+
+138
+00:09:44,221 --> 00:09:46,861
+so what do you say, Dr Livingstone?
+
+139
+00:09:47,942 --> 00:09:52,540
+I say that's
+an extraordinary proposition.
+
+140
+00:09:52,624 --> 00:09:55,503
+I can't go. I mean, I've got a job.
+
+141
+00:09:55,585 --> 00:09:57,736
+Quit. Get a new one
+when you come back.
+
+142
+00:09:57,866 --> 00:09:59,778
+I don't even know your real name.
+
+143
+00:09:59,867 --> 00:10:03,065
+- Tricia McMillan.
+- Well, Tricia McMillan.
+
+144
+00:10:03,989 --> 00:10:06,424
+I have a proposition for you.
+
+145
+00:10:06,550 --> 00:10:13,151
+Why don't we go somewhere
+a little closer first, say Cornwall,
+
+146
+00:10:13,232 --> 00:10:16,943
+and we'll see how it goes.
+
+147
+00:10:17,034 --> 00:10:21,426
+Right, of course, Cornwall.
+
+148
+00:10:21,515 --> 00:10:23,632
+Hey, excuse me.
+
+149
+00:10:26,397 --> 00:10:30,392
+Is this guy boring you?
+Why don't you talk to me instead?
+
+150
+00:10:30,479 --> 00:10:33,233
+I'm from a different planet.
+
+151
+00:10:36,201 --> 00:10:39,239
+It's true. You want to see my spaceship?
+
+152
+00:10:40,683 --> 00:10:45,236
+"Do you want to see my spaceship?"
+What kind of chat-up line is that?
+
+153
+00:10:45,325 --> 00:10:47,316
+That does happen.
+
+154
+00:10:47,406 --> 00:10:49,317
+Speaking of...
+
+155
+00:10:50,367 --> 00:10:52,518
+We've got two minutes.
+Drink up.
+
+156
+00:10:53,208 --> 00:10:55,484
+That's my house.
+
+157
+00:11:01,971 --> 00:11:05,852
+People of Earth, a round of drinks,
+for everyone, on me.
+
+158
+00:11:05,933 --> 00:11:08,494
+You really think
+the world's going to end?
+
+159
+00:11:08,574 --> 00:11:10,053
+Yes.
+
+160
+00:11:10,615 --> 00:11:14,404
+Shouldn't we lie down, or put a paper
+bag over our heads, or something?
+
+161
+00:11:14,496 --> 00:11:17,295
+- If you like.
+- Will it help?
+
+162
+00:11:17,377 --> 00:11:19,972
+Not at all. See you.
+
+163
+00:11:20,058 --> 00:11:21,253
+Last orders, then.
+
+164
+00:11:36,905 --> 00:11:39,136
+- What is that?
+- Run.
+
+165
+00:11:39,226 --> 00:11:41,103
+Look out.
+
+166
+00:12:08,317 --> 00:12:09,875
+Towel.
+
+167
+00:12:10,758 --> 00:12:12,670
+Arthur.
+
+168
+00:12:12,759 --> 00:12:14,636
+What the hell are those things?
+
+169
+00:12:15,520 --> 00:12:18,115
+They're ships
+from a Vogon constructor fleet.
+
+170
+00:12:18,201 --> 00:12:22,593
+I picked up their signal this morning.
+Here, you'll need this.
+
+171
+00:12:22,682 --> 00:12:25,721
+- What are you doing?
+- We're hitching a ride.
+
+172
+00:12:28,805 --> 00:12:33,004
+People of Earth,
+this is Prostetnic Vogon Jeltz
+
+173
+00:12:33,086 --> 00:12:35,647
+of the Galactic Hyperspace
+Planning Council.
+
+174
+00:12:35,727 --> 00:12:37,207
+As you are probably aware,
+
+175
+00:12:37,288 --> 00:12:40,759
+plans for the development
+of the outlying regions of the galaxy
+
+176
+00:12:40,849 --> 00:12:45,208
+involve the building of a hyperspace
+express route through your star system.
+
+177
+00:12:45,291 --> 00:12:49,286
+And your planet is one of those
+scheduled for demolition.
+
+178
+00:12:57,016 --> 00:12:59,406
+<i>There's no point
+acting surprised about it.</i>
+
+179
+00:12:59,497 --> 00:13:01,932
+<i>The plans have been on display</i>
+
+180
+00:13:02,018 --> 00:13:05,614
+<i>at your local planning office
+in Alpha Centauri for 50 Earth years.</i>
+
+181
+00:13:06,459 --> 00:13:10,249
+<i>If you can't be bothered
+with local affairs, that's your lookout.</i>
+
+182
+00:13:10,341 --> 00:13:12,697
+Apathetic bloody planet.
+
+183
+00:13:12,782 --> 00:13:15,661
+I've no sympathy at all.
+
+184
+00:14:58,743 --> 00:15:01,338
+The Hitchhiker's Guide to the Galaxy
+
+185
+00:15:01,424 --> 00:15:03,780
+<i>is a wholly remarkable book.</i>
+
+186
+00:15:03,865 --> 00:15:06,983
+<i>Perhaps the most remarkable,
+certainly the most successful,</i>
+
+187
+00:15:07,066 --> 00:15:10,981
+<i>ever to come out of the great
+publishing corporations of Ursa Minor.</i>
+
+188
+00:15:11,068 --> 00:15:14,220
+<i>More popular than
+The Celestial Homecare Omnibus,</i>
+
+189
+00:15:14,309 --> 00:15:17,939
+<i>better selling than
+53 More Things to Do in Zero Gravity,</i>
+
+190
+00:15:18,030 --> 00:15:20,909
+<i>and more controversial than
+Oolon Colluphid's trilogy</i>
+
+191
+00:15:20,992 --> 00:15:24,030
+<i>of philosophical blockbusters,
+Where God Went Wrong,</i>
+
+192
+00:15:24,113 --> 00:15:26,503
+Some More of God's Greatest Mistakes,
+
+193
+00:15:26,594 --> 00:15:28,825
+<i>and Who Is This God Person Anyway?</i>
+
+194
+00:15:29,475 --> 00:15:32,468
+<i>It's already supplanted
+the Encyclopaedia Galactica</i>
+
+195
+00:15:32,596 --> 00:15:35,589
+<i>as the standard repository
+of all knowledge and wisdom</i>
+
+196
+00:15:35,677 --> 00:15:37,953
+<i>for two important reasons.</i>
+
+197
+00:15:38,038 --> 00:15:40,507
+<i>First, it's slightly cheaper,</i>
+
+198
+00:15:40,639 --> 00:15:43,598
+<i>and second, it has the words
+"Don't Panic"</i>
+
+199
+00:15:43,680 --> 00:15:46,992
+<i>printed in large,
+friendly letters on its cover.</i>
+
+200
+00:15:55,325 --> 00:15:57,999
+So you're not from Guildford?
+
+201
+00:15:58,126 --> 00:16:02,006
+Which would explain the accent,
+which I've always wondered about.
+
+202
+00:16:02,087 --> 00:16:05,684
+You're not an out-of-work actor,
+
+203
+00:16:05,769 --> 00:16:11,050
+but rather a writer for this,
+this book thing.
+
+204
+00:16:11,811 --> 00:16:13,450
+Good, huh?
+
+205
+00:16:13,532 --> 00:16:15,842
+I don't feel well.
+I need a cup of tea.
+
+206
+00:16:15,933 --> 00:16:19,210
+If I asked where we were,
+would I regret it?
+
+207
+00:16:19,294 --> 00:16:22,287
+- We're safe for now.
+- Good.
+
+208
+00:16:22,375 --> 00:16:26,165
+We're in the washroom on one of the
+ships of the Vogon constructor fleet.
+
+209
+00:16:26,297 --> 00:16:29,608
+- Get me home, Ford.
+- Arthur, your home is...
+
+210
+00:16:29,738 --> 00:16:34,097
+Oh, God, my home.
+My home was demolished.
+
+211
+00:16:38,782 --> 00:16:40,693
+You don't remember.
+
+212
+00:16:41,623 --> 00:16:47,700
+OK, Arthur, I've got something to tell
+you. It's unfortunate, but it's true.
+
+213
+00:16:47,785 --> 00:16:50,823
+Your home planet has been blown up.
+
+214
+00:16:59,310 --> 00:17:01,221
+Blown up.
+
+215
+00:17:07,793 --> 00:17:09,785
+Couldn't you have done something?
+
+216
+00:17:09,874 --> 00:17:13,754
+I saved your life.
+OK, that makes us even.
+
+217
+00:17:13,835 --> 00:17:16,987
+It's a tough galaxy. If you want
+to survive out here,
+
+218
+00:17:17,077 --> 00:17:21,151
+you've gotta know where your towel is.
+
+219
+00:17:21,278 --> 00:17:23,668
+OK, give me a hand over here.
+
+220
+00:17:26,040 --> 00:17:29,920
+Careful. It's hot.
+We've gotta get off this ship.
+
+221
+00:17:30,002 --> 00:17:31,958
+Before the Vogons find us.
+
+222
+00:17:32,042 --> 00:17:34,955
+Vogons, they hate hitchhikers. Pull.
+
+223
+00:17:40,526 --> 00:17:43,724
+- Now we'll get a signal.
+- What is a Vogon?
+
+224
+00:17:43,807 --> 00:17:45,605
+Ask the Guide. Say "Vogons".
+
+225
+00:17:47,288 --> 00:17:49,280
+Vogons.
+
+226
+00:17:50,049 --> 00:17:54,249
+<i>Vogons are one of the
+most unpleasant races in the galaxy.</i>
+
+227
+00:17:54,331 --> 00:17:58,451
+<i>Not evil, but bad-tempered,
+bureaucratic, officious and callous.</i>
+
+228
+00:17:58,533 --> 00:18:01,970
+<i>They wouldn't even lift a finger
+to save their own grandmothers</i>
+
+229
+00:18:02,054 --> 00:18:05,127
+<i>from the Ravenous Bugblatter Beast
+of Traal without orders</i>
+
+230
+00:18:05,215 --> 00:18:07,571
+<i>signed in triplicate,
+sent in, sent back,</i>
+
+231
+00:18:07,656 --> 00:18:10,854
+<i>queried, lost, found,
+subjected to public inquiry,</i>
+
+232
+00:18:10,977 --> 00:18:14,210
+<i>lost again and finally buried
+in soft peat for three months</i>
+
+233
+00:18:14,299 --> 00:18:17,053
+<i>and recycled as firelighters.</i>
+
+234
+00:18:18,300 --> 00:18:22,898
+<i>On no account should you allow
+a Vogon to read poetry to you.</i>
+
+235
+00:18:24,503 --> 00:18:28,895
+They can't think or imagine.
+Most can't spell. They just run things.
+
+236
+00:18:34,947 --> 00:18:36,858
+And if we don't get a ride soon,
+
+237
+00:18:36,947 --> 00:18:40,225
+we won't need the Guide to tell us
+how unpleasant the Vogons are.
+
+238
+00:18:40,309 --> 00:18:42,540
+They've already destroyed
+a planet today.
+
+239
+00:18:42,630 --> 00:18:44,861
+That always makes them a little...
+
+240
+00:18:50,993 --> 00:18:53,906
+- What is that?
+- Put this in your ear.
+
+241
+00:18:58,276 --> 00:19:01,952
+<i>We have unwittingly picked up
+a couple of hitchhikers.</i>
+
+242
+00:19:02,037 --> 00:19:04,632
+The fish is translating for you.
+
+243
+00:19:05,559 --> 00:19:08,552
+<i>The Babel fish
+is small, yellow, leech-like,</i>
+
+244
+00:19:08,640 --> 00:19:12,793
+<i>and probably the oddest thing
+in the universe.</i>
+
+245
+00:19:12,881 --> 00:19:17,161
+<i>It feeds on brainwave energy,
+absorbing unconscious frequencies,</i>
+
+246
+00:19:17,243 --> 00:19:19,712
+<i>and excreting a matrix
+of conscious frequencies</i>
+
+247
+00:19:19,844 --> 00:19:21,915
+<i>to the speech centres of the brain.</i>
+
+248
+00:19:22,045 --> 00:19:25,402
+<i>The practical upshot of which is that,
+if you stick one in your ear,</i>
+
+249
+00:19:25,486 --> 00:19:30,881
+<i>you instantly understand
+anything said to you in any language.</i>
+
+250
+00:19:38,651 --> 00:19:41,041
+Resistance is useless.
+
+251
+00:19:44,694 --> 00:19:46,685
+- All right.
+- Someone's coming.
+
+252
+00:19:46,815 --> 00:19:49,090
+Here we go. Look lively.
+
+253
+00:20:25,029 --> 00:20:26,509
+Sir.
+
+254
+00:20:26,590 --> 00:20:29,230
+- What?
+- Hitchhikers.
+
+255
+00:21:07,046 --> 00:21:10,164
+"O freddled gruntbuggly..."
+
+256
+00:21:10,247 --> 00:21:12,682
+No, really, you don't have to read.
+
+257
+00:21:12,768 --> 00:21:15,363
+We've put you through
+enough trouble already.
+
+258
+00:21:15,449 --> 00:21:20,400
+"...as plerdled gabbleblotchits
+on a lurgid bee."
+
+259
+00:21:20,491 --> 00:21:25,613
+<i>Vogon poetry is widely accepted
+as the third worst in the universe.</i>
+
+260
+00:21:26,733 --> 00:21:29,851
+<i>The second worst
+is that of the Azgoths of Kria.</i>
+
+261
+00:21:29,934 --> 00:21:33,326
+<i>During a recitation by their
+Poet Master, Grunthos the Flatulent,</i>
+
+262
+00:21:33,416 --> 00:21:36,215
+<i>of his poem
+Ode to a Small Lump of Green Putty</i>
+
+263
+00:21:36,297 --> 00:21:38,766
+I Found in my Armpit
+One Midsummer Morning,
+
+264
+00:21:38,898 --> 00:21:41,971
+<i>four of his audience
+died of internal haemorrhaging,</i>
+
+265
+00:21:42,059 --> 00:21:45,416
+<i>and the President of the
+Mid-Galactic Arts Nobbling Council</i>
+
+266
+00:21:45,501 --> 00:21:47,810
+<i>survived by gnawing
+one of his own legs off.</i>
+
+267
+00:21:47,901 --> 00:21:52,613
+"Or I will rend thee
+in the gobberwarts..."
+
+268
+00:21:52,703 --> 00:21:55,537
+"...with my blurgle..."
+
+269
+00:21:55,624 --> 00:21:59,858
+<i>The absolute worst poetry was by
+Paula Millstone Jennings of Sussex.</i>
+
+270
+00:21:59,946 --> 00:22:02,336
+<i>Luckily, it was destroyed
+when the Earth was.</i>
+
+271
+00:22:02,467 --> 00:22:06,940
+"See if I don't." Yeah.
+
+272
+00:22:09,030 --> 00:22:14,186
+So, Earthlings,
+I present you with a choice.
+
+273
+00:22:14,272 --> 00:22:17,265
+Either die in the vacuum of space,
+
+274
+00:22:17,393 --> 00:22:21,991
+or tell me what you thought of my poem.
+
+275
+00:22:23,555 --> 00:22:27,311
+Actually, I rather liked it.
+
+276
+00:22:29,398 --> 00:22:31,993
+That's good. Run with it.
+
+277
+00:22:32,079 --> 00:22:34,388
+Some of the words I didn't understand,
+
+278
+00:22:34,520 --> 00:22:37,752
+but I found the imagery quite effective.
+
+279
+00:22:38,641 --> 00:22:39,916
+Continue.
+
+280
+00:22:40,002 --> 00:22:43,518
+Well, yes,
+interesting rhythmic devices,
+
+281
+00:22:43,603 --> 00:22:45,959
+which seemed to counterpoint
+
+282
+00:22:46,044 --> 00:22:48,605
+the underlying metaphor
+of the humanity of...
+
+283
+00:22:48,685 --> 00:22:51,758
+- Vogonity.
+- Vogonity, sorry, vogonity
+
+284
+00:22:51,846 --> 00:22:54,236
+of the poet's soul.
+
+285
+00:22:57,648 --> 00:23:01,609
+So what you're saying is,
+
+286
+00:23:01,690 --> 00:23:04,159
+I write poetry because
+
+287
+00:23:04,291 --> 00:23:08,525
+underneath this mean,
+callous, heartless exterior,
+
+288
+00:23:08,613 --> 00:23:12,402
+I just want to be loved?
+
+289
+00:23:13,615 --> 00:23:15,571
+Yes.
+
+290
+00:23:15,655 --> 00:23:18,011
+Yes, yeah, please.
+
+291
+00:23:23,378 --> 00:23:24,892
+Throw them off the ship.
+
+292
+00:23:24,979 --> 00:23:28,256
+- No.
+- Ford.
+
+293
+00:23:29,821 --> 00:23:32,017
+All right.
+
+294
+00:23:32,102 --> 00:23:35,493
+Resistance is useless.
+
+295
+00:23:38,064 --> 00:23:42,378
+Shut up. Get a job.
+Wash your filthy hands.
+
+296
+00:23:42,506 --> 00:23:45,101
+Don't panic.
+
+297
+00:23:45,187 --> 00:23:50,946
+So this is it?
+We're gonna die?
+
+298
+00:23:51,029 --> 00:23:54,500
+Yeah, we're gonna die.
+
+299
+00:23:54,591 --> 00:23:57,390
+No, what's this?
+
+300
+00:23:57,472 --> 00:23:59,064
+What is this?
+
+301
+00:23:59,152 --> 00:24:03,272
+What's this? This is nothing.
+Yeah, we're gonna die.
+
+302
+00:24:13,518 --> 00:24:15,555
+You're sweating.
+
+303
+00:24:23,482 --> 00:24:25,633
+- Would you like a hug?
+- No.
+
+304
+00:24:38,648 --> 00:24:42,085
+<i>"Space," says the introduction
+to The Hitchhiker's Guide,</i>
+
+305
+00:24:42,169 --> 00:24:44,525
+<i>"is big. Really big."</i>
+
+306
+00:24:44,610 --> 00:24:49,811
+<i>"You just won't believe how vastly,
+hugely, mind-bogglingly big it is. "</i>
+
+307
+00:24:49,892 --> 00:24:51,690
+<i>And so on.</i>
+
+308
+00:24:51,773 --> 00:24:54,686
+<i>It also says that
+if you hold a lungful of air,</i>
+
+309
+00:24:54,774 --> 00:24:59,975
+<i>you can survive in the total vacuum
+of space for about 30 seconds.</i>
+
+310
+00:25:00,056 --> 00:25:02,127
+<i>But with space being really big and all,</i>
+
+311
+00:25:02,257 --> 00:25:04,692
+<i>the chances of being picked up
+within that time</i>
+
+312
+00:25:04,778 --> 00:25:06,849
+<i>are two to the power of two billion,</i>
+
+313
+00:25:06,939 --> 00:25:09,852
+<i>79 million, 460 thousand,</i>
+
+314
+00:25:09,980 --> 00:25:12,814
+<i>347 to one against.</i>
+
+315
+00:25:12,901 --> 00:25:14,620
+<i>By a staggering coincidence,</i>
+
+316
+00:25:14,742 --> 00:25:17,211
+<i>it's also the phone number
+of the Islington flat</i>
+
+317
+00:25:17,343 --> 00:25:19,459
+<i>where Arthur went to a fancy dress party</i>
+
+318
+00:25:19,543 --> 00:25:22,742
+<i>and met a very nice young woman
+whom he totally blew it with.</i>
+
+319
+00:25:26,106 --> 00:25:29,986
+<i>Though the planet Earth,
+the Islington flat and telephone</i>
+
+320
+00:25:30,068 --> 00:25:35,463
+<i>have all now been demolished,
+Ford and Arthur were, in fact, rescued.</i>
+
+321
+00:25:35,550 --> 00:25:38,270
+- Ford?
+- Yes.
+
+322
+00:25:38,351 --> 00:25:42,265
+- I think I'm a sofa.
+- I know how you feel.
+
+323
+00:25:49,395 --> 00:25:51,990
+So much for the laws of physics.
+
+324
+00:25:52,076 --> 00:25:53,829
+<i>And once again, our top story.</i>
+
+325
+00:25:53,957 --> 00:25:58,076
+<i>The sensational theft of the most
+coveted ship in the universe,</i>
+
+326
+00:25:58,158 --> 00:25:59,990
+<i>the starship Heart of Gold.</i>
+
+327
+00:26:00,079 --> 00:26:02,514
+<i>Stolen at the launch ceremony
+by none other</i>
+
+328
+00:26:02,600 --> 00:26:05,320
+<i>than Galactic President
+Zaphod Beeblebrox.</i>
+
+329
+00:26:05,401 --> 00:26:10,477
+<i>In the name of people, freedom,
+and democracy, stuff like that,</i>
+
+330
+00:26:10,563 --> 00:26:14,444
+<i>I hereby kidnap myself
+and I'm taking the ship with me.</i>
+
+331
+00:26:14,525 --> 00:26:16,482
+<i>Come on.</i>
+
+332
+00:26:16,566 --> 00:26:18,921
+<i>Beeblebrox, universally considered</i>
+
+333
+00:26:19,006 --> 00:26:21,841
+<i>to be the dimmest star
+in several solar systems,</i>
+
+334
+00:26:21,928 --> 00:26:25,444
+<i>is most famous for his controversial
+defeat of Humma Kavula</i>
+
+335
+00:26:25,529 --> 00:26:29,318
+<i>who claimed many thought they were
+voting for the worst-dressed being</i>
+
+336
+00:26:29,411 --> 00:26:31,402
+<i>in the universe contest.</i>
+
+337
+00:26:32,412 --> 00:26:33,401
+Great.
+
+338
+00:26:33,492 --> 00:26:36,291
+<i>Kavula is best remembered
+for his slanderous</i>
+
+339
+00:26:36,413 --> 00:26:38,848
+<i>"Don't Vote for Stupid!" campaign.</i>
+
+340
+00:26:38,934 --> 00:26:42,292
+Put your ego aside.
+Something important has happened.
+
+341
+00:26:42,376 --> 00:26:46,575
+If there's anything more important than
+my ego, I want it caught and shot now.
+
+342
+00:26:46,697 --> 00:26:48,290
+Come on, I love it.
+
+343
+00:26:48,378 --> 00:26:51,291
+<i>Zaphod's just this guy, you know.</i>
+
+344
+00:26:54,060 --> 00:26:55,049
+What d'you...?
+
+345
+00:26:55,181 --> 00:26:59,255
+- I was just watching myself.
+- We have a couple of hitchhikers.
+
+346
+00:26:59,342 --> 00:27:01,811
+Hitchhikers?
+Why'd you pick up hitchhikers?
+
+347
+00:27:01,903 --> 00:27:03,701
+I didn't. The ship did.
+
+348
+00:27:03,824 --> 00:27:05,941
+What? Say what?
+
+349
+00:27:06,025 --> 00:27:10,463
+When we engaged the
+lmprobability Drive... The big button.
+
+350
+00:27:10,546 --> 00:27:12,503
+- I know.
+- They were picked up here.
+
+351
+00:27:12,587 --> 00:27:16,787
+In sector ZZ9 Plural Z Alpha. Wait.
+That's where you picked me up.
+
+352
+00:27:16,869 --> 00:27:18,701
+- On Earth.
+- That's impossible.
+
+353
+00:27:18,790 --> 00:27:21,988
+- No, just very improbable.
+- Listen. I don't have time for this.
+
+354
+00:27:22,111 --> 00:27:26,186
+We've got the police of half the galaxy
+after us. We've stopped for hitchhikers.
+
+355
+00:27:26,273 --> 00:27:28,503
+So ten out of ten for style, but
+
+356
+00:27:28,593 --> 00:27:30,949
+minus several million
+for good thinking.
+
+357
+00:27:31,034 --> 00:27:34,187
+You're too gorgeous, baby, stop it.
+You drive me crazy.
+
+358
+00:27:35,196 --> 00:27:37,506
+Don't. I'll send Marvin.
+
+359
+00:27:38,677 --> 00:27:40,396
+Marvin.
+
+360
+00:27:43,399 --> 00:27:46,198
+You ought to know,
+I'm feeling very depressed.
+
+361
+00:27:47,281 --> 00:27:50,479
+Well, we have something
+that should take your mind off things.
+
+362
+00:27:50,562 --> 00:27:55,035
+It won't work.
+I have an exceptionally large mind.
+
+363
+00:27:55,164 --> 00:28:00,843
+Yeah, we know. But we need you to go
+down to the number two entry bay
+
+364
+00:28:00,966 --> 00:28:03,686
+and pick up our stowaways
+and bring them up here.
+
+365
+00:28:03,767 --> 00:28:06,919
+Just that? I won't enjoy it.
+
+366
+00:28:07,008 --> 00:28:09,569
+Yeah, well, that's life.
+
+367
+00:28:09,649 --> 00:28:13,724
+Life? Don't talk to me about life.
+
+368
+00:28:22,534 --> 00:28:24,890
+<i>- Commander Kwaltz.
+- Yes.</i>
+
+369
+00:28:24,975 --> 00:28:29,129
+<i>We have located the spaceship
+Heart of Gold and President Beeblebrox.</i>
+
+370
+00:28:29,217 --> 00:28:33,177
+<i>- Where?
+- Sector ZZ9 Plural Z Alpha.</i>
+
+371
+00:28:33,259 --> 00:28:35,693
+<i>Requesting hyperspace clearance.</i>
+
+372
+00:28:35,820 --> 00:28:41,454
+Hold your position, captain,
+until clearance is granted.
+
+373
+00:28:41,542 --> 00:28:45,695
+<i>- Yes, sir.
+- Get me Vice-President Questular.</i>
+
+374
+00:28:48,945 --> 00:28:52,985
+<i>Hyperspace permission granted, captain.</i>
+
+375
+00:28:53,106 --> 00:28:55,337
+Here we go.
+
+376
+00:29:16,075 --> 00:29:18,670
+I think that door just sighed.
+
+377
+00:29:18,756 --> 00:29:21,066
+Ghastly, isn't it?
+
+378
+00:29:21,157 --> 00:29:23,467
+All the doors have been programmed
+
+379
+00:29:23,558 --> 00:29:26,631
+to have a cheerful
+and sunny disposition.
+
+380
+00:29:28,720 --> 00:29:33,318
+Anyway, come on. I've been ordered
+to take you up to the bridge.
+
+381
+00:29:35,082 --> 00:29:36,994
+Please yourselves.
+
+382
+00:29:37,083 --> 00:29:40,201
+Here I am,
+brain the size of a planet,
+
+383
+00:29:40,284 --> 00:29:42,719
+and they ask me to take you
+up to the bridge.
+
+384
+00:29:42,845 --> 00:29:46,157
+Call that job satisfaction?
+Cos I don't.
+
+385
+00:29:46,247 --> 00:29:51,721
+You can thank the Sirius Cybernetics
+Corp. For building robots with GPP.
+
+386
+00:29:51,809 --> 00:29:55,166
+- What's G.P. P?
+- Genuine People Personalities.
+
+387
+00:29:55,330 --> 00:29:59,530
+I'm a personality prototype.
+You can tell, can't you?
+
+388
+00:30:05,414 --> 00:30:06,894
+Arthur?
+
+389
+00:30:07,775 --> 00:30:12,168
+<i>Hey, Slim, are you wearing
+my underwear? Cos I'm wearing yours.</i>
+
+390
+00:30:12,257 --> 00:30:14,931
+<i>And they ain't doing the trick.
+Come on. All right.</i>
+
+391
+00:30:17,979 --> 00:30:19,971
+Oh, for heaven's sake.
+
+392
+00:30:20,900 --> 00:30:23,699
+I've brought the aliens.
+Don't thank me or anything.
+
+393
+00:30:25,862 --> 00:30:27,819
+Freeze.
+
+394
+00:30:27,943 --> 00:30:31,300
+Freeze? I'm a robot. Not a refrigerator.
+
+395
+00:30:31,384 --> 00:30:34,856
+- I wasn't talking to you, Giggles.
+- Why do I bother?
+
+396
+00:30:34,946 --> 00:30:36,664
+- Zaphod?
+- Ford.
+
+397
+00:30:36,786 --> 00:30:40,986
+Is that you? Ford. Praxibetel lx.
+
+398
+00:30:41,068 --> 00:30:42,980
+What the hell are you doing here?
+
+399
+00:30:43,069 --> 00:30:46,346
+I just stuck out my thumb and here I am.
+
+400
+00:30:46,470 --> 00:30:49,144
+- That is so you.
+- Look at you.
+
+401
+00:30:49,271 --> 00:30:53,471
+President of the Galaxy.
+I can't believe you beat Humma Kavula.
+
+402
+00:30:53,553 --> 00:30:55,111
+You zarkin' frood.
+
+403
+00:30:55,194 --> 00:30:59,393
+I want you to meet a friend.
+Arthur, this is Zaphod Beeblebrox.
+
+404
+00:31:00,556 --> 00:31:05,347
+President of the Galaxy. This is my
+cousin. He's a semi-half brother...
+
+405
+00:31:05,437 --> 00:31:08,875
+- We share three of the same mothers.
+- We've met.
+
+406
+00:31:08,999 --> 00:31:14,234
+Have we? I'm sorry.
+I've got a terrible memory for species.
+
+407
+00:31:14,321 --> 00:31:18,475
+This is him, Ford. The would-you-like-
+to-see-my-spaceship bloke.
+
+408
+00:31:19,963 --> 00:31:24,993
+- Hello, Arthur.
+- Tricia.
+
+409
+00:31:25,085 --> 00:31:27,395
+- How you doin'?
+- Hey, Trillian.
+
+410
+00:31:27,486 --> 00:31:31,116
+This is my semi-half-brother lx,
+I'm sorry, Ford.
+
+411
+00:31:31,207 --> 00:31:33,881
+- Hi.
+- Hi.
+
+412
+00:31:34,009 --> 00:31:37,764
+Would you excuse us
+for a second, please?
+
+413
+00:31:37,850 --> 00:31:40,968
+You went down on that little planet
+and didn't call me?
+
+414
+00:31:41,051 --> 00:31:43,771
+Sorry, I didn't know.
+I had a galaxy to run.
+
+415
+00:31:43,852 --> 00:31:46,048
+Hi, Tricia McMillan, right?
+
+416
+00:31:46,133 --> 00:31:49,171
+I think he called you Trillian.
+Which of us got the right one?
+
+417
+00:31:49,254 --> 00:31:51,723
+I shortened it.
+Something a little more spacey.
+
+418
+00:31:51,855 --> 00:31:54,290
+Right. I was thinking
+of changing mine to,
+
+419
+00:31:54,376 --> 00:31:56,254
+I don't know, Arthoolia.
+
+420
+00:31:56,337 --> 00:32:00,218
+That's a good one.
+Well, this is weird.
+
+421
+00:32:00,299 --> 00:32:03,690
+- How'd you get here?
+- I just stuck out my thumb.
+
+422
+00:32:03,780 --> 00:32:07,251
+- Right. In your pyjamas?
+- I was in a hurry.
+
+423
+00:32:07,381 --> 00:32:09,373
+OK. Did you know I was here?
+
+424
+00:32:09,462 --> 00:32:12,023
+Don't flatter yourself.
+I've got a spaceman too.
+
+425
+00:32:12,103 --> 00:32:14,698
+Yeah, that's kinda like
+the Dingo Shuffle, yeah.
+
+426
+00:32:14,824 --> 00:32:16,781
+OK, look.
+
+427
+00:32:16,865 --> 00:32:20,542
+I left you at the party. I feel bad, but
+I was gonna call you when I got back.
+
+428
+00:32:20,627 --> 00:32:23,506
+Well, there is no
+going back now, is there?
+
+429
+00:32:24,588 --> 00:32:26,102
+You do know what happened?
+
+430
+00:32:26,189 --> 00:32:28,863
+Enough small talk.
+We're on the run, remember?
+
+431
+00:32:28,950 --> 00:32:30,782
+Excuse me, we're having a chat.
+
+432
+00:32:30,951 --> 00:32:33,226
+Well, I think the girl's getting...
+Boo.
+
+433
+00:32:33,352 --> 00:32:38,428
+You blew it with her, Earthman, so shut
+your face or I'll kick you in the zatch.
+
+434
+00:32:38,514 --> 00:32:40,027
+- You wanna fight?
+- OK.
+
+435
+00:32:40,114 --> 00:32:42,788
+- No.
+- I'm just kidding.
+
+436
+00:32:42,875 --> 00:32:46,187
+I'm a kidder. Let's be friends.
+Let's connect. You and I.
+
+437
+00:32:47,037 --> 00:32:49,029
+Didn't see that one coming, did you?
+
+438
+00:32:49,118 --> 00:32:52,316
+Popped right out of the box.
+You foxy, yeah.
+
+439
+00:32:52,679 --> 00:32:55,717
+Teach your pal a lesson, Ford.
+He's a guest on my ship.
+
+440
+00:32:55,840 --> 00:32:58,116
+He's a guest on my ship.
+
+441
+00:32:59,082 --> 00:33:01,038
+I thought you said you stole it.
+
+442
+00:33:02,603 --> 00:33:05,357
+Stole what?
+What are we talking about?
+
+443
+00:33:06,925 --> 00:33:08,961
+That doesn't sound good.
+
+444
+00:33:13,247 --> 00:33:16,479
+- Are you OK?
+- Just fabulous, thanks, Trill.
+
+445
+00:33:16,568 --> 00:33:19,208
+A little help over here.
+I'm in over my head.
+
+446
+00:33:19,329 --> 00:33:22,562
+I'll take care of this. Good Zarquon,
+do I have to do everything?
+
+447
+00:33:22,691 --> 00:33:23,840
+Yes, I do.
+
+448
+00:33:23,931 --> 00:33:26,048
+Hey, this is really pretty.
+
+449
+00:33:26,132 --> 00:33:28,567
+- Don't.
+- They're on our tail.
+
+450
+00:33:28,693 --> 00:33:30,969
+Fire a gun. Launch a missile.
+Do some damage.
+
+451
+00:33:40,097 --> 00:33:41,087
+Stop that.
+
+452
+00:33:41,178 --> 00:33:43,135
+Just kiddin'. I love it rough. Hit me.
+
+453
+00:33:43,219 --> 00:33:46,018
+<i>- Computer?
+- Hi, there.</i>
+
+454
+00:33:46,100 --> 00:33:48,092
+<i>I'm Eddie, your computer.</i>
+
+455
+00:33:48,181 --> 00:33:51,777
+<i>I'm pleased to report that it's a fleet
+of 100 Vogon battle destroyers.</i>
+
+456
+00:33:51,862 --> 00:33:54,058
+<i>They're sending you a message.</i>
+
+457
+00:33:54,143 --> 00:33:56,419
+<i>This is Vice-President Questular Rontok.</i>
+
+458
+00:33:56,504 --> 00:33:59,781
+<i>I am speaking to the kidnapper
+of the President?</i>
+
+459
+00:33:59,905 --> 00:34:01,021
+She digs me.
+
+460
+00:34:01,106 --> 00:34:03,176
+<i>Surrender the stolen vessel at once</i>
+
+461
+00:34:03,306 --> 00:34:06,664
+<i>or we will take action
+as defined and permitted by...</i>
+
+462
+00:34:08,628 --> 00:34:12,418
+<i>section 1-8 of the Galactic Interstellar
+Space Bylaws...</i>
+
+463
+00:34:12,510 --> 00:34:15,742
+<i>Zaphod, please come back now.
+This is ridiculous.</i>
+
+464
+00:34:15,831 --> 00:34:18,471
+Leap to hyperspace. Come on.
+
+465
+00:34:18,592 --> 00:34:20,504
+<i>Sure thing, fella.</i>
+
+466
+00:34:27,396 --> 00:34:28,749
+No.
+
+467
+00:34:28,876 --> 00:34:34,032
+Did they have proper
+hyperspace authorisation?
+
+468
+00:34:34,118 --> 00:34:35,916
+No, commander.
+
+469
+00:34:38,720 --> 00:34:43,113
+Bring me the request
+to pursue fugitive forms.
+
+470
+00:34:43,202 --> 00:34:45,114
+I'm coming, sir.
+
+471
+00:34:47,564 --> 00:34:49,794
+I'm boiling. Here's the form, sir.
+
+472
+00:34:53,126 --> 00:34:57,200
+So are you along for the ride
+or am I just dropping you somewhere?
+
+473
+00:34:57,287 --> 00:35:00,486
+That depends. Where are you going?
+
+474
+00:35:00,569 --> 00:35:02,480
+Where am I going?
+
+475
+00:35:03,530 --> 00:35:07,809
+- You OK?
+- Yeah. Don't suppose there's any tea.
+
+476
+00:35:07,891 --> 00:35:10,851
+Yes, there is. Come on.
+I'll show you the kitchen.
+
+477
+00:35:10,933 --> 00:35:15,246
+When you see what I'm about to show you,
+you'll beg me to take you with us.
+
+478
+00:35:15,334 --> 00:35:19,568
+<i>The best drink in existence
+is the Pan-Galactic Gargle Blaster,</i>
+
+479
+00:35:19,656 --> 00:35:24,174
+<i>the effect of which is like having your
+brains smashed out by a slice of lemon</i>
+
+480
+00:35:24,258 --> 00:35:26,727
+<i>wrapped round a large gold brick.</i>
+
+481
+00:35:31,260 --> 00:35:34,060
+- Belgium. Hold it one second.
+- Belgium.
+
+482
+00:35:35,022 --> 00:35:37,776
+Ape-man, Earth dude, sorry,
+what's your name again?
+
+483
+00:35:37,863 --> 00:35:40,219
+- Arthur.
+- Right. Gorgeous.
+
+484
+00:35:40,304 --> 00:35:43,536
+No hard feelings, OK?
+Sorry to hear about your planet...
+
+485
+00:35:43,625 --> 00:35:45,344
+- Earth.
+- Yeah. I liked Earth.
+
+486
+00:35:45,426 --> 00:35:48,260
+Got these boots there.
+But don't mention it to the girl.
+
+487
+00:35:48,387 --> 00:35:51,984
+Because if you do... I'll pull your
+spleen out through your throat.
+
+488
+00:35:52,069 --> 00:35:54,868
+- All right. Thanks, buddy.
+- OK.
+
+489
+00:35:54,950 --> 00:35:57,863
+Good stuff. Like those jammies.
+
+490
+00:36:00,552 --> 00:36:03,431
+Zaphod, what's with the two-head thing?
+
+491
+00:36:04,153 --> 00:36:07,989
+Oh, yeah. Apparently, you can't
+be president with a whole brain.
+
+492
+00:36:08,075 --> 00:36:10,031
+It's crazy.
+
+493
+00:36:10,116 --> 00:36:12,152
+- Oh, so you carved it up?
+- Yes.
+
+494
+00:36:12,236 --> 00:36:16,197
+Parts of my personality weren't exactly
+what you'd call presidential.
+
+495
+00:36:16,278 --> 00:36:18,156
+You know what I'm talkin' about.
+
+496
+00:36:21,680 --> 00:36:24,149
+<i>Your tea is ready.</i>
+
+497
+00:36:35,485 --> 00:36:40,163
+I suppose I should've said
+it resembles tea.
+
+498
+00:36:40,247 --> 00:36:42,921
+So, two heads
+is what does it for a girl?
+
+499
+00:36:43,008 --> 00:36:45,239
+I mean, if I'd had two heads,
+or three...
+
+500
+00:36:45,329 --> 00:36:47,400
+Or your own spaceship.
+
+501
+00:36:48,330 --> 00:36:50,128
+Anything else he's got two of?
+
+502
+00:36:50,211 --> 00:36:52,601
+Come on, Arthur, don't be like that.
+
+503
+00:36:52,692 --> 00:36:56,767
+What am I supposed to be like?
+Green? Bleeping?
+
+504
+00:36:56,854 --> 00:36:59,528
+I can fold my eyelids
+inside out if you like.
+
+505
+00:36:59,615 --> 00:37:03,291
+OK, look. Do you see this?
+
+506
+00:37:03,416 --> 00:37:07,297
+This detects what you're craving
+and makes it for you.
+
+507
+00:37:07,378 --> 00:37:09,529
+<i>Enjoy your doughnut.</i>
+
+508
+00:37:13,140 --> 00:37:15,052
+Do you see this?
+
+509
+00:37:18,062 --> 00:37:24,253
+This toasts bread
+while you're slicing it.
+
+510
+00:37:25,185 --> 00:37:29,896
+We're on a spaceship, Arthur. In space.
+
+511
+00:37:29,986 --> 00:37:32,786
+- I told you I wanted to get away.
+- To Madagascar.
+
+512
+00:37:32,868 --> 00:37:36,179
+That was some sort of test.
+
+513
+00:37:37,149 --> 00:37:38,822
+And I failed.
+
+514
+00:37:38,910 --> 00:37:42,267
+- How badly does it hurt?
+- It doesn't feel great.
+
+515
+00:37:42,351 --> 00:37:44,308
+No, I mean your chin.
+
+516
+00:37:44,392 --> 00:37:46,463
+I might have an aspirin.
+
+517
+00:37:46,553 --> 00:37:47,906
+Right.
+
+518
+00:37:54,276 --> 00:37:59,227
+Tricia... Trillian, sorry.
+There's something I have to tell you.
+
+519
+00:37:59,318 --> 00:38:02,470
+- Please, don't.
+- Showtime, Trill.
+
+520
+00:38:08,922 --> 00:38:11,391
+I'm going to set up.
+Buttons aren't toys.
+
+521
+00:38:11,483 --> 00:38:13,075
+Buttons aren't toys.
+
+522
+00:38:13,163 --> 00:38:16,122
+Anyway... When I saw
+what I'm about to show you,
+
+523
+00:38:16,204 --> 00:38:20,677
+that's when I realised
+why I had to do what I did to my brain.
+
+524
+00:38:20,766 --> 00:38:23,804
+I think. It's all a little...
+
+525
+00:38:24,568 --> 00:38:25,557
+...shaky.
+
+526
+00:38:28,489 --> 00:38:31,482
+I've seen it. It's rubbish.
+
+527
+00:38:34,932 --> 00:38:37,048
+<i>Many millions of years ago,</i>
+
+528
+00:38:37,132 --> 00:38:40,444
+<i>a race of hyperintelligent,
+pan-dimensional beings</i>
+
+529
+00:38:40,534 --> 00:38:44,289
+<i>got so fed up with the constant
+bickering about the meaning of life,</i>
+
+530
+00:38:44,375 --> 00:38:47,209
+<i>that they commissioned
+two of their brightest and best</i>
+
+531
+00:38:47,336 --> 00:38:50,489
+<i>to design and build
+a stupendous super-computer</i>
+
+532
+00:38:50,578 --> 00:38:54,777
+<i>to calculate the answer to life,
+the universe and everything.</i>
+
+533
+00:38:54,859 --> 00:38:57,738
+O Deep Thought,
+
+534
+00:38:57,821 --> 00:39:01,895
+we want you to tell us the answer.
+
+535
+00:39:02,022 --> 00:39:04,139
+<i>The answer to what?</i>
+
+536
+00:39:04,223 --> 00:39:08,662
+The answer to life,
+the universe, everything.
+
+537
+00:39:08,785 --> 00:39:12,620
+We'd really like an answer.
+Something simple.
+
+538
+00:39:12,706 --> 00:39:15,267
+<i>I'd have to think about that.</i>
+
+539
+00:39:15,347 --> 00:39:20,582
+<i>Return to this place in exactly
+seven-and-a-half million years.</i>
+
+540
+00:39:22,030 --> 00:39:25,580
+- Is it finished?
+- No, there's more. They go back.
+
+541
+00:39:25,671 --> 00:39:30,542
+- Seven-and-a-half million years later?
+- That's right, they do.
+
+542
+00:39:46,559 --> 00:39:48,949
+Deep Thought, do you have...
+
+543
+00:39:49,040 --> 00:39:53,274
+<i>An answer for you?
+Yes, but you're not going to like it.</i>
+
+544
+00:39:54,402 --> 00:39:57,362
+<i>- It doesn't matter. We must know it.
+- All right.</i>
+
+545
+00:39:57,444 --> 00:40:00,243
+<i>The answer to the ultimate question</i>
+
+546
+00:40:02,125 --> 00:40:05,597
+<i>of life, the universe
+and everything...</i>
+
+547
+00:40:07,207 --> 00:40:08,243
+<i>... is...</i>
+
+548
+00:40:14,810 --> 00:40:16,290
+<i>... 42.</i>
+
+549
+00:40:16,371 --> 00:40:18,203
+Yeah? What?
+
+550
+00:40:19,772 --> 00:40:21,570
+42?
+
+551
+00:40:21,653 --> 00:40:25,648
+<i>Yes, I thought it over quite thoroughly.
+It's 42.</i>
+
+552
+00:40:25,735 --> 00:40:28,887
+<i>It would've been simpler
+to have known what the question was.</i>
+
+553
+00:40:28,976 --> 00:40:33,654
+But it was the question.
+The ultimate question. Of everything.
+
+554
+00:40:33,738 --> 00:40:35,535
+<i>That's not a question.</i>
+
+555
+00:40:35,658 --> 00:40:39,209
+<i>Only when you know the question
+will you know what the answer means.</i>
+
+556
+00:40:39,300 --> 00:40:43,739
+<i>- Give us the ultimate question then.
+- I can't. But there is one who can.</i>
+
+557
+00:40:43,822 --> 00:40:47,611
+<i>A computer that will calculate
+the ultimate question.</i>
+
+558
+00:40:47,703 --> 00:40:50,172
+<i>A computer of such infinite complexity,</i>
+
+559
+00:40:50,304 --> 00:40:54,185
+<i>that life itself will form part
+of its operational matrix.</i>
+
+560
+00:40:54,346 --> 00:40:58,260
+<i>And you yourselves shall take on new,
+more primitive forms,</i>
+
+561
+00:40:58,387 --> 00:41:03,861
+<i>and go down into the computer
+to navigate its 10-million-year program.</i>
+
+562
+00:41:03,989 --> 00:41:07,540
+<i>I shall design this computer for you,
+and it shall be called...</i>
+
+563
+00:41:12,833 --> 00:41:16,224
+- That's it?
+- That's it.
+
+564
+00:41:16,314 --> 00:41:20,025
+You're looking for
+the ultimate question? You? Why?
+
+565
+00:41:20,116 --> 00:41:22,790
+I tried that.
+Why? 42. Doesn't work.
+
+566
+00:41:22,877 --> 00:41:25,631
+- Let's get it ready, baby.
+- Why...
+
+567
+00:41:25,718 --> 00:41:28,711
+...do you want to know
+the ultimate question?
+
+568
+00:41:28,799 --> 00:41:31,633
+Partly curiosity,
+partly a sense of adventure,
+
+569
+00:41:31,800 --> 00:41:35,032
+but mostly I think
+it's for the fame and the money.
+
+570
+00:41:35,121 --> 00:41:37,192
+You're President of the Galaxy.
+
+571
+00:41:37,282 --> 00:41:39,080
+- Yes, Arman.
+- Arthur.
+
+572
+00:41:39,163 --> 00:41:41,439
+Whatever.
+Presidential fame is temporary.
+
+573
+00:41:41,524 --> 00:41:45,154
+I find the question, that's permanent.
+It sticks.
+
+574
+00:41:45,285 --> 00:41:47,675
+Plus, everyone thinks you're deep.
+Win-win.
+
+575
+00:41:48,367 --> 00:41:52,839
+We just hit that button and bam,
+we're at Magrathea, I think.
+
+576
+00:41:52,928 --> 00:41:56,002
+We've hit it twice and
+we're still not there, but anyway...
+
+577
+00:41:56,130 --> 00:41:58,439
+- You in?
+- Always.
+
+578
+00:41:58,531 --> 00:42:01,205
+- All right.
+- I want to get off.
+
+579
+00:42:01,292 --> 00:42:04,603
+- Sorry, what exactly are we doing?
+- This.
+
+580
+00:42:08,654 --> 00:42:12,205
+<i>The Infinite Improbability Drive
+is a wonderful new method</i>
+
+581
+00:42:12,296 --> 00:42:15,016
+<i>of crossing interstellar distances
+in a few seconds,</i>
+
+582
+00:42:15,097 --> 00:42:18,135
+<i>without all that tedious
+mucking about in hyperspace.</i>
+
+583
+00:42:18,218 --> 00:42:21,336
+<i>As the Improbability Drive
+reaches infinite improbability,</i>
+
+584
+00:42:21,419 --> 00:42:25,255
+<i>it passes through every conceivable
+point in every conceivable universe</i>
+
+585
+00:42:25,341 --> 00:42:27,014
+<i>almost simultaneously.</i>
+
+586
+00:42:27,102 --> 00:42:29,093
+<i>So you're never sure
+where you'll end up</i>
+
+587
+00:42:29,182 --> 00:42:31,697
+<i>or even what species you'll be
+when you get there.</i>
+
+588
+00:42:31,783 --> 00:42:34,618
+<i>It's therefore important
+to dress accordingly.</i>
+
+589
+00:42:34,705 --> 00:42:38,858
+<i>The Drive was invented following
+research into finite improbability</i>
+
+590
+00:42:39,026 --> 00:42:40,983
+<i>often used to break the ice at parties</i>
+
+591
+00:42:41,067 --> 00:42:44,185
+<i>by making all the molecules
+in the hostess's undergarments</i>
+
+592
+00:42:44,268 --> 00:42:46,225
+<i>leap one foot to the left</i>
+
+593
+00:42:46,309 --> 00:42:48,744
+<i>in accordance with
+the theory of indeterminacy.</i>
+
+594
+00:42:48,870 --> 00:42:52,261
+<i>Many physicists said they
+wouldn't stand for that sort of thing,</i>
+
+595
+00:42:52,351 --> 00:42:54,388
+<i>partly because it debased science,</i>
+
+596
+00:42:54,472 --> 00:42:58,308
+<i>but mostly because they didn't get
+invited to those sort of parties.</i>
+
+597
+00:43:08,117 --> 00:43:11,429
+Is this gonna happen
+every time we hit that button?
+
+598
+00:43:11,519 --> 00:43:13,351
+Very probably, yes.
+
+599
+00:43:13,480 --> 00:43:16,314
+Ah, I think
+the Earthman's about to be sick.
+
+600
+00:43:16,401 --> 00:43:19,155
+In the trashcan, ape-man.
+This ship's new.
+
+601
+00:43:20,042 --> 00:43:21,761
+Come on.
+
+602
+00:43:21,883 --> 00:43:24,273
+We have normality.
+
+603
+00:43:24,404 --> 00:43:25,917
+Did it work? Are we there?
+
+604
+00:43:27,725 --> 00:43:31,720
+Yeah. We're here. Magrathea.
+
+605
+00:43:31,807 --> 00:43:33,445
+I don't think so. Eddie...
+
+606
+00:43:33,567 --> 00:43:35,445
+What planet are we looking at?
+
+607
+00:43:35,568 --> 00:43:37,287
+<i>I'm checking for you.</i>
+
+608
+00:43:37,369 --> 00:43:42,161
+Did you just pluck
+one of my hairs? Off my head?
+
+609
+00:43:42,931 --> 00:43:45,651
+<i>Thank you so much for waiting.
+Sorry to disappoint,</i>
+
+610
+00:43:45,732 --> 00:43:47,724
+<i>but this is not Magrathea.</i>
+
+611
+00:43:47,853 --> 00:43:51,449
+<i>We are currently in orbit around
+the planet Viltvodle Six.</i>
+
+612
+00:43:52,415 --> 00:43:54,326
+Humma Kavula.
+
+613
+00:43:55,216 --> 00:43:59,928
+Magrathea's gonna have to wait.
+I got a score to settle on this planet.
+
+614
+00:44:00,738 --> 00:44:03,537
+Humma Kavula.
+
+615
+00:44:07,621 --> 00:44:11,661
+<i>In the beginning,
+the universe was created.</i>
+
+616
+00:44:11,782 --> 00:44:16,380
+<i>This made a lot of people very angry,
+and is widely regarded as a bad move.</i>
+
+617
+00:44:18,425 --> 00:44:21,577
+<i>Many races believed it was created
+by some sort of god,</i>
+
+618
+00:44:21,706 --> 00:44:24,141
+<i>though the Jatravartid people
+of Viltvodle Six</i>
+
+619
+00:44:24,227 --> 00:44:28,984
+<i>firmly believe that the entire universe
+was sneezed out of the nose of a being</i>
+
+620
+00:44:29,069 --> 00:44:31,743
+<i>called the Great Green Arkleseizure.</i>
+
+621
+00:44:31,830 --> 00:44:33,423
+Humma Kavula.
+
+622
+00:44:33,511 --> 00:44:35,741
+<i>The Jatravartids, who lived in fear</i>
+
+623
+00:44:35,831 --> 00:44:39,189
+<i>of the time they called the
+Coming of the Great White Handkerchief,</i>
+
+624
+00:44:39,273 --> 00:44:42,869
+<i>were small blue creatures
+with more than 50 arms each.</i>
+
+625
+00:44:42,954 --> 00:44:45,389
+<i>They were unique in being
+the only race in history</i>
+
+626
+00:44:45,475 --> 00:44:49,072
+<i>to have invented
+the aerosol deodorant before the wheel.</i>
+
+627
+00:44:50,917 --> 00:44:52,829
+Mr President.
+
+628
+00:44:52,918 --> 00:44:54,557
+Hey, all right. How you doin'?
+
+629
+00:44:54,679 --> 00:44:56,476
+What have we here? I love it.
+
+630
+00:45:01,882 --> 00:45:03,918
+Hey, I love you. Fantastic.
+
+631
+00:45:04,002 --> 00:45:06,517
+You guys related? Don't go changing.
+
+632
+00:45:06,603 --> 00:45:08,595
+Arthur, I want a drink.
+
+633
+00:45:08,684 --> 00:45:12,679
+I think I've been here before.
+Have I been here before?
+
+634
+00:45:16,167 --> 00:45:18,124
+Lxxie.
+
+635
+00:45:18,248 --> 00:45:21,082
+- I've been here before.
+- Humma Kavula.
+
+636
+00:45:21,169 --> 00:45:22,842
+Come on.
+
+637
+00:45:22,930 --> 00:45:25,650
+Tricia, I...
+
+638
+00:45:30,413 --> 00:45:38,209
+<i>Now we await
+with eager expectation</i>
+
+639
+00:45:38,336 --> 00:45:44,607
+<i>Thy handkerchief
+to bring us back to Thee</i>
+
+640
+00:45:53,061 --> 00:45:54,814
+Hello, Humma.
+
+641
+00:45:56,263 --> 00:46:00,462
+- Join us. Sit down.
+- Good to see you. Thanks. All right.
+
+642
+00:46:00,544 --> 00:46:02,581
+The handkerchief is coming.
+
+643
+00:46:02,665 --> 00:46:08,299
+Let us pray the Almighty will exhale
+a breath of compassion upon us all.
+
+644
+00:46:09,908 --> 00:46:13,663
+So that's Humma Kavula.
+I thought he was just swearing.
+
+645
+00:46:14,390 --> 00:46:18,509
+We lift our noses, clogged and unblown,
+
+646
+00:46:18,591 --> 00:46:20,628
+in reverence to you.
+
+647
+00:46:22,313 --> 00:46:27,025
+Send the handkerchief, O Blessed One,
+so that it may wipe us clean.
+
+648
+00:46:27,115 --> 00:46:32,589
+We ask this and all things
+in Thy precious and alliterative name.
+
+649
+00:46:41,160 --> 00:46:42,958
+Bless you.
+
+650
+00:46:43,401 --> 00:46:45,632
+We goin' in here?
+
+651
+00:46:45,722 --> 00:46:49,398
+All right, I like it. It's big,
+it's gold, it's fancy. Fancy pants.
+
+652
+00:46:49,483 --> 00:46:52,875
+Zaphod Beeblebrox,
+our infamous President.
+
+653
+00:46:52,965 --> 00:46:55,605
+What brings you to our humble planet?
+
+654
+00:46:55,686 --> 00:46:59,646
+- I think you know why I'm here.
+- No, I don't think I do.
+
+655
+00:46:59,727 --> 00:47:01,366
+I think you think you don't.
+
+656
+00:47:02,408 --> 00:47:05,128
+But we both know you do.
+
+657
+00:47:05,930 --> 00:47:07,727
+Eloquent as always.
+
+658
+00:47:07,810 --> 00:47:11,521
+Your ability to articulate
+never ceases to amaze.
+
+659
+00:47:11,612 --> 00:47:14,525
+That's funny.
+During the campaign, Humma,
+
+660
+00:47:14,613 --> 00:47:16,923
+when you were my opponent
+running against me,
+
+661
+00:47:17,014 --> 00:47:18,926
+you said I was stupid.
+
+662
+00:47:37,782 --> 00:47:42,016
+The election is ancient history,
+Zaphod, but...
+
+663
+00:47:44,385 --> 00:47:46,182
+...if memory serves, you won,
+
+664
+00:47:46,265 --> 00:47:48,860
+proving that good looks
+and charm
+
+665
+00:47:48,946 --> 00:47:54,227
+win over brilliance
+and the ability to govern.
+
+666
+00:47:58,310 --> 00:48:01,428
+And, incidentally, you are stupid.
+
+667
+00:48:01,511 --> 00:48:03,980
+Excuse me, Mr Humma, sir.
+
+668
+00:48:05,073 --> 00:48:08,066
+I just want to say, there's been
+some sort of terrible mix up
+
+669
+00:48:08,154 --> 00:48:10,464
+cos, actually, he's not with us.
+
+670
+00:48:10,555 --> 00:48:13,354
+We came to worship you.
+He followed us and...
+
+671
+00:48:13,436 --> 00:48:16,076
+He grew, didn't he. He's not that tall.
+
+672
+00:48:16,197 --> 00:48:20,989
+You didn't come half-way across the
+galaxy to settle a campaign grudge.
+
+673
+00:48:22,439 --> 00:48:24,396
+Why are you here?
+
+674
+00:48:25,921 --> 00:48:28,482
+Of course not, that's ridiculous.
+
+675
+00:48:28,562 --> 00:48:33,957
+I've been stranded on a strange planet
+for years, I haven't been avoiding you.
+
+676
+00:48:34,044 --> 00:48:36,923
+You look great. You're doing well.
+
+677
+00:48:37,005 --> 00:48:38,644
+You've grown, obviously.
+
+678
+00:48:39,486 --> 00:48:42,604
+Wait. We don't know why we're here.
+
+679
+00:48:42,687 --> 00:48:46,158
+We were trying to get to Magrathea
+and our ship brought us here.
+
+680
+00:48:47,689 --> 00:48:51,046
+How very, very improbable.
+
+681
+00:48:58,173 --> 00:49:00,847
+I kept a few souvenirs
+from my former life.
+
+682
+00:49:00,934 --> 00:49:03,733
+Ah, the heady days of space piracy.
+
+683
+00:49:04,696 --> 00:49:11,171
+But even an Infinite lmprobability Drive
+requires coordinates.
+
+684
+00:49:11,298 --> 00:49:13,574
+Which I happen to have.
+
+685
+00:49:13,699 --> 00:49:15,258
+No, no, no.
+
+686
+00:49:15,380 --> 00:49:17,656
+You don't get something
+for nothing, Zaphod.
+
+687
+00:49:17,781 --> 00:49:20,296
+You must bring me something in return.
+
+688
+00:49:20,382 --> 00:49:23,181
+- What?
+- A gun.
+
+689
+00:49:23,263 --> 00:49:25,141
+- A gun?
+- A very special gun.
+
+690
+00:49:25,224 --> 00:49:28,422
+Designed by the greatest computer
+ever invented.
+
+691
+00:49:28,505 --> 00:49:31,304
+But the only way to find it
+is to go to Magrathea.
+
+692
+00:49:31,386 --> 00:49:35,700
+Fine. I'll get your gun.
+Just give me the coordinates.
+
+693
+00:49:35,788 --> 00:49:38,462
+And what will you give me
+to ensure your return?
+
+694
+00:49:39,269 --> 00:49:41,579
+My word as President.
+
+695
+00:49:42,830 --> 00:49:46,188
+No. I need a hostage.
+
+696
+00:49:48,593 --> 00:49:55,512
+Only, what does
+Zaphod Beeblebrox treasure?
+
+697
+00:49:59,157 --> 00:50:01,069
+Come on.
+
+698
+00:50:03,959 --> 00:50:05,711
+Oh, no.
+
+699
+00:50:05,839 --> 00:50:08,513
+Hey, take it easy now. Think about this.
+
+700
+00:50:08,600 --> 00:50:11,639
+No, stop it.
+That kind of tickles.
+
+701
+00:50:11,722 --> 00:50:15,159
+Two heads are better than one.
+Double your pleasure.
+
+702
+00:50:15,923 --> 00:50:18,836
+It's not fair. You need me.
+
+703
+00:50:18,964 --> 00:50:22,959
+Come back. Don't leave me alone.
+
+704
+00:50:25,886 --> 00:50:27,798
+Come back.
+
+705
+00:50:27,927 --> 00:50:31,557
+I thought I alone
+considered your boyfriend
+
+706
+00:50:31,648 --> 00:50:34,209
+a narcissistic moron,
+but the whole galaxy does.
+
+707
+00:50:34,289 --> 00:50:37,009
+What about you?
+"Excuse me, Mr Humma, sir."
+
+708
+00:50:37,090 --> 00:50:41,370
+"We're not with him. We just came
+to worship you." Very brave.
+
+709
+00:50:41,452 --> 00:50:43,364
+Where the hell is Ford?
+
+710
+00:50:47,214 --> 00:50:53,406
+By the left, march.
+Left, right, left, right.
+
+711
+00:50:53,497 --> 00:50:57,616
+Mr President,
+we're here for your protection.
+
+712
+00:50:58,059 --> 00:51:00,574
+Fire upon the kidnapper.
+
+713
+00:51:01,300 --> 00:51:02,574
+<i>Hey, come on.</i>
+
+714
+00:51:02,660 --> 00:51:05,129
+The President is the kidnapper.
+You'll kill him.
+
+715
+00:51:07,142 --> 00:51:09,020
+It's locked.
+
+716
+00:51:11,824 --> 00:51:14,100
+Thank you, darling. I'll be in touch.
+
+717
+00:51:19,187 --> 00:51:21,543
+Come on, Zaphod, man.
+
+718
+00:51:24,909 --> 00:51:27,549
+- Hey, what did I miss?
+- What have you been doing?
+
+719
+00:51:27,630 --> 00:51:30,987
+Field research. So they found
+where we are? Belgium bummer.
+
+720
+00:51:31,071 --> 00:51:33,711
+They're shooting at us.
+What are we going to do?
+
+721
+00:51:33,832 --> 00:51:36,951
+- I have an idea.
+- Pushing him out and running away?
+
+722
+00:51:37,034 --> 00:51:39,424
+What? He's the one they want.
+
+723
+00:51:39,515 --> 00:51:41,665
+You can't go out there.
+What are you doing?
+
+724
+00:51:42,916 --> 00:51:45,750
+- Back off.
+- What's going on?
+
+725
+00:51:47,358 --> 00:51:50,510
+I have the President
+and I will kill him, I swear.
+
+726
+00:51:50,599 --> 00:51:54,388
+- Could that actually kill him?
+- I don't think so.
+
+727
+00:51:54,520 --> 00:51:56,591
+It's an aerosol can.
+
+728
+00:51:56,681 --> 00:51:59,071
+OK, frightened now, frightened.
+
+729
+00:52:00,643 --> 00:52:03,954
+- Hi, little guy.
+- Get her.
+
+730
+00:52:04,044 --> 00:52:06,923
+- Zaphod, no, come on.
+- Arthur.
+
+731
+00:52:07,686 --> 00:52:10,406
+- Arthur.
+- Tricia.
+
+732
+00:52:10,487 --> 00:52:13,366
+- Arthur.
+- Tricia. Wait.
+
+733
+00:52:21,971 --> 00:52:24,361
+Arthur.
+
+734
+00:52:27,013 --> 00:52:29,892
+Resistance is useless.
+
+735
+00:52:39,458 --> 00:52:43,054
+<i>Bring her to Vogsphere
+for processing, captain.</i>
+
+736
+00:52:44,740 --> 00:52:46,413
+Where's the circus?
+
+737
+00:52:46,501 --> 00:52:49,062
+They got her and it's my fault.
+We have to go.
+
+738
+00:52:49,142 --> 00:52:50,541
+Let's go.
+
+739
+00:52:53,984 --> 00:52:55,895
+Computer, take us to Magrathea.
+
+740
+00:52:55,984 --> 00:52:58,374
+What? No.
+We've got to go after Tricia.
+
+741
+00:52:58,465 --> 00:52:59,785
+- Who?
+- Trillian.
+
+742
+00:52:59,866 --> 00:53:03,257
+They've got Trillian,
+you stupid half-brained git.
+
+743
+00:53:03,347 --> 00:53:05,623
+Right, you're coming out.
+
+744
+00:53:06,388 --> 00:53:10,144
+Computer, we don't want to go to
+Magrathea, we want to follow the ships.
+
+745
+00:53:10,230 --> 00:53:13,746
+<i>I'd love to, but my guidance system
+has been deactivated.</i>
+
+746
+00:53:13,871 --> 00:53:14,907
+Oh, come on.
+
+747
+00:53:15,032 --> 00:53:17,308
+<i>I'm sorry. It wasn't my fault.</i>
+
+748
+00:53:17,393 --> 00:53:19,349
+What you doing on this ship?
+
+749
+00:53:19,473 --> 00:53:20,987
+- Ford?
+- Marvin.
+
+750
+00:53:21,074 --> 00:53:23,384
+I've been talking
+to the ship's computer.
+
+751
+00:53:23,515 --> 00:53:25,108
+And?
+
+752
+00:53:25,196 --> 00:53:26,675
+It hates me.
+
+753
+00:53:27,036 --> 00:53:29,835
+No. Eddie, computer,
+
+754
+00:53:29,917 --> 00:53:33,275
+is there another way
+to follow the ships?
+
+755
+00:53:33,399 --> 00:53:37,678
+<i>Activating Emergency Escape Pod.
+It's super-neat and fun to fly.</i>
+
+756
+00:53:40,001 --> 00:53:41,435
+Unbelievable.
+
+757
+00:53:41,522 --> 00:53:45,642
+I'm in. OK, Ford,
+do you have any idea?
+
+758
+00:53:45,724 --> 00:53:47,919
+- We'll press this button.
+- No.
+
+759
+00:53:49,485 --> 00:53:52,364
+- This button.
+- OK. Nothing's... OK.
+
+760
+00:53:52,486 --> 00:53:55,320
+Good man.
+
+761
+00:53:55,407 --> 00:53:58,845
+- OK, we're wobbling...
+- You forgot your towel.
+
+762
+00:53:58,929 --> 00:54:01,319
+Get him off me. I'll kill him.
+
+763
+00:54:01,410 --> 00:54:03,800
+- OK, Ford, there's a...
+- Is that better?
+
+764
+00:54:03,891 --> 00:54:05,847
+No, that's worse.
+
+765
+00:54:05,971 --> 00:54:09,090
+- Do what... I don't need that.
+- OK.
+
+766
+00:54:09,173 --> 00:54:11,813
+Stop the rocking.
+Marvin, any ideas?
+
+767
+00:54:11,894 --> 00:54:15,365
+I have a million ideas.
+They all point to certain death.
+
+768
+00:54:15,455 --> 00:54:16,809
+Thanks, Marv.
+
+769
+00:55:01,073 --> 00:55:04,953
+- Magrathea.
+- No, we're on the Vogon planet.
+
+770
+00:55:05,034 --> 00:55:07,549
+- Yes, it is. It's Magrathea.
+- This is Vogsphere.
+
+771
+00:55:07,635 --> 00:55:10,673
+- Yeah, Magrathea. I know it.
+- No, it's not.
+
+772
+00:55:10,756 --> 00:55:14,148
+- There is no Magrathea.
+- Yes, it is.
+
+773
+00:55:15,238 --> 00:55:17,309
+- What are you doing?
+- They took my head.
+
+774
+00:55:17,399 --> 00:55:20,119
+They have these
+on Arcturan megafreighters.
+
+775
+00:55:20,200 --> 00:55:22,635
+They use them
+when they need to concentrate.
+
+776
+00:55:22,721 --> 00:55:24,872
+- What is it?
+- It's a thinking cap.
+
+777
+00:55:29,444 --> 00:55:31,481
+There you go.
+
+778
+00:55:35,086 --> 00:55:38,966
+That should give him some zest
+for about ten minutes or so.
+
+779
+00:55:39,047 --> 00:55:42,359
+Now I'm feeling much better
+about our predicament.
+
+780
+00:56:02,817 --> 00:56:06,811
+I checked the Guide for how
+to rescue a prisoner from Vogsphere.
+
+781
+00:56:06,898 --> 00:56:09,891
+It said don't.
+I'm assuming you have a better plan.
+
+782
+00:56:09,979 --> 00:56:12,448
+Well, I kind of had this idea
+that we could...
+
+783
+00:56:14,421 --> 00:56:16,538
+- Did anyone see that?
+- See what?
+
+784
+00:56:16,662 --> 00:56:18,460
+What was it?
+
+785
+00:56:18,583 --> 00:56:22,702
+Nothing, it's nothing.
+It's just my imagination.
+
+786
+00:56:22,824 --> 00:56:26,865
+OK, right. Now, everyone just stop
+a minute, please, and look at me.
+
+787
+00:56:26,946 --> 00:56:31,658
+There's definitely something
+going on here.
+
+788
+00:56:33,349 --> 00:56:35,499
+Just watch.
+
+789
+00:56:35,589 --> 00:56:37,501
+Just watch.
+
+790
+00:56:40,791 --> 00:56:43,147
+OK, I think we...
+
+791
+00:56:44,473 --> 00:56:45,872
+You too.
+
+792
+00:56:46,874 --> 00:56:49,150
+Yeah, what was that?
+
+793
+00:56:52,396 --> 00:56:54,308
+Zaphod, what do you think?
+
+794
+00:56:57,478 --> 00:57:01,154
+I think... Zarquon.
+What was that?
+
+795
+00:57:02,120 --> 00:57:05,557
+I'd make a suggestion,
+but you wouldn't listen.
+
+796
+00:57:05,681 --> 00:57:08,480
+- No one ever does.
+- I have an idea.
+
+797
+00:57:08,562 --> 00:57:11,555
+Ford. Kill it. Get rid of it.
+
+798
+00:57:19,606 --> 00:57:22,326
+OK, don't think.
+
+799
+00:57:22,408 --> 00:57:24,797
+Nobody think. No ideas.
+
+800
+00:57:24,888 --> 00:57:26,959
+No theories. No nothing.
+
+801
+00:57:32,892 --> 00:57:35,407
+This is crazy.
+Trillian is in there somewhere.
+
+802
+00:57:35,493 --> 00:57:40,124
+- We need an idea to help save her.
+- I have an...
+
+803
+00:57:40,214 --> 00:57:42,251
+Run.
+
+804
+00:58:10,426 --> 00:58:12,463
+You're supposed to stop.
+
+805
+00:58:21,310 --> 00:58:25,430
+OK, so I'm not thinking.
+Not thinking. No ideas coming.
+
+806
+00:58:28,153 --> 00:58:31,146
+OK, this isn't an idea
+that has any merit at all,
+
+807
+00:58:31,274 --> 00:58:34,951
+but, Marvin, can you give me a hand?
+
+808
+00:58:37,317 --> 00:58:39,387
+OK, where is she?
+
+809
+00:58:42,238 --> 00:58:44,958
+Who, the director of robot arm repair?
+
+810
+00:58:46,560 --> 00:58:50,919
+Tricia Yggarstuk McMillanus of Blaard?
+
+811
+00:58:51,002 --> 00:58:54,075
+No, Tricia Marie McMillan of Earth.
+
+812
+00:58:54,203 --> 00:58:55,717
+Oh. Right.
+
+813
+00:59:01,326 --> 00:59:04,603
+Sorry, no record of Earth.
+
+814
+00:59:05,367 --> 00:59:08,998
+Galactic sector
+ZZ9 Plural Z Alpha?
+
+815
+00:59:09,089 --> 00:59:12,400
+- Oh, yes.
+- She's lying.
+
+816
+00:59:13,851 --> 00:59:17,049
+She's skinny, and she's pretty,
+and she's lying.
+
+817
+00:59:18,292 --> 00:59:20,761
+Oh, yes, here we are. Earth.
+
+818
+00:59:22,694 --> 00:59:24,094
+"Destroyed."
+
+819
+00:59:24,215 --> 00:59:27,413
+Do you have
+a second home planet?
+
+820
+00:59:27,496 --> 00:59:30,933
+- Destroyed? That's impossible.
+- That's what it says here.
+
+821
+00:59:31,057 --> 00:59:36,008
+Says it was destroyed to make way
+for a hyperspace expressway.
+
+822
+00:59:42,782 --> 00:59:46,219
+Who in their right mind
+gives an order to destroy a planet?
+
+823
+00:59:48,264 --> 00:59:52,019
+- He said the gray building, right?
+- All the buildings are gray.
+
+824
+00:59:52,106 --> 00:59:55,383
+"Give me a hand." Very funny.
+
+825
+00:59:55,467 --> 00:59:58,778
+How am I supposed to drive this pod
+with one arm? Stupid human.
+
+826
+01:00:03,030 --> 01:00:06,068
+So, you need to go back
+and fill that in.
+
+827
+01:00:06,151 --> 01:00:09,349
+Then, make sure, when you fill in
+the facilitating form...
+
+828
+01:00:07,872 --> 01:00:12,549
+Leave this to me. I'm British.
+I know how to queue.
+
+829
+01:00:14,114 --> 01:00:19,031
+If you'd fill that form in for me,
+and return it as soon as possible.
+
+830
+01:00:19,116 --> 01:00:23,270
+- Writing implements to your left...
+- You're President. Can you do anything?
+
+831
+01:00:23,358 --> 01:00:28,035
+Presidents don't have power. Their job
+is to draw attention away from it.
+
+832
+01:00:30,040 --> 01:00:31,997
+Hey, how you doin'?
+
+833
+01:00:32,081 --> 01:00:36,599
+Hey, it's me, your President.
+What's goin' on? Thanks for coming.
+
+834
+01:00:36,683 --> 01:00:39,403
+All right. I know that sponge.
+All right.
+
+835
+01:00:39,524 --> 01:00:41,800
+- Next.
+- President coming through.
+
+836
+01:00:41,925 --> 01:00:44,759
+How you doin', Pinhead?
+No, really, it's me.
+
+837
+01:00:45,606 --> 01:00:47,325
+I love kabuki. Look at that.
+
+838
+01:00:47,407 --> 01:00:49,319
+Out the way.
+
+839
+01:00:51,008 --> 01:00:53,204
+Give us a kiss.
+
+840
+01:00:54,210 --> 01:00:56,964
+Hi, I've come about
+release of a prisoner.
+
+841
+01:00:57,051 --> 01:00:59,087
+Prisoner release form.
+
+842
+01:01:02,333 --> 01:01:04,450
+I don't believe you.
+
+843
+01:01:04,534 --> 01:01:06,411
+These are the orders.
+
+844
+01:01:11,296 --> 01:01:13,208
+"Love and kisses"?
+
+845
+01:01:13,977 --> 01:01:17,335
+Now, according
+to the Galactic Penal Code,
+
+846
+01:01:17,419 --> 01:01:21,936
+the punishment for
+a presidential kidnapping
+
+847
+01:01:22,020 --> 01:01:25,617
+is to be fed to
+the Ravenous Bugblatter Beast of Traal.
+
+848
+01:01:26,382 --> 01:01:28,374
+Good day.
+
+849
+01:01:29,983 --> 01:01:34,137
+Get off of me. What the hell is that?
+
+850
+01:01:35,466 --> 01:01:39,540
+No, wait.
+There's been some kind of mistake.
+
+851
+01:01:41,948 --> 01:01:47,308
+- Tick all the boxes on the right.
+- Right. Got it.
+
+852
+01:01:47,390 --> 01:01:49,302
+Not that one.
+
+853
+01:01:49,391 --> 01:01:53,511
+<i>What to do if you find yourself
+stuck with no hope of rescue.</i>
+
+854
+01:01:53,593 --> 01:01:57,792
+<i>Consider how lucky you are
+that life has been good to you so far.</i>
+
+855
+01:01:57,874 --> 01:02:00,867
+<i>Alternatively, if life
+hasn't been good to you so far,</i>
+
+856
+01:02:00,955 --> 01:02:04,188
+<i>which, given your current circumstances,
+seems more likely,</i>
+
+857
+01:02:04,277 --> 01:02:08,317
+<i>consider how lucky you are that
+it won't be troubling you much longer.</i>
+
+858
+01:02:11,600 --> 01:02:14,399
+Right, there we go.
+
+859
+01:02:14,481 --> 01:02:16,757
+Kidnapping the President.
+
+860
+01:02:16,882 --> 01:02:21,115
+Oh, no, she's not eligible
+for release at this time.
+
+861
+01:02:21,203 --> 01:02:24,241
+OK. Right.
+Look, this is the President.
+
+862
+01:02:24,324 --> 01:02:26,361
+OK. See, there?
+
+863
+01:02:26,445 --> 01:02:29,917
+He says the kidnapping business
+was a horrible misunderstanding.
+
+864
+01:02:30,007 --> 01:02:31,520
+Oh, yeah.
+
+865
+01:02:31,607 --> 01:02:35,158
+She meant nothing by it.
+He's ordering you to let her go.
+
+866
+01:02:35,249 --> 01:02:39,801
+But this isn't a presidential
+release of prisoner form.
+
+867
+01:02:39,891 --> 01:02:41,802
+Those are blue.
+
+868
+01:02:43,052 --> 01:02:46,966
+- I'll stay here.
+- All right. Hold that. OK.
+
+869
+01:02:51,455 --> 01:02:53,686
+Oh, he's hungry today.
+
+870
+01:02:56,177 --> 01:02:57,656
+That's blue. Right.
+
+871
+01:02:59,818 --> 01:03:02,617
+- I'm not a journalist.
+- We're just hanging out.
+
+872
+01:03:02,699 --> 01:03:05,168
+OK, this is for Tricia McMillan.
+
+873
+01:03:05,941 --> 01:03:09,173
+Tricia McMillan. OK.
+
+874
+01:03:11,223 --> 01:03:15,183
+Sir, it's a release form.
+
+875
+01:03:15,304 --> 01:03:16,499
+Thank you.
+
+876
+01:03:16,585 --> 01:03:19,623
+She's free to go.
+
+877
+01:03:19,706 --> 01:03:21,698
+Release her.
+
+878
+01:03:24,388 --> 01:03:28,064
+Zaphod's here.
+Well, then, that's fine then.
+
+879
+01:03:28,149 --> 01:03:30,061
+Let's just go and get him.
+
+880
+01:03:37,833 --> 01:03:40,428
+Who are we waiting for again?
+
+881
+01:03:44,315 --> 01:03:46,227
+No, I'm serious.
+
+882
+01:03:48,117 --> 01:03:50,313
+Tricia.
+
+883
+01:03:53,239 --> 01:03:55,151
+- Tricia.
+- Trill.
+
+884
+01:03:55,680 --> 01:03:58,479
+- Hey, come on.
+- You idiot.
+
+885
+01:03:58,561 --> 01:04:00,518
+You signed the order to destroy Earth.
+
+886
+01:04:00,602 --> 01:04:02,354
+- He did?
+- I did?
+
+887
+01:04:02,443 --> 01:04:06,722
+Yes. "Love and kisses, Zaphod"?
+You didn't even read it, did you?
+
+888
+01:04:06,804 --> 01:04:11,402
+Honey, I'm President of the Galaxy.
+I don't get a lot of time for reading.
+
+889
+01:04:13,407 --> 01:04:15,159
+An entire planet, my home,
+
+890
+01:04:15,247 --> 01:04:18,446
+destroyed because you thought
+they wanted your autograph.
+
+891
+01:04:18,529 --> 01:04:20,998
+- They framed me.
+- Are you an idiot?
+
+892
+01:04:21,090 --> 01:04:24,845
+- Trillian.
+- You knew. Why didn't you tell me?
+
+893
+01:04:24,931 --> 01:04:28,812
+- He threatened me.
+- Get a backbone, Arthur.
+
+894
+01:04:28,893 --> 01:04:33,844
+Oh, a backbone? What about coming here
+to rescue you? Thank you. My idea.
+
+895
+01:04:35,055 --> 01:04:36,967
+Stupid.
+
+896
+01:04:41,097 --> 01:04:43,328
+- Got your arm.
+- How considerate.
+
+897
+01:04:43,418 --> 01:04:47,618
+Right, then, all those lucky enough
+to have two arms, hold tight.
+
+898
+01:05:03,626 --> 01:05:06,619
+The President tests my patience.
+
+899
+01:05:06,707 --> 01:05:11,339
+This time I shall pursue him myself.
+Ready my ship.
+
+900
+01:05:11,429 --> 01:05:14,228
+Fantastic. At last.
+
+901
+01:05:19,312 --> 01:05:22,511
+That's one hour for lunch, everybody.
+
+902
+01:05:23,274 --> 01:05:25,345
+I think I'll have soup today.
+
+903
+01:05:27,355 --> 01:05:30,713
+<i>The Encyclopaedia Galactica,
+in its chapter on love,</i>
+
+904
+01:05:30,797 --> 01:05:34,074
+<i>states that it is
+far too complicated to define.</i>
+
+905
+01:05:34,158 --> 01:05:38,392
+<i>The Hitchhiker's Guide
+to the Galaxy has this to say on love:</i>
+
+906
+01:05:38,560 --> 01:05:40,995
+<i>"Avoid, if at all possible."</i>
+
+907
+01:05:41,081 --> 01:05:43,835
+<i>Unfortunately,
+Arthur Dent has never read</i>
+
+908
+01:05:43,922 --> 01:05:46,278
+The Hitchhiker's Guide to the Galaxy.
+
+909
+01:05:46,403 --> 01:05:50,192
+- Oh, I'm so sorry.
+- No, come in.
+
+910
+01:05:50,324 --> 01:05:52,441
+I didn't...
+
+911
+01:05:55,286 --> 01:05:56,879
+Look...
+
+912
+01:05:56,967 --> 01:05:59,766
+Trillian, I just wanted to say,
+you were right,
+
+913
+01:05:59,848 --> 01:06:05,163
+I should've told you, and I understand
+totally if you're angry with me.
+
+914
+01:06:05,250 --> 01:06:08,800
+For what it's worth,
+I know how you must be feeling.
+
+915
+01:06:10,492 --> 01:06:14,646
+- Can you hand me a towel?
+- Yeah, sure, this...
+
+916
+01:06:16,054 --> 01:06:17,966
+Thank you.
+
+917
+01:06:18,055 --> 01:06:20,934
+Actually, what I was going to say was
+
+918
+01:06:22,177 --> 01:06:27,014
+if I'd said yes to you
+and gone to Madagascar,
+
+919
+01:06:27,099 --> 01:06:29,135
+then neither of us would be here now.
+
+920
+01:06:30,900 --> 01:06:34,530
+I just thought that might
+count for something.
+
+921
+01:06:37,663 --> 01:06:39,574
+It doesn't matter.
+
+922
+01:07:01,924 --> 01:07:07,319
+All right, computer, take us to...
+Where we headed again?
+
+923
+01:07:07,406 --> 01:07:09,841
+OK, I'm gonna get you another lemon.
+
+924
+01:07:10,808 --> 01:07:12,719
+All right.
+
+925
+01:07:16,850 --> 01:07:19,160
+<i>Engaging Improbability Drive.</i>
+
+926
+01:07:19,251 --> 01:07:22,961
+No, Zaphod, no.
+Buttons are not toys. What did you do?
+
+927
+01:07:23,052 --> 01:07:24,850
+<i>Magrathean coordinates accepted.</i>
+
+928
+01:07:32,376 --> 01:07:34,845
+<i>It blows my circuits to tell you</i>
+
+929
+01:07:34,937 --> 01:07:38,214
+<i>that we're in orbit,
+at an altitude of 300 miles,</i>
+
+930
+01:07:38,338 --> 01:07:41,810
+<i>around the legendary planet
+of Magrathea.</i>
+
+931
+01:07:41,900 --> 01:07:44,495
+Magrathea.
+
+932
+01:07:50,863 --> 01:07:52,775
+Unbelievable.
+
+933
+01:07:55,225 --> 01:07:57,136
+Incredible.
+
+934
+01:07:58,106 --> 01:08:00,462
+It's even worse
+than I thought it would be.
+
+935
+01:08:01,627 --> 01:08:05,747
+<i>Greetings. This is a recorded
+announcement as we are all out.</i>
+
+936
+01:08:05,829 --> 01:08:09,140
+<i>The Commercial Council of Magrathea
+thanks you for your visit,</i>
+
+937
+01:08:09,270 --> 01:08:12,468
+<i>but regrets that the entire planet
+is temporarily closed.</i>
+
+938
+01:08:12,551 --> 01:08:16,182
+<i>If you'd like to leave your name
+and a planet where you can be contacted,</i>
+
+939
+01:08:16,273 --> 01:08:18,310
+<i>kindly do so at the tone.</i>
+
+940
+01:08:19,354 --> 01:08:23,110
+- How can a planet be closed?
+- Zarkin' A, cousin.
+
+941
+01:08:23,196 --> 01:08:26,473
+OK, computer, keep going.
+Take us down.
+
+942
+01:08:26,597 --> 01:08:28,110
+<i>I'd be happy to.</i>
+
+943
+01:08:29,678 --> 01:08:34,549
+<i>It is gratifying that your enthusiasm
+for our planet continues unabated.</i>
+
+944
+01:08:34,640 --> 01:08:37,155
+<i>As a token of our appreciation,</i>
+
+945
+01:08:37,281 --> 01:08:40,194
+<i>we hope you will enjoy
+the two thermo-nuclear missiles</i>
+
+946
+01:08:40,282 --> 01:08:43,400
+<i>we've just sent
+to converge with your craft.</i>
+
+947
+01:08:44,084 --> 01:08:46,394
+<i>To ensure on-going quality of service,</i>
+
+948
+01:08:46,525 --> 01:08:50,599
+<i>your death may be monitored
+for training purposes. Thank you.</i>
+
+949
+01:08:51,206 --> 01:08:55,326
+<i>I'm delighted to tell you there are two
+nuclear missiles heading right for us.</i>
+
+950
+01:08:55,408 --> 01:08:58,640
+<i>If you don't mind,
+I'm going to take evasive action.</i>
+
+951
+01:09:02,811 --> 01:09:05,884
+<i>Something's jamming
+my guidance system.</i>
+
+952
+01:09:05,972 --> 01:09:07,850
+<i>Impact minus 45 seconds.</i>
+
+953
+01:09:11,454 --> 01:09:13,571
+Computer, do something.
+
+954
+01:09:13,695 --> 01:09:17,815
+<i>Sure. Handing over manual control.
+Good luck.</i>
+
+955
+01:09:28,061 --> 01:09:30,017
+I need some help.
+
+956
+01:09:30,782 --> 01:09:33,217
+I can't do this without my third arm.
+
+957
+01:09:35,944 --> 01:09:38,095
+Arthur, grab my hand.
+
+958
+01:09:48,108 --> 01:09:51,659
+- Did we lose 'em?
+- No, they're coming right at us.
+
+959
+01:09:54,231 --> 01:09:57,781
+- Why don't I just press this?
+- No, we're not back to normal yet.
+
+960
+01:09:57,872 --> 01:09:59,829
+- What will happen?
+- I don't know.
+
+961
+01:09:59,913 --> 01:10:03,749
+Don't do it. We're here.
+No telling where it'll send us.
+
+962
+01:10:06,596 --> 01:10:08,473
+- No, sod it all.
+- No.
+
+963
+01:10:14,399 --> 01:10:16,310
+Where are we?
+
+964
+01:10:20,241 --> 01:10:23,791
+- Exactly where we were.
+- And the missiles?
+
+965
+01:10:24,803 --> 01:10:30,118
+Apparently, they've turned
+into a bowl of petunias.
+
+966
+01:10:31,565 --> 01:10:34,319
+And a very surprised-looking whale.
+
+967
+01:10:34,446 --> 01:10:41,400
+<i>And an improbability factor
+of 8,767,128 to 1 against.</i>
+
+968
+01:10:42,289 --> 01:10:44,201
+We have normality.
+
+969
+01:10:45,131 --> 01:10:47,486
+Normality, right.
+
+970
+01:10:47,571 --> 01:10:50,371
+We can talk about normality
+till the cows come home.
+
+971
+01:10:51,493 --> 01:10:54,406
+- What is normal?
+- What's home?
+
+972
+01:10:54,494 --> 01:10:56,133
+What are cows?
+
+973
+01:10:57,255 --> 01:11:00,009
+A proper cup of tea
+would restore my normality.
+
+974
+01:11:00,096 --> 01:11:04,171
+<i>It is important to note that suddenly,
+and against all probability,</i>
+
+975
+01:11:04,258 --> 01:11:07,012
+<i>a sperm whale had been
+called into existence</i>
+
+976
+01:11:07,099 --> 01:11:11,060
+<i>several miles above
+the surface of an alien planet.</i>
+
+977
+01:11:11,141 --> 01:11:13,861
+<i>Since this is not a tenable position
+for a whale,</i>
+
+978
+01:11:13,942 --> 01:11:18,734
+<i>this innocent creature had very little
+time to come to terms with its identity.</i>
+
+979
+01:11:18,824 --> 01:11:21,293
+<i>This is what it thought as it fell:</i>
+
+980
+01:11:21,385 --> 01:11:24,458
+<i>What's happening? Who am I?</i>
+
+981
+01:11:24,546 --> 01:11:28,062
+<i>Why am I here? What's my purpose?
+What do I mean by "who am l"?</i>
+
+982
+01:11:28,187 --> 01:11:30,224
+<i>OK, calm down, get a grip now.</i>
+
+983
+01:11:30,308 --> 01:11:34,223
+<i>This is an interesting sensation.
+A sort of tingling in my...</i>
+
+984
+01:11:34,310 --> 01:11:39,146
+<i>I better start finding names for things.
+Let's call it a tail. Yeah, tail.</i>
+
+985
+01:11:39,272 --> 01:11:43,152
+<i>What's this roaring sound whooshing past
+what I'm gonna call my head?</i>
+
+986
+01:11:43,233 --> 01:11:45,270
+<i>Wind. Is that a good name? That'll do.</i>
+
+987
+01:11:45,354 --> 01:11:48,506
+<i>Yay, this is really exciting.
+I'm dizzy with anticipation.</i>
+
+988
+01:11:48,595 --> 01:11:51,030
+<i>Or is it the wind?
+There's a lot of that now.</i>
+
+989
+01:11:51,116 --> 01:11:55,031
+<i>And what's this thing coming towards me
+very fast? So big and flat and round.</i>
+
+990
+01:11:55,158 --> 01:12:00,029
+<i>It needs a big wide-sounding name
+like ow, ound, round, ground.</i>
+
+991
+01:12:00,120 --> 01:12:04,478
+<i>That's it, ground. I wonder if it will
+be friends with me. Hello, ground.</i>
+
+992
+01:12:06,762 --> 01:12:10,393
+<i>The only thing that went through
+the mind of the bowl of petunias</i>
+
+993
+01:12:10,484 --> 01:12:14,364
+<i>as it fell was, "Oh, no, not again."</i>
+
+994
+01:12:15,566 --> 01:12:20,961
+<i>Many have speculated that if we knew
+why the petunias had thought that,</i>
+
+995
+01:12:21,048 --> 01:12:26,249
+<i>we should know a lot more about the
+nature of the universe than we do now.</i>
+
+996
+01:12:30,371 --> 01:12:32,522
+What are those things?
+
+997
+01:12:32,612 --> 01:12:35,844
+They're portals to another dimension.
+
+998
+01:12:35,933 --> 01:12:40,247
+Right. I don't suppose this portal
+has central heating, does it?
+
+999
+01:12:46,057 --> 01:12:47,776
+This is the one.
+
+1000
+01:12:47,858 --> 01:12:52,138
+This will all end in tears,
+I just know it.
+
+1001
+01:12:54,901 --> 01:12:56,972
+Right here.
+
+1002
+01:13:01,183 --> 01:13:03,573
+OK, in we go.
+
+1003
+01:13:03,664 --> 01:13:08,581
+We can't just step into that... that.
+We don't know where it leads.
+
+1004
+01:13:08,666 --> 01:13:10,703
+If we pick the wrong one,
+
+1005
+01:13:10,827 --> 01:13:14,377
+we just come back,
+we pick another one. It's no biggie.
+
+1006
+01:13:14,508 --> 01:13:17,946
+What? Yeah, it's a big biggie, Ford.
+A big biggie.
+
+1007
+01:13:18,030 --> 01:13:22,822
+What if it rips us all into
+tiny little atomic particle thingies?
+
+1008
+01:13:22,912 --> 01:13:26,303
+This is the right one. I have a hunch.
+
+1009
+01:13:26,393 --> 01:13:30,434
+- Ford.
+- His hunches are good.
+
+1010
+01:13:30,515 --> 01:13:32,825
+Arthur, I say we go.
+
+1011
+01:13:32,916 --> 01:13:38,550
+Go with the hunch of a man
+whose brain is fuelled by lemons?
+
+1012
+01:13:38,638 --> 01:13:40,230
+This is suicide.
+
+1013
+01:13:40,318 --> 01:13:44,154
+- I think I resent that.
+- I don't care.
+
+1014
+01:13:44,240 --> 01:13:47,039
+I'm getting hostility from you, Alex...
+
+1015
+01:13:47,121 --> 01:13:50,558
+- Arthur.
+- Have you ever tried yoga?
+
+1016
+01:13:51,683 --> 01:13:55,154
+- Trillian.
+- I think that's supposed to happen.
+
+1017
+01:13:59,806 --> 01:14:02,002
+She's gone. Ford, she's gone.
+
+1018
+01:14:03,127 --> 01:14:05,323
+Arthur, don't panic.
+
+1019
+01:14:07,649 --> 01:14:11,438
+- Ford.
+- Hey, wait for me.
+
+1020
+01:14:24,456 --> 01:14:26,128
+Come on.
+
+1021
+01:14:26,216 --> 01:14:28,128
+Idiot. Come on.
+
+1022
+01:14:52,186 --> 01:14:55,703
+No, don't leave.
+Come on, just start.
+
+1023
+01:14:55,788 --> 01:14:58,781
+I told you this would end in tears.
+
+1024
+01:14:58,909 --> 01:15:00,901
+Did you?
+
+1025
+01:15:09,873 --> 01:15:11,466
+Geronimo.
+
+1026
+01:15:14,075 --> 01:15:15,667
+Far out.
+
+1027
+01:15:18,436 --> 01:15:20,507
+This is it.
+
+1028
+01:15:20,597 --> 01:15:22,953
+Deep Thought. I'm a-coming.
+
+1029
+01:15:25,639 --> 01:15:30,271
+So, this is how it's all going to end,
+is it?
+
+1030
+01:15:32,562 --> 01:15:36,522
+Me, alone on a dead planet,
+with a manically depressed robot.
+
+1031
+01:15:36,603 --> 01:15:38,481
+You think you've got problems.
+
+1032
+01:15:38,564 --> 01:15:41,477
+What if you are
+a manically depressed robot?
+
+1033
+01:15:41,605 --> 01:15:43,517
+Excuse me.
+
+1034
+01:15:49,528 --> 01:15:53,967
+- Who are you?
+- No, my name is not important.
+
+1035
+01:15:55,131 --> 01:15:57,487
+You must come with me.
+
+1036
+01:15:57,572 --> 01:16:01,691
+- Get away.
+- Terrible events are afoot.
+
+1037
+01:16:01,773 --> 01:16:05,131
+You must come or you'll be late.
+
+1038
+01:16:05,215 --> 01:16:07,410
+- Late? What for?
+- What?
+
+1039
+01:16:07,495 --> 01:16:12,776
+No. What's your name, Earthman?
+
+1040
+01:16:13,698 --> 01:16:15,974
+- Dent. Arthur Dent.
+- Well...
+
+1041
+01:16:16,059 --> 01:16:18,699
+Well, late as in
+"the late Dentarthurdent."
+
+1042
+01:16:19,420 --> 01:16:23,131
+It's a sort of threat, do you see? No.
+
+1043
+01:16:23,262 --> 01:16:26,141
+- No.
+- Your friends are safe.
+
+1044
+01:16:26,223 --> 01:16:29,296
+- You can trust me.
+- A man who won't tell me his name?
+
+1045
+01:16:31,025 --> 01:16:33,938
+OK, my name is...
+
+1046
+01:16:34,026 --> 01:16:37,781
+My name is... is... is...
+Slartibartfast.
+
+1047
+01:16:39,868 --> 01:16:42,827
+I said it wasn't important.
+
+1048
+01:16:44,430 --> 01:16:48,470
+Well... So my friends are safe?
+
+1049
+01:16:48,591 --> 01:16:49,945
+Let me show you.
+
+1050
+01:16:50,032 --> 01:16:55,711
+I could calculate your chances
+of survival, but you won't like it.
+
+1051
+01:17:19,643 --> 01:17:22,317
+Did you know we built planets?
+
+1052
+01:17:22,404 --> 01:17:25,443
+Oh, yes, fascinating trade.
+
+1053
+01:17:26,366 --> 01:17:30,839
+Doing the coastlines
+was always my favourite.
+
+1054
+01:17:30,928 --> 01:17:35,879
+We used to have endless fun doing the
+little fiddly bits around the fjords.
+
+1055
+01:17:35,970 --> 01:17:41,251
+But then the galactic economy collapsed,
+and seeing that custom-built planets
+
+1056
+01:17:41,332 --> 01:17:45,212
+are a bit of a luxury commodity...
+
+1057
+01:17:46,694 --> 01:17:50,404
+Come with me because there's
+been a terrible mix-up with your planet.
+
+1058
+01:17:50,495 --> 01:17:52,646
+Best laid plans of mice, you know.
+
+1059
+01:17:52,736 --> 01:17:56,048
+- And men.
+- What?
+
+1060
+01:17:56,138 --> 01:17:58,094
+Best laid plans of mice and men.
+
+1061
+01:17:59,779 --> 01:18:02,738
+Yes, well, I don't think men
+have much to do with it. Here.
+
+1062
+01:18:41,915 --> 01:18:43,952
+I must warn you,
+
+1063
+01:18:44,036 --> 01:18:47,347
+we're going to pass through,
+well, a sort of gateway thing.
+
+1064
+01:18:47,477 --> 01:18:49,594
+It may disturb you.
+
+1065
+01:18:49,678 --> 01:18:51,749
+It scares the willies out of me.
+
+1066
+01:19:22,011 --> 01:19:25,448
+Welcome to our factory floor.
+
+1067
+01:19:48,261 --> 01:19:50,173
+All right.
+
+1068
+01:19:51,662 --> 01:19:54,416
+Yeah, this is it.
+
+1069
+01:19:57,345 --> 01:19:59,734
+This is it.
+
+1070
+01:19:59,865 --> 01:20:03,576
+O great Deep Thought.
+
+1071
+01:20:03,667 --> 01:20:05,306
+We have travelled long...
+
+1072
+01:20:07,308 --> 01:20:08,981
+...and far.
+
+1073
+01:20:09,109 --> 01:20:14,344
+Have you calculated
+the ultimate question of life,
+
+1074
+01:20:14,431 --> 01:20:16,741
+the universe and everything?
+
+1075
+01:20:17,552 --> 01:20:18,542
+<i>No.</i>
+
+1076
+01:20:18,633 --> 01:20:21,068
+<i>- What?
+- I've been watching TV.</i>
+
+1077
+01:20:21,914 --> 01:20:24,383
+<i>I designed
+another computer to do that.</i>
+
+1078
+01:20:25,876 --> 01:20:28,106
+Oh, right, I forgot. Is it here?
+
+1079
+01:20:28,196 --> 01:20:30,836
+<i>No, it's not here. It's another world.</i>
+
+1080
+01:20:30,918 --> 01:20:32,954
+It's on another world.
+
+1081
+01:20:33,078 --> 01:20:36,436
+<i>It is another world, stupid.</i>
+
+1082
+01:20:36,520 --> 01:20:38,830
+<i>Or it was until the Vogons destroyed it</i>
+
+1083
+01:20:38,921 --> 01:20:41,197
+<i>to make way
+for a hyperspace expressway.</i>
+
+1084
+01:20:41,402 --> 01:20:43,518
+Well... OK.
+
+1085
+01:20:43,602 --> 01:20:45,639
+You sure you don't have the question,
+
+1086
+01:20:45,723 --> 01:20:49,081
+or a way to, you know,
+access it or something?
+
+1087
+01:20:49,165 --> 01:20:51,042
+I think I've done a lot to get here.
+
+1088
+01:20:51,165 --> 01:20:54,398
+<i>Oh, shh. The show's back on.</i>
+
+1089
+01:20:59,609 --> 01:21:03,523
+Well, I don't wanna bother you,
+so I'm gonna... Good stuff.
+
+1090
+01:21:03,610 --> 01:21:07,844
+Great. I'm gonna go find something
+else for my entire life to be about.
+
+1091
+01:21:07,932 --> 01:21:11,084
+Zaphod, there's the gun.
+
+1092
+01:21:11,173 --> 01:21:13,369
+- Gun?
+- That Humma sent you for.
+
+1093
+01:21:13,454 --> 01:21:17,768
+- You gave him your head.
+- Why'd I do that?
+
+1094
+01:21:17,856 --> 01:21:19,448
+- OK.
+- That's stupid.
+
+1095
+01:21:19,576 --> 01:21:24,447
+O Deep Thought,
+we were told that there is a gun.
+
+1096
+01:21:38,664 --> 01:21:40,815
+There you are.
+
+1097
+01:21:40,905 --> 01:21:42,497
+Look familiar?
+
+1098
+01:21:42,585 --> 01:21:45,977
+So it wasn't destroyed?
+
+1099
+01:21:46,067 --> 01:21:50,141
+Actually, it was.
+This is a backup. Earth Mark II.
+
+1100
+01:21:53,149 --> 01:21:54,868
+So you made the Earth?
+
+1101
+01:21:55,790 --> 01:21:58,430
+Not me alone, but I did my part.
+
+1102
+01:21:58,551 --> 01:22:01,704
+Ever heard of a place,
+I think it's called Norway?
+
+1103
+01:22:01,793 --> 01:22:05,503
+That was one of mine.
+I... I got an award for it.
+
+1104
+01:22:14,798 --> 01:22:18,109
+All right, Frank? That's Frank.
+
+1105
+01:22:20,040 --> 01:22:22,396
+They've nearly finished the oceans.
+
+1106
+01:22:31,444 --> 01:22:32,719
+Zaphod.
+
+1107
+01:22:32,805 --> 01:22:34,716
+Here, it's...
+
+1108
+01:22:37,126 --> 01:22:40,040
+It's just like Humma said.
+
+1109
+01:22:40,128 --> 01:22:42,597
+- Now you can go get your head back.
+- Hey, Ford.
+
+1110
+01:22:42,689 --> 01:22:45,079
+It's been nice knowing you,
+you zarkin' frood.
+
+1111
+01:22:45,170 --> 01:22:46,159
+No.
+
+1112
+01:22:47,210 --> 01:22:49,361
+This is a bust too.
+
+1113
+01:22:49,451 --> 01:22:53,492
+Hey, man. You know,
+you must really be frustrated.
+
+1114
+01:22:53,573 --> 01:22:56,486
+You go through all you have,
+you don't get an answer,
+
+1115
+01:22:56,574 --> 01:22:59,214
+which means no money or fame,
+which you deserve...
+
+1116
+01:22:59,295 --> 01:23:04,291
+<i>The Point-of-View Gun, conveniently,
+does precisely what its name suggests.</i>
+
+1117
+01:23:04,417 --> 01:23:06,807
+Fantastic.
+
+1118
+01:23:07,898 --> 01:23:10,732
+<i>If you point it at someone
+and pull the trigger,</i>
+
+1119
+01:23:10,859 --> 01:23:13,500
+<i>they instantly see things
+from your point of view.</i>
+
+1120
+01:23:13,581 --> 01:23:15,333
+Give me that thing.
+
+1121
+01:23:15,461 --> 01:23:17,293
+<i>It was designed by Deep Thought,</i>
+
+1122
+01:23:17,382 --> 01:23:21,137
+<i>but commissioned by a consortium
+of intergalactic angry housewives</i>
+
+1123
+01:23:21,224 --> 01:23:23,533
+<i>who, after arguments
+with their husbands,</i>
+
+1124
+01:23:23,624 --> 01:23:26,857
+<i>were sick of ending
+those arguments with the phrase,</i>
+
+1125
+01:23:26,986 --> 01:23:28,978
+<i>"You just don't get it, do you?"</i>
+
+1126
+01:23:31,668 --> 01:23:33,818
+And you're right,
+I shouldn't be so upset
+
+1127
+01:23:33,908 --> 01:23:38,267
+because life goes on, you know,
+and I should just go on with it.
+
+1128
+01:23:38,870 --> 01:23:41,101
+Shoot him again.
+
+1129
+01:23:44,232 --> 01:23:47,863
+Hitchhiking's good. Towels are good too.
+
+1130
+01:23:47,954 --> 01:23:51,106
+- Say what?
+- That is brilliant.
+
+1131
+01:23:51,195 --> 01:23:53,187
+What's goin'...?
+
+1132
+01:23:53,276 --> 01:23:55,950
+I can see why Humma Kavula
+would want one of these.
+
+1133
+01:23:57,157 --> 01:23:59,752
+- We better get back. Arthur's waiting.
+- Who cares?
+
+1134
+01:23:59,838 --> 01:24:04,197
+I do. Especially since we're somewhat
+of an endangered species, thanks to you.
+
+1135
+01:24:04,280 --> 01:24:06,317
+Why so edgy, baby doll? Relax.
+
+1136
+01:24:06,441 --> 01:24:09,115
+You wanna know why I'm edgy?
+
+1137
+01:24:10,403 --> 01:24:12,998
+Of course you're edgy.
+Your planet's been blown up
+
+1138
+01:24:13,084 --> 01:24:16,794
+and you've been tooling around
+with the guy who signed the order.
+
+1139
+01:24:18,886 --> 01:24:20,957
+You actually wanted
+to know the question
+
+1140
+01:24:21,047 --> 01:24:23,687
+because you always wondered
+if there was more to life
+
+1141
+01:24:23,768 --> 01:24:27,523
+and now you're crushed
+because you find out there really isn't.
+
+1142
+01:24:27,609 --> 01:24:31,968
+Hey, fantastic. Psychedelic.
+
+1143
+01:24:33,692 --> 01:24:37,322
+You've got no home, no family,
+and you're stuck with me,
+
+1144
+01:24:37,413 --> 01:24:40,884
+another in a long line of men
+who doesn't really get you.
+
+1145
+01:24:43,215 --> 01:24:45,127
+That's not true.
+
+1146
+01:24:47,737 --> 01:24:51,937
+And you're worried you might have blown
+it with the one guy who really does.
+
+1147
+01:24:57,261 --> 01:24:59,252
+Oh, baby doll.
+
+1148
+01:24:59,942 --> 01:25:01,854
+Give me that thing.
+
+1149
+01:25:05,504 --> 01:25:08,622
+It won't affect me.
+I'm already a woman.
+
+1150
+01:25:19,309 --> 01:25:21,505
+It's OK.
+It's only a couple of little mice.
+
+1151
+01:25:25,112 --> 01:25:28,469
+Voilà. Himalayas. Good, eh?
+
+1152
+01:25:31,794 --> 01:25:34,025
+Earthman, you must realise
+
+1153
+01:25:34,155 --> 01:25:37,148
+that the planet you lived
+on was commissioned,
+
+1154
+01:25:37,236 --> 01:25:40,434
+paid for and run by mice.
+
+1155
+01:25:43,118 --> 01:25:46,237
+When you say mice,
+do you mean the little furry creatures
+
+1156
+01:25:46,320 --> 01:25:48,151
+with whiskers, ears, cheese?
+
+1157
+01:25:48,240 --> 01:25:53,077
+Yeah, but they're protrusions into our
+dimension of hyperintelligent beings.
+
+1158
+01:25:53,162 --> 01:25:56,520
+I don't know this cheese
+of which you speak,
+
+1159
+01:25:56,644 --> 01:26:00,194
+but they were there on Earth
+as mice experimenting on you.
+
+1160
+01:26:00,285 --> 01:26:04,997
+I see where you've become confused now.
+You see, we were experimenting on them.
+
+1161
+01:26:05,127 --> 01:26:08,803
+Ah, no, well, yeah, no.
+That's what they wanted you to think,
+
+1162
+01:26:08,888 --> 01:26:12,678
+but you were actually
+elements in their computer program.
+
+1163
+01:26:14,331 --> 01:26:16,721
+Actually, this explains a lot.
+
+1164
+01:26:16,812 --> 01:26:19,201
+All my life,
+I've had this strange feeling
+
+1165
+01:26:19,293 --> 01:26:22,286
+there's something big and sinister
+going on in the world.
+
+1166
+01:26:22,374 --> 01:26:26,368
+No, that's normal paranoia.
+Everyone in the universe gets that.
+
+1167
+01:26:29,216 --> 01:26:32,574
+Perhaps I'm old and tired,
+but the chances of finding out
+
+1168
+01:26:32,658 --> 01:26:35,253
+what's actually going on
+are so absurdly remote
+
+1169
+01:26:35,339 --> 01:26:39,299
+that the only thing to do is say hang
+the sense of it and keep yourself busy.
+
+1170
+01:26:39,380 --> 01:26:41,690
+I'd much rather be happy
+than right any day.
+
+1171
+01:26:41,821 --> 01:26:43,699
+- And are you?
+- No.
+
+1172
+01:26:44,422 --> 01:26:46,334
+That's where it all falls down.
+
+1173
+01:26:57,187 --> 01:26:59,224
+Here you are then.
+
+1174
+01:27:13,113 --> 01:27:14,672
+Is this...?
+
+1175
+01:27:28,119 --> 01:27:30,270
+It's all there.
+
+1176
+01:27:31,360 --> 01:27:33,511
+You know, it all works.
+
+1177
+01:27:33,601 --> 01:27:35,593
+Welcome home.
+
+1178
+01:27:56,650 --> 01:27:58,642
+- There you are.
+- Surprise.
+
+1179
+01:27:58,731 --> 01:28:01,530
+What are you doing?
+What happened to you?
+
+1180
+01:28:01,692 --> 01:28:03,046
+Is that tea?
+
+1181
+01:28:03,133 --> 01:28:07,286
+- First, our hosts attacked us.
+- Right.
+
+1182
+01:28:07,374 --> 01:28:10,686
+But then they made up for it
+by making us
+
+1183
+01:28:10,776 --> 01:28:13,007
+this amazing meal.
+
+1184
+01:28:13,857 --> 01:28:17,055
+It's so... Everything's right.
+Everything's delicious.
+
+1185
+01:28:18,619 --> 01:28:21,180
+Oh, come on, that's lovely.
+
+1186
+01:28:21,260 --> 01:28:23,456
+We're glad you like it, Earth creature.
+
+1187
+01:28:27,462 --> 01:28:31,980
+The talking mice. Cool.
+
+1188
+01:28:32,064 --> 01:28:36,981
+- Sit, Earthman.
+- Oh, thank you. Thank you for that.
+
+1189
+01:28:37,906 --> 01:28:41,218
+- Please, drink.
+- Excuse me.
+
+1190
+01:28:41,308 --> 01:28:44,540
+- Is there anything else?
+- No, we're quite happy, thank you.
+
+1191
+01:28:44,629 --> 01:28:48,179
+Good, I'll be outside, so...
+
+1192
+01:28:48,270 --> 01:28:50,421
+You were right.
+
+1193
+01:28:50,511 --> 01:28:52,230
+- Please, drink.
+- Yes.
+
+1194
+01:28:52,832 --> 01:28:54,710
+He was right.
+
+1195
+01:28:54,833 --> 01:28:56,585
+Now, to business.
+
+1196
+01:28:56,673 --> 01:28:58,392
+To business.
+
+1197
+01:28:58,474 --> 01:28:59,749
+Eat.
+
+1198
+01:29:00,955 --> 01:29:02,150
+Sorry.
+
+1199
+01:29:02,236 --> 01:29:05,991
+We've spent a lot of time on your planet
+looking for this ultimate question.
+
+1200
+01:29:06,077 --> 01:29:09,514
+Only to have it blow up in our faces.
+Literally.
+
+1201
+01:29:09,598 --> 01:29:12,956
+Which is why you're here.
+We've been offered a lucrative contract
+
+1202
+01:29:13,040 --> 01:29:14,997
+to do several 5-D TV chat shows.
+
+1203
+01:29:15,081 --> 01:29:17,516
+But here's the point.
+We must have product.
+
+1204
+01:29:17,602 --> 01:29:20,675
+We need the ultimate question,
+or one that sounds ultimate.
+
+1205
+01:29:20,803 --> 01:29:22,999
+- Of course.
+- We've rebuilt the planet.
+
+1206
+01:29:23,084 --> 01:29:25,838
+Now all we need
+is the missing piece of the puzzle.
+
+1207
+01:29:25,925 --> 01:29:28,042
+- Which happens to be your brain.
+- Right.
+
+1208
+01:29:28,126 --> 01:29:29,320
+More tea?
+
+1209
+01:29:29,446 --> 01:29:32,041
+Sorry, did you just say
+you need my brain?
+
+1210
+01:29:32,127 --> 01:29:34,323
+Yes, to complete the programme.
+
+1211
+01:29:37,169 --> 01:29:39,764
+You can't have my brain. I'm using it.
+
+1212
+01:29:39,890 --> 01:29:44,522
+- Hardly.
+- Hardly? Cheeky mouse.
+
+1213
+01:29:48,854 --> 01:29:51,289
+Zaphod. Trillian.
+
+1214
+01:29:51,375 --> 01:29:53,571
+Ford.
+
+1215
+01:29:53,656 --> 01:29:55,089
+What was in that food?
+
+1216
+01:29:56,657 --> 01:29:58,774
+What was in my tea?
+
+1217
+01:29:58,858 --> 01:30:01,327
+Don't worry. You won't feel a thing.
+
+1218
+01:30:04,660 --> 01:30:06,458
+Just wait a sodding minute.
+
+1219
+01:30:06,541 --> 01:30:09,136
+You want a question
+that goes with the answer 42?
+
+1220
+01:30:09,222 --> 01:30:10,814
+What about, what's 6x7?
+
+1221
+01:30:10,902 --> 01:30:14,294
+Or how many Vogons
+does it take to change a light bulb?
+
+1222
+01:30:14,384 --> 01:30:18,014
+Here's one: How many roads
+must a man walk down?
+
+1223
+01:30:19,346 --> 01:30:21,257
+Hey, that's not bad.
+
+1224
+01:30:21,346 --> 01:30:27,458
+Fine, take it, cos my head
+is filled with questions,
+
+1225
+01:30:27,589 --> 01:30:29,740
+and no answer to any one of them
+
+1226
+01:30:29,830 --> 01:30:33,301
+has ever brought me
+one iota of happiness.
+
+1227
+01:30:33,391 --> 01:30:34,905
+Except for one.
+
+1228
+01:30:34,992 --> 01:30:37,791
+The one. The only question
+I've ever wanted an answer to.
+
+1229
+01:30:37,873 --> 01:30:39,465
+Is she the one?
+
+1230
+01:30:40,514 --> 01:30:43,791
+The answer bloody well isn't 42,
+it's yes.
+
+1231
+01:30:43,875 --> 01:30:49,190
+Undoubtedly, unequivocally,
+unabashedly, yes.
+
+1232
+01:30:49,277 --> 01:30:52,031
+And for one week,
+
+1233
+01:30:52,158 --> 01:30:56,711
+one week in my sad little blip
+of an existence,
+
+1234
+01:30:58,881 --> 01:31:00,873
+it made me happy.
+
+1235
+01:31:02,962 --> 01:31:04,316
+That's a good answer.
+
+1236
+01:31:04,403 --> 01:31:07,476
+Rubbish. We don't want to be happy.
+We want to be famous.
+
+1237
+01:31:07,564 --> 01:31:11,081
+- What's this "Is she the one" tripe?
+- Take his brain.
+
+1238
+01:31:11,166 --> 01:31:14,239
+No, don't take the brain.
+Don't take the brain, mice.
+
+1239
+01:31:23,410 --> 01:31:26,404
+It wasn't me. I'm famous.
+
+1240
+01:31:26,492 --> 01:31:28,767
+Shoot him, quickly, shoot him.
+
+1241
+01:31:28,852 --> 01:31:30,252
+Oh, bollocks.
+
+1242
+01:31:38,936 --> 01:31:40,416
+I'm gonna be sick.
+
+1243
+01:31:43,858 --> 01:31:45,178
+Belgium.
+
+1244
+01:31:53,302 --> 01:31:54,735
+Follow me.
+
+1245
+01:31:55,303 --> 01:31:57,693
+Left, right, left, right.
+
+1246
+01:31:57,784 --> 01:32:00,219
+Attention.
+
+1247
+01:32:03,546 --> 01:32:06,380
+Thanks a lot
+for leaving me behind.
+
+1248
+01:32:06,507 --> 01:32:08,624
+Though I can't say I blame you.
+
+1249
+01:32:08,708 --> 01:32:12,258
+Mr President,
+we're here for your protection.
+
+1250
+01:32:12,349 --> 01:32:14,580
+Thanks, man. I appreciate it.
+
+1251
+01:32:14,670 --> 01:32:15,945
+Fire.
+
+1252
+01:32:17,711 --> 01:32:19,225
+No.
+
+1253
+01:32:22,153 --> 01:32:24,190
+What's all the fuss about?
+
+1254
+01:32:24,274 --> 01:32:26,994
+Vogons are the worst marksmen
+in the galaxy.
+
+1255
+01:32:27,075 --> 01:32:31,992
+- For God's sake, stop.
+- Cease fire.
+
+1256
+01:32:38,359 --> 01:32:40,271
+Now I've got a headache.
+
+1257
+01:32:50,564 --> 01:32:52,442
+Marvin.
+
+1258
+01:32:52,565 --> 01:32:53,759
+Oh, no.
+
+1259
+01:32:55,926 --> 01:32:59,044
+He's got a towel, run away.
+
+1260
+01:33:01,168 --> 01:33:04,047
+I'm gonna get us outta here.
+How do you drive this thing?
+
+1261
+01:33:04,129 --> 01:33:05,404
+What's going on?
+
+1262
+01:33:07,731 --> 01:33:09,608
+We need that gun.
+
+1263
+01:33:10,732 --> 01:33:13,531
+Come on. Get this ship started.
+Come on. Start.
+
+1264
+01:33:14,613 --> 01:33:16,570
+Come on. Oh, fire, fire.
+
+1265
+01:33:16,654 --> 01:33:17,929
+Fire, fire.
+
+1266
+01:33:22,376 --> 01:33:24,493
+He's locked it from the other side.
+
+1267
+01:33:24,577 --> 01:33:26,648
+We'll have to go the other way.
+
+1268
+01:33:26,738 --> 01:33:28,570
+Come on, let's go.
+
+1269
+01:33:33,701 --> 01:33:36,057
+Stop.
+
+1270
+01:33:41,864 --> 01:33:45,859
+Stop it. Stop shooting at us.
+
+1271
+01:34:04,153 --> 01:34:07,703
+Oh, I feel so depressed.
+
+1272
+01:34:09,035 --> 01:34:13,746
+I can't face another day.
+
+1273
+01:34:15,557 --> 01:34:17,276
+What's the point?
+
+1274
+01:34:25,001 --> 01:34:27,197
+- You all right?
+- Yeah.
+
+1275
+01:34:32,644 --> 01:34:35,398
+Sorry about your spaceship, Arthur.
+
+1276
+01:34:40,727 --> 01:34:42,844
+Marvin, you saved our lives.
+
+1277
+01:34:42,928 --> 01:34:46,080
+I know. Wretched, isn't it?
+
+1278
+01:34:51,331 --> 01:34:54,244
+You got to ask yourself,
+what's the point?
+
+1279
+01:34:54,372 --> 01:34:56,329
+Take it away.
+
+1280
+01:35:04,256 --> 01:35:09,332
+You could do all of that, but it's
+not gonna... I'll ask... I'll just ask.
+
+1281
+01:35:09,418 --> 01:35:13,048
+I've just been informed
+by some of the lads
+
+1282
+01:35:13,179 --> 01:35:15,455
+that since we're so near completion,
+
+1283
+01:35:15,540 --> 01:35:17,850
+we're gonna go ahead and finish Earth.
+
+1284
+01:35:19,502 --> 01:35:23,337
+Well, we can put it back exactly
+as it was when you left, you know.
+
+1285
+01:35:23,423 --> 01:35:26,656
+Unless there's...
+
+1286
+01:35:26,745 --> 01:35:30,136
+there's, you know,
+anything you want to change.
+
+1287
+01:35:32,147 --> 01:35:37,269
+Something you think
+your planet could do without.
+
+1288
+01:35:38,669 --> 01:35:41,787
+Yeah. Me.
+
+1289
+01:35:42,271 --> 01:35:44,387
+Oh. Hello?
+
+1290
+01:35:44,472 --> 01:35:48,068
+No, as is. Yep, leave it. Yep.
+
+1291
+01:35:49,954 --> 01:35:51,467
+Let's go somewhere.
+
+1292
+01:35:51,554 --> 01:35:54,023
+Definitely. Where did you have in mind?
+
+1293
+01:35:54,115 --> 01:35:57,233
+I know this great restaurant
+at the end of the universe.
+
+1294
+01:35:57,997 --> 01:36:00,228
+I am a little peckish.
+
+1295
+01:36:02,158 --> 01:36:04,832
+I need to go to Humma's.
+He's got something of mine.
+
+1296
+01:36:04,919 --> 01:36:10,315
+- I think. I'm so confused.
+- Don't worry, baby. We'll sort it out.
+
+1297
+01:36:10,442 --> 01:36:13,913
+All right, let's trip the light
+fantastic, baby. Just you and me.
+
+1298
+01:36:14,003 --> 01:36:15,756
+Come on.
+
+1299
+01:36:15,884 --> 01:36:19,764
+- You got your towel?
+- Yeah. Why? Am I going to need it?
+
+1300
+01:36:19,885 --> 01:36:23,162
+- Only always.
+- Right. Yeah.
+
+1301
+01:36:23,247 --> 01:36:27,446
+I wouldn't want to go
+anywhere without my wonderful towel.
+
+1302
+01:36:31,930 --> 01:36:34,684
+OK. Hold tight.
+
+1303
+01:36:38,052 --> 01:36:43,048
+<i>Stand by for commencement
+of life cycle. In three, two, one...</i>
+
+1304
+01:36:43,134 --> 01:36:44,887
+<i>All right.</i>
+
+1305
+01:37:27,351 --> 01:37:29,547
+Not that anyone cares what I say,
+
+1306
+01:37:29,632 --> 01:37:32,750
+but the restaurant
+is at the other end of the universe.
+
+1307
+01:38:00,524 --> 01:38:03,996
+<i>So long and thanks for all the fish</i>
+
+1308
+01:38:04,126 --> 01:38:08,040
+<i>So sad that it should come to this</i>
+
+1309
+01:38:08,167 --> 01:38:12,799
+<i>We tried to warn you all but, oh, dear</i>
+
+1310
+01:38:15,690 --> 01:38:19,571
+<i>You may not share our intellect</i>
+
+1311
+01:38:19,652 --> 01:38:23,362
+<i>Which might explain your disrespect</i>
+
+1312
+01:38:23,493 --> 01:38:30,572
+<i>For all the natural wonders
+that grow around you</i>
+
+1313
+01:38:30,656 --> 01:38:35,413
+<i>So long, so long and thanks
+for all the fish</i>
+
+1314
+01:38:42,701 --> 01:38:46,456
+<i>The world's about to be destroyed</i>
+
+1315
+01:38:46,542 --> 01:38:50,218
+<i>There's no point getting all annoyed</i>
+
+1316
+01:38:50,304 --> 01:38:56,336
+<i>Lie back and let the planet dissolve</i>
+
+1317
+01:38:57,986 --> 01:39:01,776
+<i>Despite those nets of tuna fleets</i>
+
+1318
+01:39:01,908 --> 01:39:05,584
+<i>We thought that most of you were sweet</i>
+
+1319
+01:39:05,709 --> 01:39:12,709
+<i>Especially tiny tots
+and your pregnant women</i>
+
+1320
+01:39:12,792 --> 01:39:16,582
+<i>So long, so long,
+so long, so long, so long</i>
+
+1321
+01:39:20,555 --> 01:39:25,347
+<i>So long, so long and thanks
+for all the fish</i>
+
+1322
+01:39:30,959 --> 01:39:32,188
+Yeah.
+
+1323
+01:39:42,884 --> 01:39:44,283
+Play it.
+
+1324
+01:39:47,726 --> 01:39:51,686
+<i>So long and thanks for all the fish</i>
+
+1325
+01:39:51,767 --> 01:39:55,523
+<i>So sad that it should come to this</i>
+
+1326
+01:39:55,609 --> 01:40:01,368
+<i>We tried to warn you all but, oh, dear</i>
+
+1327
+01:40:01,491 --> 01:40:03,084
+<i>Oh, dear</i>
+
+1328
+01:40:03,172 --> 01:40:06,961
+<i>Despite those nets of tuna fleets</i>
+
+1329
+01:40:07,053 --> 01:40:10,889
+<i>We thought that most of you were sweet</i>
+
+1330
+01:40:11,015 --> 01:40:18,014
+<i>Especially tiny tots
+and your pregnant women</i>
+
+1331
+01:40:18,098 --> 01:40:21,853
+<i>So long, so long,
+so long, so long, so long</i>
+
+1332
+01:40:25,700 --> 01:40:33,417
+<i>So long, so long and thanks
+for all the fish</i>
+
+1333
+01:40:34,264 --> 01:40:36,825
+<i>For all the fish</i>
+
+1334
+01:40:40,186 --> 01:40:44,261
+<i>It is, of course, well known
+that careless talk costs lives.</i>
+
+1335
+01:40:44,348 --> 01:40:47,546
+<i>But the full scale of the problem
+is not always appreciated.</i>
+
+1336
+01:40:47,629 --> 01:40:50,906
+<i>For instance, at the very moment
+that Arthur Dent said,</i>
+
+1337
+01:40:50,990 --> 01:40:54,382
+<i>"I wouldn't want to go anywhere
+without my wonderful towel",</i>
+
+1338
+01:40:54,472 --> 01:40:58,864
+<i>a freak wormhole opened up in
+the fabric of the space-time continuum</i>
+
+1339
+01:40:58,953 --> 01:41:02,311
+<i>and carried his words far,
+far back in time,</i>
+
+1340
+01:41:02,395 --> 01:41:06,275
+<i>across almost infinite reaches of space,
+to a distant galaxy</i>
+
+1341
+01:41:06,356 --> 01:41:09,873
+<i>where strange and warlike beings
+were poised on the brink</i>
+
+1342
+01:41:09,958 --> 01:41:12,348
+<i>of frightful interstellar battle.</i>
+
+1343
+01:41:12,439 --> 01:41:16,797
+<i>The two opposing leaders, resplendent
+in their black-jewelled battle shorts</i>
+
+1344
+01:41:16,880 --> 01:41:18,837
+<i>were meeting for the last time,</i>
+
+1345
+01:41:19,001 --> 01:41:21,641
+<i>when a dreadful silence fell.</i>
+
+1346
+01:41:21,722 --> 01:41:23,600
+<i>And at that very moment,</i>
+
+1347
+01:41:23,683 --> 01:41:27,472
+<i>the words "I wouldn't want to go
+anywhere without my wonderful towel"</i>
+
+1348
+01:41:27,644 --> 01:41:30,479
+<i>drifted across the conference table.</i>
+
+1349
+01:41:30,566 --> 01:41:33,127
+<i>Unfortunately, in their native tongue,</i>
+
+1350
+01:41:33,207 --> 01:41:36,086
+<i>this was the most appalling
+insult imaginable.</i>
+
+1351
+01:41:36,168 --> 01:41:37,726
+<i>So the opposing battle fleets</i>
+
+1352
+01:41:37,808 --> 01:41:40,323
+<i>decided to settle
+their remaining differences,</i>
+
+1353
+01:41:40,409 --> 01:41:43,642
+<i>in order to launch
+a joint attack on our galaxy,</i>
+
+1354
+01:41:43,731 --> 01:41:47,691
+<i>now positively identified
+as the source of the offending remark.</i>
+
+1355
+01:41:47,772 --> 01:41:50,890
+<i>For thousands of years,
+the mighty starships tore across</i>
+
+1356
+01:41:51,014 --> 01:41:56,215
+<i>the empty wastes of space and finally
+dived screaming onto the planet Earth,</i>
+
+1357
+01:41:56,296 --> 01:42:00,176
+<i>where, due to
+a terrible miscalculation of scale,</i>
+
+1358
+01:42:00,297 --> 01:42:04,895
+<i>the entire battle fleet was
+accidentally swallowed by a small dog.</i>
+
+1359
+01:42:04,979 --> 01:42:08,416
+<i>Those who study the complex
+interplay of cause and effect</i>
+
+1360
+01:42:08,540 --> 01:42:10,179
+<i>in the history of the universe</i>
+
+1361
+01:42:10,301 --> 01:42:14,615
+<i>say that this sort of thing
+is going on all the time.</i>
