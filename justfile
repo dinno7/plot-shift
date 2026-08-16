@@ -1,5 +1,13 @@
 DB_MIG_DIR := "db/migrations"
-DB_PATH :="sqlite3://data/proceeded/data.db"
+DB_PATH := "data/proceeded/data.db"
+DB_PATH_SQLITE :="sqlite3://" + DB_PATH
+DB_DUMP_DIR := "dumps"
+
+@dump:
+  #! /bin/env bash
+  dumpfile="{{DB_DUMP_DIR}}/$(date +%FT%H-%M-%S)_data.sql"
+  sqlite3 {{DB_PATH}} ".dump" > "$dumpfile"
+  echo "Successfully dumped at $dumpfile"
 
 # Install migrate CLI tool
 @mig-install:
@@ -29,7 +37,4 @@ alias mig-dn := mig-down
 
 [private]
 mig-base +args:
-  migrate -database {{DB_PATH}} -path {{DB_MIG_DIR}} {{args}}
-
-
-
+  migrate -database {{DB_PATH_SQLITE}} -path {{DB_MIG_DIR}} {{args}}
