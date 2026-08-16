@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS downloaded_subtitles(
+CREATE TABLE IF NOT EXISTS subtitles_meta(
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   imdb_id_int INTEGER NOT NULL,
   file_id INTEGER NOT NULL,
