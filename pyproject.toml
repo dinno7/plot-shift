@@ -5,11 +5,15 @@ description = "Comparative sentiment analysis for narrative turning points"
 readme = "README.md"
 authors = [{ name = "dinno", email = "tahadlrb7@gmail.com" }]
 requires-python = ">=3.14"
+# requires-python = ">=3.12,<3.13"
 dependencies = [
-    "ipykernel>=7.3.0",
-    "opensubtitlescom>=0.1.5",
-    "polars>=1.43.2",
-    "python-dotenv>=1.2.2",
+  "ipykernel>=7.3.0",
+  "nltk>=3.10.3",
+  "opensubtitlescom>=0.1.5",
+  "polars>=1.43.2",
+  "python-dotenv>=1.2.2",
+  "scipy>=1.18.0",
+  "unidecode>=1.4.0",
 ]
 
 [project.scripts]
@@ -22,6 +26,12 @@ build-backend = "uv_build"
 [dependency-groups]
 dev = ["pytest", "ruff", "mypy"]
 
+# Optional heavy deps for the semantic stage. Kept separate so the offline
+# pipeline (VADER/NRC word-level scoring) never depends on torch/transformers.
+# Install only where the semantic model runs (e.g. Google Colab):
+#   uv sync --group semantic
+semantic = ["torch>=2.2", "transformers>=4.40", "sentencepiece>=0.2"]
+
 [tool.ruff]
 line-length = 100
 target-version = "py314"
@@ -29,6 +39,10 @@ target-version = "py314"
 [tool.mypy]
 python_version = "3.14"
 strict = true
+
+[[tool.mypy.overrides]]
+module = "opensubtitlescom.*"
+ignore_missing_imports = true
 
 [[tool.uv.index]]
 name = "Hamravesh"
