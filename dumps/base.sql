@@ -3476,13 +3476,18 @@ INSERT INTO subtitles_meta VALUES(1171,1527186,821007,'1527186_821007.srt','7468
 INSERT INTO subtitles_meta VALUES(1172,128445,4602944,'128445_4602944.srt','4490377',22858,1671,'en','2005-02-20T00:00:00Z','https://www.opensubtitles.com/en/subtitles/90261-rushmore-1998','2026-08-15 06:42:58','{"id": "4490377", "type": "subtitle", "subtitle_id": "4490377", "language": "en", "download_count": 22858, "new_download_count": 1671, "hearing_impaired": false, "hd": false, "fps": 23.976, "votes": 0, "ratings": 0.0, "from_trusted": false, "foreign_parts_only": false, "upload_date": "2005-02-20T00:00:00Z", "ai_translated": false, "machine_translated": false, "release": "Rushmore (1998)", "comments": null, "legacy_subtitle_id": 90261, "uploader_id": 8092, "uploader_name": "ShooCat (a)", "uploader_rank": "Platinum Member", "feature_id": 646862, "feature_type": "Movie", "year": 1998, "title": "Rushmore", "movie_name": "1998 - Rushmore", "imdb_id": 128445, "tmdb_id": 11545, "season_number": null, "episode_number": null, "parent_imdb_id": null, "parent_title": null, "parent_tmdb_id": null, "parent_feature_id": null, "url": "https://www.opensubtitles.com/en/subtitles/90261-rushmore-1998", "related_links": [{"label": "All subtitles for rushmore", "url": "https://www.opensubtitles.com/en/movies/90261-rushmore-1998", "img_url": "https://s7.opensubtitles.com/features/2/6/8/646862.jpg"}], "files": [{"file_id": 4602944, "cd_number": 1, "file_name": "Rushmore (ENG)"}], "file_id": 4602944, "file_name": "Rushmore (ENG)"}');
 INSERT INTO subtitles_meta VALUES(1173,122690,191715,'122690_191715.srt','188197',40805,1627,'en','2007-05-02T11:07:07Z','https://www.opensubtitles.com/en/subtitles/188197','2026-08-15 06:43:00','{"id": "188197", "type": "subtitle", "subtitle_id": "188197", "language": "en", "download_count": 40805, "new_download_count": 1627, "hearing_impaired": false, "hd": false, "fps": 0.0, "votes": 1, "ratings": 8.0, "from_trusted": true, "foreign_parts_only": false, "upload_date": "2007-05-02T11:07:07Z", "ai_translated": false, "machine_translated": false, "release": "Ronin.EN", "comments": "", "legacy_subtitle_id": 3120770, "uploader_id": 34727, "uploader_name": "bosomt", "uploader_rank": "Trusted member", "feature_id": 514833, "feature_type": "Movie", "year": 1998, "title": "Ronin", "movie_name": "1998 - Ronin", "imdb_id": 122690, "tmdb_id": 8195, "season_number": null, "episode_number": null, "parent_imdb_id": null, "parent_title": null, "parent_tmdb_id": null, "parent_feature_id": null, "url": "https://www.opensubtitles.com/en/subtitles/188197", "related_links": [{"label": "All subtitles for ronin", "url": "https://www.opensubtitles.com/en/movies/188197", "img_url": "https://s4.opensubtitles.com/features/3/3/8/514833.jpg"}], "files": [{"file_id": 191715, "cd_number": 1, "file_name": "Ronin.EN"}], "file_id": 191715, "file_name": "Ronin.EN"}');
 CREATE TABLE schema_migrations (version uint64,dirty bool);
-INSERT INTO schema_migrations VALUES(20260816210348,0);
-CREATE TABLE processed_movies (
+INSERT INTO schema_migrations VALUES(20260817210856,0);
+CREATE TABLE movie_subtitles_meta (
   imdb_id_int INTEGER PRIMARY KEY,
-  total_words INTEGER,
-  duration_minutes REAL,
-  is_valid BOOLEAN,
-  clean_text TEXT
+  words_count INTEGER,
+  sentences_count INTEGER,
+  duration_minutes INTEGER,
+  is_valid BOOLEAN
+);
+CREATE TABLE movie_subtitles_sentences(
+  id INTEGER PRIMARY KEY,
+  imdb_id_int INTEGER NOT NULL,
+  content TEXT NOT NULL
 );
 PRAGMA writable_schema=ON;
 CREATE TABLE IF NOT EXISTS sqlite_sequence(name,seq);
@@ -3490,5 +3495,9 @@ DELETE FROM sqlite_sequence;
 INSERT INTO sqlite_sequence VALUES('movies_meta',2313);
 INSERT INTO sqlite_sequence VALUES('subtitles_meta',1173);
 CREATE UNIQUE INDEX version_unique ON schema_migrations (version);
+CREATE INDEX idx_movie_subtitles_meta_imdb_id ON movie_subtitles_meta(imdb_id_int);
+CREATE INDEX idx_imdb_id ON movie_subtitles_sentences(imdb_id_int);
+CREATE UNIQUE INDEX idx_sentences_unique
+ON movie_subtitles_sentences(imdb_id_int, content);
 PRAGMA writable_schema=OFF;
 COMMIT;
