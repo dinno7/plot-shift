@@ -1,4 +1,5 @@
 import sqlite3
+from typing import Any
 
 from plot_shift.data.models import MovieMeta
 from plot_shift.data.repository import MovieMetaRepository
@@ -48,7 +49,7 @@ class MovieMetaSqliteRepository(MovieMetaRepository):
             cursor.close()
 
     @staticmethod
-    def _row_to_movie(row: tuple) -> MovieMeta:
+    def _row_to_movie(row: tuple[Any, ...]) -> MovieMeta:
         """Convert a raw DB row to a MovieMeta dataclass."""
         return MovieMeta(
             id=row[0],

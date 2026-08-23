@@ -1,15 +1,16 @@
 import sqlite3
 from datetime import timedelta
+from typing import Any
 
 from plot_shift.data.models import Subtitle
-from plot_shift.data.repository import SubtitleRepository
+from plot_shift.data.repository import SentencesRepository
 
 
-class SubtitleSqliteRepository(SubtitleRepository):
+class SubtitleSqliteRepository(SentencesRepository):
     def __init__(self, conn: sqlite3.Connection):
         self.db_conn: sqlite3.Connection = conn
 
-    def _row_to_entry(self, row: tuple) -> Subtitle:
+    def _row_to_entry(self, row: tuple[Any, ...]) -> Subtitle:
         """Convert a database row to a Subtitle dataclass."""
         return Subtitle(
             id=row[0],

@@ -1,5 +1,6 @@
 import sqlite3
 from datetime import datetime
+from typing import Any
 
 from plot_shift.data.models import SubtitleMeta
 from plot_shift.data.repository import SubtitleMetaRepository
@@ -51,7 +52,7 @@ class SubtitleMetaRepositorySqliteRepository(SubtitleMetaRepository):
             cursor.close()
 
     @staticmethod
-    def _row_to_subtitle(row: tuple) -> SubtitleMeta:
+    def _row_to_subtitle(row: tuple[Any, ...]) -> SubtitleMeta:
         """Convert a raw DB row to a DownloadedSubtitle dataclass."""
         return SubtitleMeta(
             id=row[0],
