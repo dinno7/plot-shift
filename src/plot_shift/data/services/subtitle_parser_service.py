@@ -3,9 +3,11 @@ from datetime import timedelta
 from pathlib import Path
 
 from plot_shift.data import Subtitle
+from plot_shift.data.models.movie_subtitle_meta import MovieSubtitlesMeta
+from plot_shift.data.services.movie_subtitles_meta_service import MovieSubtitlesMetaService
 
 
-class SrtParser:
+class SubtitleParserService:
     """Simple OOP parser for .srt subtitle files."""
 
     TIME_PATTERN: re.Pattern[str] = re.compile(
@@ -14,24 +16,25 @@ class SrtParser:
 
     def __init__(self, filepath: str):
         self.filepath: str = filepath
-        self.subtitles: list[Subtitle] = []
         first_part_of_file_name = Path(filepath).name.split("_")[0]
         self.imdb_id_int: int = int(first_part_of_file_name)
 
-    def parse(self) -> list[Subtitle]:
+        self.subtitles: list[Subtitle] = []
+        self.movie_subtitle: MovieSubtitlesMetaService = MovieSubtitlesMetaService(self.imdb_id_int)
+
+    def parse(self) -> MovieSubtitlesMeta:
         """Parse the file and populate self.subtitles."""
         with open(self.filepath, "r", encoding="utf-8-sig") as f:
             content = f.read()
 
-        blocks = re.split(r"\n\s*\n", content.strip())
-        self.subtitles = []
+            blocks = re.split(r"\n\s*\n", content.strip())
 
-        for block in blocks:
-            entry = self._parse_block(block)
-            if entry is not None:
-                self.subtitles.append(entry)
+            for block in blocks:
+                entry = self._parse_block(block)
+                if entry is not None:
+                    self.movie_subtitle.add(entry)
 
-        return self.subtitles
+            return self.movie_subtitle.process()
 
     def _parse_block(self, block: str) -> Subtitle | None:
         """Parse a single subtitle block, returning None if malformed."""
@@ -66,15 +69,8 @@ class SrtParser:
         return timedelta(hours=int(h), minutes=int(m), seconds=int(seconds), milliseconds=int(ms))
 
 
-# # --- Usage Example ---
-# if __name__ == "__main__":
-#     parser = SrtParser("./34583_186233.srt")
-#     subs = parser.parse()
-#
-#     for sub in subs[:5]:
-#         print(f"CLEAN: {sub.index}")
-#         print(f"CLEAN: {sub.imdb_id_int}")
-#         print(f"CLEAN: {sub.text}")
-#         print(f"RAW:   {sub.text_raw}")
-#         print(f"TIME:  {sub.start} --> {sub.end} ({sub.duration})")
-#         print()
+# --- Usage Example ---
+if __name__ == "__main__":
+    parser = SubtitleParserService("./34583_186233.srt")
+    subs = parser.parse()
+    print(subs.sentences)
