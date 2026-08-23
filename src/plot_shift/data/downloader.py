@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from opensubtitlescom import OpenSubtitles
 from opensubtitlescom.responses import Subtitle
 
+from plot_shift.data.db import PlotShiftSqliteDB
 from plot_shift.data.models.subtitle_meta import SubtitleMeta
 
 
@@ -36,7 +37,7 @@ class SubtitleDownloader:
             raise NameError(f"No any result for {id}")
         return max(subs.data, key=lambda x: x.download_count)
 
-    def download_with_file_id(self, file_id: int, file_path: str):
+    def download_with_file_id(self, file_id: int, file_path: str) -> None:
         sub_content = self.opensub.download(
             str(file_id),
         )
@@ -48,22 +49,20 @@ class SubtitleDownloader:
             subfile.write(sub_content)
 
     def download_with_imdb_id(self, id: int) -> tuple[Subtitle, str]:
-        item: Subtitle | None = None
-        try:
-            item = self.best_sub_with_imdb_id(id)
-        except Exception as err:
-            raise err
+        item: Subtitle = self.best_sub_with_imdb_id(id)
+        if item == None and item.file_id == None:
+            raise ValueError("item or file_id is not exists")
+            return
 
         out_file = str(Path(self.out_dir) / f"{item.imdb_id}_{item.file_id}.srt")
         self.download_with_file_id(item.file_id, out_file)
-
         return (item, out_file)
 
-    def download_with_imdb_ids(self, ids: list[int]):
+    def download_with_imdb_ids(self, ids: list[int]) -> None:
         for id in ids:
             try:
                 self.download_with_imdb_id(id)
-            except Exception as err:
+            except Exception as err:  # noqa: BLE001 - batch downloader must skip bad ids
                 print(err)
                 continue
 
@@ -85,6 +84,8 @@ if __name__ == "__main__":
     user_agent = os.getenv("OPEN_SUBTITLE_USER_AGENT")
     username = os.getenv("OPEN_SUBTITLE_USERNAME")
     password = os.getenv("OPEN_SUBTITLE_PASSWORD")
+    assert api_key is not None and user_agent is not None
+    assert username is not None and password is not None
 
     out_dir = "./data/raw/subtitles"
     sub_downloader = SubtitleDownloader(
@@ -103,6 +104,7 @@ if __name__ == "__main__":
 
     print(" > REMAINED", len(remained))
     for m in remained:
+        assert m.imdb_id_int is not None
         print(f"🔃 Start Downloading subtitle with id {m.imdb_id_int}")
 
         sub, filepath = sub_downloader.download_with_imdb_id(m.imdb_id_int)
