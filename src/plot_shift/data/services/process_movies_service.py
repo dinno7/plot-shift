@@ -4,7 +4,7 @@ from pathlib import Path
 from plot_shift.data.db import PlotShiftSqliteDB
 from plot_shift.data.models.movie_subtitle_meta import MovieSubtitlesMeta
 from plot_shift.data.repository import PlotShiftDB
-from plot_shift.data.services import SubtitleParserService
+from plot_shift.data.services.subtitle_parser_service import SubtitleParserService
 
 logger = logging.getLogger(__name__)
 
@@ -77,12 +77,18 @@ class ProcessMoviesService:
         return stats
 
 
-# Example
+def run_process(
+    db_path: str = "data/proceeded/data.db",
+    subtitles_dir: str = "data/raw/subtitles",
+    batch_size: int = 500,
+) -> dict[str, int]:
+    with PlotShiftSqliteDB(db_path) as repo:
+        processor = ProcessMoviesService(repo, subtitles_dir)
+        print("Start process, please do not interrupt, when process done you will see done message")
+        result = processor.process(batch_size=batch_size)
+        print("Process done")
+        return result
+
+
 if __name__ == "__main__":
-    print("Initiating repository")
-    repo = PlotShiftSqliteDB("data/proceeded/data.db")
-    print("Initiating processor")
-    processor = ProcessMoviesService(repo, "data/raw/subtitles")
-    print("Starting process, Do not interrupt process")
-    processor.process()
-    print("Process end")
+    print(run_process())
