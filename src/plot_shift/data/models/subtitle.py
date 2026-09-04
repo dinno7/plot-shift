@@ -1,11 +1,6 @@
 from dataclasses import dataclass
 from datetime import timedelta
 
-import nltk
-
-# Download required data (run once)
-nltk.download("punkt")
-
 
 @dataclass
 class Subtitle:
