@@ -44,7 +44,7 @@ class SentencesRepository(ABC):
     """Abstract contract for subtitle cue persistence."""
 
     @abstractmethod
-    def insert_one(self, imdb_id: int, text: str) -> int | None: ...
+    def insert_one(self, entry: Subtitle) -> int | None: ...
 
     @abstractmethod
     def insert_many(self, entries: list[Subtitle]) -> None: ...
@@ -105,6 +105,11 @@ class MovieSubtitlesMetaRepository(ABC):
         Raises:
             ValueError: If any meta has not been processed.
         """
+        ...
+
+    @abstractmethod
+    def list_valid_imdb_ids(self) -> list[int]:
+        """IMDb integer ids with is_valid true."""
         ...
 
     @abstractmethod

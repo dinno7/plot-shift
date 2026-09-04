@@ -5,7 +5,7 @@ from datetime import timedelta
 
 from plot_shift.data.models.movie_subtitle_meta import MovieSubtitlesMeta
 from plot_shift.data.repository import MovieSubtitlesMetaRepository
-from plot_shift.data.utils import sentence_to_word
+from plot_shift.data.utils import stop_words, tokenize_all_words
 
 
 class MovieSubtitlesMetaSqliteRepository(MovieSubtitlesMetaRepository):
@@ -35,7 +35,7 @@ class MovieSubtitlesMetaSqliteRepository(MovieSubtitlesMetaRepository):
             )
 
     @staticmethod
-    def _prepare_meta_row(meta: MovieSubtitlesMeta) -> tuple:
+    def _prepare_meta_row(meta: MovieSubtitlesMeta) -> tuple[int, int, int, int, bool]:
         duration_minutes = int(meta.duration.total_seconds() // 60)
         return (
             meta.imdb_id,
@@ -46,7 +46,7 @@ class MovieSubtitlesMetaSqliteRepository(MovieSubtitlesMetaRepository):
         )
 
     @staticmethod
-    def _prepare_sentence_rows(meta: MovieSubtitlesMeta) -> list[tuple]:
+    def _prepare_sentence_rows(meta: MovieSubtitlesMeta) -> list[tuple[int, str]]:
         return [(meta.imdb_id, sentence) for sentence in meta.sentences]
 
     def insert(self, meta: MovieSubtitlesMeta) -> None:
@@ -170,15 +170,31 @@ class MovieSubtitlesMetaSqliteRepository(MovieSubtitlesMetaRepository):
                 (imdb_id,),
             ).fetchall()
 
-            # Reconstruct domain object bypassing __init__ processing logic
-            meta = MovieSubtitlesMeta.__new__(MovieSubtitlesMeta)
-            meta.imdb_id = row["imdb_id_int"]
-            meta.duration = timedelta(minutes=row["duration_minutes"])
-            meta.sentences = [r["content"] for r in sentence_rows]
-            for sentence in meta.sentences:
-                meta.words.extend(sentence_to_word(sentence))
+            sentences = [r["content"] for r in sentence_rows]
+            all_words: list[str] = []
+            words: list[str] = []
+            for sentence in sentences:
+                tokens = tokenize_all_words(sentence)
+                all_words.extend(tokens)
+                words.extend(w for w in tokens if w not in stop_words)
+            return MovieSubtitlesMeta(
+                imdb_id=row["imdb_id_int"],
+                words=words,
+                sentences=sentences,
+                duration=timedelta(minutes=row["duration_minutes"]),
+                all_words=all_words,
+            )
 
-            return meta
+    def list_valid_imdb_ids(self) -> list[int]:
+        with self._get_connection() as conn:
+            rows = conn.execute(
+                """
+                SELECT imdb_id_int FROM movie_subtitles_meta
+                WHERE is_valid = 1
+                ORDER BY imdb_id_int
+                """
+            ).fetchall()
+            return [int(r["imdb_id_int"]) for r in rows]
 
     def exists(self, imdb_id: int) -> bool:
         with self._get_connection() as conn:
