@@ -4,7 +4,7 @@ from pathlib import Path
 from plot_shift.data.db import PlotShiftSqliteDB
 from plot_shift.data.models.movie_subtitle_meta import MovieSubtitlesMeta
 from plot_shift.data.repository import PlotShiftDB
-from plot_shift.data.subtitle_parser_service import SubtitleParserService
+from plot_shift.data.services import SubtitleParserService
 
 logger = logging.getLogger(__name__)
 
