@@ -17,7 +17,7 @@ dependencies = [
 ]
 
 [project.scripts]
-plot-shift = "plot_shift:main"
+plot-shift = "plot_shift.cli:main"
 
 [build-system]
 requires = ["uv_build>=0.12.1,<0.13.0"]
@@ -42,6 +42,15 @@ strict = true
 
 [[tool.mypy.overrides]]
 module = "opensubtitlescom.*"
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = ["nltk.*", "scipy.*"]
+ignore_missing_imports = true
+
+# Only installed via the `semantic` group, so absent on the offline pipeline.
+[[tool.mypy.overrides]]
+module = ["torch.*", "transformers.*"]
 ignore_missing_imports = true
 
 [[tool.uv.index]]
