@@ -1,14 +1,16 @@
-CREATE TABLE IF NOT EXISTS subtitles_meta(
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  imdb_id_int INTEGER NOT NULL,
-  file_id INTEGER NOT NULL,
-  file_name_on_disk TEXT NOT NULL,
-  subtitle_id TEXT NOT NULL,
-  download_count INTEGER NOT NULL,
-  new_download_count INTEGER NOT NULL,
-  language TEXT,
-  upload_date TEXT,
-  url TEXT,
-  fetched_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  dump_json TEXT
-  );
+CREATE TABLE IF NOT EXISTS subtitles_meta (
+    id integer PRIMARY KEY AUTOINCREMENT,
+    imdb_id_int integer NOT NULL,
+    file_id integer NOT NULL,
+    file_name_on_disk text NOT NULL,
+    subtitle_id text NOT NULL,
+    download_count integer NOT NULL,
+    new_download_count integer NOT NULL,
+    language TEXT
+,
+    upload_date text,
+    url text,
+    fetched_at timestamp DEFAULT CURRENT_TIMESTAMP,
+    dump_json text
+);
+
