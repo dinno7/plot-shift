@@ -8,7 +8,11 @@ from typing import cast
 
 from plot_shift.data.downloader import download_remaining
 from plot_shift.data.services.process_movies_service import run_process
-from plot_shift.data.services.score_lexicon_service import run_score_vad, run_score_vader
+from plot_shift.data.services.score_lexicon_service import (
+    run_score_semantic,
+    run_score_vad,
+    run_score_vader,
+)
 
 
 def repo_root() -> Path:
@@ -57,6 +61,17 @@ def cmd_score_vad(args: argparse.Namespace) -> int:
         batch_size=args.batch_size,
         limit=args.limit,
         lexicon_file=args.lexicon_file,
+    )
+    print(stats)
+    return 0
+
+
+def cmd_score_semantic(args: argparse.Namespace) -> int:
+    stats = run_score_semantic(
+        db_path=args.db,
+        batch_size=args.batch_size,
+        limit=args.limit,
+        model_name=args.model_name,
     )
     print(stats)
     return 0
@@ -169,6 +184,34 @@ def build_parser() -> argparse.ArgumentParser:
         help="Path to VAD lexicon file",
     )
     score_vad.set_defaults(func=cmd_score_vad)
+
+    score_semantic = subparsers.add_parser(
+        "score-semantic",
+        help="Score subtitle sentences with a transformer sentiment model",
+    )
+    score_semantic.add_argument(
+        "--db",
+        default="data/proceeded/data.db",
+        help="SQLite database path",
+    )
+    score_semantic.add_argument(
+        "--batch-size",
+        type=int,
+        default=1000,
+        help="Batch size for sentence score upserts",
+    )
+    score_semantic.add_argument(
+        "--limit",
+        type=int,
+        default=None,
+        help="Optional cap on valid movies to score",
+    )
+    score_semantic.add_argument(
+        "--model-name",
+        default="cardiffnlp/twitter-roberta-base-sentiment-latest",
+        help="Hugging Face model name for sequence classification",
+    )
+    score_semantic.set_defaults(func=cmd_score_semantic)
     return parser
 
 

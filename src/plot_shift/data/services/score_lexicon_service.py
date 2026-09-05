@@ -12,7 +12,7 @@ from plot_shift.sentiment import (
 )
 
 
-class ScoreLexiconService:
+class SentenceScoringService:
     def __init__(self, db: PlotShiftSqliteDB, scorer: SentimentScorer) -> None:
         self._db = db
         self._scorer = scorer
@@ -38,7 +38,7 @@ class ScoreLexiconService:
                 stats["movies_skipped_empty"] += 1
                 continue
 
-            # self._db.sentence_model_scores.delete_movie_model(imdb_id_int, self._scorer.model_name)
+            self._db.sentence_model_scores.delete_movie_model(imdb_id_int, self._scorer.model_name)
 
             for sentence_idx, sentence in enumerate(sentences):
                 score = self._scorer.score(sentence)
@@ -73,7 +73,7 @@ def run_score(
     limit: int | None = None,
 ) -> dict[str, int]:
     with PlotShiftSqliteDB(db_path) as db:
-        service = ScoreLexiconService(db, scorer)
+        service = SentenceScoringService(db, scorer)
         return service.process(batch_size=batch_size, limit=limit)
 
 
@@ -98,6 +98,23 @@ def run_score_vad(
 ) -> dict[str, int]:
     return run_score(
         scorer=VADLexiconScorer(lexicon_file=lexicon_file),
+        db_path=db_path,
+        batch_size=batch_size,
+        limit=limit,
+    )
+
+
+def run_score_semantic(
+    db_path: str = "data/proceeded/data.db",
+    batch_size: int = 1000,
+    limit: int | None = None,
+    model_name: str = "cardiffnlp/twitter-roberta-base-sentiment-latest",
+) -> dict[str, int]:
+    # Lazy import keeps non-semantic flows free from torch/transformers.
+    from plot_shift.sentiment.semantic_scorer import TransformerSentimentScorer
+
+    return run_score(
+        scorer=TransformerSentimentScorer(model_name=model_name),
         db_path=db_path,
         batch_size=batch_size,
         limit=limit,
