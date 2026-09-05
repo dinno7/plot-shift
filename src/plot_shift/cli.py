@@ -8,6 +8,7 @@ from typing import cast
 
 from plot_shift.data.downloader import download_remaining
 from plot_shift.data.services.process_movies_service import run_process
+from plot_shift.data.services.score_lexicon_service import run_score_vad, run_score_vader
 
 
 def repo_root() -> Path:
@@ -35,6 +36,27 @@ def cmd_process_subs(args: argparse.Namespace) -> int:
         db_path=args.db,
         subtitles_dir=args.subtitles_dir,
         batch_size=args.batch_size,
+    )
+    print(stats)
+    return 0
+
+
+def cmd_score_vader(args: argparse.Namespace) -> int:
+    stats = run_score_vader(
+        db_path=args.db,
+        batch_size=args.batch_size,
+        limit=args.limit,
+    )
+    print(stats)
+    return 0
+
+
+def cmd_score_vad(args: argparse.Namespace) -> int:
+    stats = run_score_vad(
+        db_path=args.db,
+        batch_size=args.batch_size,
+        limit=args.limit,
+        lexicon_file=args.lexicon_file,
     )
     print(stats)
     return 0
@@ -96,6 +118,57 @@ def build_parser() -> argparse.ArgumentParser:
         help="Insert batch size",
     )
     process_subs.set_defaults(func=cmd_process_subs)
+
+    score_vader = subparsers.add_parser(
+        "score-vader",
+        help="Score subtitle sentences with VADER and persist results",
+    )
+    score_vader.add_argument(
+        "--db",
+        default="data/proceeded/data.db",
+        help="SQLite database path",
+    )
+    score_vader.add_argument(
+        "--batch-size",
+        type=int,
+        default=1000,
+        help="Batch size for sentence score upserts",
+    )
+    score_vader.add_argument(
+        "--limit",
+        type=int,
+        default=None,
+        help="Optional cap on number of valid movies to score",
+    )
+    score_vader.set_defaults(func=cmd_score_vader)
+
+    score_vad = subparsers.add_parser(
+        "score-vad",
+        help="Score subtitle sentences with NRC-VAD and persist results",
+    )
+    score_vad.add_argument(
+        "--db",
+        default="data/proceeded/data.db",
+        help="SQLite database path",
+    )
+    score_vad.add_argument(
+        "--batch-size",
+        type=int,
+        default=1000,
+        help="Batch size for sentence score upserts",
+    )
+    score_vad.add_argument(
+        "--limit",
+        type=int,
+        default=None,
+        help="Optional cap on number of valid movies to score",
+    )
+    score_vad.add_argument(
+        "--lexicon-file",
+        default="data/raw/lexicons/vad_lexicon.txt",
+        help="Path to VAD lexicon file",
+    )
+    score_vad.set_defaults(func=cmd_score_vad)
     return parser
 
 
