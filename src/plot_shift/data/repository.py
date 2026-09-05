@@ -146,6 +146,11 @@ class MovieSubtitlesMetaRepository(ABC):
         ...
 
     @abstractmethod
+    def list_sentences_by_imdb_id(self, imdb_id: int) -> list[str]:
+        """Return processed sentences for one IMDb integer id."""
+        ...
+
+    @abstractmethod
     def exists(self, imdb_id: int) -> bool:
         """
         Check whether processed metadata exists for a given IMDb ID.

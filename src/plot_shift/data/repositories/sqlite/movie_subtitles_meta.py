@@ -182,7 +182,6 @@ class MovieSubtitlesMetaSqliteRepository(MovieSubtitlesMetaRepository):
                 words=words,
                 sentences=sentences,
                 duration=timedelta(minutes=row["duration_minutes"]),
-                all_words=all_words,
             )
 
     def list_valid_imdb_ids(self) -> list[int]:
@@ -195,6 +194,19 @@ class MovieSubtitlesMetaSqliteRepository(MovieSubtitlesMetaRepository):
                 """
             ).fetchall()
             return [int(r["imdb_id_int"]) for r in rows]
+
+    def list_sentences_by_imdb_id(self, imdb_id: int) -> list[str]:
+        with self._get_connection() as conn:
+            rows = conn.execute(
+                """
+                SELECT content
+                FROM movie_subtitles_sentences
+                WHERE imdb_id_int = ?
+                ORDER BY id ASC
+                """,
+                (imdb_id,),
+            ).fetchall()
+            return [str(r["content"]) for r in rows]
 
     def exists(self, imdb_id: int) -> bool:
         with self._get_connection() as conn:
