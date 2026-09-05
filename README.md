@@ -9,8 +9,9 @@ and processing subtitle files into SQLite.
 - Download raw IMDb files (`title.basics.tsv`, `title.ratings.tsv`)
 - Download English subtitles from OpenSubtitles for catalog movies
 - Parse `.srt` files and insert cleaned subtitle rows into SQLite
-
-Scoring, semantic modeling, and evaluation commands are not part of `main` yet.
+- Score subtitle sentences with VADER and persist results
+- Score subtitle sentences with VAD and persist results
+- Score subtitle sentences with a transformer model and persist results
 
 ## Requirements
 
@@ -91,6 +92,68 @@ Arguments:
 - `--subtitles-dir`: directory containing `.srt` files (default: `data/raw/subtitles`)
 - `--batch-size`: insert batch size (default: `500`)
 
+### `score-vader`
+
+Scores processed subtitle sentences with VADER and stores results in
+`sentence_model_scores`.
+
+```bash
+uv run plot-shift score-vader \
+  --db data/proceeded/data.db \
+  --batch-size 1000 \
+  --limit 100
+```
+
+Arguments:
+
+- `--db`: SQLite DB path (default: `data/proceeded/data.db`)
+- `--batch-size`: sentence score upsert batch size (default: `1000`)
+- `--limit`: optional cap on valid movies to score (default: no limit)
+
+### `score-vad`
+
+Scores processed subtitle sentences with NRC-VAD and stores results in
+`sentence_model_scores`.
+
+```bash
+uv run plot-shift score-vad \
+  --db data/proceeded/data.db \
+  --batch-size 1000 \
+  --limit 100 \
+  --lexicon-file data/raw/lexicons/vad_lexicon.txt
+```
+
+Arguments:
+
+- `--db`: SQLite DB path (default: `data/proceeded/data.db`)
+- `--batch-size`: sentence score upsert batch size (default: `1000`)
+- `--limit`: optional cap on valid movies to score (default: no limit)
+- `--lexicon-file`: path to VAD lexicon file
+
+### `score-semantic`
+
+Scores processed subtitle sentences with a Hugging Face transformer model and stores
+results in `sentence_model_scores`.
+
+Default model: `cardiffnlp/twitter-roberta-base-sentiment-latest` (free to use under
+CC BY 4.0 with attribution).
+
+```bash
+uv sync --group semantic
+uv run plot-shift score-semantic \
+  --db data/proceeded/data.db \
+  --batch-size 1000 \
+  --limit 100 \
+  --model-name cardiffnlp/twitter-roberta-base-sentiment-latest
+```
+
+Arguments:
+
+- `--db`: SQLite DB path (default: `data/proceeded/data.db`)
+- `--batch-size`: sentence score upsert batch size (default: `1000`)
+- `--limit`: optional cap on valid movies to score (default: no limit)
+- `--model-name`: Hugging Face model id for sequence classification
+
 ## Minimal workflow on `main`
 
 1. Download IMDb files:
@@ -105,6 +168,19 @@ Arguments:
 4. Parse and insert subtitle content:
    ```bash
    uv run plot-shift process-subs
+   ```
+5. Score sentences with VADER:
+   ```bash
+   uv run plot-shift score-vader
+   ```
+6. Score sentences with VAD:
+   ```bash
+   uv run plot-shift score-vad --lexicon-file data/raw/lexicons/vad_lexicon.txt
+   ```
+7. Score sentences with transformer model:
+   ```bash
+   uv sync --group semantic
+   uv run plot-shift score-semantic --model-name cardiffnlp/twitter-roberta-base-sentiment-latest
    ```
 
 ## Database and migrations
@@ -129,7 +205,5 @@ uv run pytest
 
 As the thesis implementation continues, additional commands can be added for:
 
-- sentiment scoring
 - reversal feature extraction
-- semantic scoring import/export
 - evaluation/report generation
