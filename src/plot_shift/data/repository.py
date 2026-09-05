@@ -3,6 +3,7 @@ from typing import Self
 
 from plot_shift.data.models import (
     MovieMeta,
+    SentenceModelScore,
     Subtitle,
     SubtitleMeta,
 )
@@ -17,6 +18,7 @@ class PlotShiftDB(ABC):
     subtitle_meta: SubtitleMetaRepository
     subtitles: SentencesRepository
     movie_subtitles_meta: MovieSubtitlesMetaRepository
+    sentence_model_scores: SentenceModelScoreRepository
 
     @abstractmethod
     def close(self) -> None:
@@ -64,6 +66,20 @@ class SubtitleMetaRepository(ABC):
 
     @abstractmethod
     def get_all(self) -> list[SubtitleMeta]: ...
+
+
+class SentenceModelScoreRepository(ABC):
+    """Abstract contract for sentence-level sentiment score persistence."""
+
+    @abstractmethod
+    def insert_many(self, scores: list[SentenceModelScore]) -> None:
+        """Insert or update many sentence-level scores."""
+        ...
+
+    @abstractmethod
+    def delete_movie_model(self, imdb_id_int: int, model: str) -> None:
+        """Delete existing scores for one movie/model pair."""
+        ...
 
 
 class MovieSubtitlesMetaRepository(ABC):

@@ -2,6 +2,7 @@ import sqlite3
 
 from plot_shift.data.repositories import (
     MovieMetaSqliteRepository,
+    SentenceModelScoreSqliteRepository,
     SubtitleMetaRepositorySqliteRepository,
     SubtitleSqliteRepository,
 )
@@ -18,6 +19,7 @@ class PlotShiftSqliteDB(PlotShiftDB):
         self.subtitle_meta = SubtitleMetaRepositorySqliteRepository(self.db_conn)
         self.subtitles = SubtitleSqliteRepository(self.db_conn)
         self.movie_subtitles_meta = MovieSubtitlesMetaSqliteRepository(dbpath)
+        self.sentence_model_scores = SentenceModelScoreSqliteRepository(dbpath)
 
     def close(self) -> None:
         self.db_conn.close()
