@@ -8,6 +8,11 @@ from typing import cast
 
 from plot_shift.data.downloader import download_remaining
 from plot_shift.data.services.process_movies_service import run_process
+from plot_shift.data.services.reversal_features_service import (
+    run_evaluate_models,
+    run_extract_reversals,
+    run_report_snapshot,
+)
 from plot_shift.data.services.score_lexicon_service import (
     run_score_semantic,
     run_score_vad,
@@ -98,6 +103,42 @@ def cmd_import_semantic_scores(args: argparse.Namespace) -> int:
         batch_size=args.batch_size,
         default_model=args.default_model,
         default_dimension=args.default_dimension,
+    )
+    print(stats)
+    return 0
+
+
+def cmd_extract_reversals(args: argparse.Namespace) -> int:
+    stats = run_extract_reversals(
+        db_path=args.db,
+        model=args.model,
+        dimension=args.dimension,
+        limit_movies=args.limit_movies,
+        prominence=args.prominence,
+    )
+    print(stats)
+    return 0
+
+
+def cmd_evaluate_models(args: argparse.Namespace) -> int:
+    stats = run_evaluate_models(
+        db_path=args.db,
+        out_csv=args.out_csv,
+        model=args.model,
+        dimension=args.dimension,
+    )
+    print(stats)
+    return 0
+
+
+def cmd_report_snapshot(args: argparse.Namespace) -> int:
+    stats = run_report_snapshot(
+        db_path=args.db,
+        out_md=args.out_md,
+        out_csv=args.out_csv,
+        model=args.model,
+        dimension=args.dimension,
+        min_movies=args.min_movies,
     )
     print(stats)
     return 0
@@ -292,6 +333,102 @@ def build_parser() -> argparse.ArgumentParser:
         help="Fallback dimension if CSV has no dimension column",
     )
     import_semantic.set_defaults(func=cmd_import_semantic_scores)
+
+    extract_reversals = subparsers.add_parser(
+        "extract-reversals",
+        help="Extract reversal features from sentence-level sentiment series",
+    )
+    extract_reversals.add_argument(
+        "--db",
+        default="data/proceeded/data.db",
+        help="SQLite database path",
+    )
+    extract_reversals.add_argument(
+        "--model",
+        default=None,
+        help="Optional model filter",
+    )
+    extract_reversals.add_argument(
+        "--dimension",
+        default=None,
+        help="Optional dimension filter",
+    )
+    extract_reversals.add_argument(
+        "--limit-movies",
+        type=int,
+        default=None,
+        help="Optional cap on movies considered",
+    )
+    extract_reversals.add_argument(
+        "--prominence",
+        type=float,
+        default=0.2,
+        help="Peak/trough prominence threshold",
+    )
+    extract_reversals.set_defaults(func=cmd_extract_reversals)
+
+    evaluate_models = subparsers.add_parser(
+        "evaluate-models",
+        help="Evaluate reversal features against IMDb rating",
+    )
+    evaluate_models.add_argument(
+        "--db",
+        default="data/proceeded/data.db",
+        help="SQLite database path",
+    )
+    evaluate_models.add_argument(
+        "--out-csv",
+        default="data/proceeded/eval_reversal_summary.csv",
+        help="Output summary CSV path",
+    )
+    evaluate_models.add_argument(
+        "--model",
+        default=None,
+        help="Optional model filter",
+    )
+    evaluate_models.add_argument(
+        "--dimension",
+        default=None,
+        help="Optional dimension filter",
+    )
+    evaluate_models.set_defaults(func=cmd_evaluate_models)
+
+    report_snapshot = subparsers.add_parser(
+        "report-snapshot",
+        help="Generate compact markdown snapshot from evaluation results",
+    )
+    report_snapshot.add_argument(
+        "--db",
+        default="data/proceeded/data.db",
+        help="SQLite database path",
+    )
+    report_snapshot.add_argument(
+        "--out-md",
+        default="data/proceeded/eval_snapshot.md",
+        help="Output markdown report path",
+    )
+    report_snapshot.add_argument(
+        "--out-csv",
+        default="data/proceeded/eval_reversal_summary.csv",
+        help="Output evaluation CSV path",
+    )
+    report_snapshot.add_argument(
+        "--model",
+        default=None,
+        help="Optional model filter",
+    )
+    report_snapshot.add_argument(
+        "--dimension",
+        default=None,
+        help="Optional dimension filter",
+    )
+    report_snapshot.add_argument(
+        "--min-movies",
+        type=int,
+        default=2,
+        help="Minimum movies required to include a group in top correlations",
+    )
+    report_snapshot.set_defaults(func=cmd_report_snapshot)
     return parser
 
 
