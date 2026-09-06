@@ -154,6 +154,91 @@ Arguments:
 - `--limit`: optional cap on valid movies to score (default: no limit)
 - `--model-name`: Hugging Face model id for sequence classification
 
+### `export-sentences-for-semantic`
+
+Exports sentence-level input to CSV for running heavy semantic models in cloud
+environments (for example Google Colab).
+
+```bash
+uv run plot-shift export-sentences-for-semantic \
+  --db data/proceeded/data.db \
+  --out-csv data/proceeded/semantic_input.csv \
+  --limit 100
+```
+
+Arguments:
+
+- `--db`: SQLite DB path (default: `data/proceeded/data.db`)
+- `--out-csv`: output CSV path
+- `--limit`: optional cap on valid movies to export (default: no limit)
+
+CSV columns:
+
+- `imdb_id_int`
+- `sentence_idx`
+- `sentence_text`
+
+### `import-semantic-scores`
+
+Imports cloud-scored semantic CSV output into `sentence_model_scores`.
+
+```bash
+uv run plot-shift import-semantic-scores \
+  --db data/proceeded/data.db \
+  --csv-path data/proceeded/semantic_scores.csv \
+  --batch-size 1000 \
+  --default-model semantic:cardiffnlp/twitter-roberta-base-sentiment-latest \
+  --default-dimension valence
+```
+
+Arguments:
+
+- `--db`: SQLite DB path (default: `data/proceeded/data.db`)
+- `--csv-path`: input scored CSV
+- `--batch-size`: score upsert batch size (default: `1000`)
+- `--default-model`: used if CSV has no `model` column
+- `--default-dimension`: used if CSV has no `dimension` column
+
+Required CSV headers:
+
+- `imdb_id_int`
+- `sentence_idx`
+- `score`
+
+Optional CSV headers:
+
+- `model`
+- `dimension`
+
+### Colab Semantic Notebook (ready-to-run)
+
+Use this when your local machine cannot run transformer scoring.
+
+1. Export local sentences:
+   ```bash
+   uv run plot-shift export-sentences-for-semantic --out-csv data/proceeded/semantic_input.csv
+   ```
+2. Upload `data/proceeded/semantic_input.csv` to Colab (or mount Drive).
+3. Open and run `notebooks/04_semantic_colab_runner.ipynb` in Colab.
+4. Download `semantic_scores.csv` from Colab.
+5. Import locally:
+   ```bash
+   uv run plot-shift import-semantic-scores --csv-path data/proceeded/semantic_scores.csv
+   ```
+
+The notebook writes CSV columns: `imdb_id_int,sentence_idx,score,model,dimension`.
+
+## Project flow
+
+1. Build movie catalog in `movies_meta`.
+2. Download subtitle files from OpenSubtitles.
+3. Process `.srt` files into sentence-level tables.
+4. Score sentences with VADER and VAD locally.
+5. Score sentences semantically:
+   - local with `score-semantic`, or
+   - cloud with `export-sentences-for-semantic` -> `notebooks/04_semantic_colab_runner.ipynb` -> `import-semantic-scores`.
+6. Continue with reversal extraction and evaluation (next phase).
+
 ## Minimal workflow on `main`
 
 1. Download IMDb files:
@@ -177,10 +262,19 @@ Arguments:
    ```bash
    uv run plot-shift score-vad --lexicon-file data/raw/lexicons/vad_lexicon.txt
    ```
-7. Score sentences with transformer model:
+7. Score sentences with transformer model (local):
    ```bash
    uv sync --group semantic
    uv run plot-shift score-semantic --model-name cardiffnlp/twitter-roberta-base-sentiment-latest
+   ```
+8. If local semantic is heavy, use cloud notebook instead:
+   ```bash
+   uv run plot-shift export-sentences-for-semantic --out-csv data/proceeded/semantic_input.csv
+   # run notebooks/04_semantic_colab_runner.ipynb in Colab
+   ```
+9. Import cloud semantic output:
+   ```bash
+   uv run plot-shift import-semantic-scores --csv-path data/proceeded/semantic_scores.csv
    ```
 
 ## Database and migrations
