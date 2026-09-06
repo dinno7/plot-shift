@@ -5,10 +5,10 @@ from pathlib import Path
 from plot_shift.data.db import PlotShiftSqliteDB
 from plot_shift.data.models import SentenceModelScore
 from plot_shift.sentiment import (
+    DEFAULT_SEMANTIC_MODEL_NAME,
     DEFAULT_VAD_LEXICON_PATH,
     SentimentScorer,
-    VaderLexiconScorer,
-    VADLexiconScorer,
+    build_scorer,
 )
 
 
@@ -82,12 +82,7 @@ def run_score_vader(
     batch_size: int = 1000,
     limit: int | None = None,
 ) -> dict[str, int]:
-    return run_score(
-        scorer=VaderLexiconScorer(),
-        db_path=db_path,
-        batch_size=batch_size,
-        limit=limit,
-    )
+    return run_score_model(model="vader", db_path=db_path, batch_size=batch_size, limit=limit)
 
 
 def run_score_vad(
@@ -96,11 +91,12 @@ def run_score_vad(
     limit: int | None = None,
     lexicon_file: str | Path = DEFAULT_VAD_LEXICON_PATH,
 ) -> dict[str, int]:
-    return run_score(
-        scorer=VADLexiconScorer(lexicon_file=lexicon_file),
+    return run_score_model(
+        model="vad",
         db_path=db_path,
         batch_size=batch_size,
         limit=limit,
+        vad_lexicon_file=lexicon_file,
     )
 
 
@@ -108,13 +104,36 @@ def run_score_semantic(
     db_path: str = "data/proceeded/data.db",
     batch_size: int = 1000,
     limit: int | None = None,
-    model_name: str = "cardiffnlp/twitter-roberta-base-sentiment-latest",
+    model_name: str = DEFAULT_SEMANTIC_MODEL_NAME,
+    max_length: int = 512,
 ) -> dict[str, int]:
-    # Lazy import keeps non-semantic flows free from torch/transformers.
-    from plot_shift.sentiment.semantic_scorer import TransformerSentimentScorer
+    return run_score_model(
+        model="semantic",
+        db_path=db_path,
+        batch_size=batch_size,
+        limit=limit,
+        semantic_model_name=model_name,
+        semantic_max_length=max_length,
+    )
 
+
+def run_score_model(
+    model: str,
+    db_path: str = "data/proceeded/data.db",
+    batch_size: int = 1000,
+    limit: int | None = None,
+    vad_lexicon_file: str | Path = DEFAULT_VAD_LEXICON_PATH,
+    semantic_model_name: str = DEFAULT_SEMANTIC_MODEL_NAME,
+    semantic_max_length: int = 512,
+) -> dict[str, int]:
+    scorer = build_scorer(
+        strategy=model,
+        vad_lexicon_file=vad_lexicon_file,
+        semantic_model_name=semantic_model_name,
+        semantic_max_length=semantic_max_length,
+    )
     return run_score(
-        scorer=TransformerSentimentScorer(model_name=model_name),
+        scorer=scorer,
         db_path=db_path,
         batch_size=batch_size,
         limit=limit,

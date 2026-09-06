@@ -13,15 +13,12 @@ from plot_shift.data.services.reversal_features_service import (
     run_extract_reversals,
     run_report_snapshot,
 )
-from plot_shift.data.services.score_lexicon_service import (
-    run_score_semantic,
-    run_score_vad,
-    run_score_vader,
-)
+from plot_shift.data.services.score_lexicon_service import run_score_model
 from plot_shift.data.services.semantic_io_service import (
     export_sentences_for_semantic,
     import_semantic_scores,
 )
+from plot_shift.sentiment import DEFAULT_SEMANTIC_MODEL_NAME, list_supported_scorer_strategies
 
 
 def repo_root() -> Path:
@@ -55,7 +52,8 @@ def cmd_process_subs(args: argparse.Namespace) -> int:
 
 
 def cmd_score_vader(args: argparse.Namespace) -> int:
-    stats = run_score_vader(
+    stats = run_score_model(
+        model="vader",
         db_path=args.db,
         batch_size=args.batch_size,
         limit=args.limit,
@@ -65,22 +63,39 @@ def cmd_score_vader(args: argparse.Namespace) -> int:
 
 
 def cmd_score_vad(args: argparse.Namespace) -> int:
-    stats = run_score_vad(
+    stats = run_score_model(
+        model="vad",
         db_path=args.db,
         batch_size=args.batch_size,
         limit=args.limit,
-        lexicon_file=args.lexicon_file,
+        vad_lexicon_file=args.lexicon_file,
     )
     print(stats)
     return 0
 
 
 def cmd_score_semantic(args: argparse.Namespace) -> int:
-    stats = run_score_semantic(
+    stats = run_score_model(
+        model="semantic",
         db_path=args.db,
         batch_size=args.batch_size,
         limit=args.limit,
-        model_name=args.model_name,
+        semantic_model_name=args.model_name,
+        semantic_max_length=args.max_length,
+    )
+    print(stats)
+    return 0
+
+
+def cmd_score_model(args: argparse.Namespace) -> int:
+    stats = run_score_model(
+        model=args.model,
+        db_path=args.db,
+        batch_size=args.batch_size,
+        limit=args.limit,
+        vad_lexicon_file=args.lexicon_file,
+        semantic_model_name=args.semantic_model_name,
+        semantic_max_length=args.semantic_max_length,
     )
     print(stats)
     return 0
@@ -275,10 +290,61 @@ def build_parser() -> argparse.ArgumentParser:
     )
     score_semantic.add_argument(
         "--model-name",
-        default="cardiffnlp/twitter-roberta-base-sentiment-latest",
+        default=DEFAULT_SEMANTIC_MODEL_NAME,
         help="Hugging Face model name for sequence classification",
     )
+    score_semantic.add_argument(
+        "--max-length",
+        type=int,
+        default=512,
+        help="Max tokens per sentence for semantic model",
+    )
     score_semantic.set_defaults(func=cmd_score_semantic)
+
+    score_model = subparsers.add_parser(
+        "score-model",
+        help="Score subtitle sentences with selected model strategy",
+    )
+    score_model.add_argument(
+        "--db",
+        default="data/proceeded/data.db",
+        help="SQLite database path",
+    )
+    score_model.add_argument(
+        "--model",
+        choices=list_supported_scorer_strategies(),
+        required=True,
+        help="Scoring strategy",
+    )
+    score_model.add_argument(
+        "--batch-size",
+        type=int,
+        default=1000,
+        help="Batch size for sentence score upserts",
+    )
+    score_model.add_argument(
+        "--limit",
+        type=int,
+        default=None,
+        help="Optional cap on valid movies to score",
+    )
+    score_model.add_argument(
+        "--lexicon-file",
+        default="data/raw/lexicons/vad_lexicon.txt",
+        help="VAD lexicon file (used when --model vad)",
+    )
+    score_model.add_argument(
+        "--semantic-model-name",
+        default=DEFAULT_SEMANTIC_MODEL_NAME,
+        help="HF semantic model id (used when --model semantic)",
+    )
+    score_model.add_argument(
+        "--semantic-max-length",
+        type=int,
+        default=512,
+        help="Max semantic model token length (used when --model semantic)",
+    )
+    score_model.set_defaults(func=cmd_score_model)
 
     export_semantic = subparsers.add_parser(
         "export-sentences-for-semantic",
