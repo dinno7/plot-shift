@@ -13,6 +13,10 @@ from plot_shift.data.services.score_lexicon_service import (
     run_score_vad,
     run_score_vader,
 )
+from plot_shift.data.services.semantic_io_service import (
+    export_sentences_for_semantic,
+    import_semantic_scores,
+)
 
 
 def repo_root() -> Path:
@@ -72,6 +76,28 @@ def cmd_score_semantic(args: argparse.Namespace) -> int:
         batch_size=args.batch_size,
         limit=args.limit,
         model_name=args.model_name,
+    )
+    print(stats)
+    return 0
+
+
+def cmd_export_sentences_for_semantic(args: argparse.Namespace) -> int:
+    stats = export_sentences_for_semantic(
+        db_path=args.db,
+        out_csv=args.out_csv,
+        limit=args.limit,
+    )
+    print(stats)
+    return 0
+
+
+def cmd_import_semantic_scores(args: argparse.Namespace) -> int:
+    stats = import_semantic_scores(
+        csv_path=args.csv_path,
+        db_path=args.db,
+        batch_size=args.batch_size,
+        default_model=args.default_model,
+        default_dimension=args.default_dimension,
     )
     print(stats)
     return 0
@@ -212,6 +238,60 @@ def build_parser() -> argparse.ArgumentParser:
         help="Hugging Face model name for sequence classification",
     )
     score_semantic.set_defaults(func=cmd_score_semantic)
+
+    export_semantic = subparsers.add_parser(
+        "export-sentences-for-semantic",
+        help="Export sentence rows to CSV for cloud semantic scoring",
+    )
+    export_semantic.add_argument(
+        "--db",
+        default="data/proceeded/data.db",
+        help="SQLite database path",
+    )
+    export_semantic.add_argument(
+        "--out-csv",
+        default="data/proceeded/semantic_input.csv",
+        help="Output CSV path",
+    )
+    export_semantic.add_argument(
+        "--limit",
+        type=int,
+        default=None,
+        help="Optional cap on valid movies to export",
+    )
+    export_semantic.set_defaults(func=cmd_export_sentences_for_semantic)
+
+    import_semantic = subparsers.add_parser(
+        "import-semantic-scores",
+        help="Import scored semantic CSV rows into sentence_model_scores",
+    )
+    import_semantic.add_argument(
+        "--db",
+        default="data/proceeded/data.db",
+        help="SQLite database path",
+    )
+    import_semantic.add_argument(
+        "--csv-path",
+        required=True,
+        help="Input CSV path (headers: imdb_id_int,sentence_idx,score[,model,dimension])",
+    )
+    import_semantic.add_argument(
+        "--batch-size",
+        type=int,
+        default=1000,
+        help="Batch size for score upserts",
+    )
+    import_semantic.add_argument(
+        "--default-model",
+        default="semantic:cardiffnlp/twitter-roberta-base-sentiment-latest",
+        help="Fallback model name if CSV has no model column",
+    )
+    import_semantic.add_argument(
+        "--default-dimension",
+        default="valence",
+        help="Fallback dimension if CSV has no dimension column",
+    )
+    import_semantic.set_defaults(func=cmd_import_semantic_scores)
     return parser
 
 
