@@ -1,35 +1,12 @@
 from abc import ABC, abstractmethod
-from typing import Self
 
 from plot_shift.data.models import (
     MovieMeta,
     SentenceModelScore,
-    Subtitle,
     SubtitleMeta,
 )
-from plot_shift.data.models.movie_subtitle_meta import MovieSubtitlesMeta
-
-
-class PlotShiftDB(ABC):
-    """Abstract contract for the PlotShift database facade."""
-
-    # INFO: All Repo
-    movies_meta: MovieMetaRepository
-    subtitle_meta: SubtitleMetaRepository
-    subtitles: SentencesRepository
-    movie_subtitles_meta: MovieSubtitlesMetaRepository
-    sentence_model_scores: SentenceModelScoreRepository
-
-    @abstractmethod
-    def close(self) -> None:
-        """Release underlying database resources."""
-        ...
-
-    def __enter__(self) -> Self:
-        return self
-
-    def __exit__(self, exc_type: object, exc_val: object, exc_tb: object) -> None:
-        self.close()
+from plot_shift.data.models.movie_subtitle_meta import MovieSubtitle
+from plot_shift.data.models.subtitle_segment import SubtitleSegment
 
 
 class MovieMetaRepository(ABC):
@@ -40,22 +17,6 @@ class MovieMetaRepository(ABC):
 
     @abstractmethod
     def get_all(self) -> list[MovieMeta]: ...
-
-
-class SentencesRepository(ABC):
-    """Abstract contract for subtitle cue persistence."""
-
-    @abstractmethod
-    def insert_one(self, entry: Subtitle) -> int | None: ...
-
-    @abstractmethod
-    def insert_many(self, entries: list[Subtitle]) -> None: ...
-
-    @abstractmethod
-    def get_by_id(self, entry_id: int) -> Subtitle | None: ...
-
-    @abstractmethod
-    def get_by_imdb_id(self, imdb_id_int: int) -> list[Subtitle]: ...
 
 
 class SubtitleMetaRepository(ABC):
@@ -82,7 +43,7 @@ class SentenceModelScoreRepository(ABC):
         ...
 
 
-class MovieSubtitlesMetaRepository(ABC):
+class MovieSubtitlesRepository(ABC):
     """
     Abstract repository contract for MovieSubtitlesMeta persistence.
 
@@ -91,9 +52,9 @@ class MovieSubtitlesMetaRepository(ABC):
     """
 
     @abstractmethod
-    def insert(
+    def upsert(
         self,
-        meta: MovieSubtitlesMeta,
+        movie_sub: MovieSubtitle,
     ) -> None:
         """
         Persist or update processed MovieSubtitlesMeta and its sentences.
@@ -108,7 +69,7 @@ class MovieSubtitlesMetaRepository(ABC):
         ...
 
     @abstractmethod
-    def insert_many(self, metas: list[MovieSubtitlesMeta]) -> None:
+    def upsert_many(self, movie_subs: list[MovieSubtitle]) -> None:
         """
         Persist or update multiple processed MovieSubtitlesMeta records atomically.
 
@@ -129,7 +90,7 @@ class MovieSubtitlesMetaRepository(ABC):
         ...
 
     @abstractmethod
-    def find_by_imdb_id(self, imdb_id: int) -> MovieSubtitlesMeta | None:
+    def find_by_imdb_id(self, imdb_id: int) -> MovieSubtitle | None:
         """
         Reconstruct a MovieSubtitlesMeta from persistent storage.
 
@@ -147,7 +108,12 @@ class MovieSubtitlesMetaRepository(ABC):
 
     @abstractmethod
     def list_sentences_by_imdb_id(self, imdb_id: int) -> list[str]:
-        """Return processed sentences for one IMDb integer id."""
+        """Return processed segment texts for one IMDb integer id, in order."""
+        ...
+
+    @abstractmethod
+    def list_segments_by_imdb_id(self, imdb_id: int) -> list[SubtitleSegment]:
+        """Return processed, timestamped segments for one IMDb integer id, in order."""
         ...
 
     @abstractmethod
@@ -176,5 +142,41 @@ class MovieSubtitlesMetaRepository(ABC):
 
         Args:
             imdb_id: The IMDb integer identifier.
+        """
+        ...
+
+
+class SubtitleSegmentsRepository(ABC):
+    """
+    Abstract repository contract for SubtitleSegment persistence.
+    """
+
+    @abstractmethod
+    def upsert(
+        self,
+        segment: SubtitleSegment,
+    ) -> None:
+        """
+        Upsert processed subtitle's segment into SubtitleSegment.
+        """
+        ...
+
+    @abstractmethod
+    def upsert_many(self, segments: list[SubtitleSegment]) -> None:
+        """
+        Upsert multiple processed subtitle's segment into SubtitleSegment.
+
+        All records are saved within a single transaction. If any record fails
+        validation, none are persisted.
+        """
+        ...
+
+    @abstractmethod
+    def find_by_imdb_id(self, imdb_id: int) -> list[SubtitleSegment]: ...
+
+    @abstractmethod
+    def delete(self, imdb_id: int) -> None:
+        """
+        Remove all persisted data for a given IMDb ID.
         """
         ...

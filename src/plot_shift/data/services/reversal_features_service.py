@@ -7,6 +7,8 @@ from pathlib import Path
 
 from scipy.stats import pearsonr
 
+from plot_shift.data.services.windowing import FixedCountTimeWindower, TimedScore
+
 
 def _compute_reversal_features(
     scores: list[float],
@@ -39,7 +41,10 @@ def run_extract_reversals(
     dimension: str | None = None,
     limit_movies: int | None = None,
     prominence: float = 0.2,
+    n_windows: int = 100,
 ) -> dict[str, int | float]:
+    windower = FixedCountTimeWindower(n_windows=n_windows)
+
     with sqlite3.connect(db_path) as conn:
         conn.row_factory = sqlite3.Row
 
@@ -81,16 +86,38 @@ def run_extract_reversals(
 
             series_rows = conn.execute(
                 """
-                SELECT score
-                FROM sentence_model_scores
-                WHERE imdb_id_int = ? AND model = ? AND dimension = ?
-                ORDER BY sentence_idx ASC
+                SELECT sms.score AS score, seg.start_seconds AS start_seconds,
+                       seg.end_seconds AS end_seconds
+                FROM sentence_model_scores sms
+                JOIN subtitle_segments seg
+                    ON seg.imdb_id_int = sms.imdb_id_int AND seg.segment_idx = sms.segment_idx
+                WHERE sms.imdb_id_int = ? AND sms.model = ? AND sms.dimension = ?
+                ORDER BY sms.segment_idx ASC
                 """,
                 (imdb_id_int, group_model, group_dimension),
             ).fetchall()
-            scores = [float(row["score"]) for row in series_rows]
+            timed_scores = [
+                TimedScore(
+                    start_seconds=float(row["start_seconds"]),
+                    end_seconds=float(row["end_seconds"]),
+                    score=float(row["score"]),
+                )
+                for row in series_rows
+            ]
+
+            duration_row = conn.execute(
+                "SELECT duration_seconds FROM movie_subtitles WHERE imdb_id_int = ?",
+                (imdb_id_int,),
+            ).fetchone()
+            total_duration_seconds = (
+                float(duration_row["duration_seconds"])
+                if duration_row and duration_row["duration_seconds"] is not None
+                else 0.0
+            )
+
+            windowed_scores = windower.window(timed_scores, total_duration_seconds)
             n_reversals, mean_intensity, max_intensity, series_length = _compute_reversal_features(
-                scores=scores,
+                scores=windowed_scores,
                 prominence=prominence,
             )
 
@@ -100,6 +127,7 @@ def run_extract_reversals(
                     group_model,
                     group_dimension,
                     float(prominence),
+                    n_windows,
                     series_length,
                     n_reversals,
                     mean_intensity,
@@ -111,10 +139,12 @@ def run_extract_reversals(
             conn.executemany(
                 """
                 INSERT INTO reversal_features
-                    (imdb_id_int, model, dimension, prominence, series_length, n_reversals, mean_intensity, max_intensity)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                    (imdb_id_int, model, dimension, prominence, n_windows, series_length,
+                     n_reversals, mean_intensity, max_intensity)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
                 ON CONFLICT(imdb_id_int, model, dimension) DO UPDATE SET
                     prominence = excluded.prominence,
+                    n_windows = excluded.n_windows,
                     series_length = excluded.series_length,
                     n_reversals = excluded.n_reversals,
                     mean_intensity = excluded.mean_intensity,
@@ -127,6 +157,7 @@ def run_extract_reversals(
     return {
         "groups_processed": len(rows_to_upsert),
         "prominence": float(prominence),
+        "n_windows": n_windows,
     }
 
 

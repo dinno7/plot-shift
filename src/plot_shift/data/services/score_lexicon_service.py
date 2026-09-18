@@ -26,14 +26,14 @@ class SentenceScoringService:
             "rows_written": 0,
         }
 
-        imdb_ids = self._db.movie_subtitles_meta.list_valid_imdb_ids()
+        imdb_ids = self._db.movie_subtitles.list_valid_imdb_ids()
         if limit is not None:
             imdb_ids = imdb_ids[:limit]
         stats["movies_total"] = len(imdb_ids)
 
         buffer: list[SentenceModelScore] = []
         for imdb_id_int in imdb_ids:
-            sentences = self._db.movie_subtitles_meta.list_sentences_by_imdb_id(imdb_id_int)
+            sentences = self._db.movie_subtitles.list_sentences_by_imdb_id(imdb_id_int)
             if not sentences:
                 stats["movies_skipped_empty"] += 1
                 continue
@@ -47,7 +47,7 @@ class SentenceScoringService:
                     buffer.append(
                         SentenceModelScore(
                             imdb_id_int=imdb_id_int,
-                            sentence_idx=sentence_idx,
+                            segment_idx=sentence_idx,
                             model=self._scorer.model_name,
                             dimension=dimension.kind.value,
                             score=dimension.value,

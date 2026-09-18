@@ -20,7 +20,7 @@ class SentenceModelScoreSqliteRepository(SentenceModelScoreRepository):
     def _to_row(score: SentenceModelScore) -> tuple[int, int, str, str, float]:
         return (
             score.imdb_id_int,
-            score.sentence_idx,
+            score.segment_idx,
             score.model,
             score.dimension,
             score.score,
@@ -35,9 +35,9 @@ class SentenceModelScoreSqliteRepository(SentenceModelScoreRepository):
             conn.executemany(
                 """
                 INSERT INTO sentence_model_scores
-                    (imdb_id_int, sentence_idx, model, dimension, score)
+                    (imdb_id_int, segment_idx, model, dimension, score)
                 VALUES (?, ?, ?, ?, ?)
-                ON CONFLICT(imdb_id_int, sentence_idx, model, dimension) DO UPDATE SET
+                ON CONFLICT(imdb_id_int, segment_idx, model, dimension) DO UPDATE SET
                     score = excluded.score
                 """,
                 rows,

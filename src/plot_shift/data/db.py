@@ -2,24 +2,47 @@ import sqlite3
 
 from plot_shift.data.repositories import (
     MovieMetaSqliteRepository,
+    MovieSubtitlesSqliteRepository,
     SentenceModelScoreSqliteRepository,
     SubtitleMetaRepositorySqliteRepository,
-    SubtitleSqliteRepository,
+    SubtitleSegmentsSqliteRepository,
 )
-from plot_shift.data.repositories.sqlite.movie_subtitles_meta import (
-    MovieSubtitlesMetaSqliteRepository,
+from plot_shift.data.repository import (
+    MovieMetaRepository,
+    MovieSubtitlesRepository,
+    SentenceModelScoreRepository,
+    SubtitleMetaRepository,
 )
-from plot_shift.data.repository import PlotShiftDB
 
 
-class PlotShiftSqliteDB(PlotShiftDB):
-    def __init__(self, dbpath: str):
-        self.db_conn = sqlite3.connect(dbpath)
-        self.movies_meta = MovieMetaSqliteRepository(self.db_conn)
-        self.subtitle_meta = SubtitleMetaRepositorySqliteRepository(self.db_conn)
-        self.subtitles = SubtitleSqliteRepository(self.db_conn)
-        self.movie_subtitles_meta = MovieSubtitlesMetaSqliteRepository(dbpath)
-        self.sentence_model_scores = SentenceModelScoreSqliteRepository(dbpath)
+class PlotShiftSqliteDB:
+    def __init__(self, db_path):
+        self.db_path = db_path
 
-    def close(self) -> None:
-        self.db_conn.close()
+    def __enter__(self):
+        self.conn = sqlite3.connect(self.db_path)
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        if self.conn:
+            self.conn.close()
+
+    @property
+    def movies_meta(self) -> MovieMetaRepository:
+        return MovieMetaSqliteRepository(self.conn)
+
+    @property
+    def subtitle_meta(self) -> SubtitleMetaRepository:
+        return SubtitleMetaRepositorySqliteRepository(self.conn)
+
+    @property
+    def movie_subtitles(self) -> MovieSubtitlesRepository:
+        return MovieSubtitlesSqliteRepository(self.conn)
+
+    @property
+    def subtitle_segments(self):
+        return SubtitleSegmentsSqliteRepository(self.conn)
+
+    @property
+    def sentence_model_scores(self) -> SentenceModelScoreRepository:
+        return SentenceModelScoreSqliteRepository(self.db_path)

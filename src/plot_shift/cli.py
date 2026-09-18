@@ -130,6 +130,7 @@ def cmd_extract_reversals(args: argparse.Namespace) -> int:
         dimension=args.dimension,
         limit_movies=args.limit_movies,
         prominence=args.prominence,
+        n_windows=args.n_windows,
     )
     print(stats)
     return 0
@@ -211,7 +212,7 @@ def build_parser() -> argparse.ArgumentParser:
     process_subs.add_argument(
         "--batch-size",
         type=int,
-        default=500,
+        default=100,
         help="Insert batch size",
     )
     process_subs.set_defaults(func=cmd_process_subs)
@@ -380,7 +381,7 @@ def build_parser() -> argparse.ArgumentParser:
     import_semantic.add_argument(
         "--csv-path",
         required=True,
-        help="Input CSV path (headers: imdb_id_int,sentence_idx,score[,model,dimension])",
+        help="Input CSV path (headers: imdb_id_int,segment_idx,score[,model,dimension])",
     )
     import_semantic.add_argument(
         "--batch-size",
@@ -430,6 +431,12 @@ def build_parser() -> argparse.ArgumentParser:
         type=float,
         default=0.2,
         help="Peak/trough prominence threshold",
+    )
+    extract_reversals.add_argument(
+        "--n-windows",
+        type=int,
+        default=100,
+        help="Fixed number of equal-width, real-time windows per movie (Knight-style)",
     )
     extract_reversals.set_defaults(func=cmd_extract_reversals)
 
