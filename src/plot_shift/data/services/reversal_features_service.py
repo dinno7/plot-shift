@@ -53,7 +53,7 @@ def run_extract_reversals(
         if limit_movies is not None:
             movie_filter_sql = (
                 "AND sms.imdb_id_int IN ("
-                "SELECT DISTINCT imdb_id_int FROM sentence_model_scores "
+                "SELECT DISTINCT imdb_id_int FROM model_scores "
                 "ORDER BY imdb_id_int LIMIT ?)"
             )
             movie_filter_args.append(limit_movies)
@@ -70,7 +70,7 @@ def run_extract_reversals(
         groups = conn.execute(
             f"""
             SELECT DISTINCT sms.imdb_id_int, sms.model, sms.dimension
-            FROM sentence_model_scores sms
+            FROM model_scores sms
             WHERE {" AND ".join(where_parts)}
             {movie_filter_sql}
             ORDER BY sms.imdb_id_int, sms.model, sms.dimension
@@ -86,13 +86,13 @@ def run_extract_reversals(
 
             series_rows = conn.execute(
                 """
-                SELECT sms.score AS score, seg.start_seconds AS start_seconds,
+                SELECT ms.score AS score, seg.start_seconds AS start_seconds,
                        seg.end_seconds AS end_seconds
-                FROM sentence_model_scores sms
+                FROM model_scores ms
                 JOIN subtitle_segments seg
-                    ON seg.imdb_id_int = sms.imdb_id_int AND seg.segment_idx = sms.segment_idx
-                WHERE sms.imdb_id_int = ? AND sms.model = ? AND sms.dimension = ?
-                ORDER BY sms.segment_idx ASC
+                    ON seg.imdb_id_int = ms.imdb_id_int AND seg.segment_idx = ms.segment_idx
+                WHERE ms.imdb_id_int = ? AND ms.model = ? AND ms.dimension = ?
+                ORDER BY ms.segment_idx ASC
                 """,
                 (imdb_id_int, group_model, group_dimension),
             ).fetchall()

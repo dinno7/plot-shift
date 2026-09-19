@@ -108,7 +108,7 @@ class MovieSubtitlesSqliteRepository(MovieSubtitlesRepository):
     def _load_segments(self, imdb_id: int) -> list[SubtitleSegment]:
         rows = self._db_conn.execute(
             """
-            SELECT segment_idx, start_seconds, end_seconds, content
+            SELECT id, segment_idx, start_seconds, end_seconds, content
             FROM subtitle_segments
             WHERE imdb_id_int = ?
             ORDER BY segment_idx ASC
@@ -117,6 +117,7 @@ class MovieSubtitlesSqliteRepository(MovieSubtitlesRepository):
         ).fetchall()
         return [
             SubtitleSegment(
+                id=row["id"],
                 imdb_id_int=imdb_id,
                 segment_idx=row["segment_idx"],
                 start=timedelta(seconds=row["start_seconds"]),

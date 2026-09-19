@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 
 from plot_shift.data.models import (
     MovieMeta,
-    SentenceModelScore,
+    ModelScore,
     SubtitleMeta,
 )
 from plot_shift.data.models.movie_subtitle_meta import MovieSubtitle
@@ -29,12 +29,12 @@ class SubtitleMetaRepository(ABC):
     def get_all(self) -> list[SubtitleMeta]: ...
 
 
-class SentenceModelScoreRepository(ABC):
+class ModelScoresRepository(ABC):
     """Abstract contract for sentence-level sentiment score persistence."""
 
     @abstractmethod
-    def insert_many(self, scores: list[SentenceModelScore]) -> None:
-        """Insert or update many sentence-level scores."""
+    def insert_many(self, scores: list[ModelScore]) -> None:
+        """Insert or update many window-level scores."""
         ...
 
     @abstractmethod

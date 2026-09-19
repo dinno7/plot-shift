@@ -4,7 +4,7 @@ import csv
 from pathlib import Path
 
 from plot_shift.data.db import PlotShiftSqliteDB
-from plot_shift.data.models import SentenceModelScore
+from plot_shift.data.models import ModelScore
 
 
 def export_sentences_for_semantic(
@@ -49,7 +49,7 @@ def import_semantic_scores(
         raise FileNotFoundError(f"CSV not found: {csv_path}")
 
     with PlotShiftSqliteDB(db_path) as db:
-        buffer: list[SentenceModelScore] = []
+        buffer: list[ModelScore] = []
         rows_read = 0
         rows_written = 0
         cleared_pairs: set[tuple[int, str]] = set()
@@ -66,20 +66,26 @@ def import_semantic_scores(
             for row in reader:
                 rows_read += 1
                 imdb_id_int = int(row["imdb_id_int"])
-                segment_idx = int(row["segment_idx"])
+                window_idx = int(row["window_idx"])
+                total_windows = int(row["total_windows"])
+                from_segment_idx = int(row["from_segment_idx"])
+                to_segment_idx = int(row["to_segment_idx"])
                 model = (row.get("model") or default_model).strip()
                 dimension = (row.get("dimension") or default_dimension).strip()
                 score = float(row["score"])
 
                 clear_key = (imdb_id_int, model)
                 if clear_key not in cleared_pairs:
-                    db.sentence_model_scores.delete_movie_model(imdb_id_int, model)
+                    db.model_scores.delete_movie_model(imdb_id_int, model)
                     cleared_pairs.add(clear_key)
 
                 buffer.append(
-                    SentenceModelScore(
+                    ModelScore(
                         imdb_id_int=imdb_id_int,
-                        segment_idx=segment_idx,
+                        window_idx=window_idx,
+                        total_windows=total_windows,
+                        from_segment_idx=from_segment_idx,
+                        to_segment_idx=to_segment_idx,
                         model=model,
                         dimension=dimension,
                         score=score,
@@ -87,12 +93,12 @@ def import_semantic_scores(
                 )
 
                 if len(buffer) >= batch_size:
-                    db.sentence_model_scores.insert_many(buffer)
+                    db.model_scores.insert_many(buffer)
                     rows_written += len(buffer)
                     buffer.clear()
 
         if buffer:
-            db.sentence_model_scores.insert_many(buffer)
+            db.model_scores.insert_many(buffer)
             rows_written += len(buffer)
             buffer.clear()
 
