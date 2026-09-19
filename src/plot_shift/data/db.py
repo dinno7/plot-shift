@@ -21,6 +21,8 @@ class PlotShiftSqliteDB:
 
     def __enter__(self):
         self.conn = sqlite3.connect(self.db_path)
+        self.conn.row_factory = sqlite3.Row
+        self.conn.execute("PRAGMA foreign_keys = ON")
         return self
 
     def __exit__(self, exc_type, exc_val, exc_tb):
