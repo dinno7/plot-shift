@@ -1,16 +1,16 @@
 import sqlite3
 
 from plot_shift.data.repositories import (
+    ModelScoreSqliteRepository,
     MovieMetaSqliteRepository,
     MovieSubtitlesSqliteRepository,
-    SentenceModelScoreSqliteRepository,
     SubtitleMetaRepositorySqliteRepository,
     SubtitleSegmentsSqliteRepository,
 )
 from plot_shift.data.repository import (
+    ModelScoresRepository,
     MovieMetaRepository,
     MovieSubtitlesRepository,
-    SentenceModelScoreRepository,
     SubtitleMetaRepository,
 )
 
@@ -46,5 +46,5 @@ class PlotShiftSqliteDB:
         return SubtitleSegmentsSqliteRepository(self.conn)
 
     @property
-    def sentence_model_scores(self) -> SentenceModelScoreRepository:
-        return SentenceModelScoreSqliteRepository(self.db_path)
+    def model_scores(self) -> ModelScoresRepository:
+        return ModelScoreSqliteRepository(self.conn)
