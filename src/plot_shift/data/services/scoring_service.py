@@ -1,21 +1,32 @@
 from __future__ import annotations
 
+import logging
+from datetime import timedelta
 from pathlib import Path
 
 from plot_shift.data.db import PlotShiftSqliteDB
-from plot_shift.data.models import SentenceModelScore
+from plot_shift.data.models import ModelScore
 from plot_shift.sentiment import (
     DEFAULT_SEMANTIC_MODEL_NAME,
     DEFAULT_VAD_LEXICON_PATH,
     SentimentScorer,
     build_scorer,
 )
+from plot_shift.windows.base import WindowGenerator
+from plot_shift.windows.fixed_width_temporal import FixedWidthTemporalWindowGenerator
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+logger.addHandler(logging.StreamHandler())
 
 
-class SentenceScoringService:
-    def __init__(self, db: PlotShiftSqliteDB, scorer: SentimentScorer) -> None:
+class ScoringService:
+    def __init__(
+        self, db: PlotShiftSqliteDB, window_generator: WindowGenerator, scorer: SentimentScorer
+    ) -> None:
         self._db = db
         self._scorer = scorer
+        self._window_generator = window_generator
 
     def process(self, batch_size: int = 1000, limit: int | None = None) -> dict[str, int]:
         stats = {
@@ -31,35 +42,47 @@ class SentenceScoringService:
             imdb_ids = imdb_ids[:limit]
         stats["movies_total"] = len(imdb_ids)
 
-        buffer: list[SentenceModelScore] = []
+        buffer: list[ModelScore] = []
         for imdb_id_int in imdb_ids:
-            sentences = self._db.movie_subtitles.list_sentences_by_imdb_id(imdb_id_int)
-            if not sentences:
-                stats["movies_skipped_empty"] += 1
+            logger.info("Start scoring IMDB(%d) movie", imdb_id_int)
+            movie_subtitle = self._db.movie_subtitles.find_by_imdb_id(imdb_id_int)
+            if movie_subtitle is None:
+                logger.warning("Movie with IMDB(%d) is not exists, ignored", imdb_id_int)
                 continue
 
-            self._db.sentence_model_scores.delete_movie_model(imdb_id_int, self._scorer.model_name)
-
-            for sentence_idx, sentence in enumerate(sentences):
-                score = self._scorer.score(sentence)
+            logger.info(
+                "Generating windows IMDB(%d) with %s window generator",
+                imdb_id_int,
+                self._window_generator.name(),
+            )
+            windows = self._window_generator.generate(movie_subtitle)
+            logger.info("Deleting previous %s model's scores", self._scorer.model_name)
+            self._db.model_scores.delete_movie_model(imdb_id_int, self._scorer.model_name)
+            logger.info("Scoring %d windows with %s model", len(windows), self._scorer.model_name)
+            for window in windows:
+                score = self._scorer.score(window.text)
                 stats["sentences_scored"] += 1
                 for dimension in score.dimensions:
                     buffer.append(
-                        SentenceModelScore(
+                        ModelScore(
                             imdb_id_int=imdb_id_int,
-                            segment_idx=sentence_idx,
+                            from_segment_idx=window.from_segment_idx,
+                            to_segment_idx=window.to_segment_idx,
+                            window_idx=window.index,
+                            total_windows=len(windows),
                             model=self._scorer.model_name,
                             dimension=dimension.kind.value,
                             score=dimension.value,
                         )
                     )
                     if len(buffer) >= batch_size:
-                        self._db.sentence_model_scores.insert_many(buffer)
+                        self._db.model_scores.insert_many(buffer)
                         stats["rows_written"] += len(buffer)
                         buffer.clear()
+
             stats["movies_scored"] += 1
         if buffer:
-            self._db.sentence_model_scores.insert_many(buffer)
+            self._db.model_scores.insert_many(buffer)
             stats["rows_written"] += len(buffer)
             buffer.clear()
 
@@ -68,53 +91,14 @@ class SentenceScoringService:
 
 def run_score(
     scorer: SentimentScorer,
+    window_generator: WindowGenerator,
     db_path: str = "data/proceeded/data.db",
     batch_size: int = 1000,
     limit: int | None = None,
 ) -> dict[str, int]:
     with PlotShiftSqliteDB(db_path) as db:
-        service = SentenceScoringService(db, scorer)
+        service = ScoringService(db, window_generator, scorer)
         return service.process(batch_size=batch_size, limit=limit)
-
-
-def run_score_vader(
-    db_path: str = "data/proceeded/data.db",
-    batch_size: int = 1000,
-    limit: int | None = None,
-) -> dict[str, int]:
-    return run_score_model(model="vader", db_path=db_path, batch_size=batch_size, limit=limit)
-
-
-def run_score_vad(
-    db_path: str = "data/proceeded/data.db",
-    batch_size: int = 1000,
-    limit: int | None = None,
-    lexicon_file: str | Path = DEFAULT_VAD_LEXICON_PATH,
-) -> dict[str, int]:
-    return run_score_model(
-        model="vad",
-        db_path=db_path,
-        batch_size=batch_size,
-        limit=limit,
-        vad_lexicon_file=lexicon_file,
-    )
-
-
-def run_score_semantic(
-    db_path: str = "data/proceeded/data.db",
-    batch_size: int = 1000,
-    limit: int | None = None,
-    model_name: str = DEFAULT_SEMANTIC_MODEL_NAME,
-    max_length: int = 512,
-) -> dict[str, int]:
-    return run_score_model(
-        model="semantic",
-        db_path=db_path,
-        batch_size=batch_size,
-        limit=limit,
-        semantic_model_name=model_name,
-        semantic_max_length=max_length,
-    )
 
 
 def run_score_model(
@@ -122,6 +106,8 @@ def run_score_model(
     db_path: str = "data/proceeded/data.db",
     batch_size: int = 1000,
     limit: int | None = None,
+    window_duration: timedelta = timedelta(minutes=5),
+    n_windows: int = 100,
     vad_lexicon_file: str | Path = DEFAULT_VAD_LEXICON_PATH,
     semantic_model_name: str = DEFAULT_SEMANTIC_MODEL_NAME,
     semantic_max_length: int = 512,
@@ -132,8 +118,10 @@ def run_score_model(
         semantic_model_name=semantic_model_name,
         semantic_max_length=semantic_max_length,
     )
+    window_generator = FixedWidthTemporalWindowGenerator(window_duration, n_windows)
     return run_score(
         scorer=scorer,
+        window_generator=window_generator,
         db_path=db_path,
         batch_size=batch_size,
         limit=limit,
