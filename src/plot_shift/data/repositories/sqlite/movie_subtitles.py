@@ -23,7 +23,7 @@ class MovieSubtitlesSqliteRepository(MovieSubtitlesRepository):
 
     @staticmethod
     def _validate_processed(movie_sub: MovieSubtitle) -> None:
-        if movie_sub.segments is None:
+        if movie_sub._segments is None:
             raise ValueError(f"MovieSubtitles(imdb_id={movie_sub.imdb_id}) must have segments.")
 
     @staticmethod
@@ -51,7 +51,7 @@ class MovieSubtitlesSqliteRepository(MovieSubtitlesRepository):
                 segment.end.total_seconds(),
                 segment.content,
             )
-            for segment in meta.segments
+            for segment in meta._segments
         ]
 
     def upsert(self, movie_sub: MovieSubtitle) -> None:
@@ -105,9 +105,8 @@ class MovieSubtitlesSqliteRepository(MovieSubtitlesRepository):
 
             self._db_conn.commit()
 
-    @staticmethod
-    def _load_segments(conn: sqlite3.Connection, imdb_id: int) -> list[SubtitleSegment]:
-        rows = conn.execute(
+    def _load_segments(self, imdb_id: int) -> list[SubtitleSegment]:
+        rows = self._db_conn.execute(
             """
             SELECT segment_idx, start_seconds, end_seconds, content
             FROM subtitle_segments
@@ -142,13 +141,13 @@ class MovieSubtitlesSqliteRepository(MovieSubtitlesRepository):
         if row is None:
             return None
 
-        segments = self._load_segments(self._db_conn, imdb_id)
+        segments = self._load_segments(imdb_id)
         words: list[str] = []
         for segment in segments:
             tokens = tokenize_all_words(segment.content)
             words.extend(w for w in tokens if w not in stop_words)
 
-        return MovieSubtitle(imdb_id=row["imdb_id_int"], words=words, segments=segments)
+        return MovieSubtitle(imdb_id=row["imdb_id_int"], words=words, _segments=segments)
 
     def list_valid_imdb_ids(self) -> list[int]:
         rows = self._db_conn.execute(
