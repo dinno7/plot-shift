@@ -20,6 +20,9 @@ class FixedWidthTemporalWindowGenerator(WindowGenerator):
         self.window_duration = window_duration
         self.n_windows = n_windows
 
+    def name(self) -> str:
+        return f"Fixed width({self.n_windows}) temporal({self.window_duration.__str__()})"
+
     def generate(
         self,
         movie_subtitle: MovieSubtitle,
@@ -40,24 +43,31 @@ class FixedWidthTemporalWindowGenerator(WindowGenerator):
 
         starts = self._calculate_window_starts(duration)
 
-        return [
-            NarrativeWindow(
-                index=index,
-                from_segment_idx=segments[0].segment_idx,
-                to_segment_idx=segments[-1].segment_idx,
-                start=start,
-                end=min(
-                    start + self.window_duration,
-                    duration,
-                ),
-                text=self._collect_text(
-                    segments,
-                    start,
-                    min(start + self.window_duration, duration),
-                ),
+        windows: list[NarrativeWindow] = []
+        for index, start in enumerate(starts):
+            text, from_segment_idx, to_segment_idx = self._collect_segments(
+                segments,
+                start,
+                min(start + self.window_duration, duration),
             )
-            for index, start in enumerate(starts)
-        ]
+            if from_segment_idx is None or to_segment_idx is None:
+                continue
+
+            windows.append(
+                NarrativeWindow(
+                    index=index,
+                    from_segment_idx=from_segment_idx,
+                    to_segment_idx=to_segment_idx,
+                    start=start,
+                    end=min(
+                        start + self.window_duration,
+                        duration,
+                    ),
+                    text=text,
+                )
+            )
+
+        return windows
 
     def _calculate_window_starts(
         self,
@@ -76,14 +86,16 @@ class FixedWidthTemporalWindowGenerator(WindowGenerator):
 
         return [stride * i for i in range(self.n_windows)]
 
-    def _collect_text(
+    def _collect_segments(
         self,
         segments: list[SubtitleSegment],
         window_start: timedelta,
         window_end: timedelta,
-    ) -> str:
+    ) -> tuple[str, int | None, int | None]:
 
-        texts = []
+        texts: list[str] = []
+        segment_from: int | None = None
+        segment_to: int | None = None
 
         for segment in segments:
             # Segment ends before the window starts.
@@ -94,19 +106,25 @@ class FixedWidthTemporalWindowGenerator(WindowGenerator):
             if segment.start >= window_end:
                 break
 
+            # The first segment
+            if segment_from is None:
+                segment_from = segment.segment_idx
+            segment_to = segment.segment_idx
             texts.append(segment.content)
 
-        return " ".join(texts)
+        combined_text = " ".join(texts).strip() if texts else ""
+        return (combined_text, segment_from, segment_to)
 
 
 # Example
 if __name__ == "__main__":
     with PlotShiftSqliteDB("data/proceeded/data.db") as repo:
         windower = FixedWidthTemporalWindowGenerator(timedelta(minutes=5), n_windows=100)
-        movie_sub = repo.movie_subtitles.find_by_imdb_id(50212)
+        movie_sub = repo.movie_subtitles.find_by_imdb_id(31381)
         if movie_sub is None:
             raise ValueError("MovieSubtitle is None")
         windows = windower.generate(movie_subtitle=movie_sub)
         for w in windows:
             print("Window > ", w)
             print("-----\n")
+        print("LEN", len(windows))

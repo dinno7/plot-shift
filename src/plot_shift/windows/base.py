@@ -13,3 +13,6 @@ class WindowGenerator(ABC):
         self,
         movie_subtitle: MovieSubtitle,
     ) -> list[NarrativeWindow]: ...
+
+    @abstractmethod
+    def name(self) -> str: ...
