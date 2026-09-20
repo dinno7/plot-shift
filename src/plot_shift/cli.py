@@ -16,9 +16,9 @@ from plot_shift.data.services.reversal_features_service import (
     run_report_snapshot,
 )
 from plot_shift.data.services.scoring_service import run_score_model
-from plot_shift.data.services.semantic_io_service import (
-    export_sentences_for_semantic,
-    import_semantic_scores,
+from plot_shift.data.services.colab_io_service import (
+    export_windows_for_colab,
+    import_colab_scores,
 )
 
 
@@ -108,23 +108,23 @@ def cmd_score_model(args: argparse.Namespace) -> int:
     return 0
 
 
-def cmd_export_sentences_for_semantic(args: argparse.Namespace) -> int:
-    stats = export_sentences_for_semantic(
+def cmd_export_colab_data(args: argparse.Namespace) -> int:
+    stats = export_windows_for_colab(
         db_path=args.db,
         out_csv=args.out_csv,
+        n_windows=args.n_windows,
+        window_seconds=args.window_seconds,
         limit=args.limit,
     )
     print(stats)
     return 0
 
 
-def cmd_import_semantic_scores(args: argparse.Namespace) -> int:
-    stats = import_semantic_scores(
+def cmd_import_colab_scores(args: argparse.Namespace) -> int:
+    stats = import_colab_scores(
         csv_path=args.csv_path,
         db_path=args.db,
         batch_size=args.batch_size,
-        default_model=args.default_model,
-        default_dimension=args.default_dimension,
     )
     print(stats)
     return 0
@@ -390,59 +390,66 @@ def build_parser() -> argparse.ArgumentParser:
     )
     score_model.set_defaults(func=cmd_score_model)
 
-    export_semantic = subparsers.add_parser(
-        "export-sentences-for-semantic",
-        help="Export sentence rows to CSV for cloud semantic scoring",
+    export_colab = subparsers.add_parser(
+        "export-colab-data",
+        help="Export narrative windows to CSV for remote scoring in Google Colab",
     )
-    export_semantic.add_argument(
+    export_colab.add_argument(
         "--db",
         default="data/proceeded/data.db",
         help="SQLite database path",
     )
-    export_semantic.add_argument(
+    export_colab.add_argument(
         "--out-csv",
-        default="data/proceeded/semantic_input.csv",
-        help="Output CSV path",
+        default="data/proceeded/colab_input.csv",
+        help="Output CSV path (upload this to Colab)",
     )
-    export_semantic.add_argument(
+    export_colab.add_argument(
+        "--n-windows",
+        type=int,
+        default=100,
+        help="Number of equal-width windows per movie (default: 100)",
+    )
+    export_colab.add_argument(
+        "--window-seconds",
+        type=int,
+        default=300,
+        help="Window width in seconds (default: 300 = 5 min)",
+    )
+    export_colab.add_argument(
         "--limit",
         type=int,
         default=None,
-        help="Optional cap on valid movies to export",
+        help="Optional cap on the number of movies to export",
     )
-    export_semantic.set_defaults(func=cmd_export_sentences_for_semantic)
+    export_colab.set_defaults(func=cmd_export_colab_data)
 
-    import_semantic = subparsers.add_parser(
-        "import-semantic-scores",
-        help="Import scored semantic CSV rows into model_scores",
+    import_colab = subparsers.add_parser(
+        "import-colab-scores",
+        help="Import window-level scores from the Colab scoring notebook",
     )
-    import_semantic.add_argument(
+    import_colab.add_argument(
         "--db",
         default="data/proceeded/data.db",
         help="SQLite database path",
     )
-    import_semantic.add_argument(
+    import_colab.add_argument(
         "--csv-path",
         required=True,
-        help="Input CSV path (headers: imdb_id_int,segment_idx,score[,model,dimension])",
+        help=(
+            "Path to the scored CSV from Colab. "
+            "Required columns: imdb_id_int, window_idx, total_windows, "
+            "from_segment_idx, to_segment_idx, scorer_name, scorer_kind, "
+            "dimension, score"
+        ),
     )
-    import_semantic.add_argument(
+    import_colab.add_argument(
         "--batch-size",
         type=int,
         default=1000,
-        help="Batch size for score upserts",
+        help="Rows per DB insert batch (default: 1000)",
     )
-    import_semantic.add_argument(
-        "--default-model",
-        default="semantic:cardiffnlp/twitter-roberta-base-sentiment-latest",
-        help="Fallback model name if CSV has no model column",
-    )
-    import_semantic.add_argument(
-        "--default-dimension",
-        default="valence",
-        help="Fallback dimension if CSV has no dimension column",
-    )
-    import_semantic.set_defaults(func=cmd_import_semantic_scores)
+    import_colab.set_defaults(func=cmd_import_colab_scores)
 
     extract_reversals = subparsers.add_parser(
         "extract-reversals",
