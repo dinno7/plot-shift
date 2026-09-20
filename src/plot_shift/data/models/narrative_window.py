@@ -9,8 +9,8 @@ class NarrativeWindow:
     """
 
     index: int
-    from_segment_idx: int
-    to_segment_idx: int
+    from_segment_idx: int | None  # It is possible some window do not cover any segment
+    to_segment_idx: int | None
     start: timedelta
     end: timedelta
     text: str

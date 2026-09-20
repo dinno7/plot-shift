@@ -33,9 +33,10 @@ class ModelScoreSqliteRepository(ModelScoresRepository):
             INSERT INTO model_scores
                 (imdb_id_int, from_segment_idx, to_segment_idx, window_idx, total_windows, model, dimension, score)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-            ON CONFLICT(imdb_id_int, from_segment_idx, to_segment_idx, model, dimension) DO UPDATE SET
+            ON CONFLICT(imdb_id_int, window_idx, model, dimension) DO UPDATE SET
                 score = excluded.score,
-                window_idx = excluded.window_idx,
+                from_segment_idx = excluded.from_segment_idx,
+                to_segment_idx = excluded.to_segment_idx,
                 total_windows = excluded.total_windows
             """,
             rows,

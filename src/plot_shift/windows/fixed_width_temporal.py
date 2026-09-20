@@ -50,8 +50,6 @@ class FixedWidthTemporalWindowGenerator(WindowGenerator):
                 start,
                 min(start + self.window_duration, duration),
             )
-            if from_segment_idx is None or to_segment_idx is None:
-                continue
 
             windows.append(
                 NarrativeWindow(
