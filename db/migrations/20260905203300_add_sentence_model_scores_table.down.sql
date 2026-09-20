@@ -1,3 +1,3 @@
-DROP INDEX IF EXISTS idx_sentence_model_scores_lookup;
+DROP INDEX IF EXISTS idx_model_scores_lookup;
 
-DROP TABLE IF EXISTS sentence_model_scores;
+DROP TABLE IF EXISTS model_scores;

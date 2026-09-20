@@ -3,17 +3,18 @@ from __future__ import annotations
 import argparse
 import subprocess
 from collections.abc import Callable
+from datetime import timedelta
 from pathlib import Path
 from typing import cast
 
 from plot_shift.data.downloader import download_remaining
+from plot_shift.data.services import run_score_model
 from plot_shift.data.services.process_movies_service import run_process
 from plot_shift.data.services.reversal_features_service import (
     run_evaluate_models,
     run_extract_reversals,
     run_report_snapshot,
 )
-from plot_shift.data.services.score_lexicon_service import run_score_model
 from plot_shift.data.services.semantic_io_service import (
     export_sentences_for_semantic,
     import_semantic_scores,
@@ -57,6 +58,8 @@ def cmd_score_vader(args: argparse.Namespace) -> int:
         db_path=args.db,
         batch_size=args.batch_size,
         limit=args.limit,
+        n_windows=args.n_windows,
+        window_duration=timedelta(seconds=args.window_seconds),
     )
     print(stats)
     return 0
@@ -69,6 +72,8 @@ def cmd_score_vad(args: argparse.Namespace) -> int:
         batch_size=args.batch_size,
         limit=args.limit,
         vad_lexicon_file=args.lexicon_file,
+        n_windows=args.n_windows,
+        window_duration=timedelta(seconds=args.window_seconds),
     )
     print(stats)
     return 0
@@ -82,6 +87,8 @@ def cmd_score_semantic(args: argparse.Namespace) -> int:
         limit=args.limit,
         semantic_model_name=args.model_name,
         semantic_max_length=args.max_length,
+        n_windows=args.n_windows,
+        window_duration=timedelta(seconds=args.window_seconds),
     )
     print(stats)
     return 0
@@ -130,6 +137,7 @@ def cmd_extract_reversals(args: argparse.Namespace) -> int:
         dimension=args.dimension,
         limit_movies=args.limit_movies,
         prominence=args.prominence,
+        n_windows=args.n_windows,
     )
     print(stats)
     return 0
@@ -211,7 +219,7 @@ def build_parser() -> argparse.ArgumentParser:
     process_subs.add_argument(
         "--batch-size",
         type=int,
-        default=500,
+        default=100,
         help="Insert batch size",
     )
     process_subs.set_defaults(func=cmd_process_subs)
@@ -236,6 +244,18 @@ def build_parser() -> argparse.ArgumentParser:
         type=int,
         default=None,
         help="Optional cap on number of valid movies to score",
+    )
+    score_vader.add_argument(
+        "--window-seconds",
+        type=int,
+        default=300,
+        help="Optional window duration in seconds(default is 300(5min))",
+    )
+    score_vader.add_argument(
+        "--n-windows",
+        type=int,
+        default=100,
+        help="Optional windows count(default is 100)",
     )
     score_vader.set_defaults(func=cmd_score_vader)
 
@@ -264,6 +284,18 @@ def build_parser() -> argparse.ArgumentParser:
         "--lexicon-file",
         default="data/raw/lexicons/vad_lexicon.txt",
         help="Path to VAD lexicon file",
+    )
+    score_vad.add_argument(
+        "--window-seconds",
+        type=int,
+        default=300,
+        help="Optional window duration in seconds(default is 300(5min))",
+    )
+    score_vad.add_argument(
+        "--n-windows",
+        type=int,
+        default=100,
+        help="Optional windows count(default is 100)",
     )
     score_vad.set_defaults(func=cmd_score_vad)
 
@@ -298,6 +330,18 @@ def build_parser() -> argparse.ArgumentParser:
         type=int,
         default=512,
         help="Max tokens per sentence for semantic model",
+    )
+    score_semantic.add_argument(
+        "--window-seconds",
+        type=int,
+        default=300,
+        help="Optional window duration in seconds(default is 300(5min))",
+    )
+    score_semantic.add_argument(
+        "--n-windows",
+        type=int,
+        default=100,
+        help="Optional windows count(default is 100)",
     )
     score_semantic.set_defaults(func=cmd_score_semantic)
 
@@ -370,7 +414,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     import_semantic = subparsers.add_parser(
         "import-semantic-scores",
-        help="Import scored semantic CSV rows into sentence_model_scores",
+        help="Import scored semantic CSV rows into model_scores",
     )
     import_semantic.add_argument(
         "--db",
@@ -380,7 +424,7 @@ def build_parser() -> argparse.ArgumentParser:
     import_semantic.add_argument(
         "--csv-path",
         required=True,
-        help="Input CSV path (headers: imdb_id_int,sentence_idx,score[,model,dimension])",
+        help="Input CSV path (headers: imdb_id_int,segment_idx,score[,model,dimension])",
     )
     import_semantic.add_argument(
         "--batch-size",
@@ -430,6 +474,12 @@ def build_parser() -> argparse.ArgumentParser:
         type=float,
         default=0.2,
         help="Peak/trough prominence threshold",
+    )
+    extract_reversals.add_argument(
+        "--n-windows",
+        type=int,
+        default=100,
+        help="Fixed number of equal-width, real-time windows per movie (Knight-style)",
     )
     extract_reversals.set_defaults(func=cmd_extract_reversals)
 

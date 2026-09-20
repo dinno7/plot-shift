@@ -1,6 +1,10 @@
 {
-  "userWords": [
+  "words": [
     "metas",
-    "imdb"
+    "imdb",
+    "executemany",
+    "punkt",
+    "pearsonr",
+    "Windower"
   ]
 }

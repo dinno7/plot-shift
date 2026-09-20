@@ -9,6 +9,10 @@ DB_DUMP_DIR := "dumps"
   sqlite3 {{DB_PATH}} ".dump" > "$dumpfile"
   echo "Successfully dumped at $dumpfile"
 
+
+@connectdb:
+  sqlite3 {{DB_PATH}}
+
 # Install migrate CLI tool
 @mig-install:
     go install -tags 'sqlite3' github.com/golang-migrate/migrate/v4/cmd/migrate@latest

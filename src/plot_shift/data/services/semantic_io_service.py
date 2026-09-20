@@ -4,7 +4,7 @@ import csv
 from pathlib import Path
 
 from plot_shift.data.db import PlotShiftSqliteDB
-from plot_shift.data.models import SentenceModelScore
+from plot_shift.data.models import ModelScore
 
 
 def export_sentences_for_semantic(
@@ -13,7 +13,7 @@ def export_sentences_for_semantic(
     limit: int | None = None,
 ) -> dict[str, int | str]:
     with PlotShiftSqliteDB(db_path) as db:
-        imdb_ids = db.movie_subtitles_meta.list_valid_imdb_ids()
+        imdb_ids = db.movie_subtitles.list_valid_imdb_ids()
         if limit is not None:
             imdb_ids = imdb_ids[:limit]
 
@@ -23,11 +23,11 @@ def export_sentences_for_semantic(
         rows_written = 0
         with out_path.open("w", newline="", encoding="utf-8") as fh:
             writer = csv.writer(fh)
-            writer.writerow(["imdb_id_int", "sentence_idx", "sentence_text"])
+            writer.writerow(["imdb_id_int", "segment_idx", "sentence_text"])
             for imdb_id_int in imdb_ids:
-                sentences = db.movie_subtitles_meta.list_sentences_by_imdb_id(imdb_id_int)
-                for sentence_idx, sentence in enumerate(sentences):
-                    writer.writerow([imdb_id_int, sentence_idx, sentence])
+                sentences = db.movie_subtitles.list_sentences_by_imdb_id(imdb_id_int)
+                for segment_idx, sentence in enumerate(sentences):
+                    writer.writerow([imdb_id_int, segment_idx, sentence])
                     rows_written += 1
 
         return {
@@ -49,37 +49,43 @@ def import_semantic_scores(
         raise FileNotFoundError(f"CSV not found: {csv_path}")
 
     with PlotShiftSqliteDB(db_path) as db:
-        buffer: list[SentenceModelScore] = []
+        buffer: list[ModelScore] = []
         rows_read = 0
         rows_written = 0
         cleared_pairs: set[tuple[int, str]] = set()
 
         with in_path.open("r", newline="", encoding="utf-8") as fh:
             reader = csv.DictReader(fh)
-            required = {"imdb_id_int", "sentence_idx", "score"}
+            required = {"imdb_id_int", "segment_idx", "score"}
             if not reader.fieldnames or not required.issubset(set(reader.fieldnames)):
                 raise ValueError(
-                    "CSV must include headers: imdb_id_int,sentence_idx,score "
+                    "CSV must include headers: imdb_id_int,segment_idx,score "
                     "(optional: model,dimension)."
                 )
 
             for row in reader:
                 rows_read += 1
                 imdb_id_int = int(row["imdb_id_int"])
-                sentence_idx = int(row["sentence_idx"])
+                window_idx = int(row["window_idx"])
+                total_windows = int(row["total_windows"])
+                from_segment_idx = int(row["from_segment_idx"])
+                to_segment_idx = int(row["to_segment_idx"])
                 model = (row.get("model") or default_model).strip()
                 dimension = (row.get("dimension") or default_dimension).strip()
                 score = float(row["score"])
 
                 clear_key = (imdb_id_int, model)
                 if clear_key not in cleared_pairs:
-                    db.sentence_model_scores.delete_movie_model(imdb_id_int, model)
+                    db.model_scores.delete_movie_model(imdb_id_int, model)
                     cleared_pairs.add(clear_key)
 
                 buffer.append(
-                    SentenceModelScore(
+                    ModelScore(
                         imdb_id_int=imdb_id_int,
-                        sentence_idx=sentence_idx,
+                        window_idx=window_idx,
+                        total_windows=total_windows,
+                        from_segment_idx=from_segment_idx,
+                        to_segment_idx=to_segment_idx,
                         model=model,
                         dimension=dimension,
                         score=score,
@@ -87,12 +93,12 @@ def import_semantic_scores(
                 )
 
                 if len(buffer) >= batch_size:
-                    db.sentence_model_scores.insert_many(buffer)
+                    db.model_scores.insert_many(buffer)
                     rows_written += len(buffer)
                     buffer.clear()
 
         if buffer:
-            db.sentence_model_scores.insert_many(buffer)
+            db.model_scores.insert_many(buffer)
             rows_written += len(buffer)
             buffer.clear()
 
