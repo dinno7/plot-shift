@@ -1,8 +1,8 @@
 from abc import ABC, abstractmethod
 
 from plot_shift.data.models import (
-    MovieMeta,
     ModelScore,
+    MovieMeta,
     SubtitleMeta,
 )
 from plot_shift.data.models.movie_subtitle_meta import MovieSubtitle
@@ -38,7 +38,7 @@ class ModelScoresRepository(ABC):
         ...
 
     @abstractmethod
-    def delete_movie_model(self, imdb_id_int: int, model: str) -> None:
+    def delete_movie_model(self, imdb_id_int: int, scorer_name: str) -> None:
         """Delete existing scores for one movie/model pair."""
         ...
 

@@ -2,14 +2,26 @@
 
 from pathlib import Path
 
-from plot_shift.sentiment.base import DimensionKind, DimensionScore, Score, SentimentScorer
+from plot_shift.sentiment.base import (
+    DimensionKind,
+    DimensionScore,
+    Score,
+    ScorerKind,
+    SentimentScorer,
+)
 from plot_shift.sentiment.vad_model import VADIntensityAnalyzer
 
 DEFAULT_VAD_LEXICON_PATH = Path("data/raw/lexicons/vad_lexicon.txt")
 
 
 class VADLexiconScorer(SentimentScorer):
-    model_name = "vad"
+    @property
+    def scorer_name(self) -> str:
+        return "vad"
+
+    @property
+    def scorer_kind(self) -> ScorerKind:
+        return ScorerKind.LEXICON
 
     def __init__(self, lexicon_file: str | Path = DEFAULT_VAD_LEXICON_PATH) -> None:
         self._analyzer: VADIntensityAnalyzer = VADIntensityAnalyzer(lexicon_file=lexicon_file)

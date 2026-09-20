@@ -14,7 +14,7 @@ class TransformerSentimentScorer(SentimentScorer):
         max_length: int = 512,
     ) -> None:
         self._hf_model_name = model_name
-        self.model_name = f"semantic:{model_name}"
+        self.scorer_name = f"semantic:{model_name}"
         self._max_length = max_length
 
         try:

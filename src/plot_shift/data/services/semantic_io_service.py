@@ -86,7 +86,7 @@ def import_semantic_scores(
                         total_windows=total_windows,
                         from_segment_idx=from_segment_idx,
                         to_segment_idx=to_segment_idx,
-                        model=model,
+                        scorer_name=model,
                         dimension=dimension,
                         score=score,
                     )

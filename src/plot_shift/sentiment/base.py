@@ -1,19 +1,32 @@
 """Sentiment scorer protocol shared by all scoring approaches."""
 
+from abc import ABC
 from dataclasses import dataclass
 from enum import Enum
-from typing import Protocol
 
 
-class SentimentScorer(Protocol):
+class ScorerKind(Enum):
+    LEXICON = "lexicon"
+    TRANSFORMER = "transformer"
+
+
+@dataclass(frozen=True)
+class SentimentScorer(ABC):
     """Any model that maps a unit of text to a continuous sentiment score."""
-
-    model_name: str
-    """Identifier used as the ``model`` column in the score series / features."""
 
     def score(self, text: str) -> Score:
         """Return the (single) continuous score for ``text`` in [-1, 1]."""
-        ...
+        raise NotImplementedError
+
+    @property
+    def scorer_name(self) -> str:
+        """Return then name of scorer"""
+        raise NotImplementedError
+
+    @property
+    def scorer_kind(self) -> ScorerKind:
+        """Return the kind of scorer"""
+        raise NotImplementedError
 
 
 @dataclass()

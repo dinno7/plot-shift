@@ -70,8 +70,8 @@ class ScoringService:
                             to_segment_idx=window.to_segment_idx,
                             window_idx=window.index,
                             total_windows=len(windows),
-                            model=self._scorer.scorer_name,
-                            model_kind=self._scorer.scorer_kind.value,
+                            scorer_name=self._scorer.scorer_name,
+                            scorer_kind=self._scorer.scorer_kind.value,
                             dimension=dimension.kind.value,
                             score=dimension.value,
                         )

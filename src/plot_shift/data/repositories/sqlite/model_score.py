@@ -11,14 +11,17 @@ class ModelScoreSqliteRepository(ModelScoresRepository):
         self._db_conn = conn
 
     @staticmethod
-    def _to_row(score: ModelScore) -> tuple[int, int, int, int, int, str, str, float]:
+    def _to_row(
+        score: ModelScore,
+    ) -> tuple[int, int | None, int | None, int, int, str, str, str, float]:
         return (
             score.imdb_id_int,
             score.from_segment_idx,
             score.to_segment_idx,
             score.window_idx,
             score.total_windows,
-            score.model,
+            score.scorer_name,
+            score.scorer_kind,
             score.dimension,
             score.score,
         )
@@ -31,9 +34,9 @@ class ModelScoreSqliteRepository(ModelScoresRepository):
         self._db_conn.executemany(
             """
             INSERT INTO model_scores
-                (imdb_id_int, from_segment_idx, to_segment_idx, window_idx, total_windows, model, dimension, score)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-            ON CONFLICT(imdb_id_int, window_idx, model, dimension) DO UPDATE SET
+                (imdb_id_int, from_segment_idx, to_segment_idx, window_idx, total_windows, scorer_name, scorer_kind, dimension, score)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ON CONFLICT(imdb_id_int, window_idx, scorer_name, dimension) DO UPDATE SET
                 score = excluded.score,
                 from_segment_idx = excluded.from_segment_idx,
                 to_segment_idx = excluded.to_segment_idx,
@@ -43,9 +46,9 @@ class ModelScoreSqliteRepository(ModelScoresRepository):
         )
         self._db_conn.commit()
 
-    def delete_movie_model(self, imdb_id_int: int, model: str) -> None:
+    def delete_movie_model(self, imdb_id_int: int, scorer_name: str) -> None:
         self._db_conn.execute(
-            "DELETE FROM model_scores WHERE imdb_id_int = ? AND model = ?",
-            (imdb_id_int, model),
+            "DELETE FROM model_scores WHERE imdb_id_int = ? AND scorer_name = ?",
+            (imdb_id_int, scorer_name),
         )
         self._db_conn.commit()

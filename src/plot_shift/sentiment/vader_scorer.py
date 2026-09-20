@@ -3,13 +3,25 @@
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 from plot_shift.data.utils import ensure_nltk_data
-from plot_shift.sentiment.base import DimensionKind, DimensionScore, Score, SentimentScorer
+from plot_shift.sentiment.base import (
+    DimensionKind,
+    DimensionScore,
+    Score,
+    ScorerKind,
+    SentimentScorer,
+)
 
 
 class VaderLexiconScorer(SentimentScorer):
     """Lookup VADER lexicon valence; map roughly [-4, 4] to [-1, 1]."""
 
-    model_name = "vader"
+    @property
+    def scorer_name(self) -> str:
+        return "vad"
+
+    @property
+    def scorer_kind(self) -> ScorerKind:
+        return ScorerKind.LEXICON
 
     def __init__(self) -> None:
         ensure_nltk_data("sentiment/vader_lexicon")
