@@ -24,6 +24,8 @@ class VaderLexiconScorer(SentimentScorer):
 
     def score(self, text: str) -> Score:
         result = Score()
+        if not text:  # Empty text
+            return result
         result.add_dimension_score(
             DimensionScore(value=self.score_token(text), kind=DimensionKind.VALENCE)
         )

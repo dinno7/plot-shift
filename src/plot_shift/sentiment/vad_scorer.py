@@ -33,6 +33,8 @@ class VADLexiconScorer(SentimentScorer):
 
     def score(self, text: str) -> Score:
         result = Score()
+        if not text:  # Empty text
+            return result
         scores = self.score_token(text)
         for dimension_kind in scores:
             dimension_score = DimensionScore(value=scores[dimension_kind], kind=dimension_kind)
