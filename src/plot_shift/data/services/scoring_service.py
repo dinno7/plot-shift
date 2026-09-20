@@ -7,10 +7,10 @@ from pathlib import Path
 from plot_shift.data.db import PlotShiftSqliteDB
 from plot_shift.data.models import ModelScore
 from plot_shift.sentiment import (
-    DEFAULT_SEMANTIC_MODEL_NAME,
     DEFAULT_VAD_LEXICON_PATH,
     SentimentScorer,
-    build_scorer,
+    VaderLexiconScorer,
+    VADLexiconScorer,
 )
 from plot_shift.windows.base import WindowGenerator
 from plot_shift.windows.fixed_width_temporal import FixedWidthTemporalWindowGenerator
@@ -56,9 +56,9 @@ class ScoringService:
                 self._window_generator.name(),
             )
             windows = self._window_generator.generate(movie_subtitle)
-            logger.info("Deleting previous %s model's scores", self._scorer.model_name)
-            self._db.model_scores.delete_movie_model(imdb_id_int, self._scorer.model_name)
-            logger.info("Scoring %d windows with %s model", len(windows), self._scorer.model_name)
+            logger.info("Deleting previous %s model's scores", self._scorer.scorer_name)
+            self._db.model_scores.delete_movie_model(imdb_id_int, self._scorer.scorer_name)
+            logger.info("Scoring %d windows with %s model", len(windows), self._scorer.scorer_name)
             for window in windows:
                 score = self._scorer.score(window.text)
                 stats["sentences_scored"] += 1
@@ -70,7 +70,8 @@ class ScoringService:
                             to_segment_idx=window.to_segment_idx,
                             window_idx=window.index,
                             total_windows=len(windows),
-                            model=self._scorer.model_name,
+                            model=self._scorer.scorer_name,
+                            model_kind=self._scorer.scorer_kind.value,
                             dimension=dimension.kind.value,
                             score=dimension.value,
                         )
@@ -87,6 +88,9 @@ class ScoringService:
             buffer.clear()
 
         return stats
+
+
+DEFAULT_SEMANTIC_MODEL_NAME = "vad"
 
 
 def run_score(
@@ -112,12 +116,18 @@ def run_score_model(
     semantic_model_name: str = DEFAULT_SEMANTIC_MODEL_NAME,
     semantic_max_length: int = 512,
 ) -> dict[str, int]:
-    scorer = build_scorer(
-        strategy=model,
-        vad_lexicon_file=vad_lexicon_file,
-        semantic_model_name=semantic_model_name,
-        semantic_max_length=semantic_max_length,
-    )
+    scorer: SentimentScorer
+    selected_model = model.strip(" ").lower()
+    if selected_model == "vader":
+        scorer = VaderLexiconScorer()
+    elif selected_model == "vad":
+        scorer = VADLexiconScorer(lexicon_file=vad_lexicon_file)
+    else:
+        raise ValueError(
+            f"Unknown scoring strategy: {model}. ",
+            f"Supported: {list_supported_scorer()}",
+        )
+
     window_generator = FixedWidthTemporalWindowGenerator(window_duration, n_windows)
     return run_score(
         scorer=scorer,
@@ -126,3 +136,7 @@ def run_score_model(
         batch_size=batch_size,
         limit=limit,
     )
+
+
+def list_supported_scorer() -> list[str]:
+    return ["vader", "vad"]

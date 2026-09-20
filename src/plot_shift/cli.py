@@ -8,18 +8,18 @@ from pathlib import Path
 from typing import cast
 
 from plot_shift.data.downloader import download_remaining
-from plot_shift.data.services import run_score_model
+from plot_shift.data.services import DEFAULT_SEMANTIC_MODEL_NAME, list_supported_scorer
 from plot_shift.data.services.process_movies_service import run_process
 from plot_shift.data.services.reversal_features_service import (
     run_evaluate_models,
     run_extract_reversals,
     run_report_snapshot,
 )
+from plot_shift.data.services.scoring_service import run_score_model
 from plot_shift.data.services.semantic_io_service import (
     export_sentences_for_semantic,
     import_semantic_scores,
 )
-from plot_shift.sentiment import DEFAULT_SEMANTIC_MODEL_NAME, list_supported_scorer_strategies
 
 
 def repo_root() -> Path:
@@ -356,7 +356,7 @@ def build_parser() -> argparse.ArgumentParser:
     )
     score_model.add_argument(
         "--model",
-        choices=list_supported_scorer_strategies(),
+        choices=list_supported_scorer(),
         required=True,
         help="Scoring strategy",
     )
