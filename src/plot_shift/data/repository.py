@@ -180,3 +180,43 @@ class SubtitleSegmentsRepository(ABC):
         Remove all persisted data for a given IMDb ID.
         """
         ...
+
+
+class ReversalFeaturesRepository(ABC):
+    """Abstract contract for reversal-feature persistence.
+
+    One row per (movie, scorer_name, dimension) triple, written after
+    trend-detection has been applied to the windowed score series.
+    """
+
+    @abstractmethod
+    def upsert_many(self, features: list[ReversalFeatures]) -> None:
+        """Insert or replace reversal features for a batch of triples."""
+        ...
+
+    @abstractmethod
+    def list_all(
+        self,
+        scorer_name: str | None = None,
+        dimension: str | None = None,
+    ) -> list[ReversalFeatures]:
+        """Return all stored features, optionally filtered by scorer/dimension.
+
+        Results are ordered by imdb_id_int, scorer_name, dimension.
+        """
+        ...
+
+    @abstractmethod
+    def find(
+        self,
+        imdb_id_int: int,
+        scorer_name: str,
+        dimension: str,
+    ) -> ReversalFeatures | None:
+        """Return the features for one specific triple, or None."""
+        ...
+
+    @abstractmethod
+    def delete_by_movie(self, imdb_id_int: int) -> None:
+        """Remove all features for one movie (all scorers/dimensions)."""
+        ...
