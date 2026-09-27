@@ -3,10 +3,11 @@ from abc import ABC, abstractmethod
 from plot_shift.data.models import (
     ModelScore,
     MovieMeta,
+    MovieSubtitle,
+    ReversalFeatures,
     SubtitleMeta,
+    SubtitleSegment,
 )
-from plot_shift.data.models.movie_subtitle_meta import MovieSubtitle
-from plot_shift.data.models.subtitle_segment import SubtitleSegment
 
 
 class MovieMetaRepository(ABC):
@@ -30,7 +31,7 @@ class SubtitleMetaRepository(ABC):
 
 
 class ModelScoresRepository(ABC):
-    """Abstract contract for sentence-level sentiment score persistence."""
+    """Abstract contract for window-level sentiment score persistence."""
 
     @abstractmethod
     def insert_many(self, scores: list[ModelScore]) -> None:
@@ -39,7 +40,36 @@ class ModelScoresRepository(ABC):
 
     @abstractmethod
     def delete_movie_model(self, imdb_id_int: int, scorer_name: str) -> None:
-        """Delete existing scores for one movie/model pair."""
+        """Delete existing scores for one movie/scorer pair."""
+        ...
+
+    @abstractmethod
+    def list_groups(
+        self,
+        scorer_name: str | None = None,
+        dimension: str | None = None,
+        limit_movies: int | None = None,
+    ) -> list[tuple[int, str, str]]:
+        """Return distinct (imdb_id_int, scorer_name, dimension) triples.
+
+        Optionally filter by scorer_name and/or dimension; optionally cap the
+        number of distinct movies considered (useful for smoke-test runs).
+        Results are ordered by imdb_id_int, scorer_name, dimension.
+        """
+        ...
+
+    @abstractmethod
+    def list_windowed(
+        self,
+        imdb_id_int: int,
+        scorer_name: str,
+        dimension: str,
+    ) -> list[ModelScore]:
+        """Return all window-level scores for one (movie, scorer, dimension) triple.
+
+        Rows are ordered by window_idx ascending so callers can feed the list
+        directly into trend-detection without sorting.
+        """
         ...
 
 
