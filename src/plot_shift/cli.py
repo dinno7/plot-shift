@@ -9,6 +9,10 @@ from typing import cast
 
 from plot_shift.data.downloader import download_remaining
 from plot_shift.data.services import DEFAULT_SEMANTIC_MODEL_NAME, list_supported_scorer
+from plot_shift.data.services.colab_io_service import (
+    export_windows_for_colab,
+    import_colab_scores,
+)
 from plot_shift.data.services.process_movies_service import run_process
 from plot_shift.data.services.reversal_features_service import (
     run_evaluate_models,
@@ -16,10 +20,6 @@ from plot_shift.data.services.reversal_features_service import (
     run_report_snapshot,
 )
 from plot_shift.data.services.scoring_service import run_score_model
-from plot_shift.data.services.colab_io_service import (
-    export_windows_for_colab,
-    import_colab_scores,
-)
 
 
 def repo_root() -> Path:
@@ -133,11 +133,12 @@ def cmd_import_colab_scores(args: argparse.Namespace) -> int:
 def cmd_extract_reversals(args: argparse.Namespace) -> int:
     stats = run_extract_reversals(
         db_path=args.db,
-        model=args.model,
+        scorer_name=args.model,
         dimension=args.dimension,
         limit_movies=args.limit_movies,
-        prominence=args.prominence,
-        n_windows=args.n_windows,
+        detector=args.detector,
+        trend_window_size=args.trend_window_size,
+        ruptures_penalty=args.ruptures_penalty,
     )
     print(stats)
     return 0
@@ -147,7 +148,7 @@ def cmd_evaluate_models(args: argparse.Namespace) -> int:
     stats = run_evaluate_models(
         db_path=args.db,
         out_csv=args.out_csv,
-        model=args.model,
+        scorer_name=args.model,
         dimension=args.dimension,
     )
     print(stats)
@@ -159,7 +160,7 @@ def cmd_report_snapshot(args: argparse.Namespace) -> int:
         db_path=args.db,
         out_md=args.out_md,
         out_csv=args.out_csv,
-        model=args.model,
+        scorer_name=args.model,
         dimension=args.dimension,
         min_movies=args.min_movies,
     )
@@ -453,7 +454,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     extract_reversals = subparsers.add_parser(
         "extract-reversals",
-        help="Extract reversal features from sentence-level sentiment series",
+        help="Extract reversal features from windowed model_scores",
     )
     extract_reversals.add_argument(
         "--db",
@@ -463,7 +464,7 @@ def build_parser() -> argparse.ArgumentParser:
     extract_reversals.add_argument(
         "--model",
         default=None,
-        help="Optional model filter",
+        help="Optional scorer_name filter",
     )
     extract_reversals.add_argument(
         "--dimension",
@@ -477,16 +478,22 @@ def build_parser() -> argparse.ArgumentParser:
         help="Optional cap on movies considered",
     )
     extract_reversals.add_argument(
-        "--prominence",
-        type=float,
-        default=0.2,
-        help="Peak/trough prominence threshold",
+        "--detector",
+        choices=["trendet", "ruptures"],
+        default="trendet",
+        help="Reversal detector implementation (default: trendet)",
     )
     extract_reversals.add_argument(
-        "--n-windows",
+        "--trend-window-size",
         type=int,
-        default=100,
-        help="Fixed number of equal-width, real-time windows per movie (Knight-style)",
+        default=5,
+        help="trendet window_size / ruptures min_size (default: 5)",
+    )
+    extract_reversals.add_argument(
+        "--ruptures-penalty",
+        type=float,
+        default=1.0,
+        help="PELT penalty for --detector ruptures (default: 1.0)",
     )
     extract_reversals.set_defaults(func=cmd_extract_reversals)
 
