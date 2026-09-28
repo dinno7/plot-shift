@@ -56,8 +56,6 @@ class ScoringService:
                 self._window_generator.name(),
             )
             windows = self._window_generator.generate(movie_subtitle)
-            logger.info("Deleting previous %s model's scores", self._scorer.scorer_name)
-            self._db.model_scores.delete_movie_model(imdb_id_int, self._scorer.scorer_name)
             logger.info("Scoring %d windows with %s model", len(windows), self._scorer.scorer_name)
             for window in windows:
                 score = self._scorer.score(window.text)
@@ -82,7 +80,7 @@ class ScoringService:
                         buffer.clear()
 
             stats["movies_scored"] += 1
-        if buffer:
+        if len(buffer) > 0:
             self._db.model_scores.insert_many(buffer)
             stats["rows_written"] += len(buffer)
             buffer.clear()
