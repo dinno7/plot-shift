@@ -27,6 +27,13 @@ class VADLexiconScorer(SentimentScorer):
         self._analyzer: VADIntensityAnalyzer = VADIntensityAnalyzer(lexicon_file=lexicon_file)
 
     def score_token(self, token: str) -> dict[DimensionKind, float]:
+        if not token:
+            return {
+                DimensionKind.VALENCE: 0.0,
+                DimensionKind.AROUSAL: 0.0,
+                DimensionKind.DOMINANCE: 0.0,
+            }
+
         r = self._analyzer.polarity_scores(token)
         # NOTE: It is always in range of (-1, +1)
         valence = r["valence"]["compound"]
@@ -45,8 +52,6 @@ class VADLexiconScorer(SentimentScorer):
 
     def score(self, text: str) -> Score:
         result = Score()
-        if not text:  # Empty text
-            return result
         scores = self.score_token(text)
         for dimension_kind in scores:
             dimension_score = DimensionScore(value=scores[dimension_kind], kind=dimension_kind)
