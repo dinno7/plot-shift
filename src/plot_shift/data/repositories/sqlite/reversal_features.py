@@ -26,7 +26,7 @@ class ReversalFeaturesSqliteRepository(ReversalFeaturesRepository):
     @staticmethod
     def _to_row(
         f: ReversalFeatures,
-    ) -> tuple[int, str, str, int, float, int, int, int, float, float]:
+    ) -> tuple[int, str, str, int, float, int, int, int, float, float, str]:
         return (
             f.imdb_id_int,
             f.scorer_name,
@@ -38,6 +38,7 @@ class ReversalFeaturesSqliteRepository(ReversalFeaturesRepository):
             f.n_reversals,
             f.mean_intensity,
             f.max_intensity,
+            f.detector_name,
         )
 
     @staticmethod
@@ -53,6 +54,7 @@ class ReversalFeaturesSqliteRepository(ReversalFeaturesRepository):
             n_reversals=int(row["n_reversals"]),
             mean_intensity=float(row["mean_intensity"]),
             max_intensity=float(row["max_intensity"]),
+            detector_name=str(row["detector_name"]),
         )
 
     # ------------------------------------------------------------------
@@ -67,9 +69,9 @@ class ReversalFeaturesSqliteRepository(ReversalFeaturesRepository):
             """
             INSERT INTO reversal_features
                 (imdb_id_int, scorer_name, dimension, n_windows, window_duration,
-                 trend_window_size, series_length, n_reversals, mean_intensity, max_intensity)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-            ON CONFLICT(imdb_id_int, scorer_name, dimension) DO UPDATE SET
+                 trend_window_size, series_length, n_reversals, mean_intensity, max_intensity, detector_name)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ON CONFLICT(imdb_id_int, scorer_name, detector_name, dimension) DO UPDATE SET
                 n_windows         = excluded.n_windows,
                 window_duration   = excluded.window_duration,
                 trend_window_size = excluded.trend_window_size,
@@ -101,7 +103,7 @@ class ReversalFeaturesSqliteRepository(ReversalFeaturesRepository):
         rows = self._db_conn.execute(
             f"""
             SELECT imdb_id_int, scorer_name, dimension, n_windows, window_duration,
-                   trend_window_size, series_length, n_reversals, mean_intensity, max_intensity
+                   trend_window_size, series_length, n_reversals, mean_intensity, max_intensity, detector_name
             FROM reversal_features
             {where_clause}
             ORDER BY imdb_id_int, scorer_name, dimension
@@ -119,7 +121,7 @@ class ReversalFeaturesSqliteRepository(ReversalFeaturesRepository):
         row = self._db_conn.execute(
             """
             SELECT imdb_id_int, scorer_name, dimension, n_windows, window_duration,
-                   trend_window_size, series_length, n_reversals, mean_intensity, max_intensity
+                   trend_window_size, series_length, n_reversals, mean_intensity, max_intensity, detector_name
             FROM reversal_features
             WHERE imdb_id_int = ? AND scorer_name = ? AND dimension = ?
             """,

@@ -50,3 +50,4 @@ class ReversalFeatures:
     n_reversals: int
     mean_intensity: float
     max_intensity: float
+    detector_name: str

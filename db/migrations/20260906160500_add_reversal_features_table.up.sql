@@ -9,8 +9,8 @@ CREATE TABLE IF NOT EXISTS reversal_features (
     window_duration real NOT NULL DEFAULT 0.0,
     mean_intensity real NOT NULL,
     max_intensity real NOT NULL,
-    PRIMARY KEY (imdb_id_int, scorer_name, dimension),
-    FOREIGN KEY (imdb_id_int) REFERENCES movies_meta (imdb_id_int) ON DELETE CASCADE
+    detector_name text NOT NULL,
+    PRIMARY KEY (imdb_id_int, scorer_name, detector_name, dimension)
 );
 
 CREATE INDEX IF NOT EXISTS idx_reversal_features_lookup ON reversal_features (scorer_name, dimension, imdb_id_int);
