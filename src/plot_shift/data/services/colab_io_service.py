@@ -109,14 +109,16 @@ def export_windows_for_colab(
                 total = len(windows)
 
                 for window in windows:
-                    writer.writerow([
-                        imdb_id_int,
-                        window.index,
-                        total,
-                        window.from_segment_idx,
-                        window.to_segment_idx,
-                        window.text,
-                    ])
+                    writer.writerow(
+                        [
+                            imdb_id_int,
+                            window.index,
+                            total,
+                            window.from_segment_idx,
+                            window.to_segment_idx,
+                            window.text,
+                        ]
+                    )
                     windows_exported += 1
 
                 movies_exported += 1
@@ -187,17 +189,19 @@ def import_colab_scores(
                 from_seg = row["from_segment_idx"].strip()
                 to_seg = row["to_segment_idx"].strip()
 
-                buffer.append(ModelScore(
-                    imdb_id_int=imdb_id_int,
-                    window_idx=int(row["window_idx"]),
-                    total_windows=int(row["total_windows"]),
-                    from_segment_idx=int(from_seg) if from_seg else None,
-                    to_segment_idx=int(to_seg) if to_seg else None,
-                    scorer_name=scorer_name,
-                    scorer_kind=row["scorer_kind"].strip(),
-                    dimension=row["dimension"].strip(),
-                    score=float(row["score"]),
-                ))
+                buffer.append(
+                    ModelScore(
+                        imdb_id_int=imdb_id_int,
+                        window_idx=int(row["window_idx"]),
+                        total_windows=int(row["total_windows"]),
+                        from_segment_idx=int(float(from_seg)) if from_seg else None,
+                        to_segment_idx=int(float(to_seg)) if to_seg else None,
+                        scorer_name=scorer_name,
+                        scorer_kind=row["scorer_kind"].strip(),
+                        dimension=row["dimension"].strip(),
+                        score=float(row["score"]),
+                    )
+                )
 
                 if len(buffer) >= batch_size:
                     db.model_scores.insert_many(buffer)

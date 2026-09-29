@@ -17,7 +17,7 @@ class VaderLexiconScorer(SentimentScorer):
 
     @property
     def scorer_name(self) -> str:
-        return "vad"
+        return "vader"
 
     @property
     def scorer_kind(self) -> ScorerKind:
@@ -28,6 +28,8 @@ class VaderLexiconScorer(SentimentScorer):
         self._analyzer: SentimentIntensityAnalyzer = SentimentIntensityAnalyzer()
 
     def score_token(self, token: str) -> float:
+        if not token:
+            return 0.0
         r = self._analyzer.polarity_scores(token)
         score_value = r["compound"]  # NOTE: It is always in range of (-1, +1)
         if score_value is None:
@@ -36,8 +38,6 @@ class VaderLexiconScorer(SentimentScorer):
 
     def score(self, text: str) -> Score:
         result = Score()
-        if not text:  # Empty text
-            return result
         result.add_dimension_score(
             DimensionScore(value=self.score_token(text), kind=DimensionKind.VALENCE)
         )

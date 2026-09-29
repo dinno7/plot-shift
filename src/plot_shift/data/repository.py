@@ -3,10 +3,11 @@ from abc import ABC, abstractmethod
 from plot_shift.data.models import (
     ModelScore,
     MovieMeta,
+    MovieSubtitle,
+    ReversalFeatures,
     SubtitleMeta,
+    SubtitleSegment,
 )
-from plot_shift.data.models.movie_subtitle_meta import MovieSubtitle
-from plot_shift.data.models.subtitle_segment import SubtitleSegment
 
 
 class MovieMetaRepository(ABC):
@@ -30,7 +31,7 @@ class SubtitleMetaRepository(ABC):
 
 
 class ModelScoresRepository(ABC):
-    """Abstract contract for sentence-level sentiment score persistence."""
+    """Abstract contract for window-level sentiment score persistence."""
 
     @abstractmethod
     def insert_many(self, scores: list[ModelScore]) -> None:
@@ -39,7 +40,36 @@ class ModelScoresRepository(ABC):
 
     @abstractmethod
     def delete_movie_model(self, imdb_id_int: int, scorer_name: str) -> None:
-        """Delete existing scores for one movie/model pair."""
+        """Delete existing scores for one movie/scorer pair."""
+        ...
+
+    @abstractmethod
+    def list_groups(
+        self,
+        scorer_name: str | None = None,
+        dimension: str | None = None,
+        limit_movies: int | None = None,
+    ) -> list[tuple[int, str, str]]:
+        """Return distinct (imdb_id_int, scorer_name, dimension) triples.
+
+        Optionally filter by scorer_name and/or dimension; optionally cap the
+        number of distinct movies considered (useful for smoke-test runs).
+        Results are ordered by imdb_id_int, scorer_name, dimension.
+        """
+        ...
+
+    @abstractmethod
+    def list_windowed(
+        self,
+        imdb_id_int: int,
+        scorer_name: str,
+        dimension: str,
+    ) -> list[ModelScore]:
+        """Return all window-level scores for one (movie, scorer, dimension) triple.
+
+        Rows are ordered by window_idx ascending so callers can feed the list
+        directly into trend-detection without sorting.
+        """
         ...
 
 
@@ -179,4 +209,44 @@ class SubtitleSegmentsRepository(ABC):
         """
         Remove all persisted data for a given IMDb ID.
         """
+        ...
+
+
+class ReversalFeaturesRepository(ABC):
+    """Abstract contract for reversal-feature persistence.
+
+    One row per (movie, scorer_name, dimension) triple, written after
+    trend-detection has been applied to the windowed score series.
+    """
+
+    @abstractmethod
+    def upsert_many(self, features: list[ReversalFeatures]) -> None:
+        """Insert or replace reversal features for a batch of triples."""
+        ...
+
+    @abstractmethod
+    def list_all(
+        self,
+        scorer_name: str | None = None,
+        dimension: str | None = None,
+    ) -> list[ReversalFeatures]:
+        """Return all stored features, optionally filtered by scorer/dimension.
+
+        Results are ordered by imdb_id_int, scorer_name, dimension.
+        """
+        ...
+
+    @abstractmethod
+    def find(
+        self,
+        imdb_id_int: int,
+        scorer_name: str,
+        dimension: str,
+    ) -> ReversalFeatures | None:
+        """Return the features for one specific triple, or None."""
+        ...
+
+    @abstractmethod
+    def delete_by_movie(self, imdb_id_int: int) -> None:
+        """Remove all features for one movie (all scorers/dimensions)."""
         ...
