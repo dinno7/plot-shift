@@ -437,7 +437,7 @@ def build_parser() -> argparse.ArgumentParser:
     extract_reversals.add_argument(
         "--model",
         default=None,
-        choices=["vader", "vad", "pert-emopair"],
+        choices=["vader", "vad", "vad-bert", "pert-emopair"],
         required=True,
         help="scorer name",
     )
@@ -456,7 +456,6 @@ def build_parser() -> argparse.ArgumentParser:
         "--detector",
         choices=["ruptures"],
         default="ruptures",
-        required=True,
         help="Reversal detector implementation (default: ruptures)",
     )
     extract_reversals.add_argument(
