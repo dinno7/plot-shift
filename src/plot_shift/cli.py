@@ -14,11 +14,7 @@ from plot_shift.data.services.colab_io_service import (
     import_colab_scores,
 )
 from plot_shift.data.services.process_movies_service import run_process
-from plot_shift.data.services.reversal_features_service import (
-    run_evaluate_models,
-    run_extract_reversals,
-    run_report_snapshot,
-)
+from plot_shift.data.services.reversal_service import run_extract_reversals
 from plot_shift.data.services.scoring_service import run_score_model
 
 
@@ -139,30 +135,7 @@ def cmd_extract_reversals(args: argparse.Namespace) -> int:
         detector=args.detector,
         trend_window_size=args.trend_window_size,
         ruptures_penalty=args.ruptures_penalty,
-    )
-    print(stats)
-    return 0
-
-
-def cmd_evaluate_models(args: argparse.Namespace) -> int:
-    stats = run_evaluate_models(
-        db_path=args.db,
-        out_csv=args.out_csv,
-        scorer_name=args.model,
-        dimension=args.dimension,
-    )
-    print(stats)
-    return 0
-
-
-def cmd_report_snapshot(args: argparse.Namespace) -> int:
-    stats = run_report_snapshot(
-        db_path=args.db,
-        out_md=args.out_md,
-        out_csv=args.out_csv,
-        scorer_name=args.model,
-        dimension=args.dimension,
-        min_movies=args.min_movies,
+        window_seconds=args.window_seconds,
     )
     print(stats)
     return 0
@@ -454,7 +427,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     extract_reversals = subparsers.add_parser(
         "extract-reversals",
-        help="Extract reversal features from windowed model_scores",
+        help="Detect narrative reversals on windowed model_scores",
     )
     extract_reversals.add_argument(
         "--db",
@@ -464,12 +437,14 @@ def build_parser() -> argparse.ArgumentParser:
     extract_reversals.add_argument(
         "--model",
         default=None,
-        help="Optional scorer_name filter",
+        choices=["vader", "vad", "pert-emopair"],
+        required=True,
+        help="scorer name",
     )
     extract_reversals.add_argument(
         "--dimension",
         default=None,
-        help="Optional dimension filter",
+        help="Optional dimension filter (valence, arousal, dominance, aggregate)",
     )
     extract_reversals.add_argument(
         "--limit-movies",
@@ -479,86 +454,31 @@ def build_parser() -> argparse.ArgumentParser:
     )
     extract_reversals.add_argument(
         "--detector",
-        choices=["trendet", "ruptures"],
-        default="trendet",
-        help="Reversal detector implementation (default: trendet)",
+        choices=["ruptures"],
+        default="ruptures",
+        required=True,
+        help="Reversal detector implementation (default: ruptures)",
     )
     extract_reversals.add_argument(
         "--trend-window-size",
         type=int,
         default=5,
-        help="trendet window_size / ruptures min_size (default: 5)",
+        help="Minimum trend segment length in windows (ruptures min_size, default: 5)",
     )
     extract_reversals.add_argument(
         "--ruptures-penalty",
         type=float,
         default=1.0,
-        help="PELT penalty for --detector ruptures (default: 1.0)",
+        help="PELT penalty; higher means fewer change-points (default: 1.0)",
+    )
+    extract_reversals.add_argument(
+        "--window-seconds",
+        type=int,
+        default=300,
+        help="Window width used when scoring, recorded with the features (default: 300)",
     )
     extract_reversals.set_defaults(func=cmd_extract_reversals)
 
-    evaluate_models = subparsers.add_parser(
-        "evaluate-models",
-        help="Evaluate reversal features against IMDb rating",
-    )
-    evaluate_models.add_argument(
-        "--db",
-        default="data/proceeded/data.db",
-        help="SQLite database path",
-    )
-    evaluate_models.add_argument(
-        "--out-csv",
-        default="data/proceeded/eval_reversal_summary.csv",
-        help="Output summary CSV path",
-    )
-    evaluate_models.add_argument(
-        "--model",
-        default=None,
-        help="Optional model filter",
-    )
-    evaluate_models.add_argument(
-        "--dimension",
-        default=None,
-        help="Optional dimension filter",
-    )
-    evaluate_models.set_defaults(func=cmd_evaluate_models)
-
-    report_snapshot = subparsers.add_parser(
-        "report-snapshot",
-        help="Generate compact markdown snapshot from evaluation results",
-    )
-    report_snapshot.add_argument(
-        "--db",
-        default="data/proceeded/data.db",
-        help="SQLite database path",
-    )
-    report_snapshot.add_argument(
-        "--out-md",
-        default="data/proceeded/eval_snapshot.md",
-        help="Output markdown report path",
-    )
-    report_snapshot.add_argument(
-        "--out-csv",
-        default="data/proceeded/eval_reversal_summary.csv",
-        help="Output evaluation CSV path",
-    )
-    report_snapshot.add_argument(
-        "--model",
-        default=None,
-        help="Optional model filter",
-    )
-    report_snapshot.add_argument(
-        "--dimension",
-        default=None,
-        help="Optional dimension filter",
-    )
-    report_snapshot.add_argument(
-        "--min-movies",
-        type=int,
-        default=2,
-        help="Minimum movies required to include a group in top correlations",
-    )
-    report_snapshot.set_defaults(func=cmd_report_snapshot)
     return parser
 
 

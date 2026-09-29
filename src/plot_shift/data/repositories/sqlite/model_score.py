@@ -86,8 +86,8 @@ class ModelScoreSqliteRepository(ModelScoresRepository):
             )
             args.append(limit_movies)
         if scorer_name is not None:
-            where_parts.append("scorer_name = ?")
-            args.append(scorer_name)
+            where_parts.append("lower(scorer_name) = ?")
+            args.append(scorer_name.lower())
         if dimension is not None:
             where_parts.append("dimension = ?")
             args.append(dimension)
