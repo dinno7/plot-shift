@@ -55,7 +55,7 @@ class VadBertScorer(SentimentScorer):
         with torch.no_grad():
             logits = self._model(**inputs).logits.detach().squeeze().tolist()
 
-        valence, arousal, dominance = (_unit_to_pm1(v, 0.0, 1.0) for v in logits)
+        valence, arousal, dominance = logits
 
         score = Score()
         score.add_dimension_score(DimensionScore(value=valence, kind=DimensionKind.VALENCE))

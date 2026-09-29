@@ -180,7 +180,7 @@ class PERTEmoPairScorer(SentimentScorer):
 
     @property
     def scorer_name(self) -> str:
-        return "PERT-EmoPair"
+        return "pert-emopair"
 
     @property
     def scorer_kind(self) -> ScorerKind:

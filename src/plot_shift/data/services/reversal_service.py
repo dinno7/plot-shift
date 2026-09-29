@@ -13,6 +13,21 @@ logger = logging.getLogger(__name__)
 AGGREGATE_DIMENSION = "aggregate"
 
 
+def load_series(
+    db: PlotShiftSqliteDB, imdb_id_int: int, scorer_name: str, dimensions: list[str]
+) -> dict[str, list[float]]:
+    """Windowed scores per dimension, plus their per-window mean when there are several."""
+    series = {
+        dim: [r.score for r in db.model_scores.list_windowed(imdb_id_int, scorer_name, dim)]
+        for dim in dimensions
+    }
+    if len(series) > 1:
+        series[AGGREGATE_DIMENSION] = [
+            fmean(values) for values in zip(*series.values(), strict=True)
+        ]
+    return series
+
+
 class ReversalService:
     def __init__(
         self,
@@ -41,19 +56,8 @@ class ReversalService:
             dims_by_movie_scorer[(imdb_id_int, scorer)].append(dim)
 
         for (imdb_id_int, scorer), dims in dims_by_movie_scorer.items():
-            series: dict[str, list[float]] = {}
-            n_windows = 0
-            for dim in dims:
-                rows = self._db.model_scores.list_windowed(imdb_id_int, scorer, dim)
-                series[dim] = [r.score for r in rows]
-                n_windows = rows[0].total_windows
-            if len(series) > 1:
-                series[AGGREGATE_DIMENSION] = [
-                    fmean(values) for values in zip(*series.values(), strict=True)
-                ]
-
             features: list[ReversalFeatures] = []
-            for dim, scores in series.items():
+            for dim, scores in load_series(self._db, imdb_id_int, scorer, dims).items():
                 if dimension is not None and dim != dimension:
                     continue
                 result = self._detector.detect(scores)
@@ -62,7 +66,7 @@ class ReversalService:
                         imdb_id_int=imdb_id_int,
                         scorer_name=scorer,
                         dimension=dim,
-                        n_windows=n_windows,
+                        n_windows=len(scores),
                         window_duration=self._window_seconds,
                         trend_window_size=self._trend_window_size,
                         series_length=result.series_length,

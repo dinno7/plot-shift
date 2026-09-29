@@ -5,13 +5,7 @@ from __future__ import annotations
 import numpy as np
 import ruptures as rpt
 
-from plot_shift.reversals.base import (
-    Direction,
-    ReversalDetector,
-    ReversalStats,
-    TrendSegment,
-    stats_from_trends,
-)
+from plot_shift.reversals.base import Direction, ReversalDetector, TrendSegment
 
 
 class RupturesReversalDetector(ReversalDetector):
@@ -33,17 +27,15 @@ class RupturesReversalDetector(ReversalDetector):
     def name(self) -> str:
         return "ruptures"
 
-    def detect(self, scores: list[float]) -> ReversalStats:
-        series_length = len(scores)
-        if series_length < self.min_size * 2:
-            return ReversalStats(0, 0.0, 0.0, series_length)
+    def trends(self, scores: list[float]) -> list[TrendSegment]:
+        if len(scores) < self.min_size * 2:
+            return []
 
         signal = np.asarray(scores, dtype=np.float64).reshape(-1, 1)
         algo = rpt.Pelt(model="l2", min_size=self.min_size).fit(signal)
         # predict returns end indices of segments, last == n
         breakpoints = algo.predict(pen=self.penalty)
-        trends = _segments_from_breakpoints(scores, breakpoints)
-        return stats_from_trends(scores, trends)
+        return _segments_from_breakpoints(scores, breakpoints)
 
 
 def _segments_from_breakpoints(scores: list[float], breakpoints: list[int]) -> list[TrendSegment]:

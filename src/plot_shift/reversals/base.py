@@ -35,8 +35,12 @@ class ReversalDetector(ABC):
         """Stable detector name (e.g. ``ruptures``)."""
 
     @abstractmethod
+    def trends(self, scores: list[float]) -> list[TrendSegment]:
+        """Split ``scores`` into ordered up/down trend segments."""
+
     def detect(self, scores: list[float]) -> ReversalStats:
         """Return reversal count and peak-to-trough intensities for ``scores``."""
+        return stats_from_trends(scores, self.trends(scores))
 
 
 def stats_from_trends(scores: list[float], trends: list[TrendSegment]) -> ReversalStats:

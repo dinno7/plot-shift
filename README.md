@@ -77,7 +77,11 @@ Arguments:
 
 ### `process-subs`
 
-Parses downloaded subtitle files and inserts cleaned rows into `movie_subtitles_meta`.
+Parses downloaded subtitle files. Each subtitle _cue_ is cleaned and
+sentence-tokenized on its own (never joined into one big string first), so
+every resulting segment keeps its cue's real start/end timestamp. Segments
+are inserted into `subtitle_segments`; aggregate stats (word/segment counts,
+real duration, validity) go into `movie_subtitles`.
 
 ```bash
 uv run plot-shift process-subs \
@@ -95,7 +99,7 @@ Arguments:
 ### `score-vader`
 
 Scores processed subtitle sentences with VADER and stores results in
-`sentence_model_scores`.
+`model_scores`.
 
 ```bash
 uv run plot-shift score-vader \
@@ -113,7 +117,7 @@ Arguments:
 ### `score-vad`
 
 Scores processed subtitle sentences with NRC-VAD and stores results in
-`sentence_model_scores`.
+`model_scores`.
 
 ```bash
 uv run plot-shift score-vad \
@@ -133,7 +137,7 @@ Arguments:
 ### `score-semantic`
 
 Scores processed subtitle sentences with a Hugging Face transformer model and stores
-results in `sentence_model_scores`.
+results in `model_scores`.
 
 Default model: `cardiffnlp/twitter-roberta-base-sentiment-latest` (free to use under
 CC BY 4.0 with attribution).
@@ -154,90 +158,112 @@ Arguments:
 - `--limit`: optional cap on valid movies to score (default: no limit)
 - `--model-name`: Hugging Face model id for sequence classification
 
-### `export-sentences-for-semantic`
+### `export-colab-data`
 
-Exports sentence-level input to CSV for running heavy semantic models in cloud
-environments (for example Google Colab).
+Exports narrative windows to CSV for remote scoring in Google Colab (or any
+cloud GPU environment).  Each row is one temporal window of a movie — the same
+unit that the local scorers operate on — so imported results land directly in
+`model_scores` without any re-aggregation.
 
 ```bash
-uv run plot-shift export-sentences-for-semantic \
+uv run plot-shift export-colab-data \
   --db data/proceeded/data.db \
-  --out-csv data/proceeded/semantic_input.csv \
+  --out-csv data/proceeded/colab_input.csv \
+  --n-windows 100 \
+  --window-seconds 300 \
   --limit 100
 ```
 
 Arguments:
 
 - `--db`: SQLite DB path (default: `data/proceeded/data.db`)
-- `--out-csv`: output CSV path
-- `--limit`: optional cap on valid movies to export (default: no limit)
+- `--out-csv`: output CSV path (default: `data/proceeded/colab_input.csv`)
+- `--n-windows`: equal-width windows per movie (default: `100`)
+- `--window-seconds`: window width in seconds (default: `300`)
+- `--limit`: optional cap on movies to export (default: no limit)
 
-CSV columns:
+Output CSV columns: `imdb_id_int`, `window_idx`, `total_windows`,
+`from_segment_idx`, `to_segment_idx`, `window_text`
 
-- `imdb_id_int`
-- `sentence_idx`
-- `sentence_text`
+### `import-colab-scores`
 
-### `import-semantic-scores`
-
-Imports cloud-scored semantic CSV output into `sentence_model_scores`.
+Imports the scored CSV produced by `notebooks/colab_scorer.ipynb` into
+`model_scores`.  For each `(imdb_id_int, scorer_name)` pair found in the
+file, any pre-existing rows are deleted first so re-runs are idempotent.
 
 ```bash
-uv run plot-shift import-semantic-scores \
+uv run plot-shift import-colab-scores \
   --db data/proceeded/data.db \
-  --csv-path data/proceeded/semantic_scores.csv \
-  --batch-size 1000 \
-  --default-model semantic:cardiffnlp/twitter-roberta-base-sentiment-latest \
-  --default-dimension valence
+  --csv-path data/proceeded/colab_scores.csv \
+  --batch-size 1000
 ```
 
 Arguments:
 
 - `--db`: SQLite DB path (default: `data/proceeded/data.db`)
-- `--csv-path`: input scored CSV
-- `--batch-size`: score upsert batch size (default: `1000`)
-- `--default-model`: used if CSV has no `model` column
-- `--default-dimension`: used if CSV has no `dimension` column
+- `--csv-path`: scored CSV from Colab (**required**)
+- `--batch-size`: rows per DB insert batch (default: `1000`)
 
-Required CSV headers:
+Required CSV columns: `imdb_id_int`, `window_idx`, `total_windows`,
+`from_segment_idx`, `to_segment_idx`, `scorer_name`, `scorer_kind`,
+`dimension`, `score`
 
-- `imdb_id_int`
-- `sentence_idx`
-- `score`
+### Colab Scoring Notebook
 
-Optional CSV headers:
+Use `notebooks/colab_scorer.ipynb` when your local machine cannot run
+heavyweight transformer models (e.g. PERT-EmoPair, which needs a GPU and a
+pretrained weights file).
 
-- `model`
-- `dimension`
+**Round-trip**
 
-### Colab Semantic Notebook (ready-to-run)
-
-Use this when your local machine cannot run transformer scoring.
-
-1. Export local sentences:
+1. Export windows locally:
    ```bash
-   uv run plot-shift export-sentences-for-semantic --out-csv data/proceeded/semantic_input.csv
+   uv run plot-shift export-colab-data --out-csv data/proceeded/colab_input.csv
    ```
-2. Upload `data/proceeded/semantic_input.csv` to Colab (or mount Drive).
-3. Open and run `notebooks/04_semantic_colab_runner.ipynb` in Colab.
-4. Download `semantic_scores.csv` from Colab.
+2. Upload `colab_input.csv` to Colab (or mount from Google Drive).
+3. Open `notebooks/colab_scorer.ipynb`, set `SCORER` and paths in the
+   *Configuration* cell, then run all cells.
+4. Download `colab_scores.csv` from Colab.
 5. Import locally:
    ```bash
-   uv run plot-shift import-semantic-scores --csv-path data/proceeded/semantic_scores.csv
+   uv run plot-shift import-colab-scores --csv-path data/proceeded/colab_scores.csv
    ```
 
-The notebook writes CSV columns: `imdb_id_int,sentence_idx,score,model,dimension`.
+**Supported scorers in the notebook**
+
+| `SCORER` value | Model | Dimensions |
+|---|---|---|
+| `pert_emopar` (default) | RoBERTa-large VAD regressor — upload weights to `/content/pert_emopar_weights.pt` | valence, arousal, dominance |
+| `cardiffnlp` | `cardiffnlp/twitter-roberta-base-sentiment-latest` — downloaded automatically | valence |
 
 ## Project flow
 
 1. Build movie catalog in `movies_meta`.
 2. Download subtitle files from OpenSubtitles.
-3. Process `.srt` files into sentence-level tables.
-4. Score sentences with VADER and VAD locally.
-5. Score sentences semantically:
+3. Process `.srt` files into timestamped `subtitle_segments` (one row per
+   cleaned, sentence-tokenized cue; each keeps its cue's real start/end).
+4. Score segments with VADER and VAD locally.
+5. Score segments semantically:
    - local with `score-semantic`, or
-   - cloud with `export-sentences-for-semantic` -> `notebooks/04_semantic_colab_runner.ipynb` -> `import-semantic-scores`.
-6. Continue with reversal extraction and evaluation (next phase).
+   - cloud with `export-colab-data` → `notebooks/colab_scorer.ipynb` → `import-colab-scores`.
+6. `extract-reversals` buckets each movie's scored segments into a fixed
+   number of equal-width, real-time windows (`--n-windows`, default 100 —
+   same idea as Knight et al.'s fixed window count, so movies of any length
+   are comparable), then finds peak/trough reversals on that windowed
+   series, once per model/dimension.
+7. `evaluate-models` / `report-snapshot` correlate reversal features
+   (count, mean/max intensity) against IMDb rating, per model and dimension,
+   so VADER (1D), NRC-VAD (3D), and the semantic model can be compared on
+   the same footing.
+
+### Adding a new scoring model
+
+Implement the `SentimentScorer` protocol (`src/plot_shift/sentiment/base.py`)
+and add one entry to `_SCORER_FACTORIES` in
+`src/plot_shift/sentiment/registry.py`. It's then automatically available as
+`--model <name>` on `score-model` and appears in `list_supported_scorer_strategies()`.
+No other pipeline code needs to change: scoring, windowing, and reversal
+extraction all key off of `(imdb_id_int, segment_idx, model, dimension)`.
 
 ## Minimal workflow on `main`
 
@@ -267,14 +293,14 @@ The notebook writes CSV columns: `imdb_id_int,sentence_idx,score,model,dimension
    uv sync --group semantic
    uv run plot-shift score-semantic --model-name cardiffnlp/twitter-roberta-base-sentiment-latest
    ```
-8. If local semantic is heavy, use cloud notebook instead:
+8. If local scoring is too heavy, use the Colab notebook instead:
    ```bash
-   uv run plot-shift export-sentences-for-semantic --out-csv data/proceeded/semantic_input.csv
-   # run notebooks/04_semantic_colab_runner.ipynb in Colab
+   uv run plot-shift export-colab-data --out-csv data/proceeded/colab_input.csv
+   # open notebooks/colab_scorer.ipynb in Colab, run all cells, download colab_scores.csv
    ```
-9. Import cloud semantic output:
+9. Import Colab scores:
    ```bash
-   uv run plot-shift import-semantic-scores --csv-path data/proceeded/semantic_scores.csv
+   uv run plot-shift import-colab-scores --csv-path data/proceeded/colab_scores.csv
    ```
 
 ## Database and migrations
