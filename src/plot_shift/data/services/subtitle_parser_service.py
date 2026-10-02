@@ -74,4 +74,4 @@ class SubtitleParserService:
 if __name__ == "__main__":
     parser = SubtitleParserService("./34583_186233.srt")
     subs = parser.parse()
-    print(subs._segments)
+    print(subs.segments)

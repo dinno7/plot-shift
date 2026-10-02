@@ -85,4 +85,4 @@ class MovieSubtitlesService:
                 words.extend(sentence_to_word(sentence))
                 segment_idx += 1
 
-        return MovieSubtitle(imdb_id=self.imdb_id, words=words, _segments=segments)
+        return MovieSubtitle(imdb_id=self.imdb_id, words=words, segments=segments)
