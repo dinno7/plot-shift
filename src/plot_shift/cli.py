@@ -462,13 +462,16 @@ def build_parser() -> argparse.ArgumentParser:
         "--trend-window-size",
         type=int,
         default=5,
-        help="Minimum trend segment length in windows (ruptures min_size, default: 5)",
+        help="Shortest trend piece in windows, like trendet window_size (ruptures min_size, default: 5)",
     )
     extract_reversals.add_argument(
         "--ruptures-penalty",
         type=float,
         default=1.0,
-        help="PELT penalty; higher means fewer change-points (default: 1.0)",
+        help=(
+            "Penalty multiplier c; PELT uses c * var(series) * log(n), so it is "
+            "scorer-independent. Higher means fewer reversals (default: 1.0)"
+        ),
     )
     extract_reversals.add_argument(
         "--window-seconds",
