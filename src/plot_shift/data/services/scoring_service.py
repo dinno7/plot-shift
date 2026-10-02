@@ -4,16 +4,14 @@ import logging
 from datetime import timedelta
 from pathlib import Path
 
-from plot_shift.data.db import PlotShiftSqliteDB
-from plot_shift.data.models import ModelScore
+from plot_shift.data import ModelScore, PlotShiftSqliteDB
 from plot_shift.sentiment import (
     DEFAULT_VAD_LEXICON_PATH,
     SentimentScorer,
     VaderLexiconScorer,
     VADLexiconScorer,
 )
-from plot_shift.windows.base import WindowGenerator
-from plot_shift.windows.fixed_width_temporal import FixedWidthTemporalWindowGenerator
+from plot_shift.windows import FixedWidthTemporalWindowGenerator, WindowGenerator
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -103,6 +101,10 @@ def run_score(
         return service.process(batch_size=batch_size, limit=limit)
 
 
+def list_supported_scorer() -> list[str]:
+    return ["vader", "vad", "vad-bert", "pert"]
+
+
 def run_score_model(
     model: str,
     db_path: str = "data/proceeded/data.db",
@@ -120,6 +122,26 @@ def run_score_model(
         scorer = VaderLexiconScorer()
     elif selected_model == "vad":
         scorer = VADLexiconScorer(lexicon_file=vad_lexicon_file)
+    elif selected_model == "pert" or selected_model == "pert-emopair":
+        try:
+            from plot_shift.sentiment.pert_emopair_scorer import PERTEmoPairScorer
+
+            scorer = PERTEmoPairScorer()
+        except Exception as e:
+            raise ImportError(
+                "Failed to import PERTEmoPairScorer",
+                e,
+            )
+    elif selected_model == "vad-bert":
+        try:
+            from plot_shift.sentiment.vad_bert_scorer import VadBertScorer
+
+            scorer = VadBertScorer()
+        except Exception as e:
+            raise ImportError(
+                "Failed to import VadBertScorer",
+                e,
+            )
     else:
         raise ValueError(
             f"Unknown scoring strategy: {model}. ",
@@ -134,7 +156,3 @@ def run_score_model(
         batch_size=batch_size,
         limit=limit,
     )
-
-
-def list_supported_scorer() -> list[str]:
-    return ["vader", "vad"]
