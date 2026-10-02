@@ -316,11 +316,11 @@ def sift_scores(scores: Sequence[float]) -> tuple[float, float, int]:
     return pos_sum, neg_sum, neu_count
 
 
-def polarity_from_scores(scores: Sequence[float]) -> PolarityScores:
+def polarity_from_scores(scores: Sequence[float], make_normalize: bool = True) -> PolarityScores:
     if not scores:
         return {"neg": 0.0, "neu": 0.0, "pos": 0.0, "compound": 0.0}
 
-    compound = normalize(sum(scores))
+    compound = normalize(sum(scores)) if make_normalize else sum(scores)
     pos_sum, neg_sum, neu_count = sift_scores(scores)
     total = pos_sum + abs(neg_sum) + neu_count
     if total == 0:
@@ -351,9 +351,10 @@ def load_lexicon(path: Path) -> dict[str, VADVector]:
 class VADIntensityAnalyzer:
     """Give valence, arousal, and dominance intensity scores to a sentence."""
 
-    def __init__(self, lexicon_file: str | Path | None = None) -> None:
+    def __init__(self, lexicon_file: str | Path | None = None, make_normalize: bool = True) -> None:
         path = Path(lexicon_file) if lexicon_file is not None else _DEFAULT_LEXICON
         self.lexicon = load_lexicon(path)
+        self.make_normalize = make_normalize
 
     def polarity_scores(self, text: str) -> VADPolarityScores:
         """Return ``neg`` / ``neu`` / ``pos`` / ``compound`` for each VAD dimension.
@@ -378,9 +379,15 @@ class VADIntensityAnalyzer:
             dominance.append(vector.dominance)
 
         return {
-            "valence": polarity_from_scores(apply_but_contrast(tokens, valence)),
-            "arousal": polarity_from_scores(apply_but_contrast(tokens, arousal)),
-            "dominance": polarity_from_scores(apply_but_contrast(tokens, dominance)),
+            "valence": polarity_from_scores(
+                apply_but_contrast(tokens, valence), self.make_normalize
+            ),
+            "arousal": polarity_from_scores(
+                apply_but_contrast(tokens, arousal), self.make_normalize
+            ),
+            "dominance": polarity_from_scores(
+                apply_but_contrast(tokens, dominance), self.make_normalize
+            ),
         }
 
     def _score_token(self, tokens: Sequence[str], index: int, token: str) -> VADVector:

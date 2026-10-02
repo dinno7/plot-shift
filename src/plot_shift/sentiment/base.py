@@ -15,7 +15,7 @@ class SentimentScorer(ABC):
     """Any model that maps a unit of text to a continuous sentiment score."""
 
     def score(self, text: str) -> Score:
-        """Return the (single) continuous score for ``text`` in [-1, 1]."""
+        """Return the continuous (unnormalized) score for ``text``."""
         raise NotImplementedError
 
     @property

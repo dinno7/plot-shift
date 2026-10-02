@@ -24,7 +24,9 @@ class VADLexiconScorer(SentimentScorer):
         return ScorerKind.LEXICON
 
     def __init__(self, lexicon_file: str | Path = DEFAULT_VAD_LEXICON_PATH) -> None:
-        self._analyzer: VADIntensityAnalyzer = VADIntensityAnalyzer(lexicon_file=lexicon_file)
+        self._analyzer: VADIntensityAnalyzer = VADIntensityAnalyzer(
+            lexicon_file=lexicon_file, make_normalize=False
+        )
 
     def score_token(self, token: str) -> dict[DimensionKind, float]:
         if not token:
@@ -35,7 +37,6 @@ class VADLexiconScorer(SentimentScorer):
             }
 
         r = self._analyzer.polarity_scores(token)
-        # NOTE: It is always in range of (-1, +1)
         valence = r["valence"]["compound"]
         arousal = r["arousal"]["compound"]
         dominance = r["dominance"]["compound"]

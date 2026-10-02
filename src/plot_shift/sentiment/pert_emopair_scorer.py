@@ -2,11 +2,16 @@ from pathlib import Path
 
 import torch
 from huggingface_hub import snapshot_download
-from notebooks.colab_scorer import DimensionKind, ScorerKind
 from torch import nn
 from transformers import AutoTokenizer, RobertaModel
 
-from plot_shift.sentiment import DimensionScore, Score, SentimentScorer
+from plot_shift.sentiment.base import (
+    DimensionKind,
+    DimensionScore,
+    Score,
+    ScorerKind,
+    SentimentScorer,
+)
 
 
 class RoBERTaForVAD(nn.Module):

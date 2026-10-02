@@ -13,7 +13,7 @@ from plot_shift.sentiment.base import (
 
 
 class VaderLexiconScorer(SentimentScorer):
-    """Lookup VADER lexicon valence; map roughly [-4, 4] to [-1, 1]."""
+    """VADER valence as the raw (unnormalized) sum of word scores."""
 
     @property
     def scorer_name(self) -> str:
@@ -26,12 +26,14 @@ class VaderLexiconScorer(SentimentScorer):
     def __init__(self) -> None:
         ensure_nltk_data("sentiment/vader_lexicon")
         self._analyzer: SentimentIntensityAnalyzer = SentimentIntensityAnalyzer()
+        # NLTK squashes ``compound`` into (-1, 1) via constants.normalize; keep the raw sum.
+        self._analyzer.constants.normalize = lambda score, alpha=15: score
 
     def score_token(self, token: str) -> float:
         if not token:
             return 0.0
         r = self._analyzer.polarity_scores(token)
-        score_value = r["compound"]  # NOTE: It is always in range of (-1, +1)
+        score_value = r["compound"]
         if score_value is None:
             return 0.0
         return score_value
