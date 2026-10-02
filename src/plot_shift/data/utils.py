@@ -15,7 +15,8 @@ def ensure_nltk_data(*resources: str):
             nltk.download(resource_name)
 
 
-ensure_nltk_data("corpora/stopwords")
+# FIXME:
+# ensure_nltk_data("corpora/stopwords")
 stop_words = set(stopwords.words("english"))
 
 

@@ -9,10 +9,6 @@ from plot_shift.data.models import MovieSubtitle
 from plot_shift.data.models.subtitle_segment import SubtitleSegment
 from plot_shift.data.utils import sentence_to_word
 
-# Download required data (run once)
-nltk.download("punkt")
-nltk.download("punkt_tab")
-
 
 def clean_subtitle_segment_content(text: str) -> str:
     """Remove common SRT artifacts from a single subtitle segment's text."""
@@ -61,6 +57,10 @@ class MovieSubtitlesService:
         self._segments.append(sub)
 
     def process(self) -> MovieSubtitle:
+        # Download required data (run once)
+        nltk.download("punkt")
+        nltk.download("punkt_tab")
+
         segments: list[SubtitleSegment] = []
         words: list[str] = []
         segment_idx = 0
