@@ -454,9 +454,9 @@ def build_parser() -> argparse.ArgumentParser:
     )
     extract_reversals.add_argument(
         "--detector",
-        choices=["ruptures"],
-        default="ruptures",
-        help="Reversal detector implementation (default: ruptures)",
+        choices=["trendet", "ruptures"],
+        default="trendet",
+        help="Reversal detector implementation (default: trendet)",
     )
     extract_reversals.add_argument(
         "--trend-window-size",
