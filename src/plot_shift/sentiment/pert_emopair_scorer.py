@@ -152,13 +152,30 @@ class PERTEmoPairScorer(SentimentScorer):
         return output.squeeze(0).detach().cpu().tolist()
 
     def score(self, text: str) -> Score:
+        result = Score()
 
         if not text or not text.strip():
-            raise ValueError("Text must not be empty.")
+            result.add_dimension_score(
+                DimensionScore(
+                    value=0.0,
+                    kind=DimensionKind.VALENCE,
+                )
+            )
+            result.add_dimension_score(
+                DimensionScore(
+                    value=0.0,
+                    kind=DimensionKind.AROUSAL,
+                )
+            )
+            result.add_dimension_score(
+                DimensionScore(
+                    value=0.0,
+                    kind=DimensionKind.DOMINANCE,
+                )
+            )
+            return result
 
         valence, arousal, dominance = self._predict(text)
-
-        result = Score()
 
         result.add_dimension_score(
             DimensionScore(

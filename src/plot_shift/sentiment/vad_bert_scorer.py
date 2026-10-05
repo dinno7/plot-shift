@@ -39,6 +39,13 @@ class VadBertScorer(SentimentScorer):
         object.__setattr__(self, "_model", model)
 
     def score(self, text: str) -> Score:
+        score = Score()
+        if not text or not text.strip():
+            score.add_dimension_score(DimensionScore(value=0.0, kind=DimensionKind.VALENCE))
+            score.add_dimension_score(DimensionScore(value=0.0, kind=DimensionKind.AROUSAL))
+            score.add_dimension_score(DimensionScore(value=0.0, kind=DimensionKind.DOMINANCE))
+            return score
+
         """Return the three raw VAD dimension scores for ``text``."""
         inputs = self._tokenizer(text, return_tensors="pt", truncation=True, max_length=512).to(
             self.device
@@ -48,7 +55,6 @@ class VadBertScorer(SentimentScorer):
 
         valence, arousal, dominance = logits
 
-        score = Score()
         score.add_dimension_score(DimensionScore(value=valence, kind=DimensionKind.VALENCE))
         score.add_dimension_score(DimensionScore(value=arousal, kind=DimensionKind.AROUSAL))
         score.add_dimension_score(DimensionScore(value=dominance, kind=DimensionKind.DOMINANCE))
