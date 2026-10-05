@@ -8,10 +8,13 @@ requires-python = ">=3.14"
 # requires-python = ">=3.12,<3.13"
 dependencies = [
   "ipykernel>=7.3.0",
+  "matplotlib>=3.11.2",
   "nltk>=3.10.3",
   "opensubtitlescom>=0.1.5",
+  "pandas>=3.0.6",
   "polars>=1.43.2",
   "python-dotenv>=1.2.2",
+  "ruptures>=1.1.10",
   "scipy>=1.18.0",
   "unidecode>=1.4.0",
 ]
@@ -30,7 +33,7 @@ dev = ["pytest", "ruff", "mypy"]
 # pipeline (VADER/NRC word-level scoring) never depends on torch/transformers.
 # Install only where the semantic model runs (e.g. Google Colab):
 #   uv sync --group semantic
-semantic = ["torch>=2.2", "transformers>=4.40", "sentencepiece>=0.2"]
+semantic = ["torch>=2.2", "transformers>=4.40", "huggingface-hub"]
 
 [tool.ruff]
 line-length = 100
@@ -53,7 +56,7 @@ ignore_missing_imports = true
 module = ["torch.*", "transformers.*"]
 ignore_missing_imports = true
 
-[[tool.uv.index]]
-name = "Hamravesh"
-url = "https://repo.hmirror.ir/python/simple"
-default = true
+# [[tool.uv.index]]
+# name = "Hamravesh"
+# url = "https://repo.hmirror.ir/python/simple"
+# default = true
