@@ -35,6 +35,11 @@ dev = ["pytest", "ruff", "mypy"]
 #   uv sync --group semantic
 semantic = ["torch>=2.2", "transformers>=4.40", "huggingface-hub"]
 
+# Optional API client for the Jev scorer. The offline lexicon pipeline does not
+# need it. Install where Jev scoring runs:
+#   uv sync --group jev
+jev = ["typesafe-sdk>=0.7.5"]
+
 [tool.ruff]
 line-length = 100
 target-version = "py314"
@@ -54,6 +59,11 @@ ignore_missing_imports = true
 # Only installed via the `semantic` group, so absent on the offline pipeline.
 [[tool.mypy.overrides]]
 module = ["torch.*", "transformers.*"]
+ignore_missing_imports = true
+
+# Only installed via the `jev` group.
+[[tool.mypy.overrides]]
+module = ["typesafe_sdk.*"]
 ignore_missing_imports = true
 
 # [[tool.uv.index]]
