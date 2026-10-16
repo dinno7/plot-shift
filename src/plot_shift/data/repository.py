@@ -215,13 +215,13 @@ class SubtitleSegmentsRepository(ABC):
 class ReversalFeaturesRepository(ABC):
     """Abstract contract for reversal-feature persistence.
 
-    One row per (movie, scorer_name, dimension) triple, written after
+    One row per (movie, scorer, detector, dimension), written after
     trend-detection has been applied to the windowed score series.
     """
 
     @abstractmethod
     def upsert_many(self, features: list[ReversalFeatures]) -> None:
-        """Insert or replace reversal features for a batch of triples."""
+        """Insert or replace reversal features for a batch of rows."""
         ...
 
     @abstractmethod
@@ -229,10 +229,11 @@ class ReversalFeaturesRepository(ABC):
         self,
         scorer_name: str | None = None,
         dimension: str | None = None,
+        detector_name: str | None = None,
     ) -> list[ReversalFeatures]:
-        """Return all stored features, optionally filtered by scorer/dimension.
+        """Return stored features, optionally filtered by scorer, dimension, or detector.
 
-        Results are ordered by imdb_id_int, scorer_name, dimension.
+        Results are ordered by imdb_id_int, scorer_name, detector_name, dimension.
         """
         ...
 
@@ -242,8 +243,14 @@ class ReversalFeaturesRepository(ABC):
         imdb_id_int: int,
         scorer_name: str,
         dimension: str,
+        detector_name: str | None = None,
     ) -> ReversalFeatures | None:
-        """Return the features for one specific triple, or None."""
+        """Return one stored row, or None.
+
+        When ``detector_name`` is omitted and more than one detector is stored
+        for the same movie, scorer, and dimension, the row whose detector name
+        sorts first is returned.
+        """
         ...
 
     @abstractmethod

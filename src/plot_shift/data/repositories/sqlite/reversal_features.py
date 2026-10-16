@@ -88,6 +88,7 @@ class ReversalFeaturesSqliteRepository(ReversalFeaturesRepository):
         self,
         scorer_name: str | None = None,
         dimension: str | None = None,
+        detector_name: str | None = None,
     ) -> list[ReversalFeatures]:
         where_parts: list[str] = []
         args: list[object] = []
@@ -98,6 +99,9 @@ class ReversalFeaturesSqliteRepository(ReversalFeaturesRepository):
         if dimension is not None:
             where_parts.append("dimension = ?")
             args.append(dimension)
+        if detector_name is not None:
+            where_parts.append("detector_name = ?")
+            args.append(detector_name)
 
         where_clause = f"WHERE {' AND '.join(where_parts)}" if where_parts else ""
         rows = self._db_conn.execute(
@@ -106,7 +110,7 @@ class ReversalFeaturesSqliteRepository(ReversalFeaturesRepository):
                    trend_window_size, series_length, n_reversals, mean_intensity, max_intensity, detector_name
             FROM reversal_features
             {where_clause}
-            ORDER BY imdb_id_int, scorer_name, dimension
+            ORDER BY imdb_id_int, scorer_name, detector_name, dimension
             """,
             args,
         ).fetchall()
@@ -117,15 +121,23 @@ class ReversalFeaturesSqliteRepository(ReversalFeaturesRepository):
         imdb_id_int: int,
         scorer_name: str,
         dimension: str,
+        detector_name: str | None = None,
     ) -> ReversalFeatures | None:
+        where = "imdb_id_int = ? AND scorer_name = ? AND dimension = ?"
+        args: list[object] = [imdb_id_int, scorer_name, dimension]
+        if detector_name is not None:
+            where += " AND detector_name = ?"
+            args.append(detector_name)
         row = self._db_conn.execute(
-            """
+            f"""
             SELECT imdb_id_int, scorer_name, dimension, n_windows, window_duration,
                    trend_window_size, series_length, n_reversals, mean_intensity, max_intensity, detector_name
             FROM reversal_features
-            WHERE imdb_id_int = ? AND scorer_name = ? AND dimension = ?
+            WHERE {where}
+            ORDER BY detector_name
+            LIMIT 1
             """,
-            (imdb_id_int, scorer_name, dimension),
+            args,
         ).fetchone()
         return self._from_row(row) if row is not None else None
 
