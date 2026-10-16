@@ -437,7 +437,7 @@ def build_parser() -> argparse.ArgumentParser:
     extract_reversals.add_argument(
         "--model",
         default=None,
-        choices=["vader", "vad", "vad-bert", "pert-emopair"],
+        choices=["vader", "vad", "vad-bert", "pert-emopair", "jev"],
         required=True,
         help="scorer name",
     )
