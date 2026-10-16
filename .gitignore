@@ -11,6 +11,5 @@ wheels/
 /.env
 /data/raw/title.basics.tsv
 /data/raw/title.ratings.tsv
-/data/raw/lexicons/
 /dumps
 /data/proceeded
