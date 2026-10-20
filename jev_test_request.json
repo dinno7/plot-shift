@@ -1,0 +1,16 @@
+{
+  "state": "if i didn't care more than words can say if i didn't care would i feel this way? if this isn't love then why do i thrill? and what makes my head go round and round while my heart stands still? if i didn't care would it be the same? would my every prayer begin and end with just your name? and would i be sure that this is love beyond compare? would all this be true if i didn't care for you? mr. dufresne, describe the confrontation you had with your wife the night she was murdered. it was very bitter. she said she was glad i knew, that she hated all the sneaking around. and she said. she wanted a divorce in reno. what was your response? i told her i would not grant one. ill see you in hell before i see you in reno. those were the words you used, mr. dufresne, according to your neighbors. if they say so. i really don't remember. i was upset. what happened after you argued with your wife? she packed a bag. she packed a bag to go and stay with. mr. quentin. glenn quentin. a golf pro at the snowdon hills country club. the man you discovered was your wife's lover. did you follow her? i went to a few bars first. later, i. drove to his house to confront them. they weren't home, so i. parked in the turnout, and waited. with what intention? i'm not sure. i was confused. drunk. i think. mostly, i wanted to scare them. when they arrived, you went up to the house and murdered them. no. i was sobering up. i got back in the car, and i drove home to sleep it off. along the way, i stopped, and i threw my gun into the royal river. i feel i've been very clear on this point. well, where i get hazy is where the cleaning woman shows up the following morning and finds your wife in bed with her lover, riddled with .38 caliber bullets. now, does that strike you as a fantastic coincidence, mr. dufresne, or is it just me? yes, it does. yet you still maintain that you threw your gun into the river before the murders took place. that's very convenient. it's the truth. the police dragged that river for three days, and nary a gun was found. so, there could be no comparison made between your gun and the bullets taken from the bloodstained corpses of the victims. and that also. is very convenient. isn't it, mr. dufresne? since i am innocent of this crime, sir, i find it decidedly inconvenient that the gun was never found. and would i be sure that this is love beyond compare. ladies and gentlemen, you've heard all the evidence. you know all the facts.",
+  "questions": {
+    "valence": {
+      "type": "score",
+      "instructions": "Rate the emotional valence of this film-subtitle window, from very negative to very positive.",
+      "criteria": [
+        "very negative",
+        "negative",
+        "neutral",
+        "positive",
+        "very positive"
+      ]
+    }
+  }
+}

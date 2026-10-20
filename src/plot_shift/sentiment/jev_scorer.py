@@ -82,7 +82,9 @@ def jev_client_settings(
     return {
         "model": explicit_model or _lookup(env, DEFAULT_MODEL_ENV) or JEV_MODEL,
         "base_url": _lookup(env, BASE_URL_ENV) or DEFAULT_BASE_URL,
+        "compression": False,
         "timeout": _timeout(env) or DEFAULT_TIMEOUT,
+        "headers": {"Content-Type": "application/json", "Accept": "application/json"},
     }
 
 
