@@ -115,7 +115,7 @@ class MovieSubtitlesRepository(ABC):
         ...
 
     @abstractmethod
-    def list_valid_imdb_ids(self) -> list[int]:
+    def list_valid_imdb_ids(self, limit: int | None) -> list[int]:
         """IMDb integer ids with is_valid true."""
         ...
 

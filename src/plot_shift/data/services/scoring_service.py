@@ -35,7 +35,7 @@ class ScoringService:
             "rows_written": 0,
         }
 
-        imdb_ids = self._db.movie_subtitles.list_valid_imdb_ids()
+        imdb_ids = self._db.movie_subtitles.list_valid_imdb_ids(limit)
         if limit is not None:
             imdb_ids = imdb_ids[:limit]
         stats["movies_total"] = len(imdb_ids)
