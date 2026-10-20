@@ -35,7 +35,7 @@ class ScoringService:
             "rows_written": 0,
         }
 
-        imdb_ids = self._db.movie_subtitles.list_valid_imdb_ids()
+        imdb_ids = self._db.movie_subtitles.list_valid_imdb_ids(limit)
         if limit is not None:
             imdb_ids = imdb_ids[:limit]
         stats["movies_total"] = len(imdb_ids)
@@ -102,7 +102,7 @@ def run_score(
 
 
 def list_supported_scorer() -> list[str]:
-    return ["vader", "vad", "vad-bert", "pert"]
+    return ["vader", "vad", "vad-bert", "pert", "jev"]
 
 
 def run_score_model(
@@ -142,6 +142,15 @@ def run_score_model(
                 "Failed to import VadBertScorer",
                 e,
             )
+    elif selected_model == "jev":
+        from plot_shift.sentiment.jev_scorer import JevScorer
+
+        try:
+            scorer = JevScorer()
+        except ImportError as e:
+            raise ImportError(
+                "Failed to import the Jev client. Install it with: uv sync --group jev"
+            ) from e
     else:
         raise ValueError(
             f"Unknown scoring strategy: {model}. ",

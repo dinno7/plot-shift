@@ -150,14 +150,18 @@ class MovieSubtitlesSqliteRepository(MovieSubtitlesRepository):
 
         return MovieSubtitle(imdb_id=row["imdb_id_int"], words=words, segments=segments)
 
-    def list_valid_imdb_ids(self) -> list[int]:
-        rows = self._db_conn.execute(
-            """
-            SELECT imdb_id_int FROM movie_subtitles
-            WHERE is_valid = 1
-            ORDER BY imdb_id_int
-            """
-        ).fetchall()
+    def list_valid_imdb_ids(self, limit: int | None) -> list[int]:
+        args: list[object] = []
+        query = """SELECT ms.imdb_id_int FROM movie_subtitles as ms
+        JOIN movies_meta AS mm
+        ON ms.imdb_id_int = mm.imdb_id_int
+        WHERE is_valid = 1
+        ORDER BY num_votes DESC"""
+        if limit is not None:
+            query += "\nLIMIT ?"
+            args.append(limit)
+
+        rows = self._db_conn.execute(query, args).fetchall()
         return [int(r["imdb_id_int"]) for r in rows]
 
     def list_sentences_by_imdb_id(self, imdb_id: int) -> list[str]:

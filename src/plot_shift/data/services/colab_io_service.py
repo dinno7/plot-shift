@@ -85,7 +85,7 @@ def export_windows_for_colab(
     )
 
     with PlotShiftSqliteDB(db_path) as db:
-        imdb_ids = db.movie_subtitles.list_valid_imdb_ids()
+        imdb_ids = db.movie_subtitles.list_valid_imdb_ids(limit)
         if limit is not None:
             imdb_ids = imdb_ids[:limit]
 

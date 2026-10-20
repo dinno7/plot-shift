@@ -8,6 +8,7 @@ from enum import Enum
 class ScorerKind(Enum):
     LEXICON = "lexicon"
     TRANSFORMER = "transformer"
+    API = "api"
 
 
 @dataclass(frozen=True)
