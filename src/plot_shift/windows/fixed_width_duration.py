@@ -5,7 +5,7 @@ from plot_shift.data.models import MovieSubtitle, NarrativeWindow, SubtitleSegme
 from plot_shift.windows import WindowGenerator
 
 
-class FixedWidthTemporalWindowGenerator(WindowGenerator):
+class FixedWidthAndDurationWindowGenerator(WindowGenerator):
     def __init__(
         self,
         window_duration: timedelta = timedelta(minutes=5),
@@ -21,7 +21,9 @@ class FixedWidthTemporalWindowGenerator(WindowGenerator):
         self.n_windows = n_windows
 
     def name(self) -> str:
-        return f"Fixed width({self.n_windows}) temporal({self.window_duration.__str__()})"
+        return (
+            f"Fixed width({self.n_windows}) duration({self.window_duration.__str__()})"
+        )
 
     def generate(
         self,
@@ -117,7 +119,9 @@ class FixedWidthTemporalWindowGenerator(WindowGenerator):
 # Example
 if __name__ == "__main__":
     with PlotShiftSqliteDB("data/proceeded/data.db") as repo:
-        windower = FixedWidthTemporalWindowGenerator(timedelta(minutes=5), n_windows=100)
+        windower = FixedWidthAndDurationWindowGenerator(
+            timedelta(minutes=5), n_windows=100
+        )
         movie_sub = repo.movie_subtitles.find_by_imdb_id(31381)
         if movie_sub is None:
             raise ValueError("MovieSubtitle is None")

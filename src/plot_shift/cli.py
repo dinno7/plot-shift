@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import cast
 
 from plot_shift.data.downloader import download_remaining
-from plot_shift.data.services import DEFAULT_SEMANTIC_MODEL_NAME, list_supported_scorer
+from plot_shift.data.services import list_supported_scorer
 from plot_shift.data.services.colab_io_service import (
     export_windows_for_colab,
     import_colab_scores,
@@ -48,48 +48,6 @@ def cmd_process_subs(args: argparse.Namespace) -> int:
     return 0
 
 
-def cmd_score_vader(args: argparse.Namespace) -> int:
-    stats = run_score_model(
-        model="vader",
-        db_path=args.db,
-        batch_size=args.batch_size,
-        limit=args.limit,
-        n_windows=args.n_windows,
-        window_duration=timedelta(seconds=args.window_seconds),
-    )
-    print(stats)
-    return 0
-
-
-def cmd_score_vad(args: argparse.Namespace) -> int:
-    stats = run_score_model(
-        model="vad",
-        db_path=args.db,
-        batch_size=args.batch_size,
-        limit=args.limit,
-        vad_lexicon_file=args.lexicon_file,
-        n_windows=args.n_windows,
-        window_duration=timedelta(seconds=args.window_seconds),
-    )
-    print(stats)
-    return 0
-
-
-def cmd_score_semantic(args: argparse.Namespace) -> int:
-    stats = run_score_model(
-        model="semantic",
-        db_path=args.db,
-        batch_size=args.batch_size,
-        limit=args.limit,
-        semantic_model_name=args.model_name,
-        semantic_max_length=args.max_length,
-        n_windows=args.n_windows,
-        window_duration=timedelta(seconds=args.window_seconds),
-    )
-    print(stats)
-    return 0
-
-
 def cmd_score_model(args: argparse.Namespace) -> int:
     stats = run_score_model(
         model=args.model,
@@ -97,8 +55,10 @@ def cmd_score_model(args: argparse.Namespace) -> int:
         batch_size=args.batch_size,
         limit=args.limit,
         vad_lexicon_file=args.lexicon_file,
-        semantic_model_name=args.semantic_model_name,
-        semantic_max_length=args.semantic_max_length,
+        distilbert_max_length=args.semantic_max_length,
+        n_windows=args.n_windows,
+        window_duration=timedelta(seconds=args.window_seconds),
+        windower=args.windower,
     )
     print(stats)
     return 0
@@ -110,6 +70,7 @@ def cmd_export_colab_data(args: argparse.Namespace) -> int:
         out_csv=args.out_csv,
         n_windows=args.n_windows,
         window_seconds=args.window_seconds,
+        windower=args.windower,
         limit=args.limit,
     )
     print(stats)
@@ -139,6 +100,19 @@ def cmd_extract_reversals(args: argparse.Namespace) -> int:
     )
     print(stats)
     return 0
+
+
+def _add_window_kind(parser: argparse.ArgumentParser) -> None:
+    parser.add_argument(
+        "--windower",
+        choices=("fixed-width-duration", "fixed-duration"),
+        default="fixed-width-duration",
+        help=(
+            "fixed-width-duration places --n-windows windows of --window-seconds across the movie. "
+            "fixed-duration places abutting windows of --window-seconds and the count "
+            "follows the movie length (default: fixed-width-duration)"
+        ),
+    )
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -198,127 +172,6 @@ def build_parser() -> argparse.ArgumentParser:
     )
     process_subs.set_defaults(func=cmd_process_subs)
 
-    score_vader = subparsers.add_parser(
-        "score-vader",
-        help="Score subtitle sentences with VADER and persist results",
-    )
-    score_vader.add_argument(
-        "--db",
-        default="data/proceeded/data.db",
-        help="SQLite database path",
-    )
-    score_vader.add_argument(
-        "--batch-size",
-        type=int,
-        default=1000,
-        help="Batch size for sentence score upserts",
-    )
-    score_vader.add_argument(
-        "--limit",
-        type=int,
-        default=None,
-        help="Optional cap on number of valid movies to score",
-    )
-    score_vader.add_argument(
-        "--window-seconds",
-        type=int,
-        default=300,
-        help="Optional window duration in seconds(default is 300(5min))",
-    )
-    score_vader.add_argument(
-        "--n-windows",
-        type=int,
-        default=100,
-        help="Optional windows count(default is 100)",
-    )
-    score_vader.set_defaults(func=cmd_score_vader)
-
-    score_vad = subparsers.add_parser(
-        "score-vad",
-        help="Score subtitle sentences with NRC-VAD and persist results",
-    )
-    score_vad.add_argument(
-        "--db",
-        default="data/proceeded/data.db",
-        help="SQLite database path",
-    )
-    score_vad.add_argument(
-        "--batch-size",
-        type=int,
-        default=1000,
-        help="Batch size for sentence score upserts",
-    )
-    score_vad.add_argument(
-        "--limit",
-        type=int,
-        default=None,
-        help="Optional cap on number of valid movies to score",
-    )
-    score_vad.add_argument(
-        "--lexicon-file",
-        default="data/raw/lexicons/vad_lexicon.txt",
-        help="Path to VAD lexicon file",
-    )
-    score_vad.add_argument(
-        "--window-seconds",
-        type=int,
-        default=300,
-        help="Optional window duration in seconds(default is 300(5min))",
-    )
-    score_vad.add_argument(
-        "--n-windows",
-        type=int,
-        default=100,
-        help="Optional windows count(default is 100)",
-    )
-    score_vad.set_defaults(func=cmd_score_vad)
-
-    score_semantic = subparsers.add_parser(
-        "score-semantic",
-        help="Score subtitle sentences with a transformer sentiment model",
-    )
-    score_semantic.add_argument(
-        "--db",
-        default="data/proceeded/data.db",
-        help="SQLite database path",
-    )
-    score_semantic.add_argument(
-        "--batch-size",
-        type=int,
-        default=1000,
-        help="Batch size for sentence score upserts",
-    )
-    score_semantic.add_argument(
-        "--limit",
-        type=int,
-        default=None,
-        help="Optional cap on valid movies to score",
-    )
-    score_semantic.add_argument(
-        "--model-name",
-        default=DEFAULT_SEMANTIC_MODEL_NAME,
-        help="Hugging Face model name for sequence classification",
-    )
-    score_semantic.add_argument(
-        "--max-length",
-        type=int,
-        default=512,
-        help="Max tokens per sentence for semantic model",
-    )
-    score_semantic.add_argument(
-        "--window-seconds",
-        type=int,
-        default=300,
-        help="Optional window duration in seconds(default is 300(5min))",
-    )
-    score_semantic.add_argument(
-        "--n-windows",
-        type=int,
-        default=100,
-        help="Optional windows count(default is 100)",
-    )
-    score_semantic.set_defaults(func=cmd_score_semantic)
-
     score_model = subparsers.add_parser(
         "score-model",
         help="Score subtitle sentences with selected model strategy",
@@ -352,16 +205,24 @@ def build_parser() -> argparse.ArgumentParser:
         help="VAD lexicon file (used when --model vad)",
     )
     score_model.add_argument(
-        "--semantic-model-name",
-        default=DEFAULT_SEMANTIC_MODEL_NAME,
-        help="HF semantic model id (used when --model semantic)",
-    )
-    score_model.add_argument(
         "--semantic-max-length",
         type=int,
         default=512,
-        help="Max semantic model token length (used when --model semantic)",
+        help="Max token length for distilbert-sst2 (default: 512)",
     )
+    score_model.add_argument(
+        "--window-seconds",
+        type=int,
+        default=300,
+        help="Window duration in seconds (default: 300)",
+    )
+    score_model.add_argument(
+        "--n-windows",
+        type=int,
+        default=100,
+        help="Window count for --windower fixed-width-duration (default: 100)",
+    )
+    _add_window_kind(score_model)
     score_model.set_defaults(func=cmd_score_model)
 
     export_colab = subparsers.add_parser(
@@ -390,6 +251,7 @@ def build_parser() -> argparse.ArgumentParser:
         default=300,
         help="Window width in seconds (default: 300 = 5 min)",
     )
+    _add_window_kind(export_colab)
     export_colab.add_argument(
         "--limit",
         type=int,
@@ -437,7 +299,7 @@ def build_parser() -> argparse.ArgumentParser:
     extract_reversals.add_argument(
         "--model",
         default=None,
-        choices=["vader", "vad", "vad-bert", "pert-emopair", "jev"],
+        choices=["vader", "vad", "vad-bert", "pert-emopair", "distilbert-sst2", "jev"],
         required=True,
         help="scorer name",
     )

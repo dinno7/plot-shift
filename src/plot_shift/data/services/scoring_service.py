@@ -3,6 +3,7 @@ from __future__ import annotations
 import logging
 from datetime import timedelta
 from pathlib import Path
+from typing import Literal
 
 from plot_shift.data import ModelScore, PlotShiftSqliteDB
 from plot_shift.sentiment import (
@@ -11,7 +12,7 @@ from plot_shift.sentiment import (
     VaderLexiconScorer,
     VADLexiconScorer,
 )
-from plot_shift.windows import FixedWidthTemporalWindowGenerator, WindowGenerator
+from plot_shift.windows import WindowGenerator, create_window_generator
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -20,7 +21,10 @@ logger.addHandler(logging.StreamHandler())
 
 class ScoringService:
     def __init__(
-        self, db: PlotShiftSqliteDB, window_generator: WindowGenerator, scorer: SentimentScorer
+        self,
+        db: PlotShiftSqliteDB,
+        window_generator: WindowGenerator,
+        scorer: SentimentScorer,
     ) -> None:
         self._db = db
         self._scorer = scorer
@@ -54,7 +58,11 @@ class ScoringService:
                 self._window_generator.name(),
             )
             windows = self._window_generator.generate(movie_subtitle)
-            logger.info("Scoring %d windows with %s model", len(windows), self._scorer.scorer_name)
+            logger.info(
+                "Scoring %d windows with %s model",
+                len(windows),
+                self._scorer.scorer_name,
+            )
             for window in windows:
                 score = self._scorer.score(window.text)
                 stats["sentences_scored"] += 1
@@ -86,9 +94,6 @@ class ScoringService:
         return stats
 
 
-DEFAULT_SEMANTIC_MODEL_NAME = "vad"
-
-
 def run_score(
     scorer: SentimentScorer,
     window_generator: WindowGenerator,
@@ -102,62 +107,65 @@ def run_score(
 
 
 def list_supported_scorer() -> list[str]:
-    return ["vader", "vad", "vad-bert", "pert", "jev"]
+    return ["vader", "vad", "vad-bert", "pert", "distilbert", "jev"]
 
 
 def run_score_model(
-    model: str,
+    model: Literal["vader", "vad", "vad-bert", "pert", "distilbert"],
     db_path: str = "data/proceeded/data.db",
     batch_size: int = 1000,
     limit: int | None = None,
     window_duration: timedelta = timedelta(minutes=5),
     n_windows: int = 100,
+    windower: str = "fixed-width-duration",
     vad_lexicon_file: str | Path = DEFAULT_VAD_LEXICON_PATH,
-    semantic_model_name: str = DEFAULT_SEMANTIC_MODEL_NAME,
-    semantic_max_length: int = 512,
+    distilbert_max_length: int = 512,
 ) -> dict[str, int]:
     scorer: SentimentScorer
-    selected_model = model.strip(" ").lower()
-    if selected_model == "vader":
+    if model == "vader":
         scorer = VaderLexiconScorer()
-    elif selected_model == "vad":
+    elif model == "vad":
         scorer = VADLexiconScorer(lexicon_file=vad_lexicon_file)
-    elif selected_model == "pert" or selected_model == "pert-emopair":
+    elif model == "pert" or model == "pert-emopair":
         try:
             from plot_shift.sentiment.pert_emopair_scorer import PERTEmoPairScorer
-
-            scorer = PERTEmoPairScorer()
-        except Exception as e:
-            raise ImportError(
-                "Failed to import PERTEmoPairScorer",
-                e,
-            )
-    elif selected_model == "vad-bert":
+        except ImportError as e:
+            raise ImportError("Failed to import PERTEmoPairScorer") from e
+        scorer = PERTEmoPairScorer()
+    elif model == "vad-bert":
         try:
             from plot_shift.sentiment.vad_bert_scorer import VadBertScorer
-
-            scorer = VadBertScorer()
-        except Exception as e:
+        except ImportError as e:
+            raise ImportError("Failed to import VadBertScorer") from e
+        scorer = VadBertScorer()
+    elif model == "distilbert-sst2" or model == "distilbert":
+        try:
+            from plot_shift.sentiment.distilbert_sst2_scorer import DistilBertSst2Scorer
+        except ImportError as e:
             raise ImportError(
                 "Failed to import VadBertScorer",
                 e,
             )
-    elif selected_model == "jev":
-        from plot_shift.sentiment.jev_scorer import JevScorer
-
+        scorer = DistilBertSst2Scorer(max_length=distilbert_max_length)
+    elif model == "jev":
         try:
-            scorer = JevScorer()
-        except ImportError as e:
+            from plot_shift.sentiment.jev_scorer import JevScorer
+        except ImportError:
             raise ImportError(
                 "Failed to import the Jev client. Install it with: uv sync --group jev"
-            ) from e
+            )
+        scorer = JevScorer()
     else:
         raise ValueError(
             f"Unknown scoring strategy: {model}. ",
             f"Supported: {list_supported_scorer()}",
         )
 
-    window_generator = FixedWidthTemporalWindowGenerator(window_duration, n_windows)
+    window_generator = create_window_generator(
+        windower,
+        window_duration=window_duration,
+        n_windows=n_windows,
+    )
     return run_score(
         scorer=scorer,
         window_generator=window_generator,

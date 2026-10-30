@@ -15,7 +15,7 @@ from matplotlib.figure import Figure
 from scipy import stats
 
 from plot_shift.data.db import PlotShiftSqliteDB
-from plot_shift.data.services.reversal_service import load_series
+from plot_shift.data.services.reversal_service import AGGREGATE_DIMENSION, load_series
 from plot_shift.reversals import ReversalDetector, TrendSegment
 
 GROUP = ["scorer_name", "dimension"]
@@ -70,11 +70,14 @@ def regression_table(
         if n <= k or (std == 0).any():
             continue
         design = np.column_stack([np.ones(n), (x - x.mean(axis=0)) / std])
+        gram = design.T @ design
+        if np.linalg.matrix_rank(gram) < k:
+            continue
         y = g[RATING].to_numpy(dtype=float)
         beta, *_ = np.linalg.lstsq(design, y, rcond=None)
         resid = y - design @ beta
         dof = n - k
-        se = np.sqrt(np.diag(resid @ resid / dof * np.linalg.inv(design.T @ design)))
+        se = np.sqrt(np.diag(resid @ resid / dof * np.linalg.inv(gram)))
         p = 2 * stats.t.sf(np.abs(beta / se), dof)
         r2 = 1 - (resid @ resid) / np.sum((y - y.mean()) ** 2)
 
@@ -148,8 +151,12 @@ def plot_movie(
     detector: ReversalDetector,
     scorer_name: str | None = None,
     title: str = "",
+    dimension: str | None = None,
 ) -> Figure:
-    """Trajectories of one movie for every scorer/dimension, stacked for comparison."""
+    """Trajectories of one movie for every scorer/dimension, stacked for comparison.
+
+    ``dimension`` limits the panels to one series, including ``aggregate``.
+    """
     imdb_id_int = int(
         imdb_id_int
     )  # sqlite won't match numpy ints coming from DataFrames
@@ -157,11 +164,24 @@ def plot_movie(
     for movie_id, scorer, dim in db.model_scores.list_groups(scorer_name=scorer_name):
         if movie_id == imdb_id_int:
             dims_by_scorer.setdefault(scorer, []).append(dim)
-    panels = [
-        (scorer, dim, scores)
-        for scorer, dims in dims_by_scorer.items()
-        for dim, scores in load_series(db, imdb_id_int, scorer, dims).items()
-    ]
+    panels: list[tuple[str, str, list[float]]] = []
+    for scorer, dims in dims_by_scorer.items():
+        raw_dims = dims
+        if dimension is not None and dimension != AGGREGATE_DIMENSION:
+            raw_dims = [dim for dim in dims if dim == dimension]
+            if not raw_dims:
+                continue
+        for dim, scores in load_series(db, imdb_id_int, scorer, raw_dims).items():
+            if dimension is not None and dim != dimension:
+                continue
+            panels.append((scorer, dim, scores))
+
+    if not panels:
+        fig, ax = plt.subplots(figsize=(10, 2))
+        ax.set_axis_off()
+        fig.suptitle(title or f"IMDb {imdb_id_int}")
+        ax.set_title("no stored scores for this filter")
+        return fig
 
     fig, axes = plt.subplots(
         len(panels), 1, figsize=(10, 2.6 * len(panels)), squeeze=False

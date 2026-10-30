@@ -29,7 +29,7 @@ from pathlib import Path
 
 from plot_shift.data.db import PlotShiftSqliteDB
 from plot_shift.data.models import ModelScore
-from plot_shift.windows.fixed_width_temporal import FixedWidthTemporalWindowGenerator
+from plot_shift.windows import create_window_generator
 
 logger = logging.getLogger(__name__)
 
@@ -60,6 +60,7 @@ def export_windows_for_colab(
     out_csv: str = "data/proceeded/colab_input.csv",
     n_windows: int = 100,
     window_seconds: int = 300,
+    windower: str = "fixed-width-duration",
     limit: int | None = None,
 ) -> dict[str, int | str]:
     """Export narrative windows to CSV for remote scoring in Google Colab.
@@ -71,15 +72,17 @@ def export_windows_for_colab(
     Args:
         db_path:        Path to the SQLite database.
         out_csv:        Destination CSV path.
-        n_windows:      Number of equal-width windows per movie.
+        n_windows:      Number of windows per movie for ``fixed-width-duration``.
         window_seconds: Width of each window in seconds.
+        windower:    ``fixed-width-duration`` or ``fixed-duration``.
         limit:          Optional cap on the number of movies to export.
 
     Returns:
         Summary dict with ``movies_exported``, ``windows_exported``,
         and ``out_csv`` keys.
     """
-    window_generator = FixedWidthTemporalWindowGenerator(
+    window_generator = create_window_generator(
+        windower,
         window_duration=timedelta(seconds=window_seconds),
         n_windows=n_windows,
     )
