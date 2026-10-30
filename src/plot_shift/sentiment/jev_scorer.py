@@ -26,22 +26,70 @@ from plot_shift.sentiment.base import (
 JEV_MODEL = "jev-1.13.0"
 JEV_TIMEOUT_ENV = "TYPESAFE_TIMEOUT"
 
-_VALENCE_LEVELS = (
-    "very negative",
-    "negative",
-    "neutral",
-    "positive",
-    "very positive",
+SUBTITLES_FIELD = "subtitles"
+
+# Jev judges each level on its own and never sees its position, so every level names
+# situations, not degrees, and shares the same keys. Examples are written as subtitle
+# dialogue because that is what the state holds.
+_VALENCE_LEVELS: tuple[dict[str, Any], ...] = (
+    {
+        "what": "Dominated by distress: death, grief, violence, terror, despair, or bitter "
+        "hatred between characters.",
+        "examples": [
+            "He's dead. They killed him. It's my fault, I should have been there.",
+            "Get on the floor or I'll shoot! Please, I have kids! Please!",
+        ],
+    },
+    {
+        "what": "Mostly unpleasant: arguments, worry, sadness, threats, accusations, or bad "
+        "news, short of catastrophe.",
+        "examples": [
+            "You lied to me again. I can't trust you anymore. Just go.",
+            "The bank called. We're going to lose the house, aren't we?",
+        ],
+    },
+    {
+        "what": "Neither pleasant nor unpleasant: routine talk, plans, or information, or "
+        "pleasant and unpleasant moments that roughly cancel out.",
+        "examples": [
+            "The train leaves at six. Take the north road and wait by the bridge.",
+            "I got the job. But Mom's back in the hospital.",
+        ],
+    },
+    {
+        "what": "Mostly pleasant: friendly banter, jokes, hope, reassurance, kindness, or "
+        "small wins.",
+        "examples": [
+            "Relax, you'll be great. Want me to make you some coffee?",
+            "Ha! You actually did it, you lucky bastard. Drinks are on me.",
+        ],
+    },
+    {
+        "what": "Dominated by joy: love declared, celebration, triumph, reunion, or deep relief.",
+        "examples": [
+            "Will you marry me? Yes! Yes, of course I will!",
+            "We won! I can't believe it, we actually won! You're alive!",
+        ],
+    },
 )
-_VALENCE_INSTRUCTIONS = (
-    "Rate the emotional valence of this film-subtitle window, from very negative to very positive."
-)
+_VALENCE_INSTRUCTIONS: dict[str, Any] = {
+    "question": f"How pleasant or unpleasant is the emotional tone of `{SUBTITLES_FIELD}`, "
+    "taken as a whole?",
+    SUBTITLES_FIELD: "Every subtitle line shown during one stretch of a film, joined in order. "
+    "Speaker names and line breaks are missing.",
+    "rate": "The feelings the characters express and what happens to them in this stretch.",
+    "do_not_rate": [
+        "Whether the film or the writing is good.",
+        "Swearing on its own: friendly banter with swear words is pleasant.",
+        "Events outside this stretch.",
+    ],
+}
 
 
 class JevDecisionClient(Protocol):
     """The slice of the TypeSafe client this scorer calls."""
 
-    def system_one(self, *, state: str, questions: Mapping[str, Any]) -> Any: ...
+    def system_one(self, *, state: Mapping[str, str], questions: Mapping[str, Any]) -> Any: ...
 
 
 def scale_jev_score(raw: float, *, top_level: int) -> float:
@@ -130,7 +178,7 @@ class JevScorer(SentimentScorer):
             result.add_dimension_score(DimensionScore(value=0.0, kind=DimensionKind.VALENCE))
             return result
 
-        response = self._client.system_one(state=text, questions=_questions())
+        response = self._client.system_one(state={SUBTITLES_FIELD: text}, questions=_questions())
         raw = float(response.scores[DimensionKind.VALENCE.value].score)
         result.add_dimension_score(
             DimensionScore(
