@@ -10,6 +10,7 @@ from plot_shift.sentiment.base import (
     ScorerKind,
     SentimentScorer,
 )
+from plot_shift.sentiment.scales import emobank_to_bipolar
 
 # ---------------------------------------------------------------------------
 # 1) Multi-dimensional VAD transformer scorer (recommended)
@@ -18,10 +19,11 @@ from plot_shift.sentiment.base import (
 
 @dataclass(frozen=True)
 class VadBertScorer(SentimentScorer):
-    """Multi-dimensional (VAD) transformer scorer built on ``RobroKools/vad-bert``.
+    """Valence, arousal, and dominance from ``RobroKools/vad-bert``.
 
-    The model regresses Valence, Arousal and Dominance from text; the raw
-    regression outputs (approximately on a [0, 1] scale) are returned as-is.
+    The checkpoint is fine-tuned on EmoBank. That corpus rates every dimension
+    on a 1–5 scale, so each logit is mapped with ``emobank_to_bipolar`` onto
+    [-1, 1]. A rating of 3, the scale midpoint, becomes 0.
     """
 
     model_name: str = "RobroKools/vad-bert"
@@ -46,7 +48,6 @@ class VadBertScorer(SentimentScorer):
             score.add_dimension_score(DimensionScore(value=0.0, kind=DimensionKind.DOMINANCE))
             return score
 
-        """Return the three raw VAD dimension scores for ``text``."""
         inputs = self._tokenizer(text, return_tensors="pt", truncation=True, max_length=512).to(
             self.device
         )
@@ -55,9 +56,15 @@ class VadBertScorer(SentimentScorer):
 
         valence, arousal, dominance = logits
 
-        score.add_dimension_score(DimensionScore(value=valence, kind=DimensionKind.VALENCE))
-        score.add_dimension_score(DimensionScore(value=arousal, kind=DimensionKind.AROUSAL))
-        score.add_dimension_score(DimensionScore(value=dominance, kind=DimensionKind.DOMINANCE))
+        score.add_dimension_score(
+            DimensionScore(value=emobank_to_bipolar(float(valence)), kind=DimensionKind.VALENCE)
+        )
+        score.add_dimension_score(
+            DimensionScore(value=emobank_to_bipolar(float(arousal)), kind=DimensionKind.AROUSAL)
+        )
+        score.add_dimension_score(
+            DimensionScore(value=emobank_to_bipolar(float(dominance)), kind=DimensionKind.DOMINANCE)
+        )
         return score
 
     @property

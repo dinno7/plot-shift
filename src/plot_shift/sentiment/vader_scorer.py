@@ -13,7 +13,12 @@ from plot_shift.sentiment.base import (
 
 
 class VaderLexiconScorer(SentimentScorer):
-    """VADER valence as the raw (unnormalized) sum of word scores."""
+    """VADER compound valence in (-1, 1).
+
+    This is NLTK's compound score, ``sum / sqrt(sum^2 + 15)``, which is the
+    valence scale in Knight et al. A longer window can still saturate near
+    the ends, but it no longer grows without a bound.
+    """
 
     @property
     def scorer_name(self) -> str:
@@ -26,8 +31,6 @@ class VaderLexiconScorer(SentimentScorer):
     def __init__(self) -> None:
         ensure_nltk_data("sentiment/vader_lexicon")
         self._analyzer: SentimentIntensityAnalyzer = SentimentIntensityAnalyzer()
-        # NLTK squashes ``compound`` into (-1, 1) via constants.normalize; keep the raw sum.
-        self._analyzer.constants.normalize = lambda score, alpha=15: score
 
     def score_token(self, token: str) -> float:
         if not token:

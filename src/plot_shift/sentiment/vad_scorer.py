@@ -15,6 +15,13 @@ DEFAULT_VAD_LEXICON_PATH = Path("data/raw/lexicons/vad_lexicon.txt")
 
 
 class VADLexiconScorer(SentimentScorer):
+    """NRC-VAD compound scores in (-1, 1) for each dimension.
+
+    Lexicon entries are already bipolar. The reported value is the VADER-style
+    squash of their sum, ``sum / sqrt(sum^2 + 1)`` (see ``vad_model.normalize``),
+    so a longer subtitle does not inflate valence, arousal, or dominance.
+    """
+
     @property
     def scorer_name(self) -> str:
         return "vad"
@@ -25,7 +32,7 @@ class VADLexiconScorer(SentimentScorer):
 
     def __init__(self, lexicon_file: str | Path = DEFAULT_VAD_LEXICON_PATH) -> None:
         self._analyzer: VADIntensityAnalyzer = VADIntensityAnalyzer(
-            lexicon_file=lexicon_file, make_normalize=False
+            lexicon_file=lexicon_file, make_normalize=True
         )
 
     def score_token(self, token: str) -> dict[DimensionKind, float]:

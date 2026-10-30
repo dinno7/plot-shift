@@ -12,6 +12,7 @@ from plot_shift.sentiment.base import (
     ScorerKind,
     SentimentScorer,
 )
+from plot_shift.sentiment.scales import emobank_to_bipolar
 
 
 class RoBERTaForVAD(nn.Module):
@@ -52,14 +53,13 @@ class RoBERTaForVAD(nn.Module):
 
 
 class PERTEmoPairScorer(SentimentScorer):
-    """
-    PERT-EmoPair transformer scorer.
+    """PERT-EmoPair valence, arousal, and dominance on [-1, 1].
 
-    Produces three continuous emotional dimensions:
-
-        - Valence
-        - Arousal
-        - Dominance
+    Valence is trained against EmoBank's 1–5 ratings, so it is mapped with
+    ``emobank_to_bipolar``. Arousal and dominance are trained against the
+    EmoPair Bradley-Terry scores, which the dataset already stores on
+    [-1, 1] (``A_BT_score_full`` and ``D_BT_score_full``). Those two outputs
+    are kept as the model emits them.
     """
 
     REPO_ID = "edsi-umd/PERT-EmoPair"
@@ -179,7 +179,7 @@ class PERTEmoPairScorer(SentimentScorer):
 
         result.add_dimension_score(
             DimensionScore(
-                value=float(valence),
+                value=emobank_to_bipolar(float(valence)),
                 kind=DimensionKind.VALENCE,
             )
         )
