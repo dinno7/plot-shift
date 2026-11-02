@@ -13,6 +13,8 @@ from plot_shift.sentiment.jev_scorer import (
     scale_jev_score,
 )
 
+_JSON_HEADERS = {"Content-Type": "application/json", "Accept": "application/json"}
+
 
 class _Answer:
     def __init__(self, score: float) -> None:
@@ -27,10 +29,10 @@ class _Response:
 class _FakeClient:
     def __init__(self, scores: dict[str, float]) -> None:
         self.scores = scores
-        self.states: list[str] = []
+        self.states: list[Mapping[str, str]] = []
         self.questions: list[Mapping[str, object]] = []
 
-    def system_one(self, *, state: str, questions: Mapping[str, object]) -> _Response:
+    def system_one(self, *, state: Mapping[str, str], questions: Mapping[str, object]) -> _Response:
         self.states.append(state)
         self.questions.append(questions)
         return _Response(self.scores)
@@ -42,7 +44,9 @@ def test_client_settings_use_defaults() -> None:
     assert settings == {
         "model": JEV_MODEL,
         "base_url": DEFAULT_BASE_URL,
+        "compression": False,
         "timeout": DEFAULT_TIMEOUT,
+        "headers": _JSON_HEADERS,
     }
 
 
@@ -58,7 +62,9 @@ def test_client_settings_read_environment() -> None:
     assert settings == {
         "model": "local-jev",
         "base_url": "http://127.0.0.1:8080",
+        "compression": False,
         "timeout": 30.0,
+        "headers": _JSON_HEADERS,
     }
 
 
@@ -90,7 +96,7 @@ def test_score_maps_valence() -> None:
     assert scorer.scorer_name == "jev"
     assert [dimension.kind for dimension in score.dimensions] == [DimensionKind.VALENCE]
     assert [dimension.value for dimension in score.dimensions] == [-1.0]
-    assert client.states == ["The ship sinks. Then they laugh."]
+    assert client.states == [{"subtitles": "The ship sinks. Then they laugh."}]
     assert [set(questions) for questions in client.questions] == [{"valence"}]
 
 
